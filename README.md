@@ -1,2 +1,2 @@
-# fintuple-automation-projects
-Fintuple file backup
+# ft-automation
+Repository for automation file
