@@ -550,8 +550,9 @@ def get_collateral(fund_info, fs_database, app_database):
     collateral_status = "PUBLISHED"
     reporting_date = eff_end_date
     effective_start_date = collateral_date
-    is_premium = 0
+    is_premium = 1
     is_published = 1
+    is_data_changed = 1
     published_ts = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     created_ts = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     created_by = "ft-automation"
@@ -561,8 +562,8 @@ def get_collateral(fund_info, fs_database, app_database):
                        "visibility_code": visibility_code, "template_code": template_code,
                        "collateral_date": collateral_date, "collateral_status": collateral_status,
                        "reporting_date": reporting_date, "effective_start_date": effective_start_date,
-                       "is_premium": is_premium, "is_published": is_published, "published_ts": published_ts,
-                       "created_ts": created_ts, "created_by": created_by}
+                       "is_premium": is_premium, "is_published": is_published, "is_data_changed": is_data_changed,
+                       "published_ts": published_ts, "created_ts": created_ts, "created_by": created_by}
     return collateral_data
 
 

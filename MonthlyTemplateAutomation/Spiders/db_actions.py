@@ -444,8 +444,8 @@ def put_collateral_data(collateral_data, fs_database):
     collateral_query = "INSERT INTO fs.collaterals (collateral_code, view_code, collateral_type_code, entity_type, " \
                        "entity_code, collateral_title, visibility_code, template_code, collateral_date, " \
                        "collateral_status, reporting_date, effective_start_date, is_premium, is_published, " \
-                       "published_ts, created_ts, created_by) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, " \
-                       "%s, %s, %s, %s, %s, %s)"
+                       "is_data_changed, published_ts, created_ts, created_by) VALUES (%s, %s, %s, %s, %s, %s, %s, " \
+                       "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
     collateral_values = (collateral_data['collateral_code'], collateral_data['view_code'],
                          collateral_data['collateral_type_code'], collateral_data['entity_type'],
                          collateral_data['entity_code'], collateral_data['collateral_title'],
@@ -453,7 +453,8 @@ def put_collateral_data(collateral_data, fs_database):
                          collateral_data['collateral_date'], collateral_data['collateral_status'],
                          collateral_data['reporting_date'], collateral_data['effective_start_date'],
                          collateral_data['is_premium'], collateral_data['is_published'],
-                         collateral_data['published_ts'], collateral_data['created_ts'], collateral_data['created_by'])
+                         collateral_data['is_data_changed'], collateral_data['published_ts'],
+                         collateral_data['created_ts'], collateral_data['created_by'])
     collateral_cursor.execute(collateral_query, collateral_values)
     collateral_cursor.close()
 
