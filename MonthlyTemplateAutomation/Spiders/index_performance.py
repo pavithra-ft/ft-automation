@@ -124,15 +124,14 @@ def get_index_performance(fund_info, index_code, iq_database):
 
     index_perf_data = {"index_code": index_code, "perf_1m": perf_1m, "perf_3m": perf_3m, "perf_6m": perf_6m,
                        "perf_1y": perf_1y, "perf_2y": perf_2y, "perf_3y": perf_3y, "perf_5y": perf_5y,
-                       "perf_inception": perf_inception}
+                       "perf_inception": perf_inception, "reporting_date": reporting_date}
     return index_perf_data
 
 
 def get_index_ratios(index_code, nse_list, iq_database):
     top_sector_name = None
     index_ratios_data = {"standard_deviation": None, "pe_ratio": None,"top_sector_name": None,
-                         "top_sector_exposure": None, "top_holding_isin": None, "top_holding_exposure": None,
-                         "reporting_date": None}
+                         "top_sector_exposure": None, "top_holding_isin": None, "top_holding_exposure": None}
     for nse in nse_list:
         if nse['index_code'] == index_code:
             top_holding_isin = get_isin(nse['portfolio_name'], iq_database)
@@ -142,8 +141,7 @@ def get_index_ratios(index_code, nse_list, iq_database):
             index_ratios_data.update({"standard_deviation": nse['standard_deviation'], "pe_ratio": nse['pe_ratio'],
                                       "top_sector_name": top_sector_name, "top_sector_exposure": nse['sector_exposure'],
                                       "top_holding_isin": top_holding_isin,
-                                      "top_holding_exposure": nse['portfolio_exposure'],
-                                      "reporting_date": nse['reporting_date']})
+                                      "top_holding_exposure": nse['portfolio_exposure']})
     return index_ratios_data
 
 
@@ -162,14 +160,14 @@ def index_performance_data(index_code_list, nse_list, fund_info, iq_database):
                                   "perf_6m": performance['perf_6m'], "perf_1y": performance['perf_1y'],
                                   "perf_2y": performance['perf_2y'], "perf_3y": performance['perf_3y'],
                                   "perf_5y": performance['perf_5y'], "perf_inception": performance['perf_inception'],
-                                  "reporting_date": ratios['reporting_date']})
+                                  "reporting_date": performance['reporting_date']})
     put_index_performance(index_performance, iq_database)
     for i in index_performance:
         print(i)
 
 
 try:
-    os.chdir(r"C:\Users\pavithra\PycharmProjects\MonthlyTemplateAutomation\Excel files")
+    os.chdir(r"C:\Users\pavithra\Documents\fintuple-automation-projects\MonthlyTemplateAutomation\Excel files")
     excel_files = [file for file in glob("*.xlsx")]
     pdf_files = [file for file in glob(r"C:\Users\pavithra\PycharmProjects\Nse_India\nse_indices\nse_indices"
                                        r"\pdf_files\*.pdf")]
@@ -192,6 +190,7 @@ try:
             fund_info = get_fund_info(df)
             benchmark_index_code = get_benchmark_index(fund_info, iq_database)
             alt_benchmark_index_code = get_alt_benchmark_index(fund_info, iq_database)
+            # index_code_list = [benchmark_index_code, alt_benchmark_index_code]
             index_code_list = [benchmark_index_code, alt_benchmark_index_code]
             nse_list = get_nse_data(pdf_files)
 

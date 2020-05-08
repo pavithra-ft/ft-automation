@@ -439,7 +439,7 @@ def get_isin(security_name, iq_database):
         security_isin = security_details[max_index][0]
     else:
         security_isin = isin_details[0][0]
-    # print(security_isin)
+    print(security_isin)
     return security_isin
 
 
@@ -770,10 +770,10 @@ def table_records(excel_values, iq_database, fs_database, app_database):
 
     if portfolio_sum == 100:
         sector_data = get_fund_sector_from_portfolio(portfolio_values, iq_database)
+    elif portfolio_sum > 0 and portfolio_sum != 100:
+        sector_data = get_fund_sector(sector_values, iq_database)
     elif portfolio_sum == 0:
         sector_data = get_fund_sector_from_portfolio(portfolio_values, iq_database)
-    elif 0 < portfolio_sum < 100:
-        sector_data = get_fund_sector(sector_values, iq_database)
     else:
         sector_data = None
 

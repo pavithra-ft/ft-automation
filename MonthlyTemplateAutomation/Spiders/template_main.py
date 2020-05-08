@@ -12,7 +12,7 @@ from Spiders.template_excel_extraction import get_fund_info, get_fund_allocation
     get_fund_portfolio_values, get_fund_sector_values
 
 try:
-    os.chdir(r"C:\Users\pavithra\PycharmProjects\MonthlyTemplateAutomation\Excel files")
+    os.chdir(r"C:\Users\pavithra\Documents\fintuple-automation-projects\MonthlyTemplateAutomation\Excel files")
     files = [file for file in glob("*.xlsx")]
     sheet_name = ['Fund Performance Update']
     for file in files:
