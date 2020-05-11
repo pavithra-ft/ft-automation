@@ -6,15 +6,14 @@ import numpy as np
 import pandas as pd
 
 from glob import glob
-from envparse import env
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
-from Spiders.bse_index_dictionary import pe_ratio_api_dict
+from dictionary.bse_index_dictionary import pe_ratio_api_dict
 from Spiders.template_calculation import get_isin
-from Spiders.bse_pe_extraction import get_bse_data
-from Spiders.nse_pdf_extraction import get_nse_data
-from Spiders.sector_dictionary import sector_dictionary
+from indices_ratios.bse_pe_extraction import get_bse_data
+from indices_ratios.nse_pdf_extraction import get_nse_data
+from dictionary.sector_dictionary import sector_dictionary
 from Spiders.template_excel_extraction import get_fund_info
 from Spiders.db_actions import get_benchmark_index, get_index_price_as_on_date, get_alt_benchmark_index, \
     get_start_price, put_index_performance, get_index_start_date

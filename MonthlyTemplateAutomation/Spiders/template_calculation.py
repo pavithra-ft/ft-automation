@@ -6,8 +6,8 @@ import statistics
 
 from scipy import optimize
 from pyjarowinkler import distance
-from Spiders.sector_dictionary import sector_dictionary
-from Spiders.portfolio_dictionary import portfolio_dict
+from dictionary.sector_dictionary import sector_dictionary
+from dictionary.portfolio_dictionary import portfolio_dict
 from dateutil.relativedelta import relativedelta
 from Spiders.db_actions import get_benchmark_index, get_alt_benchmark_index, get_benchmark_nav, get_alt_benchmark_nav, \
     update_islatest, get_cap_type, get_nav_start_date, get_isin_sector, get_all_isin, get_sector_from_industry, \
