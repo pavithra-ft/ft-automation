@@ -10,7 +10,9 @@ from envparse import env
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
+from Spiders.bse_index_dictionary import pe_ratio_api_dict
 from Spiders.template_calculation import get_isin
+from Spiders.bse_pe_extraction import get_bse_data
 from Spiders.nse_pdf_extraction import get_nse_data
 from Spiders.sector_dictionary import sector_dictionary
 from Spiders.template_excel_extraction import get_fund_info
@@ -128,28 +130,37 @@ def get_index_performance(fund_info, index_code, iq_database):
     return index_perf_data
 
 
-def get_index_ratios(index_code, nse_list, iq_database):
-    top_sector_name = None
-    index_ratios_data = {"standard_deviation": None, "pe_ratio": None,"top_sector_name": None,
+def get_index_ratios(index_code, nse_list, bse_list, iq_database):
+    top_sector_name, top_holding_isin = None, None
+    index_ratios_data = {"standard_deviation": None, "pe_ratio": None, "top_sector_name": None,
                          "top_sector_exposure": None, "top_holding_isin": None, "top_holding_exposure": None}
+    index_ratio_list = []
     for nse in nse_list:
-        if nse['index_code'] == index_code:
-            top_holding_isin = get_isin(nse['portfolio_name'], iq_database)
-            industry = nse['sector_name'].capitalize().strip()
-            if sector_dictionary.__contains__(industry):
-                top_sector_name = sector_dictionary[industry]
-            index_ratios_data.update({"standard_deviation": nse['standard_deviation'], "pe_ratio": nse['pe_ratio'],
-                                      "top_sector_name": top_sector_name, "top_sector_exposure": nse['sector_exposure'],
+        index_ratio_list.append(nse)
+    for bse in bse_list:
+        index_ratio_list.append(bse)
+    for ratios_data in index_ratio_list:
+        if ratios_data['index_code'] == index_code:
+            if ratios_data['portfolio_name'] and ratios_data['sector_name'] is not None:
+                top_holding_isin = get_isin(ratios_data['portfolio_name'], iq_database)
+                industry = ratios_data['sector_name'].capitalize().strip()
+                if sector_dictionary.__contains__(industry):
+                    top_sector_name = sector_dictionary[industry]
+            index_ratios_data.update({"standard_deviation": ratios_data['standard_deviation'],
+                                      "pe_ratio": ratios_data['pe_ratio'], "top_sector_name": top_sector_name,
+                                      "top_sector_exposure": ratios_data['sector_exposure'],
                                       "top_holding_isin": top_holding_isin,
-                                      "top_holding_exposure": nse['portfolio_exposure']})
+                                      "top_holding_exposure": ratios_data['portfolio_exposure']})
     return index_ratios_data
 
 
-def index_performance_data(index_code_list, nse_list, fund_info, iq_database):
+def index_performance_data(index_code_list, fund_info, iq_database):
     index_performance = []
+    nse_list = get_nse_data(pdf_files)
+    bse_list = get_bse_data(pe_ratio_api_dict)
     for index_code in index_code_list:
         performance = get_index_performance(fund_info, index_code, iq_database)
-        ratios = get_index_ratios(index_code, nse_list, iq_database)
+        ratios = get_index_ratios(index_code, nse_list, bse_list, iq_database)
         index_performance.append({"index_code": performance['index_code'],
                                   "standard_deviation": ratios['standard_deviation'], "pe_ratio": ratios['pe_ratio'],
                                   "top_sector_name": ratios['top_sector_name'],
@@ -190,11 +201,9 @@ try:
             fund_info = get_fund_info(df)
             benchmark_index_code = get_benchmark_index(fund_info, iq_database)
             alt_benchmark_index_code = get_alt_benchmark_index(fund_info, iq_database)
-            # index_code_list = [benchmark_index_code, alt_benchmark_index_code]
             index_code_list = [benchmark_index_code, alt_benchmark_index_code]
-            nse_list = get_nse_data(pdf_files)
 
-            index_performance_data(index_code_list, nse_list, fund_info, iq_database)
+            index_performance_data(index_code_list, fund_info, iq_database)
             # Database commit
             iq_database.commit()
             print(fund_info['reporting_date'], ": Fund code - ", fund_info['fund_code'], "Index updated successfully")

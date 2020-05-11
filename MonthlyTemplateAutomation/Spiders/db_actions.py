@@ -113,8 +113,7 @@ def get_fund_nav(fund_info, date, iq_database):
 
 def get_isin_sector(security_name, iq_database):
     security_cursor = iq_database.cursor()
-    security_query = "SELECT security_isin from iq.mas_securities where security_name = '" + security_name + \
-                     "' and status_type_code = 'ACTIVE' and exchange_code = 'BSE'"
+    security_query = "SELECT security_isin from iq.mas_securities where security_name = '" + security_name + "'"
     security_cursor.execute(security_query)
     isin_details = security_cursor.fetchall()
     security_cursor.close()
@@ -123,7 +122,7 @@ def get_isin_sector(security_name, iq_database):
 
 def get_all_isin(iq_database):
     isin_cursor = iq_database.cursor()
-    isin_query = "SELECT security_isin, security_name from iq.mas_securities where status_type_code = 'ACTIVE'"
+    isin_query = "SELECT security_isin, security_name from iq.mas_securities"
     isin_cursor.execute(isin_query)
     security_details = isin_cursor.fetchall()
     isin_cursor.close()
@@ -132,8 +131,8 @@ def get_all_isin(iq_database):
 
 def get_sector_from_portfolio(sec_isin, iq_database):
     sector_cursor = iq_database.cursor()
-    sector_query = "select ms.sector_type_name as sector from iq.mas_securities msec, iq.mas_sectors ms where " \
-                   "msec.security_isin = '" + sec_isin + "' and ms.industry = msec.industry and ms.isActive = 1"
+    sector_query = "select ms.sector as sector from iq.mas_securities msec, iq.mas_sectors ms where " \
+                   "msec.security_isin = '" + sec_isin + "' and ms.industry = msec.industry"
     sector_cursor.execute(sector_query)
     sector_response = sector_cursor.fetchall()
     sector_cursor.close()
@@ -142,7 +141,7 @@ def get_sector_from_portfolio(sec_isin, iq_database):
 
 def get_sectorcash_from_portfolio(sec_isin, iq_database):
     sector_cash_cursor = iq_database.cursor()
-    sector_query = "SELECT sector_type_name as sector FROM iq.mas_sectors where industry = '" + sec_isin + "'"
+    sector_query = "SELECT sector FROM iq.mas_sectors where industry = '" + sec_isin + "'"
     sector_cash_cursor.execute(sector_query)
     sector_cash_response = sector_cash_cursor.fetchall()
     sector_cash_cursor.close()
@@ -151,7 +150,7 @@ def get_sectorcash_from_portfolio(sec_isin, iq_database):
 
 def get_sector_from_industry(industry, iq_database):
     industry_cursor = iq_database.cursor()
-    industry_query = "SELECT sector_type_name from iq.mas_sectors where industry = '" + industry + "'"
+    industry_query = "SELECT sector from iq.mas_sectors where industry = '" + industry + "'"
     industry_cursor.execute(industry_query)
     sector_details = industry_cursor.fetchall()
     industry_cursor.close()

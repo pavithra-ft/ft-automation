@@ -1,8 +1,5 @@
-import os
 import camelot
 import warnings
-import pandas as pd
-from glob import glob
 from datetime import datetime
 
 warnings.simplefilter('ignore')
@@ -29,7 +26,7 @@ def get_nse_data(pdf_files):
             sector_name = sector_table[0][1]
             sector_exposure = round((float(sector_table[1][1]) / 100), 4)
         else:
-            sector_name = 'Healthcare services'
+            sector_name = 'Healthcare Services'
             sector_exposure = 1
 
         portfolio = camelot.read_pdf(pdf, flavor='stream', table_areas=['320,286,577,116'])[0].df
