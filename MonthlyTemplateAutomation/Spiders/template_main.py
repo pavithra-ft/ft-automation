@@ -7,7 +7,7 @@ import pandas as pd
 from envparse import env
 from glob import glob
 from Spiders.db_actions import put_fund_performance, put_nav_data
-from Spiders.template_calculation import table_records, get_fund_performance
+from Spiders.template_calculation import table_records
 from Spiders.template_excel_extraction import get_fund_info, get_fund_allocation_values, get_market_cap_values, \
     get_fund_portfolio_values, get_fund_sector_values
 

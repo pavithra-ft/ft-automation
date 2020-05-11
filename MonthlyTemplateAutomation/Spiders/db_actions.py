@@ -12,6 +12,18 @@ def get_cap_type(type_desc, iq_database):
     return cap_type_code
 
 
+def get_mas_indices(iq_database):
+    mas_indices_cursor = iq_database.cursor()
+    mas_indices_query = "SELECT distinct(index_code) from iq.mas_indices"
+    mas_indices_cursor.execute(mas_indices_query)
+    mas_indices_details = mas_indices_cursor.fetchall()
+    mas_indices = []
+    for index in mas_indices_details:
+        mas_indices.append(index[0])
+    mas_indices_cursor.close()
+    return mas_indices
+
+
 def get_start_price(start_date, index_code, iq_database):
     start_price_cursor = iq_database.cursor()
     start_index_price_query = "SELECT ip.index_price_close from index_prices ip where ip.index_code = '" + \

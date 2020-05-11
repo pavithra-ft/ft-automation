@@ -1,22 +1,17 @@
-import os
-import re
 import MySQLdb
 import calendar
-import numpy as np
-import pandas as pd
 
 from glob import glob
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
-from dictionary.bse_index_dictionary import pe_ratio_api_dict
 from Spiders.template_calculation import get_isin
+from dictionary.bse_index_dictionary import pe_ratio_api_dict
 from indices_ratios.bse_pe_extraction import get_bse_data
 from indices_ratios.nse_pdf_extraction import get_nse_data
 from dictionary.sector_dictionary import sector_dictionary
-from Spiders.template_excel_extraction import get_fund_info
-from Spiders.db_actions import get_benchmark_index, get_index_price_as_on_date, get_alt_benchmark_index, \
-    get_start_price, put_index_performance, get_index_start_date
+from Spiders.db_actions import get_index_price_as_on_date, get_start_price, put_index_performance, get_mas_indices, \
+    get_index_start_date
 
 
 def get_1m_date(reporting_date):
@@ -68,10 +63,9 @@ def get_5y_date(reporting_date):
     return previous_5y_end_date
 
 
-def get_index_performance(fund_info, index_code, iq_database):
+def get_index_performance(reporting_date, index_code, iq_database):
     start_date = get_index_start_date(index_code, iq_database)
     start_index_price = get_start_price(start_date, index_code, iq_database)
-    reporting_date = datetime.strptime(fund_info['reporting_date'], '%Y-%m-%d %H:%M:%S').date()
     curr_price = get_index_price_as_on_date(reporting_date, index_code, iq_database)
     perf_1m_date = get_1m_date(reporting_date)
     perf_3m_date = get_3m_date(reporting_date)
@@ -153,63 +147,51 @@ def get_index_ratios(index_code, nse_list, bse_list, iq_database):
     return index_ratios_data
 
 
-def index_performance_data(index_code_list, fund_info, iq_database):
+def index_performance_data(index_code, reporting_date, iq_database):
     index_performance = []
     nse_list = get_nse_data(pdf_files)
     bse_list = get_bse_data(pe_ratio_api_dict)
-    for index_code in index_code_list:
-        performance = get_index_performance(fund_info, index_code, iq_database)
-        ratios = get_index_ratios(index_code, nse_list, bse_list, iq_database)
-        index_performance.append({"index_code": performance['index_code'],
-                                  "standard_deviation": ratios['standard_deviation'], "pe_ratio": ratios['pe_ratio'],
-                                  "top_sector_name": ratios['top_sector_name'],
-                                  "top_sector_exposure": ratios['top_sector_exposure'],
-                                  "top_holding_isin": ratios['top_holding_isin'],
-                                  "top_holding_exposure": ratios['top_holding_exposure'],
-                                  "perf_1m": performance['perf_1m'], "perf_3m": performance['perf_3m'],
-                                  "perf_6m": performance['perf_6m'], "perf_1y": performance['perf_1y'],
-                                  "perf_2y": performance['perf_2y'], "perf_3y": performance['perf_3y'],
-                                  "perf_5y": performance['perf_5y'], "perf_inception": performance['perf_inception'],
-                                  "reporting_date": performance['reporting_date']})
+    performance = get_index_performance(reporting_date, index_code, iq_database)
+    ratios = get_index_ratios(index_code, nse_list, bse_list, iq_database)
+    index_performance.append({"index_code": performance['index_code'],
+                              "standard_deviation": ratios['standard_deviation'], "pe_ratio": ratios['pe_ratio'],
+                              "top_sector_name": ratios['top_sector_name'],
+                              "top_sector_exposure": ratios['top_sector_exposure'],
+                              "top_holding_isin": ratios['top_holding_isin'],
+                              "top_holding_exposure": ratios['top_holding_exposure'], "perf_1m": performance['perf_1m'],
+                              "perf_3m": performance['perf_3m'], "perf_6m": performance['perf_6m'],
+                              "perf_1y": performance['perf_1y'], "perf_2y": performance['perf_2y'],
+                              "perf_3y": performance['perf_3y'], "perf_5y": performance['perf_5y'],
+                              "perf_inception": performance['perf_inception'],
+                              "reporting_date": performance['reporting_date']})
     put_index_performance(index_performance, iq_database)
     for i in index_performance:
         print(i)
 
 
 try:
-    os.chdir(r"C:\Users\pavithra\Documents\fintuple-automation-projects\MonthlyTemplateAutomation\Excel files")
-    excel_files = [file for file in glob("*.xlsx")]
+    iq_db, fs_db, app_db = 'iq', 'fs', 'app'
+    # db_host, db_user, db_pass = env('DB_HOST'), env('DB_USER'), env('DB_PASS')
+    db_host, db_user, db_pass = 'ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com', 'wyzeup', \
+                                'd0m#l1dZwhz!*9Iq0y1h'
+    iq_database = MySQLdb.connect(db_host, db_user, db_pass, iq_db, use_unicode=True, charset="utf8")
+    fs_database = MySQLdb.connect(db_host, db_user, db_pass, fs_db, use_unicode=True, charset="utf8")
+    app_database = MySQLdb.connect(db_host, db_user, db_pass, app_db, use_unicode=True, charset="utf8")
     pdf_files = [file for file in glob(r"C:\Users\pavithra\PycharmProjects\Nse_India\nse_indices\nse_indices"
                                        r"\pdf_files\*.pdf")]
-    sheet_name = ['Fund Performance Update']
-    for file in excel_files:
-        for sheet in sheet_name:
-            df_read = pd.read_excel(file, sheet_name=sheet)
-            # Excel clean-up
-            df_str = df_read.astype(str)
-            df = df_str.applymap(lambda x: re.sub(r'^-$', str(np.NaN), x)).where(pd.notnull(df_read), None)
-
-            iq_db, fs_db, app_db = 'iq', 'fs', 'app'
-            # db_host, db_user, db_pass = env('DB_HOST'), env('DB_USER'), env('DB_PASS')
-            db_host, db_user, db_pass = 'ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com', 'wyzeup', \
-                                        'd0m#l1dZwhz!*9Iq0y1h'
-            iq_database = MySQLdb.connect(db_host, db_user, db_pass, iq_db, use_unicode=True, charset="utf8")
-            fs_database = MySQLdb.connect(db_host, db_user, db_pass, fs_db, use_unicode=True, charset="utf8")
-            app_database = MySQLdb.connect(db_host, db_user, db_pass, app_db, use_unicode=True, charset="utf8")
-
-            fund_info = get_fund_info(df)
-            benchmark_index_code = get_benchmark_index(fund_info, iq_database)
-            alt_benchmark_index_code = get_alt_benchmark_index(fund_info, iq_database)
-            index_code_list = [benchmark_index_code, alt_benchmark_index_code]
-
-            index_performance_data(index_code_list, fund_info, iq_database)
-            # Database commit
-            iq_database.commit()
-            print(fund_info['reporting_date'], ": Fund code - ", fund_info['fund_code'], "Index updated successfully")
-            # Closing the database connection
-            iq_database.close()
-            fs_database.close()
-            app_database.close()
+    mas_indices = get_mas_indices(iq_database)
+    del_indices = ['BSE30', 'NIFVIX']
+    mas_indices = [index for index in mas_indices if index not in del_indices]
+    date = datetime.today().date() - relativedelta(months=1)
+    reporting_date = date.replace(day=calendar.monthrange(date.year, date.month)[1])
+    for index_code in mas_indices:
+        index_performance_data(index_code, reporting_date, iq_database)
+        print(reporting_date, ": Index code - ", index_code, "Index updated successfully")
+    # Database commit
+    iq_database.commit()
+    iq_database.close()
+    fs_database.close()
+    app_database.close()
 
 except Exception as error:
     print("Exception raised :", error)
