@@ -41,8 +41,8 @@ def get_nse_data(pdf_files):
         reporting_date = str(datetime.strptime(date[0][0], "%B %d, %Y").date())
 
         nse_dict.update({'index_code': index_code, 'standard_deviation': standard_deviation, 'pe_ratio': pe_ratio,
-                         'sector_name': sector_name, 'sector_exposure': sector_exposure,
-                         'portfolio_name': portfolio_name, 'portfolio_exposure': portfolio_exposure,
+                         'top_sector_name': sector_name, 'top_sector_exposure': sector_exposure,
+                         'top_holding_isin': portfolio_name, 'top_holding_exposure': portfolio_exposure,
                          'reporting_date': reporting_date})
         nse_list.append(nse_dict)
     return nse_list

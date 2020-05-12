@@ -6,8 +6,7 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
 from Spiders.template_calculation import get_isin
-from dictionary.bse_index_dictionary import pe_ratio_api_dict
-from indices_ratios.bse_pe_extraction import get_bse_data
+from indices_ratios.bse_extraction import get_bse_data
 from indices_ratios.nse_pdf_extraction import get_nse_data
 from dictionary.sector_dictionary import sector_dictionary
 from Spiders.db_actions import get_index_price_as_on_date, get_start_price, put_index_performance, get_mas_indices, \
@@ -74,13 +73,7 @@ def get_index_performance(reporting_date, index_code, iq_database):
     perf_2y_date = get_2y_date(reporting_date)
     perf_3y_date = get_3y_date(reporting_date)
     perf_5y_date = get_5y_date(reporting_date)
-    perf_1m = None
-    perf_3m = None
-    perf_6m = None
-    perf_1y = None
-    perf_2y = None
-    perf_3y = None
-    perf_5y = None
+    perf_1m, perf_3m, perf_6m, perf_1y, perf_2y, perf_3y, perf_5y = None, None, None, None, None, None, None
     # Calculation of 1 month index performance
     if start_date <= perf_1m_date:
         index_1m_price = get_index_price_as_on_date(perf_1m_date, index_code, iq_database)
@@ -134,23 +127,24 @@ def get_index_ratios(index_code, nse_list, bse_list, iq_database):
         index_ratio_list.append(bse)
     for ratios_data in index_ratio_list:
         if ratios_data['index_code'] == index_code:
-            if ratios_data['portfolio_name'] and ratios_data['sector_name'] is not None:
-                top_holding_isin = get_isin(ratios_data['portfolio_name'], iq_database)
-                industry = ratios_data['sector_name'].capitalize().strip()
+            if ratios_data['top_holding_isin'] is not None:
+                top_holding_isin = get_isin(ratios_data['top_holding_isin'], iq_database)
+            if ratios_data['top_sector_name'] is not None:
+                industry = ratios_data['top_sector_name'].capitalize().strip()
                 if sector_dictionary.__contains__(industry):
                     top_sector_name = sector_dictionary[industry]
             index_ratios_data.update({"standard_deviation": ratios_data['standard_deviation'],
                                       "pe_ratio": ratios_data['pe_ratio'], "top_sector_name": top_sector_name,
-                                      "top_sector_exposure": ratios_data['sector_exposure'],
+                                      "top_sector_exposure": ratios_data['top_sector_exposure'],
                                       "top_holding_isin": top_holding_isin,
-                                      "top_holding_exposure": ratios_data['portfolio_exposure']})
+                                      "top_holding_exposure": ratios_data['top_holding_exposure']})
     return index_ratios_data
 
 
 def index_performance_data(index_code, reporting_date, iq_database):
     index_performance = []
     nse_list = get_nse_data(pdf_files)
-    bse_list = get_bse_data(pe_ratio_api_dict)
+    bse_list = get_bse_data()
     performance = get_index_performance(reporting_date, index_code, iq_database)
     ratios = get_index_ratios(index_code, nse_list, bse_list, iq_database)
     index_performance.append({"index_code": performance['index_code'],
@@ -172,8 +166,7 @@ def index_performance_data(index_code, reporting_date, iq_database):
 try:
     iq_db, fs_db, app_db = 'iq', 'fs', 'app'
     # db_host, db_user, db_pass = env('DB_HOST'), env('DB_USER'), env('DB_PASS')
-    db_host, db_user, db_pass = 'ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com', 'wyzeup', \
-                                'd0m#l1dZwhz!*9Iq0y1h'
+    db_host, db_user, db_pass = 'ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com', 'wyzeup', 'd0m#l1dZwhz!*9Iq0y1h'
     iq_database = MySQLdb.connect(db_host, db_user, db_pass, iq_db, use_unicode=True, charset="utf8")
     fs_database = MySQLdb.connect(db_host, db_user, db_pass, fs_db, use_unicode=True, charset="utf8")
     app_database = MySQLdb.connect(db_host, db_user, db_pass, app_db, use_unicode=True, charset="utf8")
