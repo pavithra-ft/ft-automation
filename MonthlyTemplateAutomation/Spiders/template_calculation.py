@@ -484,12 +484,9 @@ def get_fund_sector_from_portfolio(portfolio_values, iq_database):
     for securityData in securityList:
         sector_body = {"security": securityData["security_name"], "isin": securityData["security_isin"],
                        "sector": None, "exposure": securityData["exposure"]}
-        if securityData["security_isin"] != "CASH":
+        if securityData["security_isin"]:
             sec_isin = securityData["security_isin"]
             sector_response = get_sector_from_portfolio(sec_isin, iq_database)
-        elif securityData["security_isin"] == 'CASH':
-            sec_isin = securityData["security_isin"]
-            sector_response = get_sectorcash_from_portfolio(sec_isin, iq_database)
         sector_body["sector"] = sector_response[0][0]
         sector_breakdown.append(sector_body)
     sector_breakdown_result = {}
@@ -770,10 +767,10 @@ def table_records(excel_values, iq_database, fs_database, app_database):
 
     if portfolio_sum == 100:
         sector_data = get_fund_sector_from_portfolio(portfolio_values, iq_database)
-    elif portfolio_sum > 0 and portfolio_sum != 100:
-        sector_data = get_fund_sector(sector_values, iq_database)
     elif portfolio_sum == 0:
         sector_data = get_fund_sector_from_portfolio(portfolio_values, iq_database)
+    elif 0 < portfolio_sum < 100:
+        sector_data = get_fund_sector(sector_values, iq_database)
     else:
         sector_data = None
 
