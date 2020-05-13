@@ -14,7 +14,8 @@ from Spiders.db_actions import get_benchmark_index, get_alt_benchmark_index, get
     get_sector_from_portfolio, get_sectorcash_from_portfolio, get_fund_short_code, get_collateral_code, \
     get_collateral_view_code, get_collateral_template_code, collaterals_check, put_collateral_data, get_pe_ratio, \
     get_fund_ratio_mcap, get_risk_free_rate, get_all_fund_return, put_market_cap_data, put_fund_sector, \
-    put_fund_portfolio, get_start_price, get_index_price_as_on_date, get_fund_nav, put_fund_ratio_data
+    put_fund_portfolio, get_start_price, get_index_price_as_on_date, get_fund_nav, put_fund_ratio_data, \
+    get_investment_style
 
 
 def get_effective_start_end_date(fund_info):
@@ -171,6 +172,12 @@ def get_fund_performance(fund_info, allocation_values, market_cap_values, iq_dat
         market_cap_type_code = fund_info['market_cap_type_code']
     else:
         market_cap_type_code = get_market_cap_type_code(market_cap_values, iq_database)
+    # Investment style
+    investment = fund_info['investment_style']
+    if investment:
+        investment_style = fund_info['investment_style']
+    else:
+        investment_style = get_investment_style(fund_info, app_database)
     # Calculation of Fund allocations
     portfolio_equity_allocation = round(float(allocation_values['Equity']), 4) if allocation_values['Equity'] else None
     portfolio_cash_allocation = round(float(allocation_values['Cash & Equivalent']), 4) if \
@@ -229,14 +236,17 @@ def get_fund_performance(fund_info, allocation_values, market_cap_values, iq_dat
     # Calculation of Fund performance inception
     nav_start_date = get_nav_start_date(fund_info, app_database)
     date_power_inception = effective_end_date - nav_start_date
-    perf_inception = round((((fund_nav / 1) ** (365 / date_power_inception.days)) - 1), 4)
+    if date_power_inception.days > 365:
+        perf_inception = round((((fund_nav / 1) ** (365 / date_power_inception.days)) - 1), 4)
+    else:
+        perf_inception = round(((fund_nav / 1) - 1), 4)
     # Other fields
     isLatest = '1'
     created_ts = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     created_by = "ft-automation"
     fund_code = fund_info["fund_code"]
     fundperfData = {"fund_code": fund_code, "current_aum": current_aum, "no_of_clients": no_of_clients,
-                    "market_cap_type_code": market_cap_type_code,
+                    "market_cap_type_code": market_cap_type_code, "investment_style": investment_style,
                     "portfolio_equity_allocation": portfolio_equity_allocation,
                     "portfolio_cash_allocation": portfolio_cash_allocation,
                     "portfolio_asset_allocation": portfolio_asset_allocation,
@@ -306,8 +316,11 @@ def get_benchmark_performance(fund_info, iq_database, app_database):
                                     (365 / bm_date_power_5y.days)) - 1), 4)
     # Calculation of Benchmark performance inception
     benchmark_power_inception = effective_end_date - nav_start_date
-    benchmark_perf_inception = round((((curr_price[0][0] / start_index_price) **
-                                       (365 / benchmark_power_inception.days)) - 1), 4)
+    if benchmark_power_inception.days > 365:
+        benchmark_perf_inception = round((((curr_price[0][0] / start_index_price) **
+                                           (365 / benchmark_power_inception.days)) - 1), 4)
+    else:
+        benchmark_perf_inception = round(((curr_price[0][0] / start_index_price) - 1), 4)
     benchmark_perf_data = {"index_code": benchmark_index_code, "benchmark_perf_1m": benchmark_perf_1m,
                            "benchmark_perf_3m": benchmark_perf_3m, "benchmark_perf_6m": benchmark_perf_6m,
                            "benchmark_perf_1y": benchmark_perf_1y, "benchmark_perf_2y": benchmark_perf_2y,
@@ -381,8 +394,11 @@ def get_alt_benchmark_performance(fund_info, iq_database, app_database):
                                         (365 / alt_bm_date_power_5y.days)) - 1), 4)
     # Calculation of alt_benchmark performance inception
     alt_benchmark_power_inception = effective_end_date - nav_start_date
-    alt_benchmark_perf_inception = round((((curr_price[0][0] / start_index_price) **
-                                           (365 / alt_benchmark_power_inception.days)) - 1), 4)
+    if alt_benchmark_power_inception.days > 365:
+        alt_benchmark_perf_inception = round((((curr_price[0][0] / start_index_price) **
+                                               (365 / alt_benchmark_power_inception.days)) - 1), 4)
+    else:
+        alt_benchmark_perf_inception = round(((curr_price[0][0] / start_index_price) - 1), 4)
     alt_benchmark_perf_data = {"index_code": alt_benchmark_index_code, "alt_benchmark_perf_1m": alt_benchmark_perf_1m,
                                "alt_benchmark_perf_3m": alt_benchmark_perf_3m,
                                "alt_benchmark_perf_6m": alt_benchmark_perf_6m,

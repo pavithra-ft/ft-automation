@@ -6,14 +6,15 @@ def get_fund_info(df):
                  "no_of_clients": df.iloc[5, 2],
                  "current_aum": df.iloc[6, 2],
                  "performance_1m": float(df.iloc[7, 2]),
-                 "market_cap_type_code": df.iloc[8, 2]}
+                 "market_cap_type_code": df.iloc[8, 2],
+                 "investment_style": df.iloc[9, 2]}
     return fund_info
 
 
 def get_fund_allocation_values(df):
     # Extraction of Fund allocations
     fund_allocation = {}
-    index = 14
+    index = 15
     while df.iloc[index, 4] != "TOTAL":
         allocation = df.iloc[index, 4]
         fund_allocation[allocation] = df.iloc[index, 5]
@@ -38,7 +39,7 @@ def get_market_cap_values(df):
 def get_fund_portfolio_values(df):
     # Extraction of Fund portfolio
     portfolio_values = []
-    index = 12
+    index = 13
     while df.iloc[index, 1] is not None:
         portfolio_body = {}
         portfolio_body.update({"security_name": df.iloc[index, 1]})
@@ -55,7 +56,7 @@ def get_fund_portfolio_values(df):
 def get_fund_sector_values(df):
     # Extraction of Sector allocations
     sector_values = []
-    index = 22
+    index = 23
     while df.iloc[index, 4] is not None:
         sector_body = {}
         sector_body.update({"sector_name": df.iloc[index, 4]})

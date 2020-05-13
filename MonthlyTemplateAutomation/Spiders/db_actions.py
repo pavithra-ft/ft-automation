@@ -113,6 +113,17 @@ def get_nav_start_date(fund_info, app_database):
     return nav_start_date
 
 
+def get_investment_style(fund_info, app_database):
+    investment_style_cursor = app_database.cursor()
+    investment_style_query = "SELECT investment_style FROM app.per_all_funds where fund_code = '" + \
+                             fund_info["fund_code"] + "'"
+    investment_style_cursor.execute(investment_style_query)
+    investment_style_details = investment_style_cursor.fetchall()
+    investment_style = investment_style_details[0][0]
+    investment_style_cursor.close()
+    return investment_style
+
+
 def get_fund_nav(fund_info, date, iq_database):
     fund_1m_cursor = iq_database.cursor()
     fund_1m_query = "SELECT fund_nav from iq.fund_benchmark_nav where effective_end_date = '" + \
@@ -309,7 +320,7 @@ def put_fund_performance(fund_perf_data, benchmark_perf_data, alt_benchmark_perf
     fund_cursor = iq_database.cursor()
     if is_fund_performance_exist(fund_perf_data['fund_code'], fund_perf_data['effective_end_date'], iq_database):
         fund_perf_query = "UPDATE iq.fund_performance SET fund_code = %s, current_aum = %s, no_of_clients = %s, " \
-                          "market_cap_type_code = %s, portfolio_equity_allocation = %s, " \
+                          "market_cap_type_code = %s, investment_style = %s, portfolio_equity_allocation = %s, " \
                           "portfolio_cash_allocation = %s, portfolio_asset_allocation = %s, " \
                           "portfolio_other_allocations = %s, perf_1m = %s, perf_3m = %s, perf_6m = %s, perf_1y = %s, " \
                           "perf_2y = %s, perf_3y = %s, perf_5y = %s, perf_inception = %s, benchmark_perf_1m = %s, " \
@@ -323,30 +334,32 @@ def put_fund_performance(fund_perf_data, benchmark_perf_data, alt_benchmark_perf
                           + "' and effective_end_date = '" + str(fund_perf_data['effective_end_date']) + "'"
     else:
         fund_perf_query = "INSERT INTO iq.fund_performance (fund_code, current_aum, no_of_clients, " \
-                          "market_cap_type_code, portfolio_equity_allocation, portfolio_cash_allocation, " \
-                          "portfolio_asset_allocation, portfolio_other_allocations, perf_1m, perf_3m, perf_6m, " \
-                          "perf_1y, perf_2y, perf_3y, perf_5y, perf_inception, benchmark_perf_1m, benchmark_perf_3m, " \
-                          "benchmark_perf_6m, benchmark_perf_1y, benchmark_perf_2y, benchmark_perf_3y, " \
-                          "benchmark_perf_5y, benchmark_perf_inception, alt_benchmark_perf_1m, " \
-                          "alt_benchmark_perf_3m, alt_benchmark_perf_6m, alt_benchmark_perf_1y, " \
-                          "alt_benchmark_perf_2y, alt_benchmark_perf_3y, alt_benchmark_perf_5y, " \
-                          "alt_benchmark_perf_inception, isLatest, effective_start_date, effective_end_date, " \
-                          "created_ts, created_by) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, " \
-                          "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+                          "market_cap_type_code, investment_style, portfolio_equity_allocation, " \
+                          "portfolio_cash_allocation, portfolio_asset_allocation, portfolio_other_allocations, " \
+                          "perf_1m, perf_3m, perf_6m, perf_1y, perf_2y, perf_3y, perf_5y, perf_inception, " \
+                          "benchmark_perf_1m, benchmark_perf_3m, benchmark_perf_6m, benchmark_perf_1y, " \
+                          "benchmark_perf_2y, benchmark_perf_3y, benchmark_perf_5y, benchmark_perf_inception, " \
+                          "alt_benchmark_perf_1m, alt_benchmark_perf_3m, alt_benchmark_perf_6m, " \
+                          "alt_benchmark_perf_1y, alt_benchmark_perf_2y, alt_benchmark_perf_3y, " \
+                          "alt_benchmark_perf_5y, alt_benchmark_perf_inception, isLatest, effective_start_date, " \
+                          "effective_end_date, created_ts, created_by) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, " \
+                          "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, " \
+                          "%s, %s, %s, %s, %s, %s, %s)"
     insert_values = (fund_perf_data['fund_code'], fund_perf_data['current_aum'], fund_perf_data['no_of_clients'],
-                     fund_perf_data['market_cap_type_code'], fund_perf_data['portfolio_equity_allocation'],
-                     fund_perf_data['portfolio_cash_allocation'], fund_perf_data['portfolio_asset_allocation'],
-                     fund_perf_data['portfolio_other_allocations'], fund_perf_data['perf_1m'],
-                     fund_perf_data['perf_3m'], fund_perf_data['perf_6m'], fund_perf_data['perf_1y'],
-                     fund_perf_data['perf_2y'], fund_perf_data['perf_3y'], fund_perf_data['perf_5y'],
-                     fund_perf_data['perf_inception'], benchmark_perf_data['benchmark_perf_1m'],
-                     benchmark_perf_data['benchmark_perf_3m'], benchmark_perf_data['benchmark_perf_6m'],
-                     benchmark_perf_data['benchmark_perf_1y'], benchmark_perf_data['benchmark_perf_2y'],
-                     benchmark_perf_data['benchmark_perf_3y'], benchmark_perf_data['benchmark_perf_5y'],
-                     benchmark_perf_data['benchmark_perf_inception'], alt_benchmark_perf_data['alt_benchmark_perf_1m'],
-                     alt_benchmark_perf_data['alt_benchmark_perf_3m'], alt_benchmark_perf_data['alt_benchmark_perf_6m'],
-                     alt_benchmark_perf_data['alt_benchmark_perf_1y'], alt_benchmark_perf_data['alt_benchmark_perf_2y'],
-                     alt_benchmark_perf_data['alt_benchmark_perf_3y'], alt_benchmark_perf_data['alt_benchmark_perf_5y'],
+                     fund_perf_data['market_cap_type_code'], fund_perf_data['investment_style'],
+                     fund_perf_data['portfolio_equity_allocation'], fund_perf_data['portfolio_cash_allocation'],
+                     fund_perf_data['portfolio_asset_allocation'], fund_perf_data['portfolio_other_allocations'],
+                     fund_perf_data['perf_1m'], fund_perf_data['perf_3m'], fund_perf_data['perf_6m'],
+                     fund_perf_data['perf_1y'], fund_perf_data['perf_2y'], fund_perf_data['perf_3y'],
+                     fund_perf_data['perf_5y'], fund_perf_data['perf_inception'],
+                     benchmark_perf_data['benchmark_perf_1m'], benchmark_perf_data['benchmark_perf_3m'],
+                     benchmark_perf_data['benchmark_perf_6m'], benchmark_perf_data['benchmark_perf_1y'],
+                     benchmark_perf_data['benchmark_perf_2y'], benchmark_perf_data['benchmark_perf_3y'],
+                     benchmark_perf_data['benchmark_perf_5y'], benchmark_perf_data['benchmark_perf_inception'],
+                     alt_benchmark_perf_data['alt_benchmark_perf_1m'], alt_benchmark_perf_data['alt_benchmark_perf_3m'],
+                     alt_benchmark_perf_data['alt_benchmark_perf_6m'], alt_benchmark_perf_data['alt_benchmark_perf_1y'],
+                     alt_benchmark_perf_data['alt_benchmark_perf_2y'], alt_benchmark_perf_data['alt_benchmark_perf_3y'],
+                     alt_benchmark_perf_data['alt_benchmark_perf_5y'],
                      alt_benchmark_perf_data['alt_benchmark_perf_inception'], fund_perf_data['isLatest'],
                      fund_perf_data['effective_start_date'], fund_perf_data['effective_end_date'],
                      fund_perf_data['created_ts'], fund_perf_data['created_by'])
