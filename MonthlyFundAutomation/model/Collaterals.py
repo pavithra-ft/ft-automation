@@ -14,6 +14,7 @@ class Collaterals:
         self.effective_start_date = None
         self.is_premium = None
         self.is_published = None
+        self.is_data_changed = None
         self.published_ts = None
         self.created_ts = None
         self.created_by = None
@@ -101,6 +102,12 @@ class Collaterals:
 
     def get_is_published(self):
         return self.is_published
+
+    def set_is_data_changed(self, is_data_changed=None):
+        self.is_data_changed = is_data_changed
+
+    def get_is_data_changed(self):
+        return self.is_data_changed
 
     def set_published_ts(self, published_ts=None):
         self.published_ts = published_ts

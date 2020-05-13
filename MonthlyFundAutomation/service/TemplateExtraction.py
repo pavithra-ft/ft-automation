@@ -1,5 +1,6 @@
 from datetime import datetime
-from model.FundExtraction import FundInfo, FundAllocation, FundMarketCap, FundPortfolio, FundSector
+from model.FundExtraction import FundInfo, FundAllocationExtraction, FundMarketCapExtraction, FundPortfolioExtraction, \
+    FundSectorExtraction
 
 
 def get_fund_info(df):
@@ -14,21 +15,20 @@ def get_fund_info(df):
     fund_info.set_current_aum(df.iloc[6, 2])
     fund_info.set_performance_1m(float(df.iloc[7, 2]))
     fund_info.set_market_cap_type_code(df.iloc[8, 2])
-    print(fund_info)
+    fund_info.set_investment_style(df.iloc[9, 2])
     return fund_info
 
 
 def get_fund_allocation_values(df):
     # Extraction of Fund allocations
     fund_allocation = []
-    index = 14
+    index = 15
     while df.iloc[index, 4] != "TOTAL":
-        allocation_body = FundAllocation()
+        allocation_body = FundAllocationExtraction()
         allocation_body.set_allocation(df.iloc[index, 4])
         allocation_body.set_exposure(df.iloc[index, 5])
         fund_allocation.append(allocation_body)
         index += 1
-    print(fund_allocation)
     return fund_allocation
 
 
@@ -37,7 +37,7 @@ def get_market_cap_values(df):
     cap_data = []
     index = 3
     while df.iloc[index, 4] != "TOTAL":
-        cap_data_body = FundMarketCap()
+        cap_data_body = FundMarketCapExtraction()
         market_cap = df.iloc[index, 4].replace(" Cap", "")
         cap_data_body.set_type_market_cap(market_cap.capitalize())
         exposure = df.iloc[index, 5]
@@ -45,16 +45,15 @@ def get_market_cap_values(df):
             cap_data_body.set_exposure(float(exposure))
         cap_data.append(cap_data_body)
         index += 1
-    print(cap_data)
     return cap_data
 
 
 def get_fund_portfolio_values(df):
     # Extraction of Fund portfolio
     portfolio_values = []
-    index = 12
+    index = 13
     while df.iloc[index, 1] is not None:
-        portfolio_body = FundPortfolio()
+        portfolio_body = FundPortfolioExtraction()
         portfolio_body.set_security_name(df.iloc[index, 1])
         exposure = df.iloc[index, 2]
         if exposure is None:
@@ -63,19 +62,17 @@ def get_fund_portfolio_values(df):
             portfolio_body.set_exposure(float(exposure))
         portfolio_values.append(portfolio_body)
         index += 1
-    print(portfolio_values)
     return portfolio_values
 
 
 def get_fund_sector_values(df):
     # Extraction of Sector allocations
     sector_values = []
-    index = 22
+    index = 23
     while df.iloc[index, 4] is not None:
-        sector_body = FundSector()
+        sector_body = FundSectorExtraction()
         sector_body.set_sector_name(df.iloc[index, 4])
         sector_body.set_exposure(float(df.iloc[index, 5]))
         sector_values.append(sector_body)
         index += 1
-    print(sector_values)
     return sector_values

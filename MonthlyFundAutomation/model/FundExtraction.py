@@ -7,6 +7,7 @@ class FundInfo:
         self.current_aum = None
         self.performance_1m = None
         self.market_cap_type_code = None
+        self.investment_style = None
 
     def set_fund_code(self, fund_code=None):
         self.fund_code = fund_code
@@ -50,14 +51,20 @@ class FundInfo:
     def get_market_cap_type_code(self):
         return self.market_cap_type_code
 
+    def set_investment_style(self, investment_style=None):
+        self.investment_style = investment_style
+
+    def get_investment_style(self):
+        return self.investment_style
+
     def __repr__(self):
         return "<FundInfo(fund_code='{0}', fund_name='{1}', reporting_date='{2}', no_of_clients='{3}', " \
-               "current_aum='{4}', performance_1m='{5}', market_cap_type_code='{6}')>".format(
+               "current_aum='{4}', performance_1m='{5}', market_cap_type_code='{6}', investment_style='{7}')>".format(
                 self.fund_code, self.fund_name, self.reporting_date, self.no_of_clients, self.current_aum,
-                self.performance_1m, self.market_cap_type_code)
+                self.performance_1m, self.market_cap_type_code, self.investment_style)
 
 
-class FundAllocation:
+class FundAllocationExtraction:
     def __init__(self):
         self.allocation = None
         self.exposure = None
@@ -75,10 +82,10 @@ class FundAllocation:
         return self.exposure
 
     def __repr__(self):
-        return "<FundAllocation(allocation='{0}', exposure='{1}')>".format(self.allocation, self.exposure)
+        return "<FundAllocationExtraction(allocation='{0}', exposure='{1}')>".format(self.allocation, self.exposure)
 
 
-class FundMarketCap:
+class FundMarketCapExtraction:
     def __init__(self):
         self.type_market_cap = None
         self.exposure = None
@@ -96,10 +103,11 @@ class FundMarketCap:
         return self.exposure
 
     def __repr__(self):
-        return "<FundMarketCap(type_market_cap='{0}', exposure='{1}')>".format(self.type_market_cap, self.exposure)
+        return "<FundMarketCapExtraction(type_market_cap='{0}', exposure='{1}')>".format(self.type_market_cap,
+                                                                                         self.exposure)
 
 
-class FundPortfolio:
+class FundPortfolioExtraction:
     def __init__(self):
         self.security_name = None
         self.exposure = None
@@ -117,10 +125,11 @@ class FundPortfolio:
         return self.exposure
 
     def __repr__(self):
-        return "<FundPortfolio(security_name='{0}', exposure='{1}')>".format(self.security_name, self.exposure)
+        return "<FundPortfolioExtraction(security_name='{0}', exposure='{1}')>".format(self.security_name,
+                                                                                       self.exposure)
 
 
-class FundSector:
+class FundSectorExtraction:
     def __init__(self):
         self.sector_name = None
         self.exposure = None
@@ -138,4 +147,4 @@ class FundSector:
         return self.exposure
 
     def __repr__(self):
-        return "<FundSector(sector_name='{0}', exposure='{1}')>".format(self.sector_name, self.exposure)
+        return "<FundSectorExtraction(sector_name='{0}', exposure='{1}')>".format(self.sector_name, self.exposure)
