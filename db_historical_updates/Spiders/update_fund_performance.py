@@ -5,19 +5,7 @@ import datetime
 import calendar
 
 from Spiders.db_actions import get_benchmark_index, get_index_price_as_on_date, get_alt_benchmark_index, get_fund_nav, \
-    get_nav_start_date, get_start_price, put_fund_performance, update_islatest
-
-
-def get_nav_dates(fund_code):
-    fund_bm_nav_cursor = iq_database.cursor()
-    fund_bm_nav_query = "SELECT effective_end_date from iq.fund_benchmark_nav where fund_code = '" \
-                        + fund_code + "' order by effective_end_date"
-    fund_bm_nav_cursor.execute(fund_bm_nav_query)
-    nav_dates = fund_bm_nav_cursor.fetchall()
-    nav_dates_list = []
-    for date in nav_dates:
-        nav_dates_list.append(date[0])
-    return nav_dates_list
+    get_nav_start_date, get_start_price, put_fund_performance, update_islatest, get_nav_dates
 
 
 def get_effective_start_end_date(reporting_date):
@@ -335,7 +323,7 @@ try:
     app_database = MySQLdb.connect(db_host, db_user, db_pass, app_db)
     fund_code_list = ['72966297']
     for fund_code in fund_code_list:
-        nav_dates_list = get_nav_dates(fund_code)
+        nav_dates_list = get_nav_dates(fund_code, iq_database)
         first_date = nav_dates_list.pop(0)
         for reporting_date in nav_dates_list:
             final_data = table_records(fund_code, reporting_date, iq_database, app_database)
