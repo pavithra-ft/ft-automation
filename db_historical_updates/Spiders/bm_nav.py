@@ -8,7 +8,7 @@ from Spiders.db_actions import get_start_price, get_index_price_as_on_date, put_
 def update_benchmark_nav(fund_code, nav_start_date, bm_index, current_date, iq_database):
     start_index_price = get_start_price(nav_start_date, bm_index, iq_database)
     curr_index_price = get_index_price_as_on_date(current_date, bm_index, iq_database)
-    benchmark_nav = round((curr_index_price / start_index_price), 6)
+    benchmark_nav = round((curr_index_price[0][0] / start_index_price), 6)
     put_into_fund_bm_nav(fund_code, benchmark_nav, current_date, iq_database)
     print("benchmark_nav", fund_code, benchmark_nav, current_date)
 
@@ -24,7 +24,7 @@ try:
     iq_database = MySQLdb.connect(db_host, db_user, db_pass, iq_db)
     fs_database = MySQLdb.connect(db_host, db_user, db_pass, fs_db)
     app_database = MySQLdb.connect(db_host, db_user, db_pass, app_db)
-    fund_code_list = ['72966297']
+    fund_code_list = []
     for fund_code in fund_code_list:
         bm_info = get_benchmark_info(fund_code, app_database)
         nav_dates_list = get_nav_dates(fund_code, iq_database)
