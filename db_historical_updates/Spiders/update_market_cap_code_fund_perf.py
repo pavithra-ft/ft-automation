@@ -66,7 +66,7 @@ def get_market_cap_type_code(market_cap_values, database):
             micro_value = market_cap_values['Micro'] if 'Micro' in market_cap_values.keys() else 0
             market_cap_values.update({"Large": mega_value + large_value})
             market_cap_values.update({"Small": small_value + micro_value})
-            keys_to_remove = ["Cash", "Micro", "Mega", "ETF"]
+            keys_to_remove = ["Cash", "Micro", "Mega", "ETF", "MFs"]
             for key in keys_to_remove:
                 if key in market_cap_values.keys():
                     del market_cap_values[key]

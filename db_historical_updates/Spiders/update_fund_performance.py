@@ -263,7 +263,7 @@ try:
     app_db = 'app'
     iq_database = MySQLdb.connect(db_host, db_user, db_pass, iq_db)
     app_database = MySQLdb.connect(db_host, db_user, db_pass, app_db)
-    fund_code_list = []
+    fund_code_list = ['72966297']
     for fund_code in fund_code_list:
         nav_dates_list = get_nav_dates(fund_code, iq_database)
         first_date = nav_dates_list.pop(0)
