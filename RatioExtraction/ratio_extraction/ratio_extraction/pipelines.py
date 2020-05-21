@@ -13,8 +13,8 @@ class RatioExtractionPipeline:
     filename = BASE_DIR + "/bse_sector_dictionary/" + "bse_sector.json"
 
     def __init__(self):
-        self.exporter = JsonItemExporter(self.file)
         self.file = open(self.filename, 'wb')
+        self.exporter = JsonItemExporter(self.file)
 
     def open_spider(self, spider):
         self.exporter.start_exporting()
