@@ -101,3 +101,15 @@ def put_index_performance(index_perf_data, iq_database):
                              data['perf_3y'], data['perf_5y'], data['perf_inception'], data['reporting_date'])
         index_perf_cursor.execute(index_perf_query, index_perf_values)
     index_perf_cursor.close()
+
+
+def put_mas_securities(mas_security_ratio_list, iq_database):
+    security_ratio_cursor = iq_database.cursor()
+    for ratio in mas_security_ratio_list:
+        index_perf_query = "UPDATE iq.mas_securities SET market_cap_value = %s, pe_ratio = %s," \
+                           "pb_ratio = %s, eps = %s, dividend_yield = %s where security_isin = '" + \
+                           ratio['security_isin'] + "'"
+        index_perf_values = (ratio['market_cap_value'], ratio['pe_ratio'], ratio['pb_ratio'], ratio['eps'],
+                             ratio['dividend_yield'])
+        security_ratio_cursor.execute(index_perf_query, index_perf_values)
+    security_ratio_cursor.close()

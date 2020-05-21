@@ -4,7 +4,7 @@ import calendar
 from pyjarowinkler import distance
 from dateutil.relativedelta import relativedelta
 
-from extraction.bse_extraction import get_bse_data
+from services.bse_ratio_extraction import get_bse_data
 from extraction.nse_pdf_extraction import get_nse_data
 from dictionary.portfolio_dictionary import portfolio_dict
 from services.db_actions import get_index_price_as_on_date, get_index_start_price, put_index_performance, \
