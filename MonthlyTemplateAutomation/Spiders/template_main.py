@@ -4,17 +4,17 @@ import MySQLdb
 import numpy as np
 import pandas as pd
 
-from envparse import env
 from glob import glob
+from envparse import env
 from Spiders.db_actions import put_fund_performance, put_nav_data
-from Spiders.template_calculation import table_records
+from Spiders.template_calculation import table_records, get_mcap_from_portfolio
 from Spiders.template_excel_extraction import get_fund_info, get_fund_allocation_values, get_market_cap_values, \
     get_fund_portfolio_values, get_fund_sector_values
 
 try:
     os.chdir(r"C:\Users\pavithra\Documents\fintuple-automation-projects\MonthlyTemplateAutomation\Excel files")
     files = [file for file in glob("*.xlsx")]
-    sheet_name = ['Fund Performance Update']
+    sheet_name = ['Fund Perf Update - Template']
     for file in files:
         for sheet in sheet_name:
             df_read = pd.read_excel(file, sheet_name=sheet)
@@ -40,7 +40,6 @@ try:
                             "sector_values": sector_values}
             # Calculation of the tables
             final_data = table_records(excel_values, iq_database, fs_database, app_database)
-
             # Inserting all the records of tables
             put_fund_performance(final_data['fund_perf_data'], final_data['benchmark_perf_data'],
                                  final_data['alt_benchmark_perf_data'], iq_database)

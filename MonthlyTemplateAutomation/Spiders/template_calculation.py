@@ -9,13 +9,12 @@ from pyjarowinkler import distance
 from dictionary.sector_dictionary import sector_dictionary
 from dictionary.portfolio_dictionary import portfolio_dict
 from dateutil.relativedelta import relativedelta
-from Spiders.db_actions import get_benchmark_index, get_alt_benchmark_index, get_benchmark_nav, get_alt_benchmark_nav, \
-    update_islatest, get_cap_type, get_nav_start_date, get_isin_sector, get_all_isin, get_sector_from_industry, \
-    get_sector_from_portfolio, get_sectorcash_from_portfolio, get_fund_short_code, get_collateral_code, \
-    get_collateral_view_code, get_collateral_template_code, collaterals_check, put_collateral_data, get_pe_ratio, \
-    get_fund_ratio_mcap, get_risk_free_rate, get_all_fund_return, put_market_cap_data, put_fund_sector, \
-    put_fund_portfolio, get_start_price, get_index_price_as_on_date, get_fund_nav, put_fund_ratio_data, \
-    get_investment_style
+from Spiders.db_actions import get_benchmark_index, get_alt_benchmark_index, update_islatest, get_cap_type, \
+    get_nav_start_date, get_isin_sector, get_all_isin, get_sector_from_industry, get_sector_from_portfolio, \
+    get_fund_short_code, get_collateral_code, get_collateral_view_code, get_pe_ratio, get_collateral_template_code, \
+    put_collateral_data, get_fund_ratio_mcap, get_risk_free_rate, get_all_fund_return, put_market_cap_data, \
+    put_fund_sector, put_fund_portfolio, get_start_price, get_index_price_as_on_date, get_fund_nav, \
+    put_fund_ratio_data, get_investment_style, get_default_visibility_code, get_mcap_for_portfolio
 
 
 def get_effective_start_end_date(fund_info):
@@ -83,40 +82,28 @@ def get_5y_date(fund_info):
     return previous_5y_end_date
 
 
-def calc_benchmark_nav(fund_info, iq_database):
+def calc_benchmark_nav(fund_info, iq_database, app_database):
     effective_start_date, effective_end_date = get_effective_start_end_date(fund_info)
-    previous_1m_date = get_1m_date(fund_info)
+    nav_start_date = get_nav_start_date(fund_info, app_database)
     benchmark_index = get_benchmark_index(fund_info, iq_database)
     index_price = get_index_price_as_on_date(effective_end_date, benchmark_index, iq_database)
-    prev_index_price = get_index_price_as_on_date(previous_1m_date, benchmark_index, iq_database)
-    if len(prev_index_price) == 0:
-        previous_index_price = None
-    else:
-        previous_index_price = prev_index_price[0][0]
-    previous_benchmark_nav = get_benchmark_nav(fund_info, previous_1m_date, iq_database)
-    benchmark_return = (index_price[0][0] / previous_index_price) - 1
-    benchmark_nav = round((previous_benchmark_nav * (1 + benchmark_return)), 6)
+    start_index_price = get_start_price(nav_start_date, benchmark_index, iq_database)
+    benchmark_nav = round((index_price[0][0] / start_index_price), 6)
     return benchmark_nav
 
 
-def calc_alt_benchmark_nav(fund_info, iq_database):
+def calc_alt_benchmark_nav(fund_info, iq_database, app_database):
     effective_start_date, effective_end_date = get_effective_start_end_date(fund_info)
-    alt_previous_1m_date = get_1m_date(fund_info)
+    nav_start_date = get_nav_start_date(fund_info, app_database)
     alt_benchmark_index = get_alt_benchmark_index(fund_info, iq_database)
     alt_index_price = get_index_price_as_on_date(effective_end_date, alt_benchmark_index, iq_database)
-    alt_prev_index_price = get_index_price_as_on_date(alt_previous_1m_date, alt_benchmark_index, iq_database)
-    if len(alt_prev_index_price) == 0:
-        alt_previous_index_price = None
-    else:
-        alt_previous_index_price = alt_prev_index_price[0][0]
-    alt_benchmark_previous_nav = get_alt_benchmark_nav(fund_info, alt_previous_1m_date, iq_database)
-    alt_benchmark_return = (alt_index_price[0][0] / alt_previous_index_price) - 1
-    alt_benchmark_nav = round((alt_benchmark_previous_nav * (1 + alt_benchmark_return)), 6)
+    start_index_price = get_start_price(nav_start_date, alt_benchmark_index, iq_database)
+    alt_benchmark_nav = round((alt_index_price[0][0] / start_index_price), 6)
     return alt_benchmark_nav
 
 
 def get_market_cap_type_code(market_cap_values, iq_database):
-    global market_cap_type_code
+    market_cap_type_code = None
     mcap_check = not market_cap_values
     if mcap_check is True:
         market_cap_type_code = None
@@ -134,7 +121,7 @@ def get_market_cap_type_code(market_cap_values, iq_database):
             micro_value = market_cap_values['Micro'] if 'Micro' in market_cap_values.keys() else 0
             market_cap_values.update({"Large": mega_value + large_value})
             market_cap_values.update({"Small": small_value + micro_value})
-            keys_to_remove = ["Cash", "Micro", "Mega", "ETF"]
+            keys_to_remove = ["Cash", "Micro", "Mega", "ETF", "MFs"]
             for key in keys_to_remove:
                 if key in market_cap_values.keys():
                     del market_cap_values[key]
@@ -162,7 +149,7 @@ def get_market_cap_type_code(market_cap_values, iq_database):
     return market_cap_type_code
 
 
-def get_fund_performance(fund_info, allocation_values, market_cap_values, iq_database, app_database):
+def get_fund_performance(fund_info, allocation_values, market_cap_data, iq_database, app_database):
     effective_start_date, effective_end_date = get_effective_start_end_date(fund_info)
     current_aum = float(fund_info['current_aum']) if fund_info['current_aum'] else None
     no_of_clients = int(fund_info['no_of_clients']) if fund_info['no_of_clients'] else None
@@ -171,13 +158,13 @@ def get_fund_performance(fund_info, allocation_values, market_cap_values, iq_dat
     if mcap_type_code:
         market_cap_type_code = fund_info['market_cap_type_code']
     else:
-        market_cap_type_code = get_market_cap_type_code(market_cap_values, iq_database)
+        market_cap_type_code = get_market_cap_type_code(market_cap_data, iq_database)
     # Investment style
-    investment = fund_info['investment_style']
-    if investment:
-        investment_style = fund_info['investment_style']
+    investment_style = fund_info['investment_style']
+    if investment_style:
+        investment_style_type_code = fund_info['investment_style']
     else:
-        investment_style = get_investment_style(fund_info, app_database)
+        investment_style_type_code = get_investment_style(fund_info, app_database)
     # Calculation of Fund allocations
     portfolio_equity_allocation = round(float(allocation_values['Equity']), 4) if allocation_values['Equity'] else None
     portfolio_cash_allocation = round(float(allocation_values['Cash & Equivalent']), 4) if \
@@ -246,7 +233,8 @@ def get_fund_performance(fund_info, allocation_values, market_cap_values, iq_dat
     created_by = "ft-automation"
     fund_code = fund_info["fund_code"]
     fundperfData = {"fund_code": fund_code, "current_aum": current_aum, "no_of_clients": no_of_clients,
-                    "market_cap_type_code": market_cap_type_code, "investment_style": investment_style,
+                    "market_cap_type_code": market_cap_type_code,
+                    "investment_style_type_code": investment_style_type_code,
                     "portfolio_equity_allocation": portfolio_equity_allocation,
                     "portfolio_cash_allocation": portfolio_cash_allocation,
                     "portfolio_asset_allocation": portfolio_asset_allocation,
@@ -432,6 +420,20 @@ def get_market_cap(fund_info, market_cap_values):
     return capData
 
 
+def get_mcap_from_portfolio(portfolio_values, iq_database):
+    mcap_values_from_pf = {}
+    cap_sum = 0
+    for value in portfolio_values:
+        security_isin = get_isin(value['security_name'], iq_database)
+        mcap_type_code = get_mcap_for_portfolio(security_isin, iq_database).capitalize()
+        cap_sum += value['exposure']
+        if mcap_values_from_pf.__contains__(mcap_type_code):
+            mcap_values_from_pf[mcap_type_code] += value['exposure']
+        else:
+            mcap_values_from_pf.update({mcap_type_code: value['exposure']})
+    return mcap_values_from_pf
+
+
 def get_isin(security_name, iq_database):
     global security_isin, sec_name
     if portfolio_dict.__contains__(security_name):
@@ -557,7 +559,7 @@ def get_collateral(fund_info, fs_database, app_database):
     entity_code = fund_info['fund_code']
     fund_short_code = get_fund_short_code(fund_info, app_database)
     collateral_title = fund_short_code + " Fintuple Factsheet"
-    visibility_code = "PUBLIC"
+    visibility_code = get_default_visibility_code(fund_info, fs_database)
     template_code = get_collateral_template_code(fund_info, fs_database)
     collateral_date = eff_end_date + datetime.timedelta(days=1)
     collateral_status = "PUBLISHED"
@@ -694,22 +696,24 @@ def get_annualized_return(fund_info, effective_end_date, fund_nav, app_database)
     return annualized_return
 
 
-def get_fund_ratios(fund_info, portfolio_values, fund_nav, benchmark_perf_1m, iq_database, app_database):
+def get_fund_ratios(fund_info, portfolio_values, fund_nav, portfolio_sum, benchmark_perf_1m, iq_database, app_database):
+    top5_pe_ratio = top10_pe_ratio = top5_market_cap = top10_market_cap = None
     effective_start_date, effective_end_date = get_effective_start_end_date(fund_info)
     fund_code = fund_info['fund_code']
     reporting_date = effective_end_date
-    sorted_exposure = sorted(portfolio_values, key=lambda i: i['exposure'], reverse=True)
-    sorted_pf_values = [i for i in sorted_exposure if not (i['security_name'] == 'Cash & Equivalents')]
-    top5_holdings = sorted_pf_values[0:5]
-    top10_holdings = sorted_pf_values[0:10]
-    pe5_ratio = calc_top5_pe_ratio(top5_holdings, iq_database)
-    top5_pe_ratio = None if (pe5_ratio == 0) else pe5_ratio
-    pe10_ratio = calc_top10_pe_ratio(top10_holdings, iq_database)
-    top10_pe_ratio = None if (pe10_ratio == 0) else pe10_ratio
-    market5_cap = calc_top5_market_cap(top5_holdings, iq_database)
-    top5_market_cap = None if (market5_cap == 0) else market5_cap
-    market10_cap = calc_top10_market_cap(top10_holdings, iq_database)
-    top10_market_cap = None if (market10_cap == 0) else market10_cap
+    if portfolio_sum > 0:
+        sorted_exposure = sorted(portfolio_values, key=lambda i: i['exposure'], reverse=True)
+        sorted_pf_values = [i for i in sorted_exposure if not (i['security_name'] == 'Cash & Equivalents')]
+        top5_holdings = sorted_pf_values[0:5]
+        top10_holdings = sorted_pf_values[0:10]
+        pe5_ratio = calc_top5_pe_ratio(top5_holdings, iq_database)
+        top5_pe_ratio = None if (pe5_ratio == 0) else pe5_ratio
+        pe10_ratio = calc_top10_pe_ratio(top10_holdings, iq_database)
+        top10_pe_ratio = None if (pe10_ratio == 0) else pe10_ratio
+        market5_cap = calc_top5_market_cap(top5_holdings, iq_database)
+        top5_market_cap = None if (market5_cap == 0) else market5_cap
+        market10_cap = calc_top10_market_cap(top10_holdings, iq_database)
+        top10_market_cap = None if (market10_cap == 0) else market10_cap
     fund_return_list = get_all_fund_return(fund_info, iq_database)
     fund_return_list.append(fund_info['performance_1m'])
     standard_deviation = round(statistics.stdev(fund_return_list), 4)
@@ -741,28 +745,35 @@ def table_records(excel_values, iq_database, fs_database, app_database):
     effective_start_date, effective_end_date = get_effective_start_end_date(fund_info)
     previous_1m_end_date = get_1m_date(fund_info)
 
-    # Calculation of Benchmark NAV
-    benchmark_nav = calc_benchmark_nav(fund_info, iq_database)
-    alt_benchmark_nav = calc_alt_benchmark_nav(fund_info, iq_database)
+    # # Calculation of Benchmark NAV
+    # benchmark_nav = calc_benchmark_nav(fund_info, iq_database, app_database)
+    # alt_benchmark_nav = calc_alt_benchmark_nav(fund_info, iq_database, app_database)
+    #
+    # # Update isLatest for the previous month
+    # update_islatest(fund_info, previous_1m_end_date, iq_database)
 
-    # Update isLatest for the previous month
-    update_islatest(fund_info, previous_1m_end_date, iq_database)
+    portfolio_sum = 0
+    for value in portfolio_values:
+        if 'exposure' in value:
+            portfolio_sum += value['exposure']
+    portfolio_sum = round(portfolio_sum * 100)
 
-    market_cap_data = get_market_cap(fund_info, market_cap_values)
-    if market_cap_data is not None:
+    if not market_cap_values and portfolio_sum == 100:
+        mcap_values_from_pf = get_mcap_from_portfolio(portfolio_values, iq_database)
+        market_cap_data = get_market_cap(fund_info, mcap_values_from_pf)
+        put_market_cap_data(market_cap_data, iq_database)
+    else:
+        market_cap_data = get_market_cap(fund_info, market_cap_values)
         put_market_cap_data(market_cap_data, iq_database)
 
-    fund_perf_data, fund_nav = get_fund_performance(fund_info, allocation_values, market_cap_values, iq_database,
+    fund_perf_data, fund_nav = get_fund_performance(fund_info, allocation_values, market_cap_data, iq_database,
                                                     app_database)
     benchmark_perf_data = get_benchmark_performance(fund_info, iq_database, app_database)
     alt_benchmark_perf_data = get_alt_benchmark_performance(fund_info, iq_database, app_database)
 
     # Collateral details
     collateral_data = get_collateral(fund_info, fs_database, app_database)
-    collateral_details = collaterals_check(fund_info, fs_database)
-    print(collateral_details)
-    if len(collateral_details) == 0:
-        put_collateral_data(collateral_data, fs_database)
+    put_collateral_data(collateral_data, fs_database)
 
     benchmark_index_code = get_benchmark_index(fund_info, iq_database)
     alt_benchmark_index_code = get_alt_benchmark_index(fund_info, iq_database)
@@ -774,12 +785,6 @@ def table_records(excel_values, iq_database, fs_database, app_database):
     if portfolio_values is not None:
         portfolio_data = get_fund_portfolio(fund_info, portfolio_values, iq_database)
         put_fund_portfolio(portfolio_data, iq_database)
-
-    portfolio_sum = 0
-    for value in portfolio_values:
-        if 'exposure' in value:
-            portfolio_sum += value['exposure']
-    portfolio_sum = round(portfolio_sum * 100)
 
     if portfolio_sum == 100:
         sector_data = get_fund_sector_from_portfolio(portfolio_values, iq_database)
@@ -800,10 +805,9 @@ def table_records(excel_values, iq_database, fs_database, app_database):
             sector_data_list.append(sectorBody)
         put_fund_sector(sector_data_list, iq_database)
 
-    if portfolio_sum > 0:
-        fund_ratio_data = get_fund_ratios(fund_info, portfolio_values, fund_nav,
-                                          benchmark_perf_data['benchmark_perf_1m'], iq_database, app_database)
-        put_fund_ratio_data(fund_ratio_data, iq_database)
+    fund_ratio_data = get_fund_ratios(fund_info, portfolio_values, fund_nav, portfolio_sum,
+                                      benchmark_perf_data['benchmark_perf_1m'], iq_database, app_database)
+    put_fund_ratio_data(fund_ratio_data, iq_database)
 
     final_data = {"fund_perf_data": fund_perf_data, "benchmark_perf_data": benchmark_perf_data,
                   "alt_benchmark_perf_data": alt_benchmark_perf_data, "nav_data": nav_data}

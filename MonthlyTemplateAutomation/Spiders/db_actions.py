@@ -162,15 +162,6 @@ def get_sector_from_portfolio(sec_isin, iq_database):
     return sector_response
 
 
-def get_sectorcash_from_portfolio(sec_isin, iq_database):
-    sector_cash_cursor = iq_database.cursor()
-    sector_query = "SELECT sector FROM iq.mas_sectors where industry = '" + sec_isin + "'"
-    sector_cash_cursor.execute(sector_query)
-    sector_cash_response = sector_cash_cursor.fetchall()
-    sector_cash_cursor.close()
-    return sector_cash_response
-
-
 def get_sector_from_industry(industry, iq_database):
     industry_cursor = iq_database.cursor()
     industry_query = "SELECT sector from iq.mas_sectors where industry = '" + industry + "'"
@@ -225,15 +216,14 @@ def get_collateral_template_code(fund_info, fs_database):
     return template_code
 
 
-def collaterals_check(fund_info, fs_database):
-    reporting_date = datetime.datetime.strptime(fund_info['reporting_date'], '%Y-%m-%d %H:%M:%S').date()
-    collateral_cursor = fs_database.cursor()
-    collateral_query = "SELECT collateral_code from fs.collaterals where entity_code = '" + fund_info['fund_code'] + \
-                       "' and reporting_date = '" + str(reporting_date) + "'"
-    collateral_cursor.execute(collateral_query)
-    collateral_details = collateral_cursor.fetchall()
-    collateral_cursor.close()
-    return collateral_details
+def get_default_visibility_code(fund_info, fs_database):
+    visibility_code_cursor = fs_database.cursor()
+    visibility_code_query = "SELECT default_visibility_code from fs.collateral_templates where entity_code = '" + \
+                            fund_info['fund_code'] + "' and entity_type = 'FUND' and template_type_code = 'FINTUPLE'"
+    visibility_code_cursor.execute(visibility_code_query)
+    visibility_code = visibility_code_cursor.fetchall()
+    visibility_code_cursor.close()
+    return visibility_code[0][0]
 
 
 def get_pe_ratio(security_isin_list, iq_database):
@@ -299,6 +289,15 @@ def get_risk_free_rate(iq_database):
     return risk_free_rate
 
 
+def get_mcap_for_portfolio(security_isin, iq_database):
+    mcap_code_cursor = iq_database.cursor()
+    mcap_code_query = "SELECT market_cap_type_code from iq.mas_securities where security_isin = '" + security_isin + "'"
+    mcap_code_cursor.execute(mcap_code_query)
+    mcap_code = mcap_code_cursor.fetchall()
+    mcap_code_cursor.close()
+    return mcap_code[0][0]
+
+
 def update_islatest(fund_info, previous_1m_end_date, iq_database):
     update_cursor = iq_database.cursor()
     update_query = "UPDATE iq.fund_performance SET isLatest = NULL where effective_end_date = '" + \
@@ -320,21 +319,22 @@ def put_fund_performance(fund_perf_data, benchmark_perf_data, alt_benchmark_perf
     fund_cursor = iq_database.cursor()
     if is_fund_performance_exist(fund_perf_data['fund_code'], fund_perf_data['effective_end_date'], iq_database):
         fund_perf_query = "UPDATE iq.fund_performance SET fund_code = %s, current_aum = %s, no_of_clients = %s, " \
-                          "market_cap_type_code = %s, investment_style = %s, portfolio_equity_allocation = %s, " \
-                          "portfolio_cash_allocation = %s, portfolio_asset_allocation = %s, " \
-                          "portfolio_other_allocations = %s, perf_1m = %s, perf_3m = %s, perf_6m = %s, perf_1y = %s, " \
-                          "perf_2y = %s, perf_3y = %s, perf_5y = %s, perf_inception = %s, benchmark_perf_1m = %s, " \
-                          "benchmark_perf_3m = %s, benchmark_perf_6m = %s, benchmark_perf_1y = %s, " \
-                          "benchmark_perf_2y = %s, benchmark_perf_3y = %s, benchmark_perf_5y = %s, " \
-                          "benchmark_perf_inception = %s, alt_benchmark_perf_1m = %s, alt_benchmark_perf_3m = %s, " \
-                          "alt_benchmark_perf_6m = %s, alt_benchmark_perf_1y = %s, alt_benchmark_perf_2y = %s, " \
-                          "alt_benchmark_perf_3y = %s, alt_benchmark_perf_5y = %s, alt_benchmark_perf_inception = %s," \
-                          " isLatest = %s, effective_start_date = %s, effective_end_date = %s, created_ts = %s, " \
-                          "created_by = %s where fund_code = '" + fund_perf_data['fund_code'] \
-                          + "' and effective_end_date = '" + str(fund_perf_data['effective_end_date']) + "'"
+                          "market_cap_type_code = %s, investment_style_type_code = %s, " \
+                          "portfolio_equity_allocation = %s, portfolio_cash_allocation = %s, " \
+                          "portfolio_asset_allocation = %s, portfolio_other_allocations = %s, perf_1m = %s, " \
+                          "perf_3m = %s, perf_6m = %s, perf_1y = %s, perf_2y = %s, perf_3y = %s, perf_5y = %s, " \
+                          "perf_inception = %s, benchmark_perf_1m = %s, benchmark_perf_3m = %s, " \
+                          "benchmark_perf_6m = %s, benchmark_perf_1y = %s, benchmark_perf_2y = %s, " \
+                          "benchmark_perf_3y = %s, benchmark_perf_5y = %s, benchmark_perf_inception = %s, " \
+                          "alt_benchmark_perf_1m = %s, alt_benchmark_perf_3m = %s, alt_benchmark_perf_6m = %s, " \
+                          "alt_benchmark_perf_1y = %s, alt_benchmark_perf_2y = %s, alt_benchmark_perf_3y = %s, " \
+                          "alt_benchmark_perf_5y = %s, alt_benchmark_perf_inception = %s, isLatest = %s, " \
+                          "effective_start_date = %s, effective_end_date = %s, created_ts = %s, created_by = %s " \
+                          "where fund_code = '" + fund_perf_data['fund_code'] + "' and effective_end_date = '" + \
+                          str(fund_perf_data['effective_end_date']) + "'"
     else:
         fund_perf_query = "INSERT INTO iq.fund_performance (fund_code, current_aum, no_of_clients, " \
-                          "market_cap_type_code, investment_style, portfolio_equity_allocation, " \
+                          "market_cap_type_code, investment_style_type_code, portfolio_equity_allocation, " \
                           "portfolio_cash_allocation, portfolio_asset_allocation, portfolio_other_allocations, " \
                           "perf_1m, perf_3m, perf_6m, perf_1y, perf_2y, perf_3y, perf_5y, perf_inception, " \
                           "benchmark_perf_1m, benchmark_perf_3m, benchmark_perf_6m, benchmark_perf_1y, " \
@@ -346,7 +346,7 @@ def put_fund_performance(fund_perf_data, benchmark_perf_data, alt_benchmark_perf
                           "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, " \
                           "%s, %s, %s, %s, %s, %s, %s)"
     insert_values = (fund_perf_data['fund_code'], fund_perf_data['current_aum'], fund_perf_data['no_of_clients'],
-                     fund_perf_data['market_cap_type_code'], fund_perf_data['investment_style'],
+                     fund_perf_data['market_cap_type_code'], fund_perf_data['investment_style_type_code'],
                      fund_perf_data['portfolio_equity_allocation'], fund_perf_data['portfolio_cash_allocation'],
                      fund_perf_data['portfolio_asset_allocation'], fund_perf_data['portfolio_other_allocations'],
                      fund_perf_data['perf_1m'], fund_perf_data['perf_3m'], fund_perf_data['perf_6m'],
@@ -473,23 +473,34 @@ def put_fund_sector(sector_data, iq_database):
     sector_cursor.close()
 
 
+def is_collaterals_exist(fund_code, reporting_date, fs_database):
+    collateral_cursor = fs_database.cursor()
+    collateral_query = "SELECT count(*) from fs.collaterals where entity_code = '" + fund_code + \
+                       "' and reporting_date = '" + str(reporting_date) + "'"
+    collateral_cursor.execute(collateral_query)
+    collateral_details = collateral_cursor.fetchall()
+    collateral_cursor.close()
+    return collateral_details[0][0]
+
+
 def put_collateral_data(collateral_data, fs_database):
     collateral_cursor = fs_database.cursor()
-    collateral_query = "INSERT INTO fs.collaterals (collateral_code, view_code, collateral_type_code, entity_type, " \
-                       "entity_code, collateral_title, visibility_code, template_code, collateral_date, " \
-                       "collateral_status, reporting_date, effective_start_date, is_premium, is_published, " \
-                       "is_data_changed, published_ts, created_ts, created_by) VALUES (%s, %s, %s, %s, %s, %s, %s, " \
-                       "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-    collateral_values = (collateral_data['collateral_code'], collateral_data['view_code'],
-                         collateral_data['collateral_type_code'], collateral_data['entity_type'],
-                         collateral_data['entity_code'], collateral_data['collateral_title'],
-                         collateral_data['visibility_code'], collateral_data['template_code'],
-                         collateral_data['collateral_date'], collateral_data['collateral_status'],
-                         collateral_data['reporting_date'], collateral_data['effective_start_date'],
-                         collateral_data['is_premium'], collateral_data['is_published'],
-                         collateral_data['is_data_changed'], collateral_data['published_ts'],
-                         collateral_data['created_ts'], collateral_data['created_by'])
-    collateral_cursor.execute(collateral_query, collateral_values)
+    if not is_collaterals_exist(collateral_data['entity_code'], collateral_data['reporting_date'], fs_database):
+        collateral_query = "INSERT INTO fs.collaterals (collateral_code, view_code, collateral_type_code, " \
+                           "entity_type, entity_code, collateral_title, visibility_code, template_code, " \
+                           "collateral_date, collateral_status, reporting_date, effective_start_date, is_premium, " \
+                           "is_published, is_data_changed, published_ts, created_ts, created_by) VALUES (%s, %s, %s, " \
+                           "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        collateral_values = (collateral_data['collateral_code'], collateral_data['view_code'],
+                             collateral_data['collateral_type_code'], collateral_data['entity_type'],
+                             collateral_data['entity_code'], collateral_data['collateral_title'],
+                             collateral_data['visibility_code'], collateral_data['template_code'],
+                             collateral_data['collateral_date'], collateral_data['collateral_status'],
+                             collateral_data['reporting_date'], collateral_data['effective_start_date'],
+                             collateral_data['is_premium'], collateral_data['is_published'],
+                             collateral_data['is_data_changed'], collateral_data['published_ts'],
+                             collateral_data['created_ts'], collateral_data['created_by'])
+        collateral_cursor.execute(collateral_query, collateral_values)
     collateral_cursor.close()
 
 
