@@ -113,3 +113,15 @@ def put_mas_securities(mas_security_ratio_list, iq_database):
                              ratio['dividend_yield'])
         security_ratio_cursor.execute(index_perf_query, index_perf_values)
     security_ratio_cursor.close()
+
+
+def put_index_prices(index_price_data, iq_database):
+    index_price_cursor = iq_database.cursor()
+    for index in index_price_data:
+        index_price_query = "INSERT INTO iq.index_prices (index_code, index_price_open, index_price_high, " \
+                            "index_price_low, index_price_close, index_price_as_on_date) VALUES (%s, %s, %s, %s, %s, " \
+                            "%s)"
+        index_price_values = (index['index_code'], index['Open'], index['High'], index['Low'], index['Close'],
+                              index['Date'])
+        index_price_cursor.execute(index_price_query, index_price_values)
+    index_price_cursor.close()
