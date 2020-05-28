@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
-from dictionary.index_prices_dictionary import index_urls
+from dictionary.nse_index_prices_dict import nse_index_prices_urls
 from services.db_actions import put_index_prices
 
 
@@ -35,14 +35,14 @@ def get_index_data(index_code, html_content):
     return index_price_data
 
 
-def get_index_main():
+def get_nse_index():
     historical_url = ['https://www1.nseindia.com/products/dynaContent/equities/indices']
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                              'Chrome/83.0.4103.61 Safari/537.36'}
 
     current_date = datetime.now() - relativedelta(months=1)
 
-    for index_code, url in index_urls.items():
+    for index_code, url in nse_index_prices_urls.items():
         if index_code != 'NIFVIX':
             start_date = datetime.strftime(current_date.replace(day=1), '%d-%m-%Y')
             end_date = datetime.strftime(current_date.replace(day=calendar.
@@ -68,7 +68,7 @@ try:
     fs_database = MySQLdb.connect(db_host, db_user, db_pass, fs_db, use_unicode=True, charset="utf8")
     app_database = MySQLdb.connect(db_host, db_user, db_pass, app_db, use_unicode=True, charset="utf8")
 
-    get_index_main()
+    get_nse_index()
     # Database commit
     iq_database.commit()
     print('Commit success')

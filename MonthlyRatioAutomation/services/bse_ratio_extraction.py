@@ -3,7 +3,7 @@ import json
 import requests
 
 from glob import glob
-from dictionary.bse_index_dictionary import pe_ratio_api_dict
+from dictionary.bse_ratio_dict import bse_ratio_api
 
 
 def get_bse_pe_ratio(pe_ratio_api_dict):
@@ -20,7 +20,7 @@ def get_bse_pe_ratio(pe_ratio_api_dict):
 
 def get_bse_data():
     bse_list = []
-    bse_pe_list = get_bse_pe_ratio(pe_ratio_api_dict)
+    bse_pe_list = get_bse_pe_ratio(bse_ratio_api)
     for pe_index in bse_pe_list:
         for sector_index in bse_sector_data:
             if sector_index['index_code'] == pe_index['index_code']:
