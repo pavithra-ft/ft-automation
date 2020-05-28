@@ -5,7 +5,7 @@ from ..items import BseSectorItem
 
 
 class BseSector(scrapy.Spider):
-    name = "bsesector"
+    name = "bse_sector"
     allowed_domains = ["https://www.bseindia.com"]
     start_url = "https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSE30&index_Code=16"
 

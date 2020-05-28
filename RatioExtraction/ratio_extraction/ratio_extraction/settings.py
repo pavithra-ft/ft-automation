@@ -17,7 +17,8 @@ NEWSPIDER_MODULE = 'ratio_extraction.spiders'
 BASE_DIR = r'C:\Users\pavithra\Documents\fintuple-automation-projects\RatioExtraction\ratio_extraction\ratio_extraction'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'ratio_extraction (+http://www.yourdomain.com)'
+USER_AGENT = 'ratio_extraction (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
+             'Chrome/83.0.4103.61 Safari/537.36) '
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -34,7 +35,7 @@ DOWNLOAD_DELAY = 3
 # CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-# COOKIES_ENABLED = False
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 # TELNETCONSOLE_ENABLED = False
