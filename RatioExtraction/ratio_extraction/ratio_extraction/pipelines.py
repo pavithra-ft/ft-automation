@@ -7,7 +7,6 @@
 
 from scrapy.exporters import JsonItemExporter
 from .settings import BASE_DIR
-from .items import BseSectorItem
 
 
 class RatioExtractionPipeline:
@@ -27,10 +26,5 @@ class RatioExtractionPipeline:
         self.file.close()
 
     def process_item(self, item, spider):
-        if isinstance(item, BseSectorItem):
-            return self.handleBseSector(item, spider)
-
-    def handleBseSector(self, item, spider):
-        self.exporter.fields_to_export = ['index_code', 'sector_name', 'sector_exposure']
         self.exporter.export_item(item)
         return item

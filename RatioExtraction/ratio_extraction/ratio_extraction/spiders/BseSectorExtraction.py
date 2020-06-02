@@ -16,6 +16,7 @@ class BseSector(scrapy.Spider):
             'BSE500': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSE500&index_Code=17',
             'BSEMC': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=MIDCAP&index_Code=81',
             'BSEMSC400': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=MSL400&index_Code=105',
+            'BSESC': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=SMLCAP&index_Code=82',
             'SENSEX': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSE30&index_Code=16'}
 
         for index_code, sector_url in bse_sector_dict.items():
