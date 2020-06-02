@@ -34,7 +34,7 @@ def get_bse_data():
 
 try:
     os.chdir(r'C:\Users\pavithra\Documents\fintuple-automation-projects\RatioExtraction\ratio_extraction'
-             r'\ratio_extraction\bse_sector_dictionary')
+             r'\ratio_extraction\ExportedData')
     bse_sector_file = [file for file in glob("*.json")]
     for file in bse_sector_file:
         with open(file) as f:

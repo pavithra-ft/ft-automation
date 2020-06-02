@@ -1,7 +1,7 @@
 import MySQLdb
+import calendar
 
 from glob import glob
-from calendar import calendar
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 

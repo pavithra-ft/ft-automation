@@ -4,6 +4,7 @@ import calendar
 from pyjarowinkler import distance
 from dateutil.relativedelta import relativedelta
 
+from dictionary.sector_dictionary import sector_dict
 from services.bse_ratio_extraction import get_bse_data
 from extraction.nse_pdf_extraction import get_nse_data
 from dictionary.portfolio_dictionary import portfolio_dict
@@ -132,7 +133,7 @@ def get_index_performance(reporting_date, index_code, iq_database):
         perf_5y = round((((curr_price[0][0] / index_5y_price[0][0]) ** (365 / date_power_5y.days)) - 1), 4)
     # Calculation of index performance inception
     power_inception = reporting_date - start_date
-    if power_inception >= 365:
+    if power_inception.days >= 365:
         perf_inception = round((((curr_price[0][0] / start_index_price) ** (365 / power_inception.days)) - 1), 4)
     else:
         perf_inception = round(((curr_price[0][0] / start_index_price) - 1), 4)
@@ -156,7 +157,10 @@ def get_index_ratios(index_code, nse_list, bse_list, iq_database):
             if ratios_data['top_holding_isin'] is not None:
                 top_holding_isin = get_isin(ratios_data['top_holding_isin'], iq_database)
             if ratios_data['top_sector_name'] is not None:
-                industry = ratios_data['top_sector_name'].capitalize().strip()
+                if sector_dict.__contains__(ratios_data['top_sector_name'].capitalize().strip()):
+                    industry = sector_dict[ratios_data['top_sector_name'].capitalize().strip()]
+                else:
+                    industry = ratios_data['top_sector_name'].capitalize().strip()
                 top_sector_name = get_security_sector(industry, iq_database)
             index_ratios_data.update({"standard_deviation": ratios_data['standard_deviation'],
                                       "pe_ratio": ratios_data['pe_ratio'], "top_sector_name": top_sector_name,
@@ -182,7 +186,6 @@ def index_performance(index_code, reporting_date, pdf_files, iq_database):
                               "perf_1y": performance['perf_1y'], "perf_2y": performance['perf_2y'],
                               "perf_3y": performance['perf_3y'], "perf_5y": performance['perf_5y'],
                               "perf_inception": performance['perf_inception'],
-                              "reporting_date": performance['reporting_date']})
+                              "reporting_date": reporting_date})
     put_index_performance(index_performance, iq_database)
-    for i in index_performance:
-        print(i)
+    print(index_performance)
