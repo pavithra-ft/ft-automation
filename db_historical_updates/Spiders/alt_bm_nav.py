@@ -14,9 +14,8 @@ def get_alt_benchmark_nav(fund_code, nav_start_date, alt_bm_index, current_date,
 
 
 try:
-    # db_host, db_user, db_pass = env('DB_HOST'), env('DB_USER'), env('DB_PASS')
-    db_host, db_user, db_pass = 'ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com', 'wyzeup', \
-                                'd0m#l1dZwhz!*9Iq0y1h'
+    db_host, db_user, db_pass = env('DB_HOST'), env('DB_USER'), env('DB_PASS')
+    # db_host, db_user, db_pass = 'ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com', 'wyzeup', 'd0m#l1dZwhz!*9Iq0y1h'
     iq_db = 'iq'
     fs_db = 'fs'
     app_db = 'app'
@@ -31,7 +30,7 @@ try:
         nav_dates_list.pop(0)
         for date in nav_dates_list:
             get_alt_benchmark_nav(fund_code, alt_bm_info['nav_start_date'], alt_bm_info['alt_bm_index'], date,
-                                     iq_database)
+                                  iq_database)
     iq_database.commit()
     print("Commit success")
     iq_database.close()

@@ -279,6 +279,26 @@ def get_collateral_template_code(fund_code, reporting_date, fs_database):
     return template_code
 
 
+def get_default_visibility_code(fund_code, fs_database):
+    visibility_code_cursor = fs_database.cursor()
+    visibility_code_query = "SELECT default_visibility_code from fs.collateral_templates where entity_code = '" + \
+                            fund_code + "' and entity_type = 'FUND' and template_type_code = 'FINTUPLE'"
+    visibility_code_cursor.execute(visibility_code_query)
+    visibility_code = visibility_code_cursor.fetchall()
+    visibility_code_cursor.close()
+    return visibility_code[0][0]
+
+
+def get_fund_codes(iq_database):
+    fund_code_cursor = iq_database.cursor()
+    fund_code_query = "SELECT fund_code, effective_end_date from iq.fund_performance where " \
+                      "effective_end_date >= '2020-04-30'"
+    fund_code_cursor.execute(fund_code_query)
+    fund_code_details = fund_code_cursor.fetchall()
+    fund_code_cursor.close()
+    return fund_code_details
+
+
 def get_pe_ratio(security_isin_list, iq_database):
     pe_ratio_cursor = iq_database.cursor()
     pe_ratio_list = []
@@ -318,9 +338,9 @@ def get_fund_ratio_mcap(security_isin_list, iq_database):
     return fund_ratio_mcap_list
 
 
-def get_all_fund_return(fund_info, iq_database):
+def get_all_fund_return(fund_code, iq_database):
     fund_return_cursor = iq_database.cursor()
-    fund_return_query = "SELECT perf_1m from iq.fund_performance where fund_code = '" + fund_info['fund_code'] + "'"
+    fund_return_query = "SELECT perf_1m from iq.fund_performance where fund_code = '" + fund_code + "'"
     fund_return_cursor.execute(fund_return_query)
     fund_return_details = fund_return_cursor.fetchall()
     fund_return_list = []
@@ -355,6 +375,26 @@ def get_fund_dates(fund_code, iq_database):
     return fund_dates_list
 
 
+def get_fund_portfolio(fund_code, reporting_date, iq_database):
+    portfolio_cursor = iq_database.cursor()
+    portfolio_query = "SELECT security_isin, exposure from iq.fund_portfolio_details where fund_code = '" + \
+                      fund_code + "' and reporting_date = '" + str(reporting_date) + "'"
+    portfolio_cursor.execute(portfolio_query)
+    portfolio_details = portfolio_cursor.fetchall()
+    portfolio_cursor.close()
+    return portfolio_details
+
+
+def get_benchmark_perf_1m(fund_code, reporting_date, iq_database):
+    bm_perf_cursor = iq_database.cursor()
+    bm_perf_query = "SELECT benchmark_perf_1m from iq.fund_performance where fund_code = '" + fund_code \
+                    + "' and effective_end_date = '" + str(reporting_date) + "'"
+    bm_perf_cursor.execute(bm_perf_query)
+    bm_perf_details = bm_perf_cursor.fetchall()
+    bm_perf_cursor.close()
+    return bm_perf_details[0][0]
+
+
 def update_islatest(fund_code, previous_1m_end_date, iq_database):
     update_cursor = iq_database.cursor()
     update_query = "UPDATE iq.fund_performance SET isLatest = NULL where effective_end_date = '" + \
@@ -382,8 +422,8 @@ def put_fund_performance(fund_perf_data, benchmark_perf_data, alt_benchmark_perf
                           "benchmark_perf_3y = %s, benchmark_perf_5y = %s, benchmark_perf_inception = %s, " \
                           "alt_benchmark_perf_1m = %s, alt_benchmark_perf_3m = %s, alt_benchmark_perf_6m = %s, " \
                           "alt_benchmark_perf_1y = %s, alt_benchmark_perf_2y = %s, alt_benchmark_perf_3y = %s, " \
-                          "alt_benchmark_perf_5y = %s, alt_benchmark_perf_inception = %s where fund_code = '" + \
-                          fund_perf_data['fund_code'] + "' and effective_end_date = '" + \
+                          "alt_benchmark_perf_5y = %s, alt_benchmark_perf_inception = %s where " \
+                          "fund_code = '" + fund_perf_data['fund_code'] + "' and effective_end_date = '" + \
                           str(fund_perf_data['effective_end_date']) + "'"
         insert_values = (fund_perf_data['investment_style_type_code'], fund_perf_data['perf_1m'],
                          fund_perf_data['perf_3m'], fund_perf_data['perf_6m'], fund_perf_data['perf_1y'],
@@ -591,30 +631,17 @@ def is_fund_ratio_exist(fund_code, reporting_date, iq_database):
 
 def put_fund_ratio_data(fund_ratio_data, iq_database):
     ratio_cursor = iq_database.cursor()
-    if is_fund_ratio_exist(fund_ratio_data['fund_code'], fund_ratio_data['reporting_date'], iq_database):
-        ratio_query = "UPDATE iq.fund_ratios SET top5_pe_ratio = %s, top10_pe_ratio = %s, top5_market_cap = %s, " \
-                      "top10_market_cap = %s, standard_deviation = %s, median = %s, sigma = %s, sortino_ratio = %s, " \
-                      "negative_excess_returns_risk_free = %s, fund_alpha = %s, updated_ts = %s, updated_by = %s " \
-                      "where fund_code = '" + fund_ratio_data['fund_code'] + "' and reporting_date = '" + \
-                      str(fund_ratio_data['reporting_date']) + "'"
-        fund_ratio_values = (fund_ratio_data['top5_pe_ratio'], fund_ratio_data['top10_pe_ratio'],
-                             fund_ratio_data['top5_market_cap'], fund_ratio_data['top10_market_cap'],
-                             fund_ratio_data['standard_deviation'], fund_ratio_data['median'], fund_ratio_data['sigma'],
-                             fund_ratio_data['sortino_ratio'], fund_ratio_data['negative_excess_returns_risk_free'],
-                             fund_ratio_data['fund_alpha'], fund_ratio_data['updated_ts'],
-                             fund_ratio_data['updated_by'])
-    else:
-        ratio_query = "INSERT INTO iq.fund_ratios (fund_code, reporting_date, top5_pe_ratio, top10_pe_ratio, " \
-                      "top5_market_cap, top10_market_cap, standard_deviation, median, sigma, sortino_ratio, " \
-                      "negative_excess_returns_risk_free, fund_alpha, updated_ts, updated_by) VALUES (%s, %s, %s, " \
-                      "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-        fund_ratio_values = (fund_ratio_data['fund_code'], fund_ratio_data['reporting_date'],
-                             fund_ratio_data['top5_pe_ratio'], fund_ratio_data['top10_pe_ratio'],
-                             fund_ratio_data['top5_market_cap'], fund_ratio_data['top10_market_cap'],
-                             fund_ratio_data['standard_deviation'], fund_ratio_data['median'], fund_ratio_data['sigma'],
-                             fund_ratio_data['sortino_ratio'], fund_ratio_data['negative_excess_returns_risk_free'],
-                             fund_ratio_data['fund_alpha'], fund_ratio_data['updated_ts'],
-                             fund_ratio_data['updated_by'])
+    ratio_query = "INSERT INTO iq.fund_ratios (fund_code, reporting_date, top5_pe_ratio, top10_pe_ratio, " \
+                  "top5_market_cap, top10_market_cap, standard_deviation, median, sigma, sortino_ratio, " \
+                  "negative_excess_returns_risk_free, fund_alpha, updated_ts, updated_by) VALUES (%s, %s, %s, " \
+                  "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+    fund_ratio_values = (str(fund_ratio_data['fund_code']), fund_ratio_data['reporting_date'],
+                         fund_ratio_data['top5_pe_ratio'], fund_ratio_data['top10_pe_ratio'],
+                         fund_ratio_data['top5_market_cap'], fund_ratio_data['top10_market_cap'],
+                         fund_ratio_data['standard_deviation'], fund_ratio_data['median'], fund_ratio_data['sigma'],
+                         fund_ratio_data['sortino_ratio'], fund_ratio_data['negative_excess_returns_risk_free'],
+                         fund_ratio_data['fund_alpha'], fund_ratio_data['updated_ts'],
+                         fund_ratio_data['updated_by'])
     ratio_cursor.execute(ratio_query, fund_ratio_values)
     ratio_cursor.close()
 
