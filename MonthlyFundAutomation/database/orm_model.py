@@ -41,6 +41,7 @@ class CollateralTemplates(Base):
     entity_code = Column(VARCHAR)
     template_url = Column(VARCHAR)
     is_default = Column(TINYINT)
+    default_visibility_code = Column(VARCHAR)
     effective_start_date = Column(DATE)
     effective_end_date = Column(DATE)
 
@@ -102,6 +103,7 @@ class FundPerformance(Base):
     current_aum = Column(DOUBLE)
     no_of_clients = Column(DOUBLE)
     market_cap_type_code = Column(VARCHAR)
+    investment_style_type_code = Column(VARCHAR)
     portfolio_equity_allocation = Column(DOUBLE)
     portfolio_cash_allocation = Column(DOUBLE)
     portfolio_asset_allocation = Column(DOUBLE)

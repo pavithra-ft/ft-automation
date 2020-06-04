@@ -110,6 +110,7 @@ class FundMarketCapExtraction:
 class FundPortfolioExtraction:
     def __init__(self):
         self.security_name = None
+        self.security_isin = None
         self.exposure = None
 
     def set_security_name(self, security_name=None):
@@ -118,6 +119,12 @@ class FundPortfolioExtraction:
     def get_security_name(self):
         return self.security_name
 
+    def set_security_isin(self, security_isin=None):
+        self.security_isin = security_isin
+
+    def get_security_isin(self):
+        return self.security_isin
+
     def set_exposure(self, exposure=None):
         self.exposure = exposure
 
@@ -125,8 +132,8 @@ class FundPortfolioExtraction:
         return self.exposure
 
     def __repr__(self):
-        return "<FundPortfolioExtraction(security_name='{0}', exposure='{1}')>".format(self.security_name,
-                                                                                       self.exposure)
+        return "<FundPortfolioExtraction(security_name='{0}', security_isin='{1}', exposure='{2}')>".\
+            format(self.security_name, self.security_isin, self.exposure)
 
 
 class FundSectorExtraction:

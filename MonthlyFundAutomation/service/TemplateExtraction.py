@@ -1,6 +1,6 @@
 from datetime import datetime
-from model.FundExtraction import FundInfo, FundAllocationExtraction, FundMarketCapExtraction, FundPortfolioExtraction, \
-    FundSectorExtraction
+from model.FundDetailsExtraction import FundInfo, FundAllocationExtraction, FundMarketCapExtraction, \
+    FundPortfolioExtraction, FundSectorExtraction
 
 
 def get_fund_info(df):
@@ -29,6 +29,9 @@ def get_fund_allocation_values(df):
         allocation_body.set_exposure(df.iloc[index, 5])
         fund_allocation.append(allocation_body)
         index += 1
+    for obj in fund_allocation:
+        if obj.exposure is None:
+            fund_allocation.remove(obj)
     return fund_allocation
 
 
@@ -41,10 +44,13 @@ def get_market_cap_values(df):
         market_cap = df.iloc[index, 4].replace(" Cap", "")
         cap_data_body.set_type_market_cap(market_cap.capitalize())
         exposure = df.iloc[index, 5]
-        if exposure is not None:
+        if exposure:
             cap_data_body.set_exposure(float(exposure))
         cap_data.append(cap_data_body)
         index += 1
+    for obj in cap_data:
+        if not obj.exposure:
+            cap_data.remove(obj)
     return cap_data
 
 
@@ -52,11 +58,11 @@ def get_fund_portfolio_values(df):
     # Extraction of Fund portfolio
     portfolio_values = []
     index = 13
-    while df.iloc[index, 1] is not None:
+    while df.iloc[index, 1]:
         portfolio_body = FundPortfolioExtraction()
         portfolio_body.set_security_name(df.iloc[index, 1])
         exposure = df.iloc[index, 2]
-        if exposure is None:
+        if not exposure:
             portfolio_body.set_exposure(0)
         else:
             portfolio_body.set_exposure(float(exposure))
@@ -69,7 +75,7 @@ def get_fund_sector_values(df):
     # Extraction of Sector allocations
     sector_values = []
     index = 23
-    while df.iloc[index, 4] is not None:
+    while df.iloc[index, 4]:
         sector_body = FundSectorExtraction()
         sector_body.set_sector_name(df.iloc[index, 4])
         sector_body.set_exposure(float(df.iloc[index, 5]))
