@@ -7,13 +7,13 @@ from database.orm_model import Collaterals, CollateralTemplates, FundRatios, Fun
     FundPerformance, FundPortfolioDetails, FundSectorDetails, IndexPrices, MasMarketCapTypes, MasSecurities, \
     MasSectors, PerAllFunds, RatioBasis, SecuritiesFundamentals
 
-# app_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/app')
-# fs_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/fs')
-# iq_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/iq')
+app_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/app')
+fs_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/fs')
+iq_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/iq')
 
-app_engine = create_engine('mysql://pavi:root@127.0.0.1/app')
-fs_engine = create_engine('mysql://pavi:root@127.0.0.1/fs')
-iq_engine = create_engine('mysql://pavi:root@127.0.0.1/iq')
+# app_engine = create_engine('mysql://pavi:root@127.0.0.1/app')
+# fs_engine = create_engine('mysql://pavi:root@127.0.0.1/fs')
+# iq_engine = create_engine('mysql://pavi:root@127.0.0.1/iq')
 
 app_db = sessionmaker(bind=app_engine)
 fs_db = sessionmaker(bind=fs_engine)
@@ -25,20 +25,19 @@ iq_session = iq_db()
 
 
 def get_nav_start_date(fund_code):
-    nav_start_date = app_session.query().with_entities(PerAllFunds.nav_start_date).filter_by(fund_code=fund_code). \
-        all()[0][0]
+    nav_start_date = app_session.query(PerAllFunds.nav_start_date).filter_by(fund_code=fund_code).all()[0][0]
     return nav_start_date
 
 
 def get_benchmark_index(fund_code):
-    benchmark_index_code = app_session.query().with_entities(PerAllFunds.benchmark_index_code). \
-        filter_by(fund_code=fund_code).all()[0][0]
+    benchmark_index_code = app_session.query(PerAllFunds.benchmark_index_code).filter_by(fund_code=fund_code).\
+        all()[0][0]
     return benchmark_index_code
 
 
 def get_alt_benchmark_index(fund_code):
-    alt_benchmark_index_code = app_session.query().with_entities(PerAllFunds.benchmark_alt_index_code). \
-        filter_by(fund_code=fund_code).all()[0][0]
+    alt_benchmark_index_code = app_session.query(PerAllFunds.benchmark_alt_index_code).filter_by(fund_code=fund_code).\
+        all()[0][0]
     return alt_benchmark_index_code
 
 
@@ -52,44 +51,41 @@ def get_index_price_as_on_date(date, index_code):
 
 
 def get_start_price(start_date, index_code):
-    start_price = iq_session.query().with_entities(IndexPrices.index_price_close).filter_by(index_code=index_code). \
+    start_price = iq_session.query(IndexPrices.index_price_close).filter_by(index_code=index_code). \
         filter_by(index_price_as_on_date=start_date).all()[0][0]
     return float(start_price)
 
 
 def get_cap_type(type_desc):
-    market_cap_type = iq_session.query().with_entitites(MasMarketCapTypes.market_cap_type_code). \
-        filter_by(market_cap_type_code=type_desc).all()[0][0]
+    market_cap_type = iq_session.query(MasMarketCapTypes.market_cap_type_code). \
+        filter_by(market_cap_type_desc=type_desc).all()[0][0]
     return market_cap_type
 
 
 def get_investment_style(fund_code):
-    investment_style = app_session.query().with_entities(PerAllFunds.investment_style). \
-        filter_by(fund_code=fund_code).all()[0][0]
+    investment_style = app_session.query(PerAllFunds.investment_style).filter_by(fund_code=fund_code).all()[0][0]
     return investment_style
 
 
 def get_fund_nav(fund_code, date):
-    fund_nav = iq_session.query().with_entities(FundBenchmarkNav.fund_nav). \
-        filter_by(fund_code=fund_code).filter_by(effective_end_date=date).all()
+    fund_nav = iq_session.query(FundBenchmarkNav.fund_nav).filter_by(fund_code=fund_code).\
+        filter_by(effective_end_date=date).all()
     return fund_nav
 
 
 def get_security_isin_from_db(security_name):
-    security_isin = iq_session.query().with_entities(MasSecurities.security_isin). \
-        filter_by(security_name=security_name).all()[0][0]
+    security_isin = iq_session.query(MasSecurities.security_isin).filter_by(security_name=security_name).all()[0][0]
     return security_isin
 
 
 def get_all_isin():
-    all_isin_query = iq_session.query().with_entities(MasSecurities.security_isin, MasSecurities.security_name).all()
-    all_isin_list = [isin[0] for isin in all_isin_query]
+    all_isin_list = iq_session.query(MasSecurities.security_isin, MasSecurities.security_name).all()
     return all_isin_list
 
 
 def get_mcap_for_security(security_isin):
-    security_mcap_code = iq_session.query().with_entities(MasSecurities.market_cap_type_code). \
-        filter_by(security_isin=security_isin).all()[0][0]
+    security_mcap_code = iq_session.query(MasSecurities.market_cap_type_code).filter_by(security_isin=security_isin).\
+        all()[0][0]
     return security_mcap_code
 
 
@@ -115,14 +111,14 @@ def get_fund_short_code(fund_code):
 
 
 def get_default_visibility_code(fund_code):
-    default_visibility_code = fs_session.query().with_entities(CollateralTemplates.default_visibility_code). \
+    default_visibility_code = fs_session.query(CollateralTemplates.default_visibility_code). \
         filter_by(entity_type='FUND').filter_by(template_type_code='FINTUPLE').filter_by(entity_code=fund_code). \
         all()[0][0]
     return default_visibility_code
 
 
 def get_collateral_template_code(fund_code, reporting_date):
-    collateral_template_code = fs_session.query().with_entities(CollateralTemplates.template_code).filter(
+    collateral_template_code = fs_session.query(CollateralTemplates.template_code).filter(
         CollateralTemplates.entity_code == fund_code).filter(
         CollateralTemplates.template_type_code == 'FINTUPLE').filter(
         or_(and_(reporting_date >= CollateralTemplates.effective_start_date,
@@ -151,7 +147,7 @@ def get_pe_ratio(security_isin_list):
 def get_fund_ratio_mcap(security_isin_list):
     fund_ratio_mcap_list = []
     for security in security_isin_list:
-        fund_ratio_mcap = iq_session.query().with_entities(SecuritiesFundamentals.market_cap). \
+        fund_ratio_mcap = iq_session.query(SecuritiesFundamentals.market_cap). \
             filter_by(security_isin=security.security_isin).order_by(SecuritiesFundamentals.as_on_date.desc()). \
             limit(1).all()
         if any(fund_ratio_mcap) is False:
@@ -176,8 +172,8 @@ def get_all_1m_perf(fund_code):
 
 
 def get_risk_free_rate():
-    risk_free_rate = float(iq_session.query().with_entities(RatioBasis.risk_free_return_rate).all()[0][0])
-    return risk_free_rate
+    risk_free_rate = iq_session.query(RatioBasis.risk_free_return_rate).all()[0][0]
+    return float(risk_free_rate)
 
 
 def is_nav_exist(fund_code, effective_end_date):
@@ -328,20 +324,21 @@ def put_market_cap(market_cap_data):
 
 
 def put_fund_portfolio(portfolio_data):
-    for data in portfolio_data:
-        if is_fund_portfolio_exist(data.fund_code, data.end_date, data.security_isin):
-            fund_portfolio = update(FundPortfolioDetails).where(FundPortfolioDetails.fund_code == data.fund_code). \
-                where(FundPortfolioDetails.end_date == data.end_date).where(
-                FundPortfolioDetails.security_isin == data.security_isin).values(
-                fund_code=data.fund_code, security_isin=data.security_isin, exposure=data.exposure,
-                start_date=data.start_date, end_date=data.end_date, created_ts=data.created_ts,
-                action_by=data.action_by)
-        else:
-            fund_portfolio = insert(FundPortfolioDetails).values(
-                fund_code=data.fund_code, security_isin=data.security_isin, exposure=data.exposure,
-                start_date=data.start_date, end_date=data.end_date, created_ts=data.created_ts,
-                action_by=data.action_by)
-        iq_engine.execute(fund_portfolio)
+    if portfolio_data:
+        for data in portfolio_data:
+            if is_fund_portfolio_exist(data.fund_code, data.end_date, data.security_isin):
+                fund_portfolio = update(FundPortfolioDetails).where(FundPortfolioDetails.fund_code == data.fund_code). \
+                    where(FundPortfolioDetails.end_date == data.end_date).where(
+                    FundPortfolioDetails.security_isin == data.security_isin).values(
+                    fund_code=data.fund_code, security_isin=data.security_isin, exposure=data.exposure,
+                    start_date=data.start_date, end_date=data.end_date, created_ts=data.created_ts,
+                    action_by=data.action_by)
+            else:
+                fund_portfolio = insert(FundPortfolioDetails).values(
+                    fund_code=data.fund_code, security_isin=data.security_isin, exposure=data.exposure,
+                    start_date=data.start_date, end_date=data.end_date, created_ts=data.created_ts,
+                    action_by=data.action_by)
+            iq_engine.execute(fund_portfolio)
 
 
 def put_fund_sector(sector_data):
@@ -387,7 +384,7 @@ def put_fund_ratios(fund_ratio_data):
 
 
 def put_collaterals(collateral_data):
-    if is_collaterals_exist(collateral_data.entity_code, collateral_data.reporting_date):
+    if not is_collaterals_exist(collateral_data.entity_code, collateral_data.reporting_date):
         collateral = insert(Collaterals).values(
             collateral_code=collateral_data.collateral_code, view_code=collateral_data.view_code,
             collateral_type_code=collateral_data.collateral_type_code, entity_type=collateral_data.entity_type,

@@ -1,6 +1,8 @@
 portfolio_dict = {'The Federal Bank  Limited': 'The Federal Bank  Ltd',
                   'ONGC': 'Oil & Natural Gas Corporation Ltd',
                   'Cash & Equivalents': 'Cash & Cash Equivalents',
+                  'Cash & Equivalent': 'Cash & Cash Equivalents',
+                  'Cash and Equivalent': 'Cash & Cash Equivalents',
                   'Cash': 'Cash & Cash Equivalents',
                   'MCX': 'Multi Commodity Exchange of India Ltd',
                   'MCX Ltd': 'Multi Commodity Exchange of India Ltd',
@@ -21,4 +23,11 @@ portfolio_dict = {'The Federal Bank  Limited': 'The Federal Bank  Ltd',
                   'Ramco Cements Ltd.': 'The Ramco Cements Ltd',
                   'Anup Engineering Ltd.': 'The Anup Engineering Ltd',
                   'BAJAJ AUTO FINANCE LTD': 'Bajaj Auto Ltd',
-                  'TITAN INDUSTRIES LIMITED': 'Titan Company Limited'}
+                  'TITAN INDUSTRIES LIMITED': 'Titan Company Limited',
+                  'State Bank of India Ltd': 'State Bank of India',
+                  'Tata Consumer Products Ltd': 'Tata Consumer Products Ltd.',
+                  'Sumitomo Chemical India Ltd': 'Sumitomo Chemical India Ltd.',
+                  'Arti Surfactants Ltd': 'Aarti Industries Ltd',
+                  'Essar Oil Ltd': 'Essar Oil Ltd.',
+                  'Dr. Lal Path Labs Ltd': 'Dr. Lal Path Labs Ltd.'
+                  }

@@ -85,7 +85,7 @@ def get_fund_performance(fund_info, allocation_values, market_cap_values):
         portfolio_other_allocations = None
     effective_start_date, effective_end_date = get_effective_start_end_date(fund_info.get_reporting_date())
 
-    current_aum = float(fund_info.get_current_aum()) if not fund_info.get_current_aum() else None
+    current_aum = float(fund_info.get_current_aum()) if fund_info.get_current_aum() else None
     no_of_clients = int(fund_info.get_no_of_clients()) if fund_info.get_no_of_clients() else None
     mcap_type_code = fund_info.get_market_cap_type_code()
     market_cap_type_code = mcap_type_code if mcap_type_code else get_market_cap_type_code(market_cap_values)
@@ -93,9 +93,6 @@ def get_fund_performance(fund_info, allocation_values, market_cap_values):
     investment_style = fund_info.get_investment_style()
     investment_style_type_code = investment_style if investment_style else \
         get_investment_style(fund_info.get_fund_code())
-    for obj in allocation_values:
-        if obj.exposure is None:
-            allocation_values.remove(obj)
     for obj in allocation_values:
         if obj.allocation == 'Equity':
             portfolio_equity_allocation = round(float(obj.exposure), 4)
@@ -146,7 +143,6 @@ def get_fund_performance(fund_info, allocation_values, market_cap_values):
         perf_inception = round((((fund_nav / 1) ** (365 / date_power_inception.days)) - 1), 4)
     else:
         perf_inception = round(((fund_nav / 1) - 1), 4)
-
     fund_perf_data = FundPerformance()
     fund_perf_data.set_fund_code(fund_info.get_fund_code())
     fund_perf_data.set_current_aum(current_aum)
@@ -312,32 +308,33 @@ def get_security_isin(security_name):
         stock_name = portfolio_dict[security_name]
     else:
         stock_name = security_name
-    isin_details = get_security_isin_from_db(stock_name.replace("'", " "))
-    if len(isin_details) == 0:
-        stock = stock_name.replace(".", " ").replace("'", " ")
-        cleaned_stock_name = re.sub(r'(?<=\b[a-z]) (?=[a-z]\b)', '', stock).lower()
-        security_details = get_all_isin()
-        max_ratio = 0
-        max_index = 0
-        for value in range(len(security_details)):
-            name = security_details[value][1].replace(".", " ").replace("'", " ")
-            cleaned_name = re.sub(r'(?<=\b[a-z]) (?=[a-z]\b)', '', name).lower()
-            ratio = distance.get_jaro_distance(cleaned_stock_name, cleaned_name, winkler=True, scaling=0.1)
-            if ratio > 0 and max_ratio < ratio:
-                max_ratio = ratio
-                max_index = value
-        security_isin = security_details[max_index]
+    # print(stock_name)
+    if stock_name == 'Sundaram Overnight Fund Direct Plan Growth':
+        security_isin = 'MF'
     else:
-        security_isin = isin_details
+        isin_details = get_security_isin_from_db(stock_name)
+        if len(isin_details) == 0:
+            stock = stock_name.replace(".", " ").replace("'", " ")
+            cleaned_stock_name = re.sub(r'(?<=\b[a-z]) (?=[a-z]\b)', '', stock).lower()
+            security_details = get_all_isin()
+            max_ratio = 0
+            max_index = 0
+            for value in range(len(security_details)):
+                name = security_details[value][1].replace(".", " ").replace("'", " ")
+                cleaned_name = re.sub(r'(?<=\b[a-z]) (?=[a-z]\b)', '', name).lower()
+                ratio = distance.get_jaro_distance(cleaned_stock_name, cleaned_name, winkler=True, scaling=0.1)
+                if ratio > 0 and max_ratio < ratio:
+                    max_ratio = ratio
+                    max_index = value
+            security_isin = security_details[max_index]
+        else:
+            security_isin = isin_details
     print(security_isin)
     return security_isin
 
 
 def get_market_cap(fund_info, market_cap_values):
     effective_start_date, effective_end_date = get_effective_start_end_date(fund_info.get_reporting_date())
-    for obj in market_cap_values:
-        if obj.exposure is None:
-            market_cap_values.remove(obj)
     market_cap_data = []
     for value in market_cap_values:
         cap_body = FundMarketCap()
@@ -376,11 +373,21 @@ def get_mcap_from_portfolio(fund_info, portfolio_values):
 def get_fund_portfolio(fund_info, portfolio_values):
     effective_start_date, effective_end_date = get_effective_start_end_date(fund_info.get_reporting_date())
     portfolio_data = []
+    portfolio_dict = {}
+    exposure_sum = 0
     for value in portfolio_values:
+        if value.security_name:
+            security_isin = get_security_isin(value.security_name)
+            exposure_sum += value.exposure
+            if portfolio_dict.__contains__(security_isin):
+                portfolio_dict[security_isin] += value.exposure
+            else:
+                portfolio_dict.update({security_isin: value.exposure})
+    for isin, exposure in portfolio_dict.items():
         portfolio_body = FundPortfolio()
         portfolio_body.set_fund_code(fund_info.get_fund_code())
-        portfolio_body.set_security_isin(get_security_isin(value.security_name))
-        exp = round(float(value.exposure), 4)
+        portfolio_body.set_security_isin(isin)
+        exp = round(float(exposure), 6)
         exposure = None if exp == 0 else exp
         portfolio_body.set_exposure(exposure)
         portfolio_body.set_start_date(effective_start_date)
@@ -407,7 +414,7 @@ def get_fund_sector_from_pf(fund_info, portfolio_values):
         sector_body = FundSector()
         sector_body.set_fund_code(fund_info.get_fund_code())
         sector_body.set_sector_type_name(sector)
-        sector_body.set_exposure(round(exp, 4))
+        sector_body.set_exposure(round(exp, 6))
         sector_body.set_start_date(effective_start_date)
         sector_body.set_end_date(effective_end_date)
         sector_body.set_created_ts(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
@@ -423,7 +430,7 @@ def get_fund_sector_from_sector(fund_info, sector_values):
         sector_body = FundSector()
         sector_body.set_fund_code(fund_info.get_fund_code())
         sector_body.set_sector_type_name(value.sector_name)
-        sector_body.set_exposure(round(value.exposure, 4))
+        sector_body.set_exposure(round(value.exposure, 6))
         sector_body.set_start_date(effective_start_date)
         sector_body.set_end_date(effective_end_date)
         sector_body.set_created_ts(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
@@ -547,10 +554,12 @@ def get_fund_ratios(fund_info, portfolio_values, fund_nav, portfolio_sum, benchm
     effective_start_date, effective_end_date = get_effective_start_end_date(fund_info.get_reporting_date())
     portfolio_details = []
     for value in portfolio_values:
-        pf_isin_body = FundPortfolioExtraction()
-        pf_isin_body.set_security_isin(get_security_isin(value.security_name))
-        pf_isin_body.set_exposure(value.exposure)
-        portfolio_details.append(pf_isin_body)
+        if value.security_name:
+            pf_isin_body = FundPortfolioExtraction()
+            pf_isin_body.set_security_name(value.security_name)
+            pf_isin_body.set_security_isin(get_security_isin(value.security_name))
+            pf_isin_body.set_exposure(value.exposure)
+            portfolio_details.append(pf_isin_body)
     if portfolio_sum > 0:
         sorted_exposure = sorted(portfolio_details, key=lambda i: i.exposure, reverse=True)
         sorted_pf_values = [i for i in sorted_exposure if not (i.security_isin == 'CASH')]
@@ -611,7 +620,10 @@ def table_records(fund_info, allocation_values, market_cap_values, portfolio_val
     else:
         market_cap_data = None
     # Portfolio details
-    portfolio_data = get_fund_portfolio(fund_info, portfolio_values) if portfolio_values else None
+    if portfolio_values:
+        portfolio_data = get_fund_portfolio(fund_info, portfolio_values)
+    else:
+        portfolio_data = None
     # Sector details
     if portfolio_sum == 100:
         sector_data = get_fund_sector_from_pf(fund_info, portfolio_data)
