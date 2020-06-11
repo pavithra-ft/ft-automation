@@ -7,7 +7,7 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
 from dictionary.bse_index_prices_dict import bse_index_prices_urls
-from services.db_actions import put_index_prices
+from database.db_queries import put_index_prices
 
 
 def get_bse_index():

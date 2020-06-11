@@ -7,7 +7,7 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
 from dictionary.nse_index_prices_dict import nse_index_prices_urls
-from services.db_actions import put_index_prices
+from database.db_queries import put_index_prices
 
 
 def get_index_data(index_code, html_content):

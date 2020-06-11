@@ -1,11 +1,12 @@
 import re
 
 import MySQLdb
+from envparse import env
 from pyjarowinkler import distance
 
 from dictionary.portfolio_dictionary import portfolio_dict
 from extraction.security_ratio_bse_500 import get_security_ratio
-from services.db_actions import get_security_isin, get_all_isin, put_mas_securities
+from database.db_queries import get_security_isin, get_all_isin, put_mas_securities
 
 
 def get_isin(security_name, iq_database):
@@ -72,8 +73,8 @@ def get_mas_security_ratio(security_ratio_list, iq_database):
 
 try:
     iq_db, fs_db, app_db = 'iq', 'fs', 'app'
-    # db_host, db_user, db_pass = env('DB_HOST'), env('DB_USER'), env('DB_PASS')
-    db_host, db_user, db_pass = 'ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com', 'wyzeup', 'd0m#l1dZwhz!*9Iq0y1h'
+    db_host, db_user, db_pass = env('DB_HOST'), env('DB_USER'), env('DB_PASS')
+    # db_host, db_user, db_pass = 'ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com', 'wyzeup', 'd0m#l1dZwhz!*9Iq0y1h'
     iq_database = MySQLdb.connect(db_host, db_user, db_pass, iq_db, use_unicode=True, charset="utf8")
     fs_database = MySQLdb.connect(db_host, db_user, db_pass, fs_db, use_unicode=True, charset="utf8")
     app_database = MySQLdb.connect(db_host, db_user, db_pass, app_db, use_unicode=True, charset="utf8")

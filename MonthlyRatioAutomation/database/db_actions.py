@@ -106,6 +106,7 @@ def put_index_performance(index_perf_data, iq_database):
 def put_mas_securities(mas_security_ratio_list, iq_database):
     security_ratio_cursor = iq_database.cursor()
     for ratio in mas_security_ratio_list:
+        print(ratio)
         index_perf_query = "UPDATE iq.mas_securities SET market_cap_value = %s, pe_ratio = %s," \
                            "pb_ratio = %s, eps = %s, dividend_yield = %s where security_isin = '" + \
                            ratio['security_isin'] + "'"

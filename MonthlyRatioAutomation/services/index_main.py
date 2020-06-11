@@ -4,14 +4,15 @@ import calendar
 from glob import glob
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
+from envparse import env
 
-from services.db_actions import get_mas_indices
+from database.db_queries import get_mas_indices
 from services.index_performance import index_performance
 
 try:
     iq_db, fs_db, app_db = 'iq', 'fs', 'app'
-    # db_host, db_user, db_pass = env('DB_HOST'), env('DB_USER'), env('DB_PASS')
-    db_host, db_user, db_pass = 'ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com', 'wyzeup', 'd0m#l1dZwhz!*9Iq0y1h'
+    db_host, db_user, db_pass = env('DB_HOST'), env('DB_USER'), env('DB_PASS')
+    # db_host, db_user, db_pass = 'ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com', 'wyzeup', 'd0m#l1dZwhz!*9Iq0y1h'
     iq_database = MySQLdb.connect(db_host, db_user, db_pass, iq_db, use_unicode=True, charset="utf8")
     fs_database = MySQLdb.connect(db_host, db_user, db_pass, fs_db, use_unicode=True, charset="utf8")
     app_database = MySQLdb.connect(db_host, db_user, db_pass, app_db, use_unicode=True, charset="utf8")

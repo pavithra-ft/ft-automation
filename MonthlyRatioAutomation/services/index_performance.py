@@ -8,7 +8,7 @@ from dictionary.sector_dictionary import sector_dict
 from services.bse_ratio_extraction import get_bse_data
 from extraction.nse_pdf_extraction import get_nse_data
 from dictionary.portfolio_dictionary import portfolio_dict
-from services.db_actions import get_index_price_as_on_date, get_index_start_price, put_index_performance, \
+from database.db_queries import get_index_price_as_on_date, get_index_start_price, put_index_performance, \
     get_index_start_date, get_security_isin, get_all_isin, get_security_sector
 
 
