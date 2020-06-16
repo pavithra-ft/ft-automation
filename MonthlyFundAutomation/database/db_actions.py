@@ -307,20 +307,22 @@ def put_fund_performance(fund_perf_data, benchmark_perf_data, alt_benchmark_perf
 
 
 def put_market_cap(market_cap_data):
-    for data in market_cap_data:
-        if is_market_cap_exist(data.fund_code, data.end_date, data.type_market_cap) is 1:
-            market_cap_query = update(FundMarketCapDetails).where(FundMarketCapDetails.fund_code == data.fund_code). \
-                where(FundMarketCapDetails.end_date == data.end_date).where(
-                FundMarketCapDetails.type_market_cap == data.type_market_cap).values(
-                fund_code=data.fund_code, type_market_cap=data.type_market_cap, exposure=data.exposure,
-                start_date=data.start_date, end_date=data.end_date, created_ts=data.created_ts,
-                action_by=data.action_by)
-        else:
-            market_cap_query = insert(FundMarketCapDetails).values(
-                fund_code=data.fund_code, type_market_cap=data.type_market_cap, exposure=data.exposure,
-                start_date=data.start_date, end_date=data.end_date, created_ts=data.created_ts,
-                action_by=data.action_by)
-        iq_engine.execute(market_cap_query)
+    if market_cap_data:
+        for data in market_cap_data:
+            if is_market_cap_exist(data.fund_code, data.end_date, data.type_market_cap) is 1:
+                market_cap_query = update(FundMarketCapDetails).\
+                    where(FundMarketCapDetails.fund_code == data.fund_code).\
+                    where(FundMarketCapDetails.end_date == data.end_date).\
+                    where(FundMarketCapDetails.type_market_cap == data.type_market_cap).values(
+                    fund_code=data.fund_code, type_market_cap=data.type_market_cap, exposure=data.exposure,
+                    start_date=data.start_date, end_date=data.end_date, created_ts=data.created_ts,
+                    action_by=data.action_by)
+            else:
+                market_cap_query = insert(FundMarketCapDetails).values(
+                    fund_code=data.fund_code, type_market_cap=data.type_market_cap, exposure=data.exposure,
+                    start_date=data.start_date, end_date=data.end_date, created_ts=data.created_ts,
+                    action_by=data.action_by)
+            iq_engine.execute(market_cap_query)
 
 
 def put_fund_portfolio(portfolio_data):
@@ -342,20 +344,21 @@ def put_fund_portfolio(portfolio_data):
 
 
 def put_fund_sector(sector_data):
-    for data in sector_data:
-        if is_fund_sector_exist(data.fund_code, data.end_date, data.sector_type_name):
-            fund_sector = update(FundSectorDetails).where(FundSectorDetails.fund_code == data.fund_code). \
-                where(FundSectorDetails.end_date == data.end_date).where(
-                FundSectorDetails.sector_type_name == data.sector_type_name).values(
-                fund_code=data.fund_code, sector_type_name=data.sector_type_name, exposure=data.exposure,
-                start_date=data.start_date, end_date=data.end_date, created_ts=data.created_ts,
-                action_by=data.action_by)
-        else:
-            fund_sector = insert(FundSectorDetails).values(
-                fund_code=data.fund_code, sector_type_name=data.sector_type_name, exposure=data.exposure,
-                start_date=data.start_date, end_date=data.end_date, created_ts=data.created_ts,
-                action_by=data.action_by)
-        iq_engine.execute(fund_sector)
+    if sector_data:
+        for data in sector_data:
+            if is_fund_sector_exist(data.fund_code, data.end_date, data.sector_type_name):
+                fund_sector = update(FundSectorDetails).where(FundSectorDetails.fund_code == data.fund_code). \
+                    where(FundSectorDetails.end_date == data.end_date).where(
+                    FundSectorDetails.sector_type_name == data.sector_type_name).values(
+                    fund_code=data.fund_code, sector_type_name=data.sector_type_name, exposure=data.exposure,
+                    start_date=data.start_date, end_date=data.end_date, created_ts=data.created_ts,
+                    action_by=data.action_by)
+            else:
+                fund_sector = insert(FundSectorDetails).values(
+                    fund_code=data.fund_code, sector_type_name=data.sector_type_name, exposure=data.exposure,
+                    start_date=data.start_date, end_date=data.end_date, created_ts=data.created_ts,
+                    action_by=data.action_by)
+            iq_engine.execute(fund_sector)
 
 
 def put_fund_ratios(fund_ratio_data):

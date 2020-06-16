@@ -30,5 +30,6 @@ portfolio_dict = {'The Federal Bank  Limited': 'The Federal Bank  Ltd',
                   'Arti Surfactants Ltd': 'Aarti Industries Ltd',
                   'Essar Oil Ltd': 'Essar Oil Ltd.',
                   'Dr. Lal Path Labs Ltd': 'Dr. Lal Path Labs Ltd.',
-                  'Berger Paints Ltd': 'Berger Paints (I) Ltd'
+                  'Berger Paints Ltd': 'Berger Paints (I) Ltd',
+                  'Avenue Supermarkets Ltd': 'Avenue Supermarts Ltd'
                   }
