@@ -50,7 +50,7 @@ def get_index_price_as_on_date(date, index_code):
 
 
 def get_security_isin(security_name):
-    security_isin = iq_session.query(MasSecurities.security_isin).filter_by(security_name=security_name).all()[0][0]
+    security_isin = iq_session.query(MasSecurities.security_isin).filter_by(security_name=security_name).all()
     return security_isin
 
 

@@ -9,16 +9,16 @@ from extraction.security_ratio_bse_500 import get_security_ratio
 from database.db_queries import get_security_isin, get_all_isin, put_mas_securities
 
 
-def get_isin(security_name, iq_database):
+def get_isin(security_name):
     if portfolio_dict.__contains__(security_name):
         sec_name = portfolio_dict[security_name]
     else:
         sec_name = security_name
-    isin_details = get_security_isin(sec_name.replace("'", " "), iq_database)
+    isin_details = get_security_isin(sec_name)
     if len(isin_details) == 0:
         sec_name = sec_name.replace(".", " ").replace("'", " ")
         cleaned_sec_name = re.sub(r'(?<=\b[a-z]) (?=[a-z]\b)', '', sec_name).lower()
-        security_details = get_all_isin(iq_database)
+        security_details = get_all_isin()
         max_ratio = 0
         max_index = 0
         for value in range(len(security_details)):
@@ -35,10 +35,10 @@ def get_isin(security_name, iq_database):
     return security_isin
 
 
-def get_mas_security_ratio(security_ratio_list, iq_database):
+def get_mas_security_ratio(security_ratio_list):
     mas_security_ratio_list = []
     for security in security_ratio_list:
-        security_isin = get_isin(security['securtiy_name'], iq_database)
+        security_isin = get_isin(security['securtiy_name'])
         # Get pe_ratio
         if security['price_to_earnings'] == '--' or security['price_to_earnings'] is None:
             pe_ratio = None
@@ -64,9 +64,8 @@ def get_mas_security_ratio(security_ratio_list, iq_database):
         else:
             eps = security['earning_per_share']
 
-        security_ratio_body = {'security_isin': security_isin,
-                               'market_cap_value': int(float(security['market_cap'].replace(',', '')) * 10000000),
-                               'pe_ratio': pe_ratio, 'pb_ratio': pb_ratio, 'eps': eps, 'dividend_yield': dividend_yield}
+        security_ratio_body = {'security_isin': security_isin, 'pe_ratio': pe_ratio, 'pb_ratio': pb_ratio, 'eps': eps,
+                               'dividend_yield': dividend_yield}
         mas_security_ratio_list.append(security_ratio_body)
     return mas_security_ratio_list
 
@@ -80,8 +79,8 @@ try:
     app_database = MySQLdb.connect(db_host, db_user, db_pass, app_db, use_unicode=True, charset="utf8")
 
     security_ratio_list = get_security_ratio()
-    mas_security_ratio_list = get_mas_security_ratio(security_ratio_list, iq_database)
-    put_mas_securities(mas_security_ratio_list, iq_database)
+    mas_security_ratio_list = get_mas_security_ratio(security_ratio_list)
+    put_mas_securities(mas_security_ratio_list)
     # Database commit
     iq_database.commit()
     print('Commit success')
