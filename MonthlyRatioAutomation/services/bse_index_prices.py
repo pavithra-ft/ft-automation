@@ -31,7 +31,7 @@ def get_bse_index():
             index_body.update({'Close': data['I_close']})
             index_body.update({'Date': data['tdate'][0:10]})
             index_price_data.append(index_body)
-        put_index_prices(index_price_data, iq_database)
+        put_index_prices(index_price_data)
         print(index_price_data)
 
 

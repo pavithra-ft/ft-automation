@@ -18,7 +18,7 @@ try:
     app_database = MySQLdb.connect(db_host, db_user, db_pass, app_db, use_unicode=True, charset="utf8")
     pdf_files = [file for file in glob(r"C:\Users\pavithra\Documents\fintuple-automation-projects\RatioExtraction"
                                        r"\ratio_extraction\ratio_extraction\pdf_files\*.pdf")]
-    mas_indices = get_mas_indices(iq_database)
+    mas_indices = get_mas_indices()
     del_indices = ['BSE30', 'NIFVIX']
     mas_indices = [index for index in mas_indices if index not in del_indices]
     date = datetime.today().date() - relativedelta(months=1)
