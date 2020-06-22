@@ -1,4 +1,4 @@
-from database.db_queries import get_mcap_dates, get_monthly_market_cap, get_fund_code, get_cap_type, \
+from database.db_queries import get_mcap_dates, get_monthly_market_cap, get_fund_code_fund_perf, get_cap_type, \
     put_mcap_type_code_fundperf
 
 
@@ -40,15 +40,12 @@ def get_market_cap_type_code(market_cap_values):
                     market_cap_type_code = get_cap_type("Mid Cap")
                 else:
                     market_cap_type_code = get_cap_type("Small Cap")
-    market_cap = {}
-    market_cap.update({"fund_code": fund_code})
-    market_cap.update({"date": str(date[0])})
-    market_cap.update({"market_cap_type_code": market_cap_type_code})
+    market_cap = {"fund_code": fund_code, "date": str(date[0]), "market_cap_type_code": market_cap_type_code}
     return market_cap
 
 
 try:
-    fund_code_list = get_fund_code()
+    fund_code_list = get_fund_code_fund_perf()
     for fund_code in fund_code_list:
         start_date = get_mcap_dates(fund_code)
         for date in start_date:
