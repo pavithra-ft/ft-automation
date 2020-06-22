@@ -291,8 +291,8 @@ def get_default_visibility_code(fund_code, fs_database):
 
 def get_fund_codes(iq_database):
     fund_code_cursor = iq_database.cursor()
-    fund_code_query = "SELECT fund_code, effective_end_date from iq.fund_performance where " \
-                      "effective_end_date >= '2020-04-30'"
+    fund_code_query = "SELECT fund_code, effective_end_date from iq.fund_performance where effective_end_date > " \
+                      "'2020-04-30'"
     fund_code_cursor.execute(fund_code_query)
     fund_code_details = fund_code_cursor.fetchall()
     fund_code_cursor.close()
@@ -304,15 +304,15 @@ def get_pe_ratio(security_isin_list, iq_database):
     pe_ratio_list = []
     for security in security_isin_list:
         pe_ratio_query = "SELECT pe_ratio from iq.securities_fundamentals where security_isin = '" + \
-                         security['security_isin'] + "' order by as_on_date desc limit 1"
+                         security[0] + "' order by as_on_date desc limit 1"
         pe_ratio_cursor.execute(pe_ratio_query)
         pe_ratio_details = pe_ratio_cursor.fetchall()
         if any(pe_ratio_details) is False:
-            pe_ratio_body = {"security_isin": security['security_isin'], "pe_ratio": 0}
+            pe_ratio_body = {"security_isin": security[0], "pe_ratio": 0}
         elif pe_ratio_details[0][0] is None:
-            pe_ratio_body = {"security_isin": security['security_isin'], "pe_ratio": 0}
+            pe_ratio_body = {"security_isin": security[0], "pe_ratio": 0}
         else:
-            pe_ratio_body = {"security_isin": security['security_isin'], "pe_ratio": pe_ratio_details[0][0]}
+            pe_ratio_body = {"security_isin": security[0], "pe_ratio": pe_ratio_details[0][0]}
         pe_ratio_list.append(pe_ratio_body)
     pe_ratio_cursor.close()
     return pe_ratio_list
@@ -323,24 +323,24 @@ def get_fund_ratio_mcap(security_isin_list, iq_database):
     fund_ratio_mcap_list = []
     for security in security_isin_list:
         fund_ratio_mcap_query = "SELECT market_cap from iq.securities_fundamentals where security_isin = '" + \
-                                security['security_isin'] + "' order by as_on_date desc limit 1"
+                                security[0] + "' order by as_on_date desc limit 1"
         fund_ratio_mcap_cursor.execute(fund_ratio_mcap_query)
         fund_ratio_mcap_details = fund_ratio_mcap_cursor.fetchall()
         if any(fund_ratio_mcap_details) is False:
-            fund_ratio_mcap_body = {"security_isin": security['security_isin'], "market_cap": 0}
+            fund_ratio_mcap_body = {"security_isin": security[0], "market_cap": 0}
         elif fund_ratio_mcap_details[0][0] is None:
-            fund_ratio_mcap_body = {"security_isin": security['security_isin'], "market_cap": 0}
+            fund_ratio_mcap_body = {"security_isin": security[0], "market_cap": 0}
         else:
-            fund_ratio_mcap_body = {"security_isin": security['security_isin'],
-                                    "market_cap": fund_ratio_mcap_details[0][0]}
+            fund_ratio_mcap_body = {"security_isin": security[0], "market_cap": fund_ratio_mcap_details[0][0]}
         fund_ratio_mcap_list.append(fund_ratio_mcap_body)
     fund_ratio_mcap_cursor.close()
     return fund_ratio_mcap_list
 
 
-def get_all_fund_return(fund_code, iq_database):
+def get_all_fund_return(fund_code, reporting_date, iq_database):
     fund_return_cursor = iq_database.cursor()
-    fund_return_query = "SELECT perf_1m from iq.fund_performance where fund_code = '" + fund_code + "'"
+    fund_return_query = "SELECT perf_1m from iq.fund_performance where fund_code = '" + fund_code +\
+                        "' and effective_end_date <= '" + str(reporting_date) + "'"
     fund_return_cursor.execute(fund_return_query)
     fund_return_details = fund_return_cursor.fetchall()
     fund_return_list = []
@@ -378,7 +378,7 @@ def get_fund_dates(fund_code, iq_database):
 def get_fund_portfolio(fund_code, reporting_date, iq_database):
     portfolio_cursor = iq_database.cursor()
     portfolio_query = "SELECT security_isin, exposure from iq.fund_portfolio_details where fund_code = '" + \
-                      fund_code + "' and reporting_date = '" + str(reporting_date) + "'"
+                      fund_code + "' and end_date = '" + str(reporting_date) + "'"
     portfolio_cursor.execute(portfolio_query)
     portfolio_details = portfolio_cursor.fetchall()
     portfolio_cursor.close()
@@ -393,6 +393,16 @@ def get_benchmark_perf_1m(fund_code, reporting_date, iq_database):
     bm_perf_details = bm_perf_cursor.fetchall()
     bm_perf_cursor.close()
     return bm_perf_details[0][0]
+
+
+def get_mcap_for_security(security_isin, iq_database):
+    mcap_security_cursor = iq_database.cursor()
+    mcap_security_query = "SELECT market_cap_type_code from iq.mas_securities where security_isin = '" + \
+                          security_isin + "'"
+    mcap_security_cursor.execute(mcap_security_query)
+    security_mcap_code = mcap_security_cursor.fetchall()
+    mcap_security_cursor.close()
+    return security_mcap_code[0][0]
 
 
 def update_islatest(fund_code, previous_1m_end_date, iq_database):
@@ -545,7 +555,6 @@ def is_fund_portfolio_exist(fund_code, end_date, security_isin, iq_database):
 
 def put_fund_portfolio(portfolio_data, iq_database):
     portfolio_cursor = iq_database.cursor()
-    # for data in portfolio_data:
     if is_fund_portfolio_exist(portfolio_data['fund_code'], portfolio_data['end_date'], portfolio_data['security_isin'],
                                iq_database):
         portfolio_query = "UPDATE iq.fund_portfolio_details SET security_isin = %s, exposure = %s where " \
@@ -631,18 +640,19 @@ def is_fund_ratio_exist(fund_code, reporting_date, iq_database):
 
 def put_fund_ratio_data(fund_ratio_data, iq_database):
     ratio_cursor = iq_database.cursor()
-    ratio_query = "INSERT INTO iq.fund_ratios (fund_code, reporting_date, top5_pe_ratio, top10_pe_ratio, " \
-                  "top5_market_cap, top10_market_cap, standard_deviation, median, sigma, sortino_ratio, " \
-                  "negative_excess_returns_risk_free, fund_alpha, updated_ts, updated_by) VALUES (%s, %s, %s, " \
-                  "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-    fund_ratio_values = (str(fund_ratio_data['fund_code']), fund_ratio_data['reporting_date'],
-                         fund_ratio_data['top5_pe_ratio'], fund_ratio_data['top10_pe_ratio'],
-                         fund_ratio_data['top5_market_cap'], fund_ratio_data['top10_market_cap'],
-                         fund_ratio_data['standard_deviation'], fund_ratio_data['median'], fund_ratio_data['sigma'],
-                         fund_ratio_data['sortino_ratio'], fund_ratio_data['negative_excess_returns_risk_free'],
-                         fund_ratio_data['fund_alpha'], fund_ratio_data['updated_ts'],
-                         fund_ratio_data['updated_by'])
-    ratio_cursor.execute(ratio_query, fund_ratio_values)
+    if not is_fund_ratio_exist(fund_ratio_data['fund_code'], fund_ratio_data['reporting_date'], iq_database):
+        ratio_query = "INSERT INTO iq.fund_ratios (fund_code, reporting_date, top5_pe_ratio, top10_pe_ratio, " \
+                      "top5_market_cap, top10_market_cap, standard_deviation, median, sigma, sortino_ratio, " \
+                      "negative_excess_returns_risk_free, fund_alpha, updated_ts, updated_by) VALUES (%s, %s, %s, " \
+                      "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        fund_ratio_values = (fund_ratio_data['fund_code'], fund_ratio_data['reporting_date'],
+                             fund_ratio_data['top5_pe_ratio'], fund_ratio_data['top10_pe_ratio'],
+                             fund_ratio_data['top5_market_cap'], fund_ratio_data['top10_market_cap'],
+                             fund_ratio_data['standard_deviation'], fund_ratio_data['median'], fund_ratio_data['sigma'],
+                             fund_ratio_data['sortino_ratio'], fund_ratio_data['negative_excess_returns_risk_free'],
+                             fund_ratio_data['fund_alpha'], fund_ratio_data['updated_ts'],
+                             fund_ratio_data['updated_by'])
+        ratio_cursor.execute(ratio_query, fund_ratio_values)
     ratio_cursor.close()
 
 
@@ -708,3 +718,11 @@ def put_collateral_title(entity_code, collateral_title, reporting_date, fs_datab
                                         "= '" + entity_code + "'"
     title_cursor.execute(title_query)
     title_cursor.close()
+
+
+def put_mas_securities_mcap(security_isin, market_cap_type_code, market_cap_value, iq_database):
+    mas_sec_cursor = iq_database.cursor()
+    mas_sec_query = "UPDATE iq.mas_securities SET market_cap_type_code = '" + str(market_cap_type_code) + \
+                    "' , market_cap_value = '" + market_cap_value + "' where security_isin = '" + security_isin + "'"
+    mas_sec_cursor.execute(mas_sec_query)
+    mas_sec_cursor.close()
