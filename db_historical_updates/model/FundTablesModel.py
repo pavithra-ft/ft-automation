@@ -255,3 +255,325 @@ class FundMarketCapDetails:
                "end_date='{4}', created_ts='{5}', action_by='{6}')>".\
             format(self.fund_code, self.type_market_cap, self.exposure, self.start_date, self.end_date, self.created_ts,
                    self.action_by)
+
+
+class BenchmarkPerformance:
+    def __init__(self):
+        self.benchmark_index_code = None
+        self.benchmark_perf_1m = None
+        self.benchmark_perf_3m = None
+        self.benchmark_perf_6m = None
+        self.benchmark_perf_1y = None
+        self.benchmark_perf_2y = None
+        self.benchmark_perf_3y = None
+        self.benchmark_perf_5y = None
+        self.benchmark_perf_inception = None
+
+    def set_benchmark_index_code(self, benchmark_index_code=None):
+        self.benchmark_index_code = benchmark_index_code
+
+    def get_benchmark_index_code(self):
+        return self.benchmark_index_code
+
+    def set_benchmark_perf_1m(self, benchmark_perf_1m=None):
+        self.benchmark_perf_1m = benchmark_perf_1m
+
+    def get_benchmark_perf_1m(self):
+        return self.benchmark_perf_1m
+
+    def set_benchmark_perf_3m(self, benchmark_perf_3m=None):
+        self.benchmark_perf_3m = benchmark_perf_3m
+
+    def get_benchmark_perf_3m(self):
+        return self.benchmark_perf_3m
+
+    def set_benchmark_perf_6m(self, benchmark_perf_6m=None):
+        self.benchmark_perf_6m = benchmark_perf_6m
+
+    def get_benchmark_perf_6m(self):
+        return self.benchmark_perf_6m
+
+    def set_benchmark_perf_1y(self, benchmark_perf_1y=None):
+        self.benchmark_perf_1y = benchmark_perf_1y
+
+    def get_benchmark_perf_1y(self):
+        return self.benchmark_perf_1y
+
+    def set_benchmark_perf_2y(self, benchmark_perf_2y=None):
+        self.benchmark_perf_2y = benchmark_perf_2y
+
+    def get_benchmark_perf_2y(self):
+        return self.benchmark_perf_2y
+
+    def set_benchmark_perf_3y(self, benchmark_perf_3y=None):
+        self.benchmark_perf_3y = benchmark_perf_3y
+
+    def get_benchmark_perf_3y(self):
+        return self.benchmark_perf_3y
+
+    def set_benchmark_perf_5y(self, benchmark_perf_5y=None):
+        self.benchmark_perf_5y = benchmark_perf_5y
+
+    def get_benchmark_perf_5y(self):
+        return self.benchmark_perf_5y
+
+    def set_benchmark_perf_inception(self, benchmark_perf_inception=None):
+        self.benchmark_perf_inception = benchmark_perf_inception
+
+    def get_benchmark_perf_inception(self):
+        return self.benchmark_perf_inception
+
+    def __repr__(self):
+        return "<BenchmarkPerformance(benchmark_index_code='{0}', benchmark_perf_1m='{1}', benchmark_perf_3m='{2}', " \
+               "benchmark_perf_6m='{3}', benchmark_perf_1y='{4}', benchmark_perf_2y='{5}', benchmark_perf_3y='{6}', " \
+               "benchmark_perf_5y='{7}', benchmark_perf_inception='{8}')>".\
+            format(self.benchmark_index_code, self.benchmark_perf_1m, self.benchmark_perf_3m, self.benchmark_perf_6m,
+                   self.benchmark_perf_1y, self.benchmark_perf_2y, self.benchmark_perf_3y, self.benchmark_perf_5y,
+                   self.benchmark_perf_inception)
+
+
+class AlternateBenchmarkPerformance:
+    def __init__(self):
+        self.alt_benchmark_index_code = None
+        self.alt_benchmark_perf_1m = None
+        self.alt_benchmark_perf_3m = None
+        self.alt_benchmark_perf_6m = None
+        self.alt_benchmark_perf_1y = None
+        self.alt_benchmark_perf_2y = None
+        self.alt_benchmark_perf_3y = None
+        self.alt_benchmark_perf_5y = None
+        self.alt_benchmark_perf_inception = None
+
+    def set_alt_benchmark_index_code(self, alt_benchmark_index_code=None):
+        self.alt_benchmark_index_code = alt_benchmark_index_code
+
+    def get_alt_benchmark_index_code(self):
+        return self.alt_benchmark_index_code
+
+    def set_alt_benchmark_perf_1m(self, alt_benchmark_perf_1m=None):
+        self.alt_benchmark_perf_1m = alt_benchmark_perf_1m
+
+    def get_alt_benchmark_perf_1m(self):
+        return self.alt_benchmark_perf_1m
+
+    def set_alt_benchmark_perf_3m(self, alt_benchmark_perf_3m=None):
+        self.alt_benchmark_perf_3m = alt_benchmark_perf_3m
+
+    def get_alt_benchmark_perf_3m(self):
+        return self.alt_benchmark_perf_3m
+
+    def set_alt_benchmark_perf_6m(self, alt_benchmark_perf_6m=None):
+        self.alt_benchmark_perf_6m = alt_benchmark_perf_6m
+
+    def get_alt_benchmark_perf_6m(self):
+        return self.alt_benchmark_perf_6m
+
+    def set_alt_benchmark_perf_1y(self, alt_benchmark_perf_1y=None):
+        self.alt_benchmark_perf_1y = alt_benchmark_perf_1y
+
+    def get_alt_benchmark_perf_1y(self):
+        return self.alt_benchmark_perf_1y
+
+    def set_alt_benchmark_perf_2y(self, alt_benchmark_perf_2y=None):
+        self.alt_benchmark_perf_2y = alt_benchmark_perf_2y
+
+    def get_alt_benchmark_perf_2y(self):
+        return self.alt_benchmark_perf_2y
+
+    def set_alt_benchmark_perf_3y(self, alt_benchmark_perf_3y=None):
+        self.alt_benchmark_perf_3y = alt_benchmark_perf_3y
+
+    def get_alt_benchmark_perf_3y(self):
+        return self.alt_benchmark_perf_3y
+
+    def set_alt_benchmark_perf_5y(self, alt_benchmark_perf_5y=None):
+        self.alt_benchmark_perf_5y = alt_benchmark_perf_5y
+
+    def get_alt_benchmark_perf_5y(self):
+        return self.alt_benchmark_perf_5y
+
+    def set_alt_benchmark_perf_inception(self, alt_benchmark_perf_inception=None):
+        self.alt_benchmark_perf_inception = alt_benchmark_perf_inception
+
+    def get_alt_benchmark_perf_inception(self):
+        return self.alt_benchmark_perf_inception
+
+    def __repr__(self):
+        return "<AlternateBenchmarkPerformance(alt_benchmark_index_code='{0}', alt_benchmark_perf_1m='{1}', " \
+               "alt_benchmark_perf_3m='{2}', alt_benchmark_perf_6m='{3}', alt_benchmark_perf_1y='{4}', " \
+               "alt_benchmark_perf_2y='{5}', alt_benchmark_perf_3y='{6}', alt_benchmark_perf_5y='{7}', " \
+               "alt_benchmark_perf_inception='{8}')>".\
+            format(self.alt_benchmark_index_code, self.alt_benchmark_perf_1m, self.alt_benchmark_perf_3m,
+                   self.alt_benchmark_perf_6m, self.alt_benchmark_perf_1y, self.alt_benchmark_perf_2y,
+                   self.alt_benchmark_perf_3y, self.alt_benchmark_perf_5y, self.alt_benchmark_perf_inception)
+
+
+class FundPerformance:
+    def __init__(self):
+        self.fund_code = None
+        self.current_aum = None
+        self.no_of_clients = None
+        self.market_cap_type_code = None
+        self.investment_style_type_code = None
+        self.portfolio_equity_allocation = None
+        self.portfolio_cash_allocation = None
+        self.portfolio_asset_allocation = None
+        self.portfolio_other_allocations = None
+        self.perf_1m = None
+        self.perf_3m = None
+        self.perf_6m = None
+        self.perf_1y = None
+        self.perf_2y = None
+        self.perf_3y = None
+        self.perf_5y = None
+        self.perf_inception = None
+        self.isLatest = None
+        self.effective_start_date = None
+        self.effective_end_date = None
+        self.created_ts = None
+        self.created_by = None
+
+    def set_fund_code(self, fund_code=None):
+        self.fund_code = fund_code
+
+    def get_fund_code(self):
+        return self.fund_code
+
+    def set_current_aum(self, current_aum=None):
+        self.current_aum = current_aum
+
+    def get_current_aum(self):
+        return self.current_aum
+
+    def set_no_of_clients(self, no_of_clients=None):
+        self.no_of_clients = no_of_clients
+
+    def get_no_of_clients(self):
+        return self.no_of_clients
+
+    def set_market_cap_type_code(self, market_cap_type_code=None):
+        self.market_cap_type_code = market_cap_type_code
+
+    def get_market_cap_type_code(self):
+        return self.market_cap_type_code
+
+    def set_investment_style_type_code(self, investment_style_type_code=None):
+        self.investment_style_type_code = investment_style_type_code
+
+    def get_investment_style_type_code(self):
+        return self.investment_style_type_code
+
+    def set_portfolio_equity_allocation(self, portfolio_equity_allocation=None):
+        self.portfolio_equity_allocation = portfolio_equity_allocation
+
+    def get_portfolio_equity_allocation(self):
+        return self.portfolio_equity_allocation
+
+    def set_portfolio_cash_allocation(self, portfolio_cash_allocation=None):
+        self.portfolio_cash_allocation = portfolio_cash_allocation
+
+    def get_portfolio_cash_allocation(self):
+        return self.portfolio_cash_allocation
+
+    def set_portfolio_asset_allocation(self, portfolio_asset_allocation=None):
+        self.portfolio_asset_allocation = portfolio_asset_allocation
+
+    def get_portfolio_asset_allocation(self):
+        return self.portfolio_asset_allocation
+
+    def set_portfolio_other_allocations(self, portfolio_other_allocations=None):
+        self.portfolio_other_allocations = portfolio_other_allocations
+
+    def get_portfolio_other_allocations(self):
+        return self.portfolio_other_allocations
+
+    def set_perf_1m(self, perf_1m=None):
+        self.perf_1m = perf_1m
+
+    def get_perf_1m(self):
+        return self.perf_1m
+
+    def set_perf_3m(self, perf_3m=None):
+        self.perf_3m = perf_3m
+
+    def get_perf_3m(self):
+        return self.perf_3m
+
+    def set_perf_6m(self, perf_6m=None):
+        self.perf_6m = perf_6m
+
+    def get_perf_6m(self):
+        return self.perf_6m
+
+    def set_perf_1y(self, perf_1y=None):
+        self.perf_1y = perf_1y
+
+    def get_perf_1y(self):
+        return self.perf_1y
+
+    def set_perf_2y(self, perf_2y=None):
+        self.perf_2y = perf_2y
+
+    def get_perf_2y(self):
+        return self.perf_2y
+
+    def set_perf_3y(self, perf_3y=None):
+        self.perf_3y = perf_3y
+
+    def get_perf_3y(self):
+        return self.perf_3y
+
+    def set_perf_5y(self, perf_5y=None):
+        self.perf_5y = perf_5y
+
+    def get_perf_5y(self):
+        return self.perf_5y
+
+    def set_perf_inception(self, perf_inception=None):
+        self.perf_inception = perf_inception
+
+    def get_perf_inception(self):
+        return self.perf_inception
+
+    def set_isLatest(self, isLatest=None):
+        self.isLatest = isLatest
+
+    def get_isLatest(self):
+        return self.isLatest
+
+    def set_effective_start_date(self, effective_start_date=None):
+        self.effective_start_date = effective_start_date
+
+    def get_effective_start_date(self):
+        return self.effective_start_date
+
+    def set_effective_end_date(self, effective_end_date=None):
+        self.effective_end_date = effective_end_date
+
+    def get_effective_end_date(self):
+        return self.effective_end_date
+
+    def set_created_ts(self, created_ts=None):
+        self.created_ts = created_ts
+
+    def get_created_ts(self):
+        return self.created_ts
+
+    def set_created_by(self, created_by=None):
+        self.created_by = created_by
+
+    def get_created_by(self):
+        return self.created_by
+
+    def __repr__(self):
+        return "<FundPerformance(fund_code='{0}', current_aum='{1}', no_of_clients='{2}', market_cap_type_code='{3}'," \
+               " investment_style_type_code='{4}', portfolio_equity_allocation='{5}', portfolio_cash_allocation='{6}'" \
+               ", portfolio_asset_allocation='{7}', portfolio_other_allocations='{8}', perf_1m='{9}', perf_3m='{10}'," \
+               " perf_6m='{11}', perf_1y='{12}', perf_2y='{13}', perf_3y='{14}', perf_5y='{15}', perf_inception='{16}" \
+               "', isLatest='{17}', effective_start_date='{18}', effective_end_date='{19}', created_ts='{20}', " \
+               "created_by='{21}')>". \
+            format(self.fund_code, self.current_aum, self.no_of_clients, self.market_cap_type_code,
+                   self.investment_style_type_code, self.portfolio_equity_allocation, self.portfolio_cash_allocation,
+                   self.portfolio_asset_allocation, self.portfolio_other_allocations, self.perf_1m, self.perf_3m,
+                   self.perf_6m, self.perf_1y, self.perf_2y, self.perf_3y, self.perf_5y, self.perf_inception,
+                   self.isLatest, self.effective_start_date, self.effective_end_date, self.created_ts, self.created_by)
