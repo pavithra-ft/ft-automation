@@ -405,16 +405,18 @@ def get_fund_sector_from_pf(fund_info, portfolio_values):
     exposure_sum = 0
     for value in portfolio_values:
         sector = get_sector_from_portfolio(value.security_isin)
-        exposure_sum += value.exposure
+        value_exposure = value.exposure if value.exposure is not None else 0
+        exposure_sum += value_exposure
         if sector_dict.__contains__(sector):
-            sector_dict[sector] += value.exposure
+            sector_dict[sector] += value_exposure
         else:
-            sector_dict.update({sector: value.exposure})
+            sector_dict.update({sector: value_exposure})
     for sector, exp in sector_dict.items():
         sector_body = FundSector()
         sector_body.set_fund_code(fund_info.get_fund_code())
         sector_body.set_sector_type_name(sector)
-        sector_body.set_exposure(round(exp, 6))
+        exposure = round(exp, 6) if exp else None
+        sector_body.set_exposure(exposure)
         sector_body.set_start_date(effective_start_date)
         sector_body.set_end_date(effective_end_date)
         sector_body.set_created_ts(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
@@ -625,7 +627,7 @@ def table_records(fund_info, allocation_values, market_cap_values, portfolio_val
     else:
         portfolio_data = None
     # Sector details
-    if portfolio_sum == 100:
+    if portfolio_sum == 100 or portfolio_sum == 0:
         sector_data = get_fund_sector_from_pf(fund_info, portfolio_data)
     elif portfolio_sum < 100:
         sector_data = get_fund_sector_from_sector(fund_info, sector_values)
