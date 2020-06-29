@@ -1,12 +1,10 @@
+import model.fund_details_extraction as extract
 from datetime import datetime
-
-from model.FundDetailsExtraction import FundInfo, FundAllocationExtraction, FundMarketCapExtraction, \
-    FundPortfolioExtraction, FundSectorExtraction
 
 
 def get_fund_info(df):
     # Extraction of Fund attributes
-    fund_info = FundInfo()
+    fund_info = extract.FundInfo()
     fund_info.set_fund_name(df.iloc[2, 2])
     fund_info.set_fund_code(df.iloc[3, 2])
     date = df.iloc[4, 2]
@@ -26,7 +24,7 @@ def get_fund_allocation_values(df):
     index = 15
     while df.iloc[index, 4] != "TOTAL":
         if df.iloc[index, 5]:
-            allocation_body = FundAllocationExtraction()
+            allocation_body = extract.FundAllocationExtraction()
             allocation_body.set_allocation(df.iloc[index, 4])
             allocation_body.set_exposure(df.iloc[index, 5])
             fund_allocation.append(allocation_body)
@@ -40,7 +38,7 @@ def get_market_cap_values(df):
     index = 3
     while df.iloc[index, 4] != "TOTAL":
         if df.iloc[index, 5]:
-            cap_data_body = FundMarketCapExtraction()
+            cap_data_body = extract.FundMarketCapExtraction()
             market_cap = df.iloc[index, 4].replace(" Cap", "")
             cap_data_body.set_type_market_cap(market_cap.capitalize())
             cap_data_body.set_exposure(float(df.iloc[index, 5]))
@@ -55,7 +53,7 @@ def get_fund_portfolio_values(df):
     index = 13
     while df.iloc[index, 1] != "TOTAL":
         if df.iloc[index, 1]:
-            portfolio_body = FundPortfolioExtraction()
+            portfolio_body = extract.FundPortfolioExtraction()
             portfolio_body.set_security_name(df.iloc[index, 1].strip())
             exposure = df.iloc[index, 2]
             if not exposure:
@@ -73,7 +71,7 @@ def get_fund_sector_values(df):
     index = 23
     while df.iloc[index, 4] != "TOTAL":
         if df.iloc[index, 4]:
-            sector_body = FundSectorExtraction()
+            sector_body = extract.FundSectorExtraction()
             sector_body.set_sector_name(df.iloc[index, 4])
             exposure = df.iloc[index, 5]
             sector_body.set_exposure(float(exposure))
