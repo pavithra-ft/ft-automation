@@ -1,27 +1,30 @@
-import MySQLdb
 import calendar
 import requests
-
 from bs4 import BeautifulSoup
 from datetime import datetime
+from database.db_queries import iq_session
 from dateutil.relativedelta import relativedelta
-
-from dictionary.nse_index_prices_dict import nse_index_prices_urls
 from database.db_queries import put_index_prices
+from config.base_logger import app_logger, sql_logger
+from dictionary.nse_index_prices_dict import nse_index_prices_urls
 
 
 def get_index_data(index_code, html_content):
+    app_logger.info('Index Prices - Extraction of NSE index prices is started')
+
     soup = BeautifulSoup(html_content.text, features="lxml")
     table = soup.find('table')
     table_row = table.find_all('tr')
     t_headers = ['Date', 'Open', 'High', 'Low', 'Close']
     table_data = []
+
     for tr in table_row:
         t_row = {}
         for td, th in zip(tr.find_all('td'), t_headers):
             t_row[th] = td.text.replace('\n', '').strip()
             t_row.update({'index_code': index_code})
         table_data.append(t_row)
+
     if index_code != 'NIFVIX':
         index_price_data = table_data[3:-1]
         for row in index_price_data:
@@ -30,13 +33,20 @@ def get_index_data(index_code, html_content):
         index_price_data = table_data[4:-1]
         for row in index_price_data:
             row['Date'] = datetime.strptime(row['Date'], '%d-%b-%Y').date()
-    put_index_prices(index_price_data)
-    print(index_price_data)
-    return index_price_data
+    try:
+        put_index_prices(index_price_data)
+        iq_session.commit()
+    except Exception as error:
+        iq_session.rollback()
+        app_logger.info('Exception raised in queries : ' + str(error))
+    finally:
+        iq_session.close()
+    app_logger.info('Index Prices - Extraction of NSE index prices is started')
 
 
-def get_nse_index():
-    historical_url = ['https://www1.nseindia.com/products/dynaContent/equities/indices']
+def get_nse_index(historical_url):
+    app_logger.info('Index Prices - NSE is started')
+    sql_logger.info('Index Prices - NSE is started')
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                              'Chrome/83.0.4103.61 Safari/537.36'}
 
@@ -57,23 +67,10 @@ def get_nse_index():
                                                                          current_date.month)[1]), '%d-%b-%Y')
             html_content = requests.get(historical_url[0] + url.format(start_date, end_date), headers=headers)
             get_index_data(index_code, html_content)
+    app_logger.info('Index Prices - NSE is completed')
+    sql_logger.info('Index Prices - NSE is completed')
 
 
-try:
-    iq_db, fs_db, app_db = 'iq', 'fs', 'app'
-    # db_host, db_user, db_pass = env('DB_HOST'), env('DB_USER'), env('DB_PASS')
-    db_host, db_user, db_pass = 'ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com', 'wyzeup', 'd0m#l1dZwhz!*9Iq0y1h'
-    iq_database = MySQLdb.connect(db_host, db_user, db_pass, iq_db, use_unicode=True, charset="utf8")
-    fs_database = MySQLdb.connect(db_host, db_user, db_pass, fs_db, use_unicode=True, charset="utf8")
-    app_database = MySQLdb.connect(db_host, db_user, db_pass, app_db, use_unicode=True, charset="utf8")
-
-    get_nse_index()
-    # Database commit
-    iq_database.commit()
-    print('Commit success')
-    iq_database.close()
-    fs_database.close()
-    app_database.close()
-
-except Exception as error:
-    print('Exception raised:', error)
+if __name__ == "main":
+    historical_url = ['https://www1.nseindia.com/products/dynaContent/equities/indices']
+    get_nse_index(historical_url)

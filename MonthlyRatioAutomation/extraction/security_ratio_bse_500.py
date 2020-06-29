@@ -1,13 +1,14 @@
 import json
-
 from requests import get
 from bs4 import BeautifulSoup
+from config.base_logger import app_logger
 
 security_ratio_url = "https://www.valueresearchonline.com/stocks/selector-data/indices/46/bse-500-index/?custom-cols" \
                      "=pe%2Cpb%2Cdy%2Ceps&output=html-data&draw=1&start=0&length=501 "
 
 
 def get_security_ratio():
+    app_logger.info('Mas Securities - PE/PB/DY/EPS extraction of Securities(BSE500) is started')
     response = get(security_ratio_url)
     security_ratio_list = []
     for data in json.loads(response.content)['data']:
@@ -21,4 +22,5 @@ def get_security_ratio():
                 text_values.append(text)
         security_values = [i for i in text_values if i]
         security_ratio_list.append(dict(zip(text_label, security_values)))
+    app_logger.info('Mas Securities - PE/PB/DY/EPS extraction of Securities(BSE500) is completed')
     return security_ratio_list

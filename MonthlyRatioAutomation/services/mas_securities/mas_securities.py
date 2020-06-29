@@ -1,9 +1,7 @@
 import re
-
-import MySQLdb
-from envparse import env
 from pyjarowinkler import distance
-
+from database.db_queries import iq_session
+from config.base_logger import app_logger, sql_logger
 from dictionary.portfolio_dictionary import portfolio_dict
 from extraction.security_ratio_bse_500 import get_security_ratio
 from database.db_queries import get_security_isin, get_all_isin, put_mas_securities
@@ -31,11 +29,12 @@ def get_isin(security_name):
         security_isin = security_details[max_index][0]
     else:
         security_isin = isin_details[0][0]
-    print(security_isin)
+    app_logger.info(security_isin)
     return security_isin
 
 
 def get_mas_security_ratio(security_ratio_list):
+    app_logger.info('Mas Securities - Ratios extraction is started')
     mas_security_ratio_list = []
     for security in security_ratio_list:
         security_isin = get_isin(security['securtiy_name'])
@@ -57,7 +56,6 @@ def get_mas_security_ratio(security_ratio_list):
                 dividend_yield = round((float(security['dividend_yield']) / 100), 4)
             else:
                 dividend_yield = None
-
         # Get Earning Per Share
         if security['earning_per_share'] == '--' or security['earning_per_share'] is None:
             eps = None
@@ -67,26 +65,21 @@ def get_mas_security_ratio(security_ratio_list):
         security_ratio_body = {'security_isin': security_isin, 'pe_ratio': pe_ratio, 'pb_ratio': pb_ratio, 'eps': eps,
                                'dividend_yield': dividend_yield}
         mas_security_ratio_list.append(security_ratio_body)
+    app_logger.info('Mas Securities - Ratios extraction is completed')
     return mas_security_ratio_list
 
 
-try:
-    iq_db, fs_db, app_db = 'iq', 'fs', 'app'
-    db_host, db_user, db_pass = env('DB_HOST'), env('DB_USER'), env('DB_PASS')
-    # db_host, db_user, db_pass = 'ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com', 'wyzeup', 'd0m#l1dZwhz!*9Iq0y1h'
-    iq_database = MySQLdb.connect(db_host, db_user, db_pass, iq_db, use_unicode=True, charset="utf8")
-    fs_database = MySQLdb.connect(db_host, db_user, db_pass, fs_db, use_unicode=True, charset="utf8")
-    app_database = MySQLdb.connect(db_host, db_user, db_pass, app_db, use_unicode=True, charset="utf8")
-
+if __name__ == "main":
+    sql_logger.info('Mas Securities - Ratios extraction is started')
     security_ratio_list = get_security_ratio()
     mas_security_ratio_list = get_mas_security_ratio(security_ratio_list)
-    put_mas_securities(mas_security_ratio_list)
-    # Database commit
-    iq_database.commit()
-    print('Commit success')
-    iq_database.close()
-    fs_database.close()
-    app_database.close()
-
-except Exception as error:
-    print("Exception raised :", error)
+    try:
+        put_mas_securities(mas_security_ratio_list)
+        iq_session.commit()
+    except Exception as error:
+        iq_session.rollback()
+        app_logger.info('Exception raised in queries : ' + str(error))
+        sql_logger.info('Exception raised in queries : ' + str(error))
+    finally:
+        iq_session.close()
+    sql_logger.info('Mas Securities - Ratios extraction is started')

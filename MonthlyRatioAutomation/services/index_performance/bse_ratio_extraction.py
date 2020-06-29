@@ -1,12 +1,13 @@
 import os
 import json
 import requests
-
 from glob import glob
+from config.base_logger import app_logger
 from dictionary.bse_ratio_dict import bse_ratio_api
 
 
 def get_bse_pe_ratio(pe_ratio_api_dict):
+    app_logger.info('Index Performance - BSE : PE ratio extraction is started')
     bse_pe_list = []
     for index_code, api_url in pe_ratio_api_dict.items():
         pe_ratio_request = requests.get(url=api_url)
@@ -15,10 +16,12 @@ def get_bse_pe_ratio(pe_ratio_api_dict):
             if data.__contains__('PE'):
                 pe_body = {'index_code': index_code, 'pe_ratio': data['PE']}
                 bse_pe_list.append(pe_body)
+    app_logger.info('Index Performance - BSE : PE ratio extraction is completed')
     return bse_pe_list
 
 
 def get_bse_data():
+    app_logger.info('Index Performance - BSE : Sector/Holding extraction is started')
     bse_list = []
     bse_pe_list = get_bse_pe_ratio(bse_ratio_api)
     for pe_index in bse_pe_list:
@@ -29,6 +32,7 @@ def get_bse_data():
                             'top_sector_exposure': round((float(sector_index['sector_exposure']) / 100), 4),
                             'top_holding_isin': None, 'top_holding_exposure': None}
                 bse_list.append(bse_body)
+    app_logger.info('Index Performance - BSE : Sector/Holding extraction is completed')
     return bse_list
 
 

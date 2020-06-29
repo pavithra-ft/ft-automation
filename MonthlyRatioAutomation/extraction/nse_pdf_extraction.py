@@ -1,11 +1,13 @@
 import camelot
 import warnings
 from datetime import datetime
+from config.base_logger import app_logger
 
 warnings.simplefilter('ignore')
 
 
 def get_nse_data(pdf_files):
+    app_logger.info('Index Performance - NSE Ratios/Sector/Holding extraction is started')
     nse_list = []
     for pdf in pdf_files:
         nse_dict = {}
@@ -45,4 +47,5 @@ def get_nse_data(pdf_files):
                          'top_holding_isin': portfolio_name, 'top_holding_exposure': portfolio_exposure,
                          'reporting_date': reporting_date})
         nse_list.append(nse_dict)
+    app_logger.info('Index Performance - NSE Ratios/Sector/Holding extraction is completed')
     return nse_list
