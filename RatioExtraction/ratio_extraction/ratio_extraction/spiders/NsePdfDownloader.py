@@ -40,6 +40,6 @@ class NsePdfSpider(scrapy.Spider):
     def save_pdf(self, pdf):
         data = requests.get(pdf)
         content = data.content
-        filename = BASE_DIR + "/pdf_files/" + pdf.split('/')[-1]
+        filename = BASE_DIR + "/extracted_pdf_files/" + pdf.split('/')[-1]
         with open(filename, 'wb') as f:
             f.write(content)

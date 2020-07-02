@@ -10,7 +10,7 @@ from .settings import BASE_DIR
 
 
 class RatioExtractionPipeline:
-    filename = BASE_DIR + "/ExportedData/"
+    filename = BASE_DIR + "/extracted_data/"
 
     def __init__(self):
         self.file = ""

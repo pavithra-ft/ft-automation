@@ -1,5 +1,4 @@
 import scrapy
-
 from scrapy_splash import SplashRequest
 from ..items import BseSectorItem
 
@@ -14,6 +13,7 @@ class BseSector(scrapy.Spider):
             'BSE100': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSE100&index_Code=22',
             'BSE200': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSE200&index_Code=23',
             'BSE500': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSE500&index_Code=17',
+            'BSEHEALTH': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSEHC&index_Code=84',
             'BSEMC': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=MIDCAP&index_Code=81',
             'BSEMSC400': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=MSL400&index_Code=105',
             'BSESC': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=SMLCAP&index_Code=82',
