@@ -1,0 +1,1920 @@
+2020-07-01 10:43:01,134 INFO Mas Securities - Ratios extraction is started
+2020-07-01 10:43:03,493 INFO Get : security_isin (3M India Ltd.)
+2020-07-01 10:43:05,039 INFO Fetched : security_isin
+2020-07-01 10:43:05,040 INFO Get : all_isin_list
+2020-07-01 10:43:05,484 INFO Fetched : all_isin_list
+2020-07-01 10:43:05,803 INFO Get : security_isin (Aarti Industries Ltd.)
+2020-07-01 10:43:05,875 INFO Fetched : security_isin
+2020-07-01 10:43:05,876 INFO Get : all_isin_list
+2020-07-01 10:43:06,217 INFO Fetched : all_isin_list
+2020-07-01 10:43:06,591 INFO Get : security_isin (Aavas Financiers Ltd.)
+2020-07-01 10:43:06,665 INFO Fetched : security_isin
+2020-07-01 10:43:06,665 INFO Get : all_isin_list
+2020-07-01 10:43:06,886 INFO Fetched : all_isin_list
+2020-07-01 10:43:07,236 INFO Get : security_isin (ABB Ltd.)
+2020-07-01 10:43:07,355 INFO Fetched : security_isin
+2020-07-01 10:43:07,356 INFO Get : all_isin_list
+2020-07-01 10:43:07,646 INFO Fetched : all_isin_list
+2020-07-01 10:43:07,901 INFO Get : security_isin (Abbott India Ltd.)
+2020-07-01 10:43:07,975 INFO Fetched : security_isin
+2020-07-01 10:43:07,976 INFO Get : all_isin_list
+2020-07-01 10:43:08,260 INFO Fetched : all_isin_list
+2020-07-01 10:43:08,605 INFO Get : security_isin (ABB Power Products and Systems India Ltd.)
+2020-07-01 10:43:08,725 INFO Fetched : security_isin
+2020-07-01 10:43:08,725 INFO Get : all_isin_list
+2020-07-01 10:43:08,939 INFO Fetched : all_isin_list
+2020-07-01 10:43:09,437 INFO Get : security_isin (ACC Ltd.)
+2020-07-01 10:43:09,556 INFO Fetched : security_isin
+2020-07-01 10:43:09,557 INFO Get : all_isin_list
+2020-07-01 10:43:09,837 INFO Fetched : all_isin_list
+2020-07-01 10:43:10,076 INFO Get : security_isin (Adani Enterprises Ltd.)
+2020-07-01 10:43:10,196 INFO Fetched : security_isin
+2020-07-01 10:43:10,197 INFO Get : all_isin_list
+2020-07-01 10:43:10,558 INFO Fetched : all_isin_list
+2020-07-01 10:43:10,980 INFO Get : security_isin (Adani Gas Ltd.)
+2020-07-01 10:43:11,079 INFO Fetched : security_isin
+2020-07-01 10:43:11,079 INFO Get : all_isin_list
+2020-07-01 10:43:11,364 INFO Fetched : all_isin_list
+2020-07-01 10:43:11,689 INFO Get : security_isin (Adani Green Energy Ltd.)
+2020-07-01 10:43:11,765 INFO Fetched : security_isin
+2020-07-01 10:43:11,765 INFO Get : all_isin_list
+2020-07-01 10:43:11,980 INFO Fetched : all_isin_list
+2020-07-01 10:43:12,368 INFO Get : security_isin (Adani Ports and Special Economic Zone Ltd.)
+2020-07-01 10:43:12,486 INFO Fetched : security_isin
+2020-07-01 10:43:12,487 INFO Get : all_isin_list
+2020-07-01 10:43:12,734 INFO Fetched : all_isin_list
+2020-07-01 10:43:13,267 INFO Get : security_isin (Adani Power Ltd.)
+2020-07-01 10:43:13,337 INFO Fetched : security_isin
+2020-07-01 10:43:13,337 INFO Get : all_isin_list
+2020-07-01 10:43:13,610 INFO Fetched : all_isin_list
+2020-07-01 10:43:13,994 INFO Get : security_isin (Adani Transmission Ltd.)
+2020-07-01 10:43:14,106 INFO Fetched : security_isin
+2020-07-01 10:43:14,106 INFO Get : all_isin_list
+2020-07-01 10:43:14,327 INFO Fetched : all_isin_list
+2020-07-01 10:43:14,769 INFO Get : security_isin (Aditya Birla Capital Ltd.)
+2020-07-01 10:43:14,865 INFO Fetched : security_isin
+2020-07-01 10:43:14,866 INFO Get : all_isin_list
+2020-07-01 10:43:15,165 INFO Fetched : all_isin_list
+2020-07-01 10:43:15,567 INFO Get : security_isin (Aditya Birla Fashion and Retail Ltd.)
+2020-07-01 10:43:15,686 INFO Fetched : security_isin
+2020-07-01 10:43:15,687 INFO Get : all_isin_list
+2020-07-01 10:43:15,978 INFO Fetched : all_isin_list
+2020-07-01 10:43:16,452 INFO Get : security_isin (Advanced Enzyme Technologies Ltd.)
+2020-07-01 10:43:16,565 INFO Fetched : security_isin
+2020-07-01 10:43:16,567 INFO Get : all_isin_list
+2020-07-01 10:43:16,882 INFO Fetched : all_isin_list
+2020-07-01 10:43:17,325 INFO Get : security_isin (Aegis Logistics Ltd.)
+2020-07-01 10:43:17,425 INFO Fetched : security_isin
+2020-07-01 10:43:17,425 INFO Get : all_isin_list
+2020-07-01 10:43:17,686 INFO Fetched : all_isin_list
+2020-07-01 10:43:18,089 INFO Get : security_isin (Affle (India) Ltd.)
+2020-07-01 10:43:18,216 INFO Fetched : security_isin
+2020-07-01 10:43:18,216 INFO Get : all_isin_list
+2020-07-01 10:43:18,497 INFO Fetched : all_isin_list
+2020-07-01 10:43:18,867 INFO Get : security_isin (AIA Engineering Ltd.)
+2020-07-01 10:43:18,998 INFO Fetched : security_isin
+2020-07-01 10:43:19,000 INFO Get : all_isin_list
+2020-07-01 10:43:19,246 INFO Fetched : all_isin_list
+2020-07-01 10:43:19,616 INFO Get : security_isin (Ajanta Pharma Ltd.)
+2020-07-01 10:43:19,715 INFO Fetched : security_isin
+2020-07-01 10:43:19,715 INFO Get : all_isin_list
+2020-07-01 10:43:19,924 INFO Fetched : all_isin_list
+2020-07-01 10:43:20,253 INFO Get : security_isin (Akzo Nobel India Ltd.)
+2020-07-01 10:43:20,355 INFO Fetched : security_isin
+2020-07-01 10:43:20,355 INFO Get : all_isin_list
+2020-07-01 10:43:20,562 INFO Fetched : all_isin_list
+2020-07-01 10:43:20,959 INFO Get : security_isin (Alembic Pharmaceuticals Ltd.)
+2020-07-01 10:43:21,096 INFO Fetched : security_isin
+2020-07-01 10:43:21,097 INFO Get : all_isin_list
+2020-07-01 10:43:21,319 INFO Fetched : all_isin_list
+2020-07-01 10:43:21,729 INFO Get : security_isin (Alkem Laboratories Ltd.)
+2020-07-01 10:43:21,846 INFO Fetched : security_isin
+2020-07-01 10:43:21,846 INFO Get : all_isin_list
+2020-07-01 10:43:22,135 INFO Fetched : all_isin_list
+2020-07-01 10:43:22,550 INFO Get : security_isin (Alkyl Amines Chemicals Ltd.)
+2020-07-01 10:43:22,665 INFO Fetched : security_isin
+2020-07-01 10:43:22,665 INFO Get : all_isin_list
+2020-07-01 10:43:22,989 INFO Fetched : all_isin_list
+2020-07-01 10:43:23,406 INFO Get : security_isin (Allcargo Logistics Ltd.)
+2020-07-01 10:43:23,496 INFO Fetched : security_isin
+2020-07-01 10:43:23,496 INFO Get : all_isin_list
+2020-07-01 10:43:23,716 INFO Fetched : all_isin_list
+2020-07-01 10:43:24,118 INFO Get : security_isin (Amara Raja Batteries Ltd.)
+2020-07-01 10:43:24,215 INFO Fetched : security_isin
+2020-07-01 10:43:24,216 INFO Get : all_isin_list
+2020-07-01 10:43:24,466 INFO Fetched : all_isin_list
+2020-07-01 10:43:24,881 INFO Get : security_isin (Amber Enterprises India Ltd.)
+2020-07-01 10:43:25,006 INFO Fetched : security_isin
+2020-07-01 10:43:25,007 INFO Get : all_isin_list
+2020-07-01 10:43:25,285 INFO Fetched : all_isin_list
+2020-07-01 10:43:25,719 INFO Get : security_isin (Ambuja Cements Ltd.)
+2020-07-01 10:43:25,794 INFO Fetched : security_isin
+2020-07-01 10:43:25,794 INFO Get : all_isin_list
+2020-07-01 10:43:26,065 INFO Fetched : all_isin_list
+2020-07-01 10:43:26,412 INFO Get : security_isin (APL Apollo Tubes Ltd.)
+2020-07-01 10:43:26,525 INFO Fetched : security_isin
+2020-07-01 10:43:26,526 INFO Get : all_isin_list
+2020-07-01 10:43:26,738 INFO Fetched : all_isin_list
+2020-07-01 10:43:27,119 INFO Get : security_isin (Apollo Hospitals Enterprise Ltd.)
+2020-07-01 10:43:27,235 INFO Fetched : security_isin
+2020-07-01 10:43:27,235 INFO Get : all_isin_list
+2020-07-01 10:43:27,499 INFO Fetched : all_isin_list
+2020-07-01 10:43:27,980 INFO Get : security_isin (Apollo Tyres Ltd.)
+2020-07-01 10:43:28,106 INFO Fetched : security_isin
+2020-07-01 10:43:28,106 INFO Get : all_isin_list
+2020-07-01 10:43:28,397 INFO Fetched : all_isin_list
+2020-07-01 10:43:28,762 INFO Get : security_isin (Arvind Fashions Ltd.)
+2020-07-01 10:43:28,895 INFO Fetched : security_isin
+2020-07-01 10:43:28,895 INFO Get : all_isin_list
+2020-07-01 10:43:29,156 INFO Fetched : all_isin_list
+2020-07-01 10:43:29,535 INFO Get : security_isin (Ashoka Buildcon Ltd.)
+2020-07-01 10:43:29,625 INFO Fetched : security_isin
+2020-07-01 10:43:29,625 INFO Get : all_isin_list
+2020-07-01 10:43:29,881 INFO Fetched : all_isin_list
+2020-07-01 10:43:30,243 INFO Get : security_isin (Ashok Leyland Ltd.)
+2020-07-01 10:43:30,376 INFO Fetched : security_isin
+2020-07-01 10:43:30,376 INFO Get : all_isin_list
+2020-07-01 10:43:30,587 INFO Fetched : all_isin_list
+2020-07-01 10:43:30,959 INFO Get : security_isin (Asian Paints Ltd.)
+2020-07-01 10:43:31,045 INFO Fetched : security_isin
+2020-07-01 10:43:31,046 INFO Get : all_isin_list
+2020-07-01 10:43:31,277 INFO Fetched : all_isin_list
+2020-07-01 10:43:31,603 INFO Get : security_isin (Aster DM Healthcare Ltd.)
+2020-07-01 10:43:31,725 INFO Fetched : security_isin
+2020-07-01 10:43:31,726 INFO Get : all_isin_list
+2020-07-01 10:43:31,921 INFO Fetched : all_isin_list
+2020-07-01 10:43:32,351 INFO Get : security_isin (Astral Poly Technik Ltd.)
+2020-07-01 10:43:32,465 INFO Fetched : security_isin
+2020-07-01 10:43:32,465 INFO Get : all_isin_list
+2020-07-01 10:43:32,787 INFO Fetched : all_isin_list
+2020-07-01 10:43:33,215 INFO Get : security_isin (Astrazeneca Pharma India Ltd.)
+2020-07-01 10:43:33,335 INFO Fetched : security_isin
+2020-07-01 10:43:33,335 INFO Get : all_isin_list
+2020-07-01 10:43:33,606 INFO Fetched : all_isin_list
+2020-07-01 10:43:34,078 INFO Get : security_isin (Atul Ltd.)
+2020-07-01 10:43:34,195 INFO Fetched : security_isin
+2020-07-01 10:43:34,195 INFO Get : all_isin_list
+2020-07-01 10:43:34,574 INFO Fetched : all_isin_list
+2020-07-01 10:43:34,795 INFO Get : security_isin (Aurobindo Pharma Ltd.)
+2020-07-01 10:43:34,884 INFO Fetched : security_isin
+2020-07-01 10:43:34,884 INFO Get : all_isin_list
+2020-07-01 10:43:35,091 INFO Fetched : all_isin_list
+2020-07-01 10:43:35,496 INFO Get : security_isin (AU Small Finance Bank Ltd.)
+2020-07-01 10:43:35,585 INFO Fetched : security_isin
+2020-07-01 10:43:35,585 INFO Get : all_isin_list
+2020-07-01 10:43:35,852 INFO Fetched : all_isin_list
+2020-07-01 10:43:36,297 INFO Get : security_isin (Avanti Feeds Ltd.)
+2020-07-01 10:43:36,415 INFO Fetched : security_isin
+2020-07-01 10:43:36,415 INFO Get : all_isin_list
+2020-07-01 10:43:36,723 INFO Fetched : all_isin_list
+2020-07-01 10:43:37,084 INFO Get : security_isin (Avenue Supermarts Ltd.)
+2020-07-01 10:43:37,206 INFO Fetched : security_isin
+2020-07-01 10:43:37,206 INFO Get : all_isin_list
+2020-07-01 10:43:37,483 INFO Fetched : all_isin_list
+2020-07-01 10:43:37,898 INFO Get : security_isin (Axis Bank Ltd.)
+2020-07-01 10:43:38,035 INFO Fetched : security_isin
+2020-07-01 10:43:38,036 INFO Get : all_isin_list
+2020-07-01 10:43:38,329 INFO Fetched : all_isin_list
+2020-07-01 10:43:38,646 INFO Get : security_isin (Bajaj Auto Ltd)
+2020-07-01 10:43:38,766 INFO Fetched : security_isin
+2020-07-01 10:43:38,766 INFO Get : security_isin (Bajaj Consumer Care Ltd.)
+2020-07-01 10:43:38,846 INFO Fetched : security_isin
+2020-07-01 10:43:38,847 INFO Get : all_isin_list
+2020-07-01 10:43:39,078 INFO Fetched : all_isin_list
+2020-07-01 10:43:39,495 INFO Get : security_isin (Bajaj Electricals Ltd.)
+2020-07-01 10:43:39,605 INFO Fetched : security_isin
+2020-07-01 10:43:39,605 INFO Get : all_isin_list
+2020-07-01 10:43:39,801 INFO Fetched : all_isin_list
+2020-07-01 10:43:40,281 INFO Get : security_isin (Bajaj Finance Ltd.)
+2020-07-01 10:43:40,365 INFO Fetched : security_isin
+2020-07-01 10:43:40,365 INFO Get : all_isin_list
+2020-07-01 10:43:40,632 INFO Fetched : all_isin_list
+2020-07-01 10:43:41,158 INFO Get : security_isin (Bajaj Finserv Ltd.)
+2020-07-01 10:43:41,286 INFO Fetched : security_isin
+2020-07-01 10:43:41,287 INFO Get : all_isin_list
+2020-07-01 10:43:41,545 INFO Fetched : all_isin_list
+2020-07-01 10:43:41,876 INFO Get : security_isin (Bajaj Holdings & Investment Ltd.)
+2020-07-01 10:43:41,998 INFO Fetched : security_isin
+2020-07-01 10:43:41,998 INFO Get : all_isin_list
+2020-07-01 10:43:42,259 INFO Fetched : all_isin_list
+2020-07-01 10:43:42,730 INFO Get : security_isin (Balkrishna Industries Ltd.)
+2020-07-01 10:43:42,804 INFO Fetched : security_isin
+2020-07-01 10:43:42,804 INFO Get : all_isin_list
+2020-07-01 10:43:43,087 INFO Fetched : all_isin_list
+2020-07-01 10:43:43,617 INFO Get : security_isin (Balmer Lawrie & Co. Ltd.)
+2020-07-01 10:43:43,715 INFO Fetched : security_isin
+2020-07-01 10:43:43,716 INFO Get : all_isin_list
+2020-07-01 10:43:44,007 INFO Fetched : all_isin_list
+2020-07-01 10:43:44,443 INFO Get : security_isin (Balrampur Chini Mills Ltd.)
+2020-07-01 10:43:44,557 INFO Fetched : security_isin
+2020-07-01 10:43:44,557 INFO Get : all_isin_list
+2020-07-01 10:43:44,892 INFO Fetched : all_isin_list
+2020-07-01 10:43:45,329 INFO Get : security_isin (Bandhan Bank Ltd.)
+2020-07-01 10:43:45,404 INFO Fetched : security_isin
+2020-07-01 10:43:45,404 INFO Get : all_isin_list
+2020-07-01 10:43:45,707 INFO Fetched : all_isin_list
+2020-07-01 10:43:46,052 INFO Get : security_isin (Bank Of Baroda)
+2020-07-01 10:43:46,124 INFO Fetched : security_isin
+2020-07-01 10:43:46,124 INFO Get : security_isin (Bank of India)
+2020-07-01 10:43:46,195 INFO Fetched : security_isin
+2020-07-01 10:43:46,196 INFO Get : security_isin (Bank of Maharashtra)
+2020-07-01 10:43:46,265 INFO Fetched : security_isin
+2020-07-01 10:43:46,266 INFO Get : security_isin (BASF India Ltd.)
+2020-07-01 10:43:46,335 INFO Fetched : security_isin
+2020-07-01 10:43:46,335 INFO Get : all_isin_list
+2020-07-01 10:43:46,632 INFO Fetched : all_isin_list
+2020-07-01 10:43:46,941 INFO Get : security_isin (Bata India Ltd.)
+2020-07-01 10:43:47,075 INFO Fetched : security_isin
+2020-07-01 10:43:47,075 INFO Get : all_isin_list
+2020-07-01 10:43:47,302 INFO Fetched : all_isin_list
+2020-07-01 10:43:47,611 INFO Get : security_isin (Bayer CropScience Ltd.)
+2020-07-01 10:43:47,723 INFO Fetched : security_isin
+2020-07-01 10:43:47,723 INFO Get : all_isin_list
+2020-07-01 10:43:47,957 INFO Fetched : all_isin_list
+2020-07-01 10:43:48,352 INFO Get : security_isin (BEML Ltd)
+2020-07-01 10:43:48,454 INFO Fetched : security_isin
+2020-07-01 10:43:48,455 INFO Get : security_isin (Berger Paints India Ltd.)
+2020-07-01 10:43:48,535 INFO Fetched : security_isin
+2020-07-01 10:43:48,535 INFO Get : all_isin_list
+2020-07-01 10:43:48,772 INFO Fetched : all_isin_list
+2020-07-01 10:43:49,191 INFO Get : security_isin (Bharat Dynamics Ltd.)
+2020-07-01 10:43:49,315 INFO Fetched : security_isin
+2020-07-01 10:43:49,315 INFO Get : all_isin_list
+2020-07-01 10:43:49,622 INFO Fetched : all_isin_list
+2020-07-01 10:43:50,029 INFO Get : security_isin (Bharat Electronics Ltd.)
+2020-07-01 10:43:50,125 INFO Fetched : security_isin
+2020-07-01 10:43:50,125 INFO Get : all_isin_list
+2020-07-01 10:43:50,380 INFO Fetched : all_isin_list
+2020-07-01 10:43:50,778 INFO Get : security_isin (Bharat Forge Ltd.)
+2020-07-01 10:43:50,854 INFO Fetched : security_isin
+2020-07-01 10:43:50,855 INFO Get : all_isin_list
+2020-07-01 10:43:51,054 INFO Fetched : all_isin_list
+2020-07-01 10:43:51,396 INFO Get : security_isin (Bharat Heavy Electricals Ltd.)
+2020-07-01 10:43:51,515 INFO Fetched : security_isin
+2020-07-01 10:43:51,516 INFO Get : all_isin_list
+2020-07-01 10:43:51,735 INFO Fetched : all_isin_list
+2020-07-01 10:43:52,204 INFO Get : security_isin (Bharat Petroleum Corpn. Ltd.)
+2020-07-01 10:43:52,313 INFO Fetched : security_isin
+2020-07-01 10:43:52,313 INFO Get : all_isin_list
+2020-07-01 10:43:52,760 INFO Fetched : all_isin_list
+2020-07-01 10:43:53,212 INFO Get : security_isin (Bharti Airtel Ltd.)
+2020-07-01 10:43:53,315 INFO Fetched : security_isin
+2020-07-01 10:43:53,315 INFO Get : all_isin_list
+2020-07-01 10:43:53,581 INFO Fetched : all_isin_list
+2020-07-01 10:43:53,949 INFO Get : security_isin (Bharti Infratel Ltd.)
+2020-07-01 10:43:54,073 INFO Fetched : security_isin
+2020-07-01 10:43:54,074 INFO Get : all_isin_list
+2020-07-01 10:43:54,326 INFO Fetched : all_isin_list
+2020-07-01 10:43:54,694 INFO Get : security_isin (Biocon Ltd.)
+2020-07-01 10:43:54,814 INFO Fetched : security_isin
+2020-07-01 10:43:54,815 INFO Get : all_isin_list
+2020-07-01 10:43:55,098 INFO Fetched : all_isin_list
+2020-07-01 10:43:55,376 INFO Get : security_isin (Birla Corporation Ltd.)
+2020-07-01 10:43:55,504 INFO Fetched : security_isin
+2020-07-01 10:43:55,505 INFO Get : all_isin_list
+2020-07-01 10:43:55,758 INFO Fetched : all_isin_list
+2020-07-01 10:43:56,169 INFO Get : security_isin (Birlasoft Ltd.)
+2020-07-01 10:43:56,284 INFO Fetched : security_isin
+2020-07-01 10:43:56,285 INFO Get : all_isin_list
+2020-07-01 10:43:56,500 INFO Fetched : all_isin_list
+2020-07-01 10:43:56,796 INFO Get : security_isin (Bliss GVS Pharma Ltd.)
+2020-07-01 10:43:56,864 INFO Fetched : security_isin
+2020-07-01 10:43:56,865 INFO Get : all_isin_list
+2020-07-01 10:43:57,072 INFO Fetched : all_isin_list
+2020-07-01 10:43:57,420 INFO Get : security_isin (Blue Dart Express Ltd.)
+2020-07-01 10:43:57,535 INFO Fetched : security_isin
+2020-07-01 10:43:57,535 INFO Get : all_isin_list
+2020-07-01 10:43:57,775 INFO Fetched : all_isin_list
+2020-07-01 10:43:58,200 INFO Get : security_isin (Blue Star Ltd.)
+2020-07-01 10:43:58,324 INFO Fetched : security_isin
+2020-07-01 10:43:58,325 INFO Get : all_isin_list
+2020-07-01 10:43:58,550 INFO Fetched : all_isin_list
+2020-07-01 10:43:58,869 INFO Get : security_isin (Bombay Burmah Trdg. Corpn. Ltd.)
+2020-07-01 10:43:58,964 INFO Fetched : security_isin
+2020-07-01 10:43:58,964 INFO Get : all_isin_list
+2020-07-01 10:43:59,232 INFO Fetched : all_isin_list
+2020-07-01 10:43:59,662 INFO Get : security_isin (Bombay Dyeing & Mfg. Co. Ltd.)
+2020-07-01 10:43:59,793 INFO Fetched : security_isin
+2020-07-01 10:43:59,793 INFO Get : all_isin_list
+2020-07-01 10:44:00,139 INFO Fetched : all_isin_list
+2020-07-01 10:44:00,549 INFO Get : security_isin (Bosch Ltd.)
+2020-07-01 10:44:00,634 INFO Fetched : security_isin
+2020-07-01 10:44:00,634 INFO Get : all_isin_list
+2020-07-01 10:44:00,875 INFO Fetched : all_isin_list
+2020-07-01 10:44:01,155 INFO Get : security_isin (Brigade Enterprises Ltd.)
+2020-07-01 10:44:01,224 INFO Fetched : security_isin
+2020-07-01 10:44:01,225 INFO Get : all_isin_list
+2020-07-01 10:44:01,524 INFO Fetched : all_isin_list
+2020-07-01 10:44:01,928 INFO Get : security_isin (Britannia Industries Ltd.)
+2020-07-01 10:44:02,014 INFO Fetched : security_isin
+2020-07-01 10:44:02,014 INFO Get : all_isin_list
+2020-07-01 10:44:02,231 INFO Fetched : all_isin_list
+2020-07-01 10:44:02,643 INFO Get : security_isin (Cadila Healthcare Ltd.)
+2020-07-01 10:44:02,767 INFO Fetched : security_isin
+2020-07-01 10:44:02,767 INFO Get : all_isin_list
+2020-07-01 10:44:03,027 INFO Fetched : all_isin_list
+2020-07-01 10:44:03,412 INFO Get : security_isin (Canara Bank)
+2020-07-01 10:44:03,494 INFO Fetched : security_isin
+2020-07-01 10:44:03,495 INFO Get : security_isin (Can Fin Homes Ltd.)
+2020-07-01 10:44:03,564 INFO Fetched : security_isin
+2020-07-01 10:44:03,565 INFO Get : all_isin_list
+2020-07-01 10:44:03,770 INFO Fetched : all_isin_list
+2020-07-01 10:44:04,163 INFO Get : security_isin (Caplin Point Laboratories Ltd.)
+2020-07-01 10:44:04,285 INFO Fetched : security_isin
+2020-07-01 10:44:04,285 INFO Get : all_isin_list
+2020-07-01 10:44:04,520 INFO Fetched : all_isin_list
+2020-07-01 10:44:04,961 INFO Get : security_isin (Capri Global Capital Ltd.)
+2020-07-01 10:44:05,083 INFO Fetched : security_isin
+2020-07-01 10:44:05,083 INFO Get : all_isin_list
+2020-07-01 10:44:05,392 INFO Fetched : all_isin_list
+2020-07-01 10:44:05,800 INFO Get : security_isin (Carborundum Universal Ltd.)
+2020-07-01 10:44:05,894 INFO Fetched : security_isin
+2020-07-01 10:44:05,894 INFO Get : all_isin_list
+2020-07-01 10:44:06,143 INFO Fetched : all_isin_list
+2020-07-01 10:44:06,553 INFO Get : security_isin (CARE Ratings Ltd.)
+2020-07-01 10:44:06,674 INFO Fetched : security_isin
+2020-07-01 10:44:06,674 INFO Get : all_isin_list
+2020-07-01 10:44:06,953 INFO Fetched : all_isin_list
+2020-07-01 10:44:07,326 INFO Get : security_isin (Castrol India Ltd.)
+2020-07-01 10:44:07,471 INFO Fetched : security_isin
+2020-07-01 10:44:07,471 INFO Get : all_isin_list
+2020-07-01 10:44:07,760 INFO Fetched : all_isin_list
+2020-07-01 10:44:08,133 INFO Get : security_isin (CCL Products (India) Ltd.)
+2020-07-01 10:44:08,254 INFO Fetched : security_isin
+2020-07-01 10:44:08,255 INFO Get : all_isin_list
+2020-07-01 10:44:08,544 INFO Fetched : all_isin_list
+2020-07-01 10:44:08,975 INFO Get : security_isin (Ceat Ltd.)
+2020-07-01 10:44:09,095 INFO Fetched : security_isin
+2020-07-01 10:44:09,095 INFO Get : all_isin_list
+2020-07-01 10:44:09,444 INFO Fetched : all_isin_list
+2020-07-01 10:44:09,677 INFO Get : security_isin (Central Bank of India)
+2020-07-01 10:44:09,754 INFO Fetched : security_isin
+2020-07-01 10:44:09,755 INFO Get : security_isin (Century Plyboards (India) Ltd.)
+2020-07-01 10:44:09,844 INFO Fetched : security_isin
+2020-07-01 10:44:09,845 INFO Get : all_isin_list
+2020-07-01 10:44:10,061 INFO Fetched : all_isin_list
+2020-07-01 10:44:10,496 INFO Get : security_isin (Century Textiles & Inds. Ltd.)
+2020-07-01 10:44:10,584 INFO Fetched : security_isin
+2020-07-01 10:44:10,584 INFO Get : all_isin_list
+2020-07-01 10:44:10,831 INFO Fetched : all_isin_list
+2020-07-01 10:44:11,288 INFO Get : security_isin (Cera Sanitaryware Ltd.)
+2020-07-01 10:44:11,405 INFO Fetched : security_isin
+2020-07-01 10:44:11,405 INFO Get : all_isin_list
+2020-07-01 10:44:11,750 INFO Fetched : all_isin_list
+2020-07-01 10:44:12,166 INFO Get : security_isin (CESC Ltd.)
+2020-07-01 10:44:12,294 INFO Fetched : security_isin
+2020-07-01 10:44:12,294 INFO Get : all_isin_list
+2020-07-01 10:44:12,643 INFO Fetched : all_isin_list
+2020-07-01 10:44:12,897 INFO Get : security_isin (Chambal Fertilisers & Chemicals Ltd.)
+2020-07-01 10:44:13,023 INFO Fetched : security_isin
+2020-07-01 10:44:13,023 INFO Get : all_isin_list
+2020-07-01 10:44:13,319 INFO Fetched : all_isin_list
+2020-07-01 10:44:13,779 INFO Get : security_isin (Chennai Petroleum Corpn. Ltd.)
+2020-07-01 10:44:13,904 INFO Fetched : security_isin
+2020-07-01 10:44:13,904 INFO Get : all_isin_list
+2020-07-01 10:44:14,206 INFO Fetched : all_isin_list
+2020-07-01 10:44:14,613 INFO Get : security_isin (Cholamandalam Financial Holdings Ltd.)
+2020-07-01 10:44:14,705 INFO Fetched : security_isin
+2020-07-01 10:44:14,705 INFO Get : all_isin_list
+2020-07-01 10:44:14,939 INFO Fetched : all_isin_list
+2020-07-01 10:44:15,444 INFO Get : security_isin (Cholamandalam Investment & Finance Co. Ltd.)
+2020-07-01 10:44:15,555 INFO Fetched : security_isin
+2020-07-01 10:44:15,555 INFO Get : all_isin_list
+2020-07-01 10:44:15,893 INFO Fetched : all_isin_list
+2020-07-01 10:44:16,431 INFO Get : security_isin (Cipla Ltd.)
+2020-07-01 10:44:16,544 INFO Fetched : security_isin
+2020-07-01 10:44:16,545 INFO Get : all_isin_list
+2020-07-01 10:44:16,871 INFO Fetched : all_isin_list
+2020-07-01 10:44:17,149 INFO Get : security_isin (City Union Bank Ltd.)
+2020-07-01 10:44:17,254 INFO Fetched : security_isin
+2020-07-01 10:44:17,254 INFO Get : all_isin_list
+2020-07-01 10:44:17,548 INFO Fetched : all_isin_list
+2020-07-01 10:44:17,906 INFO Get : security_isin (Coal India Ltd.)
+2020-07-01 10:44:18,024 INFO Fetched : security_isin
+2020-07-01 10:44:18,024 INFO Get : all_isin_list
+2020-07-01 10:44:18,351 INFO Fetched : all_isin_list
+2020-07-01 10:44:18,685 INFO Get : security_isin (Cochin Shipyard Ltd.)
+2020-07-01 10:44:18,803 INFO Fetched : security_isin
+2020-07-01 10:44:18,804 INFO Get : all_isin_list
+2020-07-01 10:44:19,187 INFO Fetched : all_isin_list
+2020-07-01 10:44:19,552 INFO Get : security_isin (Colgate-Palmolive (India) Ltd.)
+2020-07-01 10:44:19,635 INFO Fetched : security_isin
+2020-07-01 10:44:19,635 INFO Get : all_isin_list
+2020-07-01 10:44:19,907 INFO Fetched : all_isin_list
+2020-07-01 10:44:20,337 INFO Get : security_isin (Container Corpn. Of India Ltd.)
+2020-07-01 10:44:20,454 INFO Fetched : security_isin
+2020-07-01 10:44:20,454 INFO Get : all_isin_list
+2020-07-01 10:44:20,809 INFO Fetched : all_isin_list
+2020-07-01 10:44:21,270 INFO Get : security_isin (Coromandel International Ltd.)
+2020-07-01 10:44:21,394 INFO Fetched : security_isin
+2020-07-01 10:44:21,394 INFO Get : all_isin_list
+2020-07-01 10:44:21,757 INFO Fetched : all_isin_list
+2020-07-01 10:44:22,214 INFO Get : security_isin (CreditAccess Grameen Ltd.)
+2020-07-01 10:44:22,334 INFO Fetched : security_isin
+2020-07-01 10:44:22,335 INFO Get : all_isin_list
+2020-07-01 10:44:22,628 INFO Fetched : all_isin_list
+2020-07-01 10:44:23,049 INFO Get : security_isin (Crisil Ltd.)
+2020-07-01 10:44:23,121 INFO Fetched : security_isin
+2020-07-01 10:44:23,121 INFO Get : all_isin_list
+2020-07-01 10:44:23,367 INFO Fetched : all_isin_list
+2020-07-01 10:44:23,642 INFO Get : security_isin (Crompton Greaves Consumer Electricals Ltd.)
+2020-07-01 10:44:23,763 INFO Fetched : security_isin
+2020-07-01 10:44:23,763 INFO Get : all_isin_list
+2020-07-01 10:44:24,022 INFO Fetched : all_isin_list
+2020-07-01 10:44:24,553 INFO Get : security_isin (CSB Bank Ltd.)
+2020-07-01 10:44:24,633 INFO Fetched : security_isin
+2020-07-01 10:44:24,633 INFO Get : all_isin_list
+2020-07-01 10:44:24,904 INFO Fetched : all_isin_list
+2020-07-01 10:44:25,221 INFO Get : security_isin (Cummins India Ltd.)
+2020-07-01 10:44:25,313 INFO Fetched : security_isin
+2020-07-01 10:44:25,315 INFO Get : all_isin_list
+2020-07-01 10:44:25,579 INFO Fetched : all_isin_list
+2020-07-01 10:44:25,919 INFO Get : security_isin (Cyient Limited)
+2020-07-01 10:44:25,994 INFO Fetched : security_isin
+2020-07-01 10:44:25,994 INFO Get : all_isin_list
+2020-07-01 10:44:26,277 INFO Fetched : all_isin_list
+2020-07-01 10:44:26,586 INFO Get : security_isin (Dabur India Ltd.)
+2020-07-01 10:44:26,714 INFO Fetched : security_isin
+2020-07-01 10:44:26,714 INFO Get : all_isin_list
+2020-07-01 10:44:26,967 INFO Fetched : all_isin_list
+2020-07-01 10:44:27,346 INFO Get : security_isin (Dalmia Bharat Ltd.)
+2020-07-01 10:44:27,477 INFO Fetched : security_isin
+2020-07-01 10:44:27,477 INFO Get : all_isin_list
+2020-07-01 10:44:27,746 INFO Fetched : all_isin_list
+2020-07-01 10:44:28,113 INFO Get : security_isin (D.B.Corp Ltd)
+2020-07-01 10:44:28,193 INFO Fetched : security_isin
+2020-07-01 10:44:28,194 INFO Get : security_isin (DCB Bank Ltd.)
+2020-07-01 10:44:28,274 INFO Fetched : security_isin
+2020-07-01 10:44:28,274 INFO Get : all_isin_list
+2020-07-01 10:44:28,528 INFO Fetched : all_isin_list
+2020-07-01 10:44:28,828 INFO Get : security_isin (DCM Shriram Ltd.)
+2020-07-01 10:44:28,934 INFO Fetched : security_isin
+2020-07-01 10:44:28,934 INFO Get : all_isin_list
+2020-07-01 10:44:29,170 INFO Fetched : all_isin_list
+2020-07-01 10:44:29,521 INFO Get : security_isin (Deepak Fertilisers & Petrochemicals Corpn. Ltd.)
+2020-07-01 10:44:29,632 INFO Fetched : security_isin
+2020-07-01 10:44:29,633 INFO Get : all_isin_list
+2020-07-01 10:44:29,852 INFO Fetched : all_isin_list
+2020-07-01 10:44:30,402 INFO Get : security_isin (Deepak Nitrite Ltd.)
+2020-07-01 10:44:30,533 INFO Fetched : security_isin
+2020-07-01 10:44:30,533 INFO Get : all_isin_list
+2020-07-01 10:44:30,855 INFO Fetched : all_isin_list
+2020-07-01 10:44:31,235 INFO Get : security_isin (Delta Corp Ltd.)
+2020-07-01 10:44:31,345 INFO Fetched : security_isin
+2020-07-01 10:44:31,345 INFO Get : all_isin_list
+2020-07-01 10:44:31,604 INFO Fetched : all_isin_list
+2020-07-01 10:44:31,913 INFO Get : security_isin (Dhanuka Agritech Ltd.)
+2020-07-01 10:44:31,984 INFO Fetched : security_isin
+2020-07-01 10:44:31,984 INFO Get : all_isin_list
+2020-07-01 10:44:32,184 INFO Fetched : all_isin_list
+2020-07-01 10:44:32,557 INFO Get : security_isin (Dilip Buildcon Ltd.)
+2020-07-01 10:44:32,633 INFO Fetched : security_isin
+2020-07-01 10:44:32,634 INFO Get : all_isin_list
+2020-07-01 10:44:32,921 INFO Fetched : all_isin_list
+2020-07-01 10:44:33,317 INFO Get : security_isin (Dishman Carbogen Amcis Ltd.)
+2020-07-01 10:44:33,393 INFO Fetched : security_isin
+2020-07-01 10:44:33,394 INFO Get : all_isin_list
+2020-07-01 10:44:33,651 INFO Fetched : all_isin_list
+2020-07-01 10:44:34,089 INFO Get : security_isin (Dish TV India Ltd.)
+2020-07-01 10:44:34,212 INFO Fetched : security_isin
+2020-07-01 10:44:34,212 INFO Get : all_isin_list
+2020-07-01 10:44:34,512 INFO Fetched : all_isin_list
+2020-07-01 10:44:34,861 INFO Get : security_isin (Divi's Laboratories Ltd.)
+2020-07-01 10:44:34,961 INFO Fetched : security_isin
+2020-07-01 10:44:34,961 INFO Get : all_isin_list
+2020-07-01 10:44:35,170 INFO Fetched : all_isin_list
+2020-07-01 10:44:35,643 INFO Get : security_isin (Dixon Technologies (India) Ltd.)
+2020-07-01 10:44:35,763 INFO Fetched : security_isin
+2020-07-01 10:44:35,763 INFO Get : all_isin_list
+2020-07-01 10:44:36,075 INFO Fetched : all_isin_list
+2020-07-01 10:44:36,528 INFO Get : security_isin (DLF Ltd.)
+2020-07-01 10:44:36,644 INFO Fetched : security_isin
+2020-07-01 10:44:36,644 INFO Get : all_isin_list
+2020-07-01 10:44:36,938 INFO Fetched : all_isin_list
+2020-07-01 10:44:37,187 INFO Get : security_isin (Dr. Lal Path Labs Ltd.)
+2020-07-01 10:44:37,313 INFO Fetched : security_isin
+2020-07-01 10:44:37,314 INFO Get : security_isin (Dr. Reddy's Laboratories Ltd)
+2020-07-01 10:44:37,393 INFO Fetched : security_isin
+2020-07-01 10:44:37,393 INFO Get : security_isin (eClerx Services Ltd)
+2020-07-01 10:44:37,463 INFO Fetched : security_isin
+2020-07-01 10:44:37,464 INFO Get : security_isin (Edelweiss Financial Services Ltd.)
+2020-07-01 10:44:37,533 INFO Fetched : security_isin
+2020-07-01 10:44:37,534 INFO Get : all_isin_list
+2020-07-01 10:44:37,779 INFO Fetched : all_isin_list
+2020-07-01 10:44:38,261 INFO Get : security_isin (Eicher Motors Ltd.)
+2020-07-01 10:44:38,374 INFO Fetched : security_isin
+2020-07-01 10:44:38,374 INFO Get : all_isin_list
+2020-07-01 10:44:38,705 INFO Fetched : all_isin_list
+2020-07-01 10:44:39,071 INFO Get : security_isin (EID-Parry (India) Ltd.)
+2020-07-01 10:44:39,203 INFO Fetched : security_isin
+2020-07-01 10:44:39,203 INFO Get : all_isin_list
+2020-07-01 10:44:39,534 INFO Fetched : all_isin_list
+2020-07-01 10:44:39,905 INFO Get : security_isin (EIH Ltd.)
+2020-07-01 10:44:39,993 INFO Fetched : security_isin
+2020-07-01 10:44:39,994 INFO Get : all_isin_list
+2020-07-01 10:44:40,374 INFO Fetched : all_isin_list
+2020-07-01 10:44:40,620 INFO Get : security_isin (Emami Ltd.)
+2020-07-01 10:44:40,694 INFO Fetched : security_isin
+2020-07-01 10:44:40,694 INFO Get : all_isin_list
+2020-07-01 10:44:40,985 INFO Fetched : all_isin_list
+2020-07-01 10:44:41,288 INFO Get : security_isin (Endurance Technologies Ltd.)
+2020-07-01 10:44:41,423 INFO Fetched : security_isin
+2020-07-01 10:44:41,423 INFO Get : all_isin_list
+2020-07-01 10:44:41,692 INFO Fetched : all_isin_list
+2020-07-01 10:44:42,101 INFO Get : security_isin (Engineers India Ltd.)
+2020-07-01 10:44:42,213 INFO Fetched : security_isin
+2020-07-01 10:44:42,213 INFO Get : all_isin_list
+2020-07-01 10:44:42,479 INFO Fetched : all_isin_list
+2020-07-01 10:44:42,861 INFO Get : security_isin (Equitas Holdings Ltd.)
+2020-07-01 10:44:43,000 INFO Fetched : security_isin
+2020-07-01 10:44:43,001 INFO Get : all_isin_list
+2020-07-01 10:44:43,225 INFO Fetched : all_isin_list
+2020-07-01 10:44:43,592 INFO Get : security_isin (Eris Lifesciences Ltd)
+2020-07-01 10:44:43,672 INFO Fetched : security_isin
+2020-07-01 10:44:43,673 INFO Get : security_isin (Esab India Ltd.)
+2020-07-01 10:44:43,754 INFO Fetched : security_isin
+2020-07-01 10:44:43,754 INFO Get : all_isin_list
+2020-07-01 10:44:43,969 INFO Fetched : all_isin_list
+2020-07-01 10:44:44,288 INFO Get : security_isin (Escorts Ltd.)
+2020-07-01 10:44:44,413 INFO Fetched : security_isin
+2020-07-01 10:44:44,413 INFO Get : all_isin_list
+2020-07-01 10:44:44,663 INFO Fetched : all_isin_list
+2020-07-01 10:44:44,939 INFO Get : security_isin (Essel Propack Ltd.)
+2020-07-01 10:44:45,054 INFO Fetched : security_isin
+2020-07-01 10:44:45,054 INFO Get : all_isin_list
+2020-07-01 10:44:45,390 INFO Fetched : all_isin_list
+2020-07-01 10:44:45,725 INFO Get : security_isin (Exide Industries Ltd.)
+2020-07-01 10:44:45,812 INFO Fetched : security_isin
+2020-07-01 10:44:45,813 INFO Get : all_isin_list
+2020-07-01 10:44:46,079 INFO Fetched : all_isin_list
+2020-07-01 10:44:46,508 INFO Get : security_isin (FDC Ltd.)
+2020-07-01 10:44:46,624 INFO Fetched : security_isin
+2020-07-01 10:44:46,625 INFO Get : all_isin_list
+2020-07-01 10:44:46,911 INFO Fetched : all_isin_list
+2020-07-01 10:44:47,174 INFO Get : security_isin (The Federal Bank  Ltd)
+2020-07-01 10:44:47,293 INFO Fetched : security_isin
+2020-07-01 10:44:47,293 INFO Get : security_isin (Fine Organic Industries Ltd.)
+2020-07-01 10:44:47,383 INFO Fetched : security_isin
+2020-07-01 10:44:47,383 INFO Get : all_isin_list
+2020-07-01 10:44:47,619 INFO Fetched : all_isin_list
+2020-07-01 10:44:48,055 INFO Get : security_isin (Finolex Cables Ltd.)
+2020-07-01 10:44:48,192 INFO Fetched : security_isin
+2020-07-01 10:44:48,192 INFO Get : all_isin_list
+2020-07-01 10:44:48,482 INFO Fetched : all_isin_list
+2020-07-01 10:44:48,874 INFO Get : security_isin (Finolex Industries Ltd.)
+2020-07-01 10:44:48,954 INFO Fetched : security_isin
+2020-07-01 10:44:48,954 INFO Get : all_isin_list
+2020-07-01 10:44:49,190 INFO Fetched : all_isin_list
+2020-07-01 10:44:49,600 INFO Get : security_isin (Firstsource Solutions Ltd.)
+2020-07-01 10:44:49,683 INFO Fetched : security_isin
+2020-07-01 10:44:49,684 INFO Get : all_isin_list
+2020-07-01 10:44:49,945 INFO Fetched : all_isin_list
+2020-07-01 10:44:50,485 INFO Get : security_isin (Force Motors Ltd.)
+2020-07-01 10:44:50,563 INFO Fetched : security_isin
+2020-07-01 10:44:50,563 INFO Get : security_isin (Fortis Healthcare (India) Ltd)
+2020-07-01 10:44:50,636 INFO Fetched : security_isin
+2020-07-01 10:44:50,636 INFO Get : all_isin_list
+2020-07-01 10:44:50,910 INFO Fetched : all_isin_list
+2020-07-01 10:44:51,412 INFO Get : security_isin (Future Consumer Ltd.)
+2020-07-01 10:44:51,493 INFO Fetched : security_isin
+2020-07-01 10:44:51,494 INFO Get : all_isin_list
+2020-07-01 10:44:51,821 INFO Fetched : all_isin_list
+2020-07-01 10:44:52,209 INFO Get : security_isin (Future Retail Ltd.)
+2020-07-01 10:44:52,330 INFO Fetched : security_isin
+2020-07-01 10:44:52,330 INFO Get : all_isin_list
+2020-07-01 10:44:52,526 INFO Fetched : all_isin_list
+2020-07-01 10:44:52,886 INFO Get : security_isin (GAIL (India) Ltd.)
+2020-07-01 10:44:52,983 INFO Fetched : security_isin
+2020-07-01 10:44:52,983 INFO Get : all_isin_list
+2020-07-01 10:44:53,254 INFO Fetched : all_isin_list
+2020-07-01 10:44:53,607 INFO Get : security_isin (Galaxy Surfactants Ltd.)
+2020-07-01 10:44:53,733 INFO Fetched : security_isin
+2020-07-01 10:44:53,734 INFO Get : all_isin_list
+2020-07-01 10:44:53,990 INFO Fetched : all_isin_list
+2020-07-01 10:44:54,391 INFO Get : security_isin (Garden Reach Shipbuilders & Engineers Ltd.)
+2020-07-01 10:44:54,503 INFO Fetched : security_isin
+2020-07-01 10:44:54,503 INFO Get : all_isin_list
+2020-07-01 10:44:54,718 INFO Fetched : all_isin_list
+2020-07-01 10:44:55,224 INFO Get : security_isin (Garware Technical Fibres Ltd.)
+2020-07-01 10:44:55,343 INFO Fetched : security_isin
+2020-07-01 10:44:55,344 INFO Get : all_isin_list
+2020-07-01 10:44:55,669 INFO Fetched : all_isin_list
+2020-07-01 10:44:56,097 INFO Get : security_isin (Gateway Distriparks Ltd.)
+2020-07-01 10:44:56,213 INFO Fetched : security_isin
+2020-07-01 10:44:56,214 INFO Get : all_isin_list
+2020-07-01 10:44:56,519 INFO Fetched : all_isin_list
+2020-07-01 10:44:56,923 INFO Get : security_isin (General Insurance Corporation of India Ltd.)
+2020-07-01 10:44:57,056 INFO Fetched : security_isin
+2020-07-01 10:44:57,057 INFO Get : all_isin_list
+2020-07-01 10:44:57,395 INFO Fetched : all_isin_list
+2020-07-01 10:44:57,905 INFO Get : security_isin (GE Power India Ltd.)
+2020-07-01 10:44:58,042 INFO Fetched : security_isin
+2020-07-01 10:44:58,042 INFO Get : all_isin_list
+2020-07-01 10:44:58,326 INFO Fetched : all_isin_list
+2020-07-01 10:44:58,684 INFO Get : security_isin (GE T&D India Ltd.)
+2020-07-01 10:44:58,803 INFO Fetched : security_isin
+2020-07-01 10:44:58,803 INFO Get : all_isin_list
+2020-07-01 10:44:59,220 INFO Fetched : all_isin_list
+2020-07-01 10:44:59,574 INFO Get : security_isin (GHCL Ltd.)
+2020-07-01 10:44:59,693 INFO Fetched : security_isin
+2020-07-01 10:44:59,693 INFO Get : all_isin_list
+2020-07-01 10:44:59,987 INFO Fetched : all_isin_list
+2020-07-01 10:45:00,218 INFO Get : security_isin (Gillette India Ltd.)
+2020-07-01 10:45:00,342 INFO Fetched : security_isin
+2020-07-01 10:45:00,343 INFO Get : all_isin_list
+2020-07-01 10:45:00,667 INFO Fetched : all_isin_list
+2020-07-01 10:45:01,052 INFO Get : security_isin (Glaxosmithkline Pharmaceuticals Ltd.)
+2020-07-01 10:45:01,153 INFO Fetched : security_isin
+2020-07-01 10:45:01,153 INFO Get : all_isin_list
+2020-07-01 10:45:01,480 INFO Fetched : all_isin_list
+2020-07-01 10:45:01,960 INFO Get : security_isin (Glenmark Pharmaceuticals Ltd.)
+2020-07-01 10:45:02,052 INFO Fetched : security_isin
+2020-07-01 10:45:02,052 INFO Get : all_isin_list
+2020-07-01 10:45:02,368 INFO Fetched : all_isin_list
+2020-07-01 10:45:02,799 INFO Get : security_isin (GMM Pfaudler Ltd.)
+2020-07-01 10:45:02,922 INFO Fetched : security_isin
+2020-07-01 10:45:02,922 INFO Get : all_isin_list
+2020-07-01 10:45:03,247 INFO Fetched : all_isin_list
+2020-07-01 10:45:03,616 INFO Get : security_isin (GMR Infrastructure Ltd)
+2020-07-01 10:45:03,702 INFO Fetched : security_isin
+2020-07-01 10:45:03,703 INFO Get : security_isin (Godfrey Phillips India Ltd.)
+2020-07-01 10:45:03,782 INFO Fetched : security_isin
+2020-07-01 10:45:03,782 INFO Get : all_isin_list
+2020-07-01 10:45:03,977 INFO Fetched : all_isin_list
+2020-07-01 10:45:04,419 INFO Get : security_isin (Godrej Agrovet Ltd.)
+2020-07-01 10:45:04,533 INFO Fetched : security_isin
+2020-07-01 10:45:04,534 INFO Get : all_isin_list
+2020-07-01 10:45:04,880 INFO Fetched : all_isin_list
+2020-07-01 10:45:05,233 INFO Get : security_isin (Godrej Consumer Products Ltd.)
+2020-07-01 10:45:05,312 INFO Fetched : security_isin
+2020-07-01 10:45:05,312 INFO Get : all_isin_list
+2020-07-01 10:45:05,628 INFO Fetched : all_isin_list
+2020-07-01 10:45:06,056 INFO Get : security_isin (Godrej Industries Ltd.)
+2020-07-01 10:45:06,132 INFO Fetched : security_isin
+2020-07-01 10:45:06,133 INFO Get : all_isin_list
+2020-07-01 10:45:06,409 INFO Fetched : all_isin_list
+2020-07-01 10:45:06,789 INFO Get : security_isin (Godrej Properties Ltd.)
+2020-07-01 10:45:06,863 INFO Fetched : security_isin
+2020-07-01 10:45:06,863 INFO Get : all_isin_list
+2020-07-01 10:45:07,102 INFO Fetched : all_isin_list
+2020-07-01 10:45:07,529 INFO Get : security_isin (Granules India Ltd.)
+2020-07-01 10:45:07,642 INFO Fetched : security_isin
+2020-07-01 10:45:07,643 INFO Get : all_isin_list
+2020-07-01 10:45:07,935 INFO Fetched : all_isin_list
+2020-07-01 10:45:08,306 INFO Get : security_isin (Graphite India Ltd.)
+2020-07-01 10:45:08,433 INFO Fetched : security_isin
+2020-07-01 10:45:08,433 INFO Get : all_isin_list
+2020-07-01 10:45:08,677 INFO Fetched : all_isin_list
+2020-07-01 10:45:09,057 INFO Get : security_isin (Grasim Industries Ltd.)
+2020-07-01 10:45:09,162 INFO Fetched : security_isin
+2020-07-01 10:45:09,163 INFO Get : all_isin_list
+2020-07-01 10:45:09,406 INFO Fetched : all_isin_list
+2020-07-01 10:45:09,800 INFO Get : security_isin (The Great Eastern Shipping Company Ltd)
+2020-07-01 10:45:09,922 INFO Fetched : security_isin
+2020-07-01 10:45:09,922 INFO Get : security_isin (Greaves Cotton Ltd.)
+2020-07-01 10:45:10,003 INFO Fetched : security_isin
+2020-07-01 10:45:10,004 INFO Get : all_isin_list
+2020-07-01 10:45:10,249 INFO Fetched : all_isin_list
+2020-07-01 10:45:10,605 INFO Get : security_isin (Grindwell Norton Ltd.)
+2020-07-01 10:45:10,712 INFO Fetched : security_isin
+2020-07-01 10:45:10,712 INFO Get : all_isin_list
+2020-07-01 10:45:10,938 INFO Fetched : all_isin_list
+2020-07-01 10:45:11,331 INFO Get : security_isin (Gujarat Alkalies & Chemicals Ltd.)
+2020-07-01 10:45:11,452 INFO Fetched : security_isin
+2020-07-01 10:45:11,453 INFO Get : all_isin_list
+2020-07-01 10:45:11,727 INFO Fetched : all_isin_list
+2020-07-01 10:45:12,184 INFO Get : security_isin (Gujarat Fluorochemicals Ltd.)
+2020-07-01 10:45:12,292 INFO Fetched : security_isin
+2020-07-01 10:45:12,292 INFO Get : all_isin_list
+2020-07-01 10:45:12,581 INFO Fetched : all_isin_list
+2020-07-01 10:45:12,992 INFO Get : security_isin (Gujarat Gas Ltd.)
+2020-07-01 10:45:13,113 INFO Fetched : security_isin
+2020-07-01 10:45:13,113 INFO Get : all_isin_list
+2020-07-01 10:45:13,343 INFO Fetched : all_isin_list
+2020-07-01 10:45:13,662 INFO Get : security_isin (Gujarat Mineral Development Corporation Ltd)
+2020-07-01 10:45:13,783 INFO Fetched : security_isin
+2020-07-01 10:45:13,783 INFO Get : security_isin (Gujarat Narmada Valley Fertilizers & Chemicals Ltd.)
+2020-07-01 10:45:13,852 INFO Fetched : security_isin
+2020-07-01 10:45:13,852 INFO Get : all_isin_list
+2020-07-01 10:45:14,102 INFO Fetched : all_isin_list
+2020-07-01 10:45:14,649 INFO Get : security_isin (Gujarat Pipavav Port Ltd)
+2020-07-01 10:45:14,743 INFO Fetched : security_isin
+2020-07-01 10:45:14,743 INFO Get : security_isin (Gujarat State Fertilizers & Chemicals Ltd.)
+2020-07-01 10:45:14,813 INFO Fetched : security_isin
+2020-07-01 10:45:14,813 INFO Get : all_isin_list
+2020-07-01 10:45:15,104 INFO Fetched : all_isin_list
+2020-07-01 10:45:15,639 INFO Get : security_isin (Gujarat State Petronet Ltd.)
+2020-07-01 10:45:15,762 INFO Fetched : security_isin
+2020-07-01 10:45:15,762 INFO Get : all_isin_list
+2020-07-01 10:45:16,042 INFO Fetched : all_isin_list
+2020-07-01 10:45:16,504 INFO Get : security_isin (Gulf Oil Lubricants India Ltd.)
+2020-07-01 10:45:16,622 INFO Fetched : security_isin
+2020-07-01 10:45:16,622 INFO Get : all_isin_list
+2020-07-01 10:45:16,960 INFO Fetched : all_isin_list
+2020-07-01 10:45:17,403 INFO Get : security_isin (Hathway Cable & Datacom Ltd.)
+2020-07-01 10:45:17,531 INFO Fetched : security_isin
+2020-07-01 10:45:17,532 INFO Get : all_isin_list
+2020-07-01 10:45:17,842 INFO Fetched : all_isin_list
+2020-07-01 10:45:18,250 INFO Get : security_isin (Havells India Ltd.)
+2020-07-01 10:45:18,371 INFO Fetched : security_isin
+2020-07-01 10:45:18,371 INFO Get : all_isin_list
+2020-07-01 10:45:18,682 INFO Fetched : all_isin_list
+2020-07-01 10:45:19,058 INFO Get : security_isin (Hawkins Cookers Ltd.)
+2020-07-01 10:45:19,172 INFO Fetched : security_isin
+2020-07-01 10:45:19,173 INFO Get : all_isin_list
+2020-07-01 10:45:19,388 INFO Fetched : all_isin_list
+2020-07-01 10:45:19,739 INFO Get : security_isin (HCL Technologies Ltd.)
+2020-07-01 10:45:19,863 INFO Fetched : security_isin
+2020-07-01 10:45:19,863 INFO Get : all_isin_list
+2020-07-01 10:45:20,130 INFO Fetched : all_isin_list
+2020-07-01 10:45:20,510 INFO Get : security_isin (HDFC Asset Management Company Ltd.)
+2020-07-01 10:45:20,622 INFO Fetched : security_isin
+2020-07-01 10:45:20,622 INFO Get : all_isin_list
+2020-07-01 10:45:20,853 INFO Fetched : all_isin_list
+2020-07-01 10:45:21,316 INFO Get : security_isin (HDFC Bank Ltd.)
+2020-07-01 10:45:21,461 INFO Fetched : security_isin
+2020-07-01 10:45:21,462 INFO Get : all_isin_list
+2020-07-01 10:45:21,773 INFO Fetched : all_isin_list
+2020-07-01 10:45:22,065 INFO Get : security_isin (HDFC Life Insurance Co Ltd.)
+2020-07-01 10:45:22,192 INFO Fetched : security_isin
+2020-07-01 10:45:22,193 INFO Get : all_isin_list
+2020-07-01 10:45:22,416 INFO Fetched : all_isin_list
+2020-07-01 10:45:22,805 INFO Get : security_isin (HEG Ltd.)
+2020-07-01 10:45:22,904 INFO Fetched : security_isin
+2020-07-01 10:45:22,905 INFO Get : all_isin_list
+2020-07-01 10:45:23,117 INFO Fetched : all_isin_list
+2020-07-01 10:45:23,357 INFO Get : security_isin (Heidelberg Cement India Ltd.)
+2020-07-01 10:45:23,472 INFO Fetched : security_isin
+2020-07-01 10:45:23,473 INFO Get : all_isin_list
+2020-07-01 10:45:23,715 INFO Fetched : all_isin_list
+2020-07-01 10:45:24,128 INFO Get : security_isin (Heritage Foods Ltd.)
+2020-07-01 10:45:24,252 INFO Fetched : security_isin
+2020-07-01 10:45:24,252 INFO Get : all_isin_list
+2020-07-01 10:45:24,566 INFO Fetched : all_isin_list
+2020-07-01 10:45:24,919 INFO Get : security_isin (Hero Motocorp Ltd.)
+2020-07-01 10:45:25,042 INFO Fetched : security_isin
+2020-07-01 10:45:25,043 INFO Get : all_isin_list
+2020-07-01 10:45:25,277 INFO Fetched : all_isin_list
+2020-07-01 10:45:25,639 INFO Get : security_isin (Hexaware Technologies Ltd.)
+2020-07-01 10:45:25,742 INFO Fetched : security_isin
+2020-07-01 10:45:25,742 INFO Get : all_isin_list
+2020-07-01 10:45:26,019 INFO Fetched : all_isin_list
+2020-07-01 10:45:26,463 INFO Get : security_isin (HFCL Ltd.)
+2020-07-01 10:45:26,582 INFO Fetched : security_isin
+2020-07-01 10:45:26,582 INFO Get : all_isin_list
+2020-07-01 10:45:26,869 INFO Fetched : all_isin_list
+2020-07-01 10:45:27,100 INFO Get : security_isin (Himadri Speciality Chemical Ltd.)
+2020-07-01 10:45:27,222 INFO Fetched : security_isin
+2020-07-01 10:45:27,223 INFO Get : all_isin_list
+2020-07-01 10:45:27,436 INFO Fetched : all_isin_list
+2020-07-01 10:45:27,873 INFO Get : security_isin (Himatsingka Seide Ltd.)
+2020-07-01 10:45:27,982 INFO Fetched : security_isin
+2020-07-01 10:45:27,982 INFO Get : all_isin_list
+2020-07-01 10:45:28,352 INFO Fetched : all_isin_list
+2020-07-01 10:45:28,762 INFO Get : security_isin (Hindalco Industries Ltd.)
+2020-07-01 10:45:28,882 INFO Fetched : security_isin
+2020-07-01 10:45:28,883 INFO Get : all_isin_list
+2020-07-01 10:45:29,212 INFO Fetched : all_isin_list
+2020-07-01 10:45:29,633 INFO Get : security_isin (Hindustan Aeronautics Ltd.)
+2020-07-01 10:45:29,702 INFO Fetched : security_isin
+2020-07-01 10:45:29,702 INFO Get : all_isin_list
+2020-07-01 10:45:30,000 INFO Fetched : all_isin_list
+2020-07-01 10:45:30,454 INFO Get : security_isin (Hindustan Copper Ltd.)
+2020-07-01 10:45:30,531 INFO Fetched : security_isin
+2020-07-01 10:45:30,532 INFO Get : all_isin_list
+2020-07-01 10:45:30,831 INFO Fetched : all_isin_list
+2020-07-01 10:45:31,253 INFO Get : security_isin (Hindustan Petroleum Corpn. Ltd.)
+2020-07-01 10:45:31,352 INFO Fetched : security_isin
+2020-07-01 10:45:31,352 INFO Get : all_isin_list
+2020-07-01 10:45:31,646 INFO Fetched : all_isin_list
+2020-07-01 10:45:32,110 INFO Get : security_isin (Hindustan Unilever Ltd.)
+2020-07-01 10:45:32,213 INFO Fetched : security_isin
+2020-07-01 10:45:32,214 INFO Get : all_isin_list
+2020-07-01 10:45:32,426 INFO Fetched : all_isin_list
+2020-07-01 10:45:32,807 INFO Get : security_isin (Hindustan Zinc Ltd.)
+2020-07-01 10:45:32,926 INFO Fetched : security_isin
+2020-07-01 10:45:32,927 INFO Get : all_isin_list
+2020-07-01 10:45:33,209 INFO Fetched : all_isin_list
+2020-07-01 10:45:33,616 INFO Get : security_isin (Honeywell Automation India Ltd.)
+2020-07-01 10:45:33,742 INFO Fetched : security_isin
+2020-07-01 10:45:33,743 INFO Get : all_isin_list
+2020-07-01 10:45:34,061 INFO Fetched : all_isin_list
+2020-07-01 10:45:34,505 INFO Get : security_isin (Housing Development Finance Corpn. Ltd.)
+2020-07-01 10:45:34,632 INFO Fetched : security_isin
+2020-07-01 10:45:34,633 INFO Get : all_isin_list
+2020-07-01 10:45:34,957 INFO Fetched : all_isin_list
+2020-07-01 10:45:35,486 INFO Get : security_isin (Housing & Urban Development Corpn. Ltd.)
+2020-07-01 10:45:35,602 INFO Fetched : security_isin
+2020-07-01 10:45:35,603 INFO Get : all_isin_list
+2020-07-01 10:45:35,880 INFO Fetched : all_isin_list
+2020-07-01 10:45:36,367 INFO Get : security_isin (ICICI Bank Ltd.)
+2020-07-01 10:45:36,521 INFO Fetched : security_isin
+2020-07-01 10:45:36,522 INFO Get : all_isin_list
+2020-07-01 10:45:36,835 INFO Fetched : all_isin_list
+2020-07-01 10:45:37,145 INFO Get : security_isin (ICICI Lombard General Insurance Company Ltd.)
+2020-07-01 10:45:37,248 INFO Fetched : security_isin
+2020-07-01 10:45:37,248 INFO Get : all_isin_list
+2020-07-01 10:45:37,505 INFO Fetched : all_isin_list
+2020-07-01 10:45:38,009 INFO Get : security_isin (ICICI Prudential Life Insurance Company Ltd.)
+2020-07-01 10:45:38,131 INFO Fetched : security_isin
+2020-07-01 10:45:38,132 INFO Get : all_isin_list
+2020-07-01 10:45:38,402 INFO Fetched : all_isin_list
+2020-07-01 10:45:38,930 INFO Get : security_isin (ICICI Securities Ltd.)
+2020-07-01 10:45:39,061 INFO Fetched : security_isin
+2020-07-01 10:45:39,061 INFO Get : all_isin_list
+2020-07-01 10:45:39,376 INFO Fetched : all_isin_list
+2020-07-01 10:45:39,750 INFO Get : security_isin (IDBI Bank Ltd.)
+2020-07-01 10:45:39,832 INFO Fetched : security_isin
+2020-07-01 10:45:39,832 INFO Get : all_isin_list
+2020-07-01 10:45:40,068 INFO Fetched : all_isin_list
+2020-07-01 10:45:40,404 INFO Get : security_isin (IDFC First Bank Ltd.)
+2020-07-01 10:45:40,502 INFO Fetched : security_isin
+2020-07-01 10:45:40,502 INFO Get : all_isin_list
+2020-07-01 10:45:40,719 INFO Fetched : all_isin_list
+2020-07-01 10:45:41,078 INFO Get : security_isin (IDFC Ltd.)
+2020-07-01 10:45:41,172 INFO Fetched : security_isin
+2020-07-01 10:45:41,172 INFO Get : all_isin_list
+2020-07-01 10:45:41,422 INFO Fetched : all_isin_list
+2020-07-01 10:45:41,643 INFO Get : security_isin (IFB Industries Ltd.)
+2020-07-01 10:45:41,712 INFO Fetched : security_isin
+2020-07-01 10:45:41,712 INFO Get : all_isin_list
+2020-07-01 10:45:41,962 INFO Fetched : all_isin_list
+2020-07-01 10:45:42,329 INFO Get : security_isin (IFCI Ltd.)
+2020-07-01 10:45:42,442 INFO Fetched : security_isin
+2020-07-01 10:45:42,442 INFO Get : all_isin_list
+2020-07-01 10:45:42,728 INFO Fetched : all_isin_list
+2020-07-01 10:45:43,004 INFO Get : security_isin (IIFL Finance Ltd.)
+2020-07-01 10:45:43,131 INFO Fetched : security_isin
+2020-07-01 10:45:43,131 INFO Get : all_isin_list
+2020-07-01 10:45:43,346 INFO Fetched : all_isin_list
+2020-07-01 10:45:43,697 INFO Get : security_isin (IIFL Wealth Management Ltd)
+2020-07-01 10:45:43,833 INFO Fetched : security_isin
+2020-07-01 10:45:43,833 INFO Get : security_isin (Indiabulls Housing Finance Ltd.)
+2020-07-01 10:45:43,903 INFO Fetched : security_isin
+2020-07-01 10:45:43,903 INFO Get : all_isin_list
+2020-07-01 10:45:44,136 INFO Fetched : all_isin_list
+2020-07-01 10:45:44,663 INFO Get : security_isin (Indiabulls Real Estate Ltd.)
+2020-07-01 10:45:44,742 INFO Fetched : security_isin
+2020-07-01 10:45:44,742 INFO Get : all_isin_list
+2020-07-01 10:45:45,038 INFO Fetched : all_isin_list
+2020-07-01 10:45:45,493 INFO Get : security_isin (India Cements Ltd.)
+2020-07-01 10:45:45,581 INFO Fetched : security_isin
+2020-07-01 10:45:45,583 INFO Get : all_isin_list
+2020-07-01 10:45:45,958 INFO Fetched : all_isin_list
+2020-07-01 10:45:46,322 INFO Get : security_isin (Indiamart Intermesh Ltd.)
+2020-07-01 10:45:46,391 INFO Fetched : security_isin
+2020-07-01 10:45:46,391 INFO Get : all_isin_list
+2020-07-01 10:45:46,657 INFO Fetched : all_isin_list
+2020-07-01 10:45:47,071 INFO Get : security_isin (Indian Bank)
+2020-07-01 10:45:47,188 INFO Fetched : security_isin
+2020-07-01 10:45:47,189 INFO Get : security_isin (Indian Energy Exchange Ltd.)
+2020-07-01 10:45:47,251 INFO Fetched : security_isin
+2020-07-01 10:45:47,252 INFO Get : all_isin_list
+2020-07-01 10:45:47,521 INFO Fetched : all_isin_list
+2020-07-01 10:45:47,934 INFO Get : security_isin (The Indian Hotels Company Ltd)
+2020-07-01 10:45:48,068 INFO Fetched : security_isin
+2020-07-01 10:45:48,069 INFO Get : security_isin (Indian Oil Corpn. Ltd.)
+2020-07-01 10:45:48,162 INFO Fetched : security_isin
+2020-07-01 10:45:48,162 INFO Get : all_isin_list
+2020-07-01 10:45:48,382 INFO Fetched : all_isin_list
+2020-07-01 10:45:48,788 INFO Get : security_isin (Indian Overseas Bank)
+2020-07-01 10:45:48,911 INFO Fetched : security_isin
+2020-07-01 10:45:48,911 INFO Get : security_isin (Indian Railway Catering & Tourism Corpn. Ltd.)
+2020-07-01 10:45:48,982 INFO Fetched : security_isin
+2020-07-01 10:45:48,982 INFO Get : all_isin_list
+2020-07-01 10:45:49,290 INFO Fetched : all_isin_list
+2020-07-01 10:45:49,820 INFO Get : security_isin (India Tourism Devp. Corpn. Ltd.)
+2020-07-01 10:45:49,941 INFO Fetched : security_isin
+2020-07-01 10:45:49,942 INFO Get : all_isin_list
+2020-07-01 10:45:50,292 INFO Fetched : all_isin_list
+2020-07-01 10:45:50,757 INFO Get : security_isin (Indoco Remedies Ltd.)
+2020-07-01 10:45:50,831 INFO Fetched : security_isin
+2020-07-01 10:45:50,831 INFO Get : all_isin_list
+2020-07-01 10:45:51,143 INFO Fetched : all_isin_list
+2020-07-01 10:45:51,523 INFO Get : security_isin (Indostar Capital Finance Pvt Ltd.)
+2020-07-01 10:45:51,641 INFO Fetched : security_isin
+2020-07-01 10:45:51,642 INFO Get : all_isin_list
+2020-07-01 10:45:51,886 INFO Fetched : all_isin_list
+2020-07-01 10:45:52,342 INFO Get : security_isin (Indraprastha Gas Ltd.)
+2020-07-01 10:45:52,422 INFO Fetched : security_isin
+2020-07-01 10:45:52,422 INFO Get : all_isin_list
+2020-07-01 10:45:52,704 INFO Fetched : all_isin_list
+2020-07-01 10:45:53,069 INFO Get : security_isin (Indusind Bank Ltd.)
+2020-07-01 10:45:53,201 INFO Fetched : security_isin
+2020-07-01 10:45:53,201 INFO Get : all_isin_list
+2020-07-01 10:45:53,422 INFO Fetched : all_isin_list
+2020-07-01 10:45:53,763 INFO Get : security_isin (Infibeam Avenues Ltd.)
+2020-07-01 10:45:53,880 INFO Fetched : security_isin
+2020-07-01 10:45:53,881 INFO Get : all_isin_list
+2020-07-01 10:45:54,104 INFO Fetched : all_isin_list
+2020-07-01 10:45:54,527 INFO Get : security_isin (Info Edge (India) Ltd.)
+2020-07-01 10:45:54,641 INFO Fetched : security_isin
+2020-07-01 10:45:54,641 INFO Get : all_isin_list
+2020-07-01 10:45:54,927 INFO Fetched : all_isin_list
+2020-07-01 10:45:55,313 INFO Get : security_isin (Infosys Ltd.)
+2020-07-01 10:45:55,440 INFO Fetched : security_isin
+2020-07-01 10:45:55,441 INFO Get : all_isin_list
+2020-07-01 10:45:55,674 INFO Fetched : all_isin_list
+2020-07-01 10:45:55,958 INFO Get : security_isin (INOX Leisure Ltd.)
+2020-07-01 10:45:56,061 INFO Fetched : security_isin
+2020-07-01 10:45:56,061 INFO Get : all_isin_list
+2020-07-01 10:45:56,299 INFO Fetched : all_isin_list
+2020-07-01 10:45:56,652 INFO Get : security_isin (Intellect Design Arena Ltd.)
+2020-07-01 10:45:56,791 INFO Fetched : security_isin
+2020-07-01 10:45:56,791 INFO Get : all_isin_list
+2020-07-01 10:45:57,015 INFO Fetched : all_isin_list
+2020-07-01 10:45:57,426 INFO Get : security_isin (Interglobe Aviation Ltd.)
+2020-07-01 10:45:57,541 INFO Fetched : security_isin
+2020-07-01 10:45:57,541 INFO Get : all_isin_list
+2020-07-01 10:45:57,840 INFO Fetched : all_isin_list
+2020-07-01 10:45:58,256 INFO Get : security_isin (Ipca Laboratories Ltd.)
+2020-07-01 10:45:58,350 INFO Fetched : security_isin
+2020-07-01 10:45:58,350 INFO Get : all_isin_list
+2020-07-01 10:45:58,578 INFO Fetched : all_isin_list
+2020-07-01 10:45:58,955 INFO Get : security_isin (IRB Infrastructure Developers Ltd.)
+2020-07-01 10:45:59,031 INFO Fetched : security_isin
+2020-07-01 10:45:59,031 INFO Get : all_isin_list
+2020-07-01 10:45:59,260 INFO Fetched : all_isin_list
+2020-07-01 10:45:59,728 INFO Get : security_isin (Ircon International Ltd.)
+2020-07-01 10:45:59,831 INFO Fetched : security_isin
+2020-07-01 10:45:59,831 INFO Get : all_isin_list
+2020-07-01 10:46:00,096 INFO Fetched : all_isin_list
+2020-07-01 10:46:00,513 INFO Get : security_isin (ITC Ltd.)
+2020-07-01 10:46:00,622 INFO Fetched : security_isin
+2020-07-01 10:46:00,622 INFO Get : all_isin_list
+2020-07-01 10:46:00,852 INFO Fetched : all_isin_list
+2020-07-01 10:46:01,096 INFO Get : security_isin (ITI Ltd.)
+2020-07-01 10:46:01,221 INFO Fetched : security_isin
+2020-07-01 10:46:01,221 INFO Get : all_isin_list
+2020-07-01 10:46:01,465 INFO Fetched : all_isin_list
+2020-07-01 10:46:01,705 INFO Get : security_isin (Jagran Prakashan Ltd.)
+2020-07-01 10:46:01,832 INFO Fetched : security_isin
+2020-07-01 10:46:01,832 INFO Get : all_isin_list
+2020-07-01 10:46:02,064 INFO Fetched : all_isin_list
+2020-07-01 10:46:02,435 INFO Get : security_isin (Jai Corp Ltd.)
+2020-07-01 10:46:02,541 INFO Fetched : security_isin
+2020-07-01 10:46:02,541 INFO Get : all_isin_list
+2020-07-01 10:46:02,771 INFO Fetched : all_isin_list
+2020-07-01 10:46:03,043 INFO Get : security_isin (The Jammu & Kashmir Bank Ltd)
+2020-07-01 10:46:03,161 INFO Fetched : security_isin
+2020-07-01 10:46:03,162 INFO Get : security_isin (Jamna Auto Inds. Ltd.)
+2020-07-01 10:46:03,237 INFO Fetched : security_isin
+2020-07-01 10:46:03,237 INFO Get : all_isin_list
+2020-07-01 10:46:03,501 INFO Fetched : all_isin_list
+2020-07-01 10:46:03,893 INFO Get : security_isin (JB Chemicals & Pharmaceuticals Ltd.)
+2020-07-01 10:46:03,981 INFO Fetched : security_isin
+2020-07-01 10:46:03,982 INFO Get : all_isin_list
+2020-07-01 10:46:04,216 INFO Fetched : all_isin_list
+2020-07-01 10:46:04,670 INFO Get : security_isin (Jindal Saw Ltd.)
+2020-07-01 10:46:04,782 INFO Fetched : security_isin
+2020-07-01 10:46:04,782 INFO Get : all_isin_list
+2020-07-01 10:46:04,986 INFO Fetched : all_isin_list
+2020-07-01 10:46:05,291 INFO Get : security_isin (Jindal Stainless (Hisar) Ltd.)
+2020-07-01 10:46:05,411 INFO Fetched : security_isin
+2020-07-01 10:46:05,411 INFO Get : all_isin_list
+2020-07-01 10:46:05,616 INFO Fetched : all_isin_list
+2020-07-01 10:46:06,026 INFO Get : security_isin (Jindal Stainless Ltd.)
+2020-07-01 10:46:06,124 INFO Fetched : security_isin
+2020-07-01 10:46:06,124 INFO Get : all_isin_list
+2020-07-01 10:46:06,356 INFO Fetched : all_isin_list
+2020-07-01 10:46:06,781 INFO Get : security_isin (Jindal Steel & Power Ltd.)
+2020-07-01 10:46:06,901 INFO Fetched : security_isin
+2020-07-01 10:46:06,901 INFO Get : all_isin_list
+2020-07-01 10:46:07,201 INFO Fetched : all_isin_list
+2020-07-01 10:46:07,633 INFO Get : security_isin (JK Cement Ltd)
+2020-07-01 10:46:07,761 INFO Fetched : security_isin
+2020-07-01 10:46:07,762 INFO Get : security_isin (JK Lakshmi Cement Ltd.)
+2020-07-01 10:46:07,831 INFO Fetched : security_isin
+2020-07-01 10:46:07,831 INFO Get : all_isin_list
+2020-07-01 10:46:08,199 INFO Fetched : all_isin_list
+2020-07-01 10:46:08,587 INFO Get : security_isin (JK Paper Ltd.)
+2020-07-01 10:46:08,681 INFO Fetched : security_isin
+2020-07-01 10:46:08,682 INFO Get : all_isin_list
+2020-07-01 10:46:08,900 INFO Fetched : all_isin_list
+2020-07-01 10:46:09,179 INFO Get : security_isin (JK Tyre & Industries Ltd.)
+2020-07-01 10:46:09,261 INFO Fetched : security_isin
+2020-07-01 10:46:09,261 INFO Get : all_isin_list
+2020-07-01 10:46:09,529 INFO Fetched : all_isin_list
+2020-07-01 10:46:09,958 INFO Get : security_isin (JM Financial Ltd.)
+2020-07-01 10:46:10,061 INFO Fetched : security_isin
+2020-07-01 10:46:10,062 INFO Get : all_isin_list
+2020-07-01 10:46:10,341 INFO Fetched : all_isin_list
+2020-07-01 10:46:10,708 INFO Get : security_isin (Johnson Controls - Hitachi Air Conditioning India Ltd.)
+2020-07-01 10:46:10,830 INFO Fetched : security_isin
+2020-07-01 10:46:10,830 INFO Get : all_isin_list
+2020-07-01 10:46:11,032 INFO Fetched : all_isin_list
+2020-07-01 10:46:11,607 INFO Get : security_isin (JSW Energy Ltd.)
+2020-07-01 10:46:11,720 INFO Fetched : security_isin
+2020-07-01 10:46:11,720 INFO Get : all_isin_list
+2020-07-01 10:46:11,983 INFO Fetched : all_isin_list
+2020-07-01 10:46:12,310 INFO Get : security_isin (JSW Steel Ltd.)
+2020-07-01 10:46:12,431 INFO Fetched : security_isin
+2020-07-01 10:46:12,431 INFO Get : all_isin_list
+2020-07-01 10:46:12,632 INFO Fetched : all_isin_list
+2020-07-01 10:46:12,917 INFO Get : security_isin (JTEKT India Ltd.)
+2020-07-01 10:46:13,031 INFO Fetched : security_isin
+2020-07-01 10:46:13,031 INFO Get : all_isin_list
+2020-07-01 10:46:13,252 INFO Fetched : all_isin_list
+2020-07-01 10:46:13,591 INFO Get : security_isin (Jubilant FoodWorks Ltd.)
+2020-07-01 10:46:13,721 INFO Fetched : security_isin
+2020-07-01 10:46:13,721 INFO Get : all_isin_list
+2020-07-01 10:46:13,981 INFO Fetched : all_isin_list
+2020-07-01 10:46:14,365 INFO Get : security_isin (Jubilant Life Sciences Ltd.)
+2020-07-01 10:46:14,491 INFO Fetched : security_isin
+2020-07-01 10:46:14,492 INFO Get : all_isin_list
+2020-07-01 10:46:14,701 INFO Fetched : all_isin_list
+2020-07-01 10:46:15,112 INFO Get : security_isin (Just Dial Ltd.)
+2020-07-01 10:46:15,231 INFO Fetched : security_isin
+2020-07-01 10:46:15,231 INFO Get : all_isin_list
+2020-07-01 10:46:15,539 INFO Fetched : all_isin_list
+2020-07-01 10:46:15,854 INFO Get : security_isin (Jyothy Labs Ltd.)
+2020-07-01 10:46:15,981 INFO Fetched : security_isin
+2020-07-01 10:46:15,981 INFO Get : all_isin_list
+2020-07-01 10:46:16,200 INFO Fetched : all_isin_list
+2020-07-01 10:46:16,522 INFO Get : security_isin (Kajaria Ceramics Ltd.)
+2020-07-01 10:46:16,620 INFO Fetched : security_isin
+2020-07-01 10:46:16,621 INFO Get : all_isin_list
+2020-07-01 10:46:16,846 INFO Fetched : all_isin_list
+2020-07-01 10:46:17,208 INFO Get : security_isin (Kalpataru Power Transmission Ltd.)
+2020-07-01 10:46:17,301 INFO Fetched : security_isin
+2020-07-01 10:46:17,301 INFO Get : all_isin_list
+2020-07-01 10:46:17,540 INFO Fetched : all_isin_list
+2020-07-01 10:46:17,975 INFO Get : security_isin (Kansai Nerolac Paints Ltd.)
+2020-07-01 10:46:18,100 INFO Fetched : security_isin
+2020-07-01 10:46:18,100 INFO Get : all_isin_list
+2020-07-01 10:46:18,381 INFO Fetched : all_isin_list
+2020-07-01 10:46:18,823 INFO Get : security_isin (The Karnataka Bank Ltd)
+2020-07-01 10:46:18,920 INFO Fetched : security_isin
+2020-07-01 10:46:18,921 INFO Get : security_isin (KEC International Ltd.)
+2020-07-01 10:46:18,989 INFO Fetched : security_isin
+2020-07-01 10:46:18,989 INFO Get : all_isin_list
+2020-07-01 10:46:19,263 INFO Fetched : all_isin_list
+2020-07-01 10:46:19,680 INFO Get : security_isin (Kei Industries Ltd.)
+2020-07-01 10:46:19,801 INFO Fetched : security_isin
+2020-07-01 10:46:19,801 INFO Get : all_isin_list
+2020-07-01 10:46:20,026 INFO Fetched : all_isin_list
+2020-07-01 10:46:20,378 INFO Get : security_isin (KNR Constructions Ltd.)
+2020-07-01 10:46:20,461 INFO Fetched : security_isin
+2020-07-01 10:46:20,461 INFO Get : all_isin_list
+2020-07-01 10:46:20,660 INFO Fetched : all_isin_list
+2020-07-01 10:46:21,050 INFO Get : security_isin (Kotak Mahindra Bank Ltd.)
+2020-07-01 10:46:21,150 INFO Fetched : security_isin
+2020-07-01 10:46:21,151 INFO Get : all_isin_list
+2020-07-01 10:46:21,394 INFO Fetched : all_isin_list
+2020-07-01 10:46:21,798 INFO Get : security_isin (KPIT Technologies Ltd.)
+2020-07-01 10:46:21,920 INFO Fetched : security_isin
+2020-07-01 10:46:21,921 INFO Get : all_isin_list
+2020-07-01 10:46:22,198 INFO Fetched : all_isin_list
+2020-07-01 10:46:22,621 INFO Get : security_isin (K.P.R. Mill Ltd)
+2020-07-01 10:46:22,690 INFO Fetched : security_isin
+2020-07-01 10:46:22,691 INFO Get : security_isin (KRBL Ltd.)
+2020-07-01 10:46:22,760 INFO Fetched : security_isin
+2020-07-01 10:46:22,761 INFO Get : all_isin_list
+2020-07-01 10:46:23,005 INFO Fetched : all_isin_list
+2020-07-01 10:46:23,235 INFO Get : security_isin (KSB Ltd.)
+2020-07-01 10:46:23,330 INFO Fetched : security_isin
+2020-07-01 10:46:23,330 INFO Get : all_isin_list
+2020-07-01 10:46:23,540 INFO Fetched : all_isin_list
+2020-07-01 10:46:23,796 INFO Get : security_isin (Lakshmi Machine Works Ltd.)
+2020-07-01 10:46:23,889 INFO Fetched : security_isin
+2020-07-01 10:46:23,890 INFO Get : all_isin_list
+2020-07-01 10:46:24,089 INFO Fetched : all_isin_list
+2020-07-01 10:46:24,511 INFO Get : security_isin (La Opala RG Ltd.)
+2020-07-01 10:46:24,610 INFO Fetched : security_isin
+2020-07-01 10:46:24,610 INFO Get : all_isin_list
+2020-07-01 10:46:24,833 INFO Fetched : all_isin_list
+2020-07-01 10:46:25,159 INFO Get : security_isin (Larsen & Toubro Infotech Ltd.)
+2020-07-01 10:46:25,260 INFO Fetched : security_isin
+2020-07-01 10:46:25,261 INFO Get : all_isin_list
+2020-07-01 10:46:25,509 INFO Fetched : all_isin_list
+2020-07-01 10:46:25,963 INFO Get : security_isin (Larsen & Toubro Ltd.)
+2020-07-01 10:46:26,060 INFO Fetched : security_isin
+2020-07-01 10:46:26,060 INFO Get : all_isin_list
+2020-07-01 10:46:26,365 INFO Fetched : all_isin_list
+2020-07-01 10:46:26,749 INFO Get : security_isin (Laurus Labs Ltd.)
+2020-07-01 10:46:26,851 INFO Fetched : security_isin
+2020-07-01 10:46:26,851 INFO Get : all_isin_list
+2020-07-01 10:46:27,075 INFO Fetched : all_isin_list
+2020-07-01 10:46:27,408 INFO Get : security_isin (Lemon Tree Hotels Ltd.)
+2020-07-01 10:46:27,499 INFO Fetched : security_isin
+2020-07-01 10:46:27,499 INFO Get : all_isin_list
+2020-07-01 10:46:27,712 INFO Fetched : all_isin_list
+2020-07-01 10:46:28,093 INFO Get : security_isin (LIC Housing Finance Ltd.)
+2020-07-01 10:46:28,191 INFO Fetched : security_isin
+2020-07-01 10:46:28,191 INFO Get : all_isin_list
+2020-07-01 10:46:28,395 INFO Fetched : all_isin_list
+2020-07-01 10:46:28,788 INFO Get : security_isin (Linde India Ltd.)
+2020-07-01 10:46:28,910 INFO Fetched : security_isin
+2020-07-01 10:46:28,911 INFO Get : all_isin_list
+2020-07-01 10:46:29,188 INFO Fetched : all_isin_list
+2020-07-01 10:46:29,545 INFO Get : security_isin (L&T Finance Holdings Ltd.)
+2020-07-01 10:46:29,659 INFO Fetched : security_isin
+2020-07-01 10:46:29,660 INFO Get : all_isin_list
+2020-07-01 10:46:29,882 INFO Fetched : all_isin_list
+2020-07-01 10:46:30,320 INFO Get : security_isin (L&T Technology Services Ltd.)
+2020-07-01 10:46:30,420 INFO Fetched : security_isin
+2020-07-01 10:46:30,421 INFO Get : all_isin_list
+2020-07-01 10:46:30,685 INFO Fetched : all_isin_list
+2020-07-01 10:46:31,153 INFO Get : security_isin (Lupin Ltd.)
+2020-07-01 10:46:31,280 INFO Fetched : security_isin
+2020-07-01 10:46:31,281 INFO Get : all_isin_list
+2020-07-01 10:46:31,551 INFO Fetched : all_isin_list
+2020-07-01 10:46:31,820 INFO Get : security_isin (Lux Industries Ltd.)
+2020-07-01 10:46:31,940 INFO Fetched : security_isin
+2020-07-01 10:46:31,941 INFO Get : all_isin_list
+2020-07-01 10:46:32,164 INFO Fetched : all_isin_list
+2020-07-01 10:46:32,538 INFO Get : security_isin (Mahanagar Gas Ltd.)
+2020-07-01 10:46:32,610 INFO Fetched : security_isin
+2020-07-01 10:46:32,610 INFO Get : all_isin_list
+2020-07-01 10:46:32,849 INFO Fetched : all_isin_list
+2020-07-01 10:46:33,206 INFO Get : security_isin (Maharashtra Scooters Ltd.)
+2020-07-01 10:46:33,310 INFO Fetched : security_isin
+2020-07-01 10:46:33,310 INFO Get : all_isin_list
+2020-07-01 10:46:33,509 INFO Fetched : all_isin_list
+2020-07-01 10:46:33,928 INFO Get : security_isin (Maharashtra Seamless Ltd.)
+2020-07-01 10:46:34,010 INFO Fetched : security_isin
+2020-07-01 10:46:34,011 INFO Get : all_isin_list
+2020-07-01 10:46:34,287 INFO Fetched : all_isin_list
+2020-07-01 10:46:34,721 INFO Get : security_isin (Mahindra CIE Automotive Ltd.)
+2020-07-01 10:46:34,840 INFO Fetched : security_isin
+2020-07-01 10:46:34,840 INFO Get : all_isin_list
+2020-07-01 10:46:35,115 INFO Fetched : all_isin_list
+2020-07-01 10:46:35,538 INFO Get : security_isin (Mahindra Holidays & Resorts India Ltd)
+2020-07-01 10:46:35,655 INFO Fetched : security_isin
+2020-07-01 10:46:35,655 INFO Get : security_isin (Mahindra Lifespace Developers Ltd.)
+2020-07-01 10:46:35,729 INFO Fetched : security_isin
+2020-07-01 10:46:35,730 INFO Get : all_isin_list
+2020-07-01 10:46:36,024 INFO Fetched : all_isin_list
+2020-07-01 10:46:36,536 INFO Get : security_isin (Mahindra Logistics Ltd.)
+2020-07-01 10:46:36,652 INFO Fetched : security_isin
+2020-07-01 10:46:36,652 INFO Get : all_isin_list
+2020-07-01 10:46:36,932 INFO Fetched : all_isin_list
+2020-07-01 10:46:39,096 INFO Get : security_isin (Mahindra & Mahindra Financial Services Ltd.)
+2020-07-01 10:46:39,214 INFO Fetched : security_isin
+2020-07-01 10:46:39,215 INFO Get : all_isin_list
+2020-07-01 10:46:39,596 INFO Fetched : all_isin_list
+2020-07-01 10:46:40,673 INFO Get : security_isin (Mahindra & Mahindra Ltd.)
+2020-07-01 10:46:40,790 INFO Fetched : security_isin
+2020-07-01 10:46:40,790 INFO Get : all_isin_list
+2020-07-01 10:46:41,203 INFO Fetched : all_isin_list
+2020-07-01 10:46:41,941 INFO Get : security_isin (Manappuram Finance Ltd.)
+2020-07-01 10:46:42,060 INFO Fetched : security_isin
+2020-07-01 10:46:42,060 INFO Get : all_isin_list
+2020-07-01 10:46:42,397 INFO Fetched : all_isin_list
+2020-07-01 10:46:42,879 INFO Get : security_isin (Mangalore Refinery & Petrochemicals Ltd.)
+2020-07-01 10:46:43,000 INFO Fetched : security_isin
+2020-07-01 10:46:43,000 INFO Get : all_isin_list
+2020-07-01 10:46:43,269 INFO Fetched : all_isin_list
+2020-07-01 10:46:43,879 INFO Get : security_isin (Marico Ltd.)
+2020-07-01 10:46:43,980 INFO Fetched : security_isin
+2020-07-01 10:46:43,980 INFO Get : all_isin_list
+2020-07-01 10:46:44,261 INFO Fetched : all_isin_list
+2020-07-01 10:46:44,677 INFO Get : security_isin (Maruti Suzuki India Ltd.)
+2020-07-01 10:46:44,789 INFO Fetched : security_isin
+2020-07-01 10:46:44,790 INFO Get : all_isin_list
+2020-07-01 10:46:45,007 INFO Fetched : all_isin_list
+2020-07-01 10:46:45,506 INFO Get : security_isin (Mas Financial Services Ltd.)
+2020-07-01 10:46:45,619 INFO Fetched : security_isin
+2020-07-01 10:46:45,619 INFO Get : all_isin_list
+2020-07-01 10:46:45,901 INFO Fetched : all_isin_list
+2020-07-01 10:46:46,416 INFO Get : security_isin (Max Financial Services Ltd.)
+2020-07-01 10:46:46,540 INFO Fetched : security_isin
+2020-07-01 10:46:46,541 INFO Get : all_isin_list
+2020-07-01 10:46:46,831 INFO Fetched : all_isin_list
+2020-07-01 10:46:47,365 INFO Get : security_isin (Meghmani Organics Ltd.)
+2020-07-01 10:46:47,490 INFO Fetched : security_isin
+2020-07-01 10:46:47,490 INFO Get : all_isin_list
+2020-07-01 10:46:47,775 INFO Fetched : all_isin_list
+2020-07-01 10:46:48,245 INFO Get : security_isin (Metropolis Healthcare Ltd.)
+2020-07-01 10:46:48,349 INFO Fetched : security_isin
+2020-07-01 10:46:48,350 INFO Get : all_isin_list
+2020-07-01 10:46:48,611 INFO Fetched : all_isin_list
+2020-07-01 10:46:49,253 INFO Get : security_isin (Minda Corporation Ltd.)
+2020-07-01 10:46:49,369 INFO Fetched : security_isin
+2020-07-01 10:46:49,369 INFO Get : all_isin_list
+2020-07-01 10:46:49,645 INFO Fetched : all_isin_list
+2020-07-01 10:46:50,090 INFO Get : security_isin (Minda Industries Ltd.)
+2020-07-01 10:46:50,210 INFO Fetched : security_isin
+2020-07-01 10:46:50,210 INFO Get : all_isin_list
+2020-07-01 10:46:50,496 INFO Fetched : all_isin_list
+2020-07-01 10:46:51,131 INFO Get : security_isin (MindTree Ltd.)
+2020-07-01 10:46:51,199 INFO Fetched : security_isin
+2020-07-01 10:46:51,199 INFO Get : all_isin_list
+2020-07-01 10:46:51,475 INFO Fetched : all_isin_list
+2020-07-01 10:46:51,868 INFO Get : security_isin (Mishra Dhatu Nigam Ltd.)
+2020-07-01 10:46:51,938 INFO Fetched : security_isin
+2020-07-01 10:46:51,938 INFO Get : all_isin_list
+2020-07-01 10:46:52,154 INFO Fetched : all_isin_list
+2020-07-01 10:46:52,690 INFO Get : security_isin (MMTC Ltd.)
+2020-07-01 10:46:52,768 INFO Fetched : security_isin
+2020-07-01 10:46:52,768 INFO Get : all_isin_list
+2020-07-01 10:46:53,040 INFO Fetched : all_isin_list
+2020-07-01 10:46:53,304 INFO Get : security_isin (Moil Ltd.)
+2020-07-01 10:46:53,430 INFO Fetched : security_isin
+2020-07-01 10:46:53,430 INFO Get : all_isin_list
+2020-07-01 10:46:53,663 INFO Fetched : all_isin_list
+2020-07-01 10:46:53,949 INFO Get : security_isin (Motherson Sumi Systems Ltd.)
+2020-07-01 10:46:54,050 INFO Fetched : security_isin
+2020-07-01 10:46:54,050 INFO Get : all_isin_list
+2020-07-01 10:46:54,259 INFO Fetched : all_isin_list
+2020-07-01 10:46:54,750 INFO Get : security_isin (Motilal Oswal Financial Services Ltd)
+2020-07-01 10:46:54,869 INFO Fetched : security_isin
+2020-07-01 10:46:54,869 INFO Get : security_isin (Mphasis Ltd.)
+2020-07-01 10:46:54,939 INFO Fetched : security_isin
+2020-07-01 10:46:54,939 INFO Get : all_isin_list
+2020-07-01 10:46:55,248 INFO Fetched : all_isin_list
+2020-07-01 10:46:55,530 INFO Get : security_isin (MRF Ltd.)
+2020-07-01 10:46:55,650 INFO Fetched : security_isin
+2020-07-01 10:46:55,650 INFO Get : all_isin_list
+2020-07-01 10:46:55,882 INFO Fetched : all_isin_list
+2020-07-01 10:46:56,109 INFO Get : security_isin (Multi Commodity Exchange India)
+2020-07-01 10:46:56,231 INFO Fetched : security_isin
+2020-07-01 10:46:56,231 INFO Get : all_isin_list
+2020-07-01 10:46:56,429 INFO Fetched : all_isin_list
+2020-07-01 10:46:56,925 INFO Get : security_isin (Muthoot Finance Ltd.)
+2020-07-01 10:46:56,999 INFO Fetched : security_isin
+2020-07-01 10:46:56,999 INFO Get : all_isin_list
+2020-07-01 10:46:57,287 INFO Fetched : all_isin_list
+2020-07-01 10:46:57,641 INFO Get : security_isin (Narayana Hrudayalaya Ltd.)
+2020-07-01 10:46:57,772 INFO Fetched : security_isin
+2020-07-01 10:46:57,773 INFO Get : security_isin (Natco Pharma Ltd.)
+2020-07-01 10:46:57,838 INFO Fetched : security_isin
+2020-07-01 10:46:57,838 INFO Get : all_isin_list
+2020-07-01 10:46:58,073 INFO Fetched : all_isin_list
+2020-07-01 10:46:58,432 INFO Get : security_isin (National Aluminium Co. Ltd.)
+2020-07-01 10:46:58,509 INFO Fetched : security_isin
+2020-07-01 10:46:58,509 INFO Get : all_isin_list
+2020-07-01 10:46:58,745 INFO Fetched : all_isin_list
+2020-07-01 10:46:59,210 INFO Get : security_isin (NTPC Ltd)
+2020-07-01 10:46:59,330 INFO Fetched : security_isin
+2020-07-01 10:46:59,330 INFO Get : security_isin (Nava Bharat Ventures Ltd.)
+2020-07-01 10:46:59,399 INFO Fetched : security_isin
+2020-07-01 10:46:59,400 INFO Get : all_isin_list
+2020-07-01 10:46:59,736 INFO Fetched : all_isin_list
+2020-07-01 10:47:00,198 INFO Get : security_isin (Navin Fluorine International Ltd.)
+2020-07-01 10:47:00,320 INFO Fetched : security_isin
+2020-07-01 10:47:00,320 INFO Get : all_isin_list
+2020-07-01 10:47:00,615 INFO Fetched : all_isin_list
+2020-07-01 10:47:01,090 INFO Get : security_isin (Navneet Education Ltd.)
+2020-07-01 10:47:01,159 INFO Fetched : security_isin
+2020-07-01 10:47:01,159 INFO Get : all_isin_list
+2020-07-01 10:47:01,455 INFO Fetched : all_isin_list
+2020-07-01 10:47:01,859 INFO Get : security_isin (NBCC India Ltd.)
+2020-07-01 10:47:01,959 INFO Fetched : security_isin
+2020-07-01 10:47:01,959 INFO Get : all_isin_list
+2020-07-01 10:47:02,209 INFO Fetched : all_isin_list
+2020-07-01 10:47:02,578 INFO Get : security_isin (NCC Ltd.)
+2020-07-01 10:47:02,692 INFO Fetched : security_isin
+2020-07-01 10:47:02,692 INFO Get : all_isin_list
+2020-07-01 10:47:02,913 INFO Fetched : all_isin_list
+2020-07-01 10:47:03,190 INFO Get : security_isin (Nesco Ltd.)
+2020-07-01 10:47:03,309 INFO Fetched : security_isin
+2020-07-01 10:47:03,310 INFO Get : all_isin_list
+2020-07-01 10:47:03,546 INFO Fetched : all_isin_list
+2020-07-01 10:47:03,813 INFO Get : security_isin (Nestle India Ltd.)
+2020-07-01 10:47:03,888 INFO Fetched : security_isin
+2020-07-01 10:47:03,888 INFO Get : all_isin_list
+2020-07-01 10:47:04,280 INFO Fetched : all_isin_list
+2020-07-01 10:47:04,614 INFO Get : security_isin (NHPC Ltd.)
+2020-07-01 10:47:04,739 INFO Fetched : security_isin
+2020-07-01 10:47:04,740 INFO Get : all_isin_list
+2020-07-01 10:47:04,936 INFO Fetched : all_isin_list
+2020-07-01 10:47:05,159 INFO Get : security_isin (NIIT Technologies Ltd.)
+2020-07-01 10:47:05,263 INFO Fetched : security_isin
+2020-07-01 10:47:05,264 INFO Get : all_isin_list
+2020-07-01 10:47:05,483 INFO Fetched : all_isin_list
+2020-07-01 10:47:05,877 INFO Get : security_isin (Nilkamal Ltd.)
+2020-07-01 10:47:05,949 INFO Fetched : security_isin
+2020-07-01 10:47:05,949 INFO Get : all_isin_list
+2020-07-01 10:47:06,164 INFO Fetched : all_isin_list
+2020-07-01 10:47:06,438 INFO Get : security_isin (Reliance Nippon Life Asset Management Ltd)
+2020-07-01 10:47:06,510 INFO Fetched : security_isin
+2020-07-01 10:47:06,510 INFO Get : security_isin (NLC India Ltd.)
+2020-07-01 10:47:06,579 INFO Fetched : security_isin
+2020-07-01 10:47:06,579 INFO Get : all_isin_list
+2020-07-01 10:47:06,835 INFO Fetched : all_isin_list
+2020-07-01 10:47:07,174 INFO Get : security_isin (NMDC Ltd.)
+2020-07-01 10:47:07,299 INFO Fetched : security_isin
+2020-07-01 10:47:07,300 INFO Get : all_isin_list
+2020-07-01 10:47:07,534 INFO Fetched : all_isin_list
+2020-07-01 10:47:07,779 INFO Get : security_isin (NOCIL Ltd.)
+2020-07-01 10:47:07,880 INFO Fetched : security_isin
+2020-07-01 10:47:07,880 INFO Get : all_isin_list
+2020-07-01 10:47:08,082 INFO Fetched : all_isin_list
+2020-07-01 10:47:08,336 INFO Get : security_isin (Oberoi Realty Ltd.)
+2020-07-01 10:47:08,449 INFO Fetched : security_isin
+2020-07-01 10:47:08,449 INFO Get : all_isin_list
+2020-07-01 10:47:08,694 INFO Fetched : all_isin_list
+2020-07-01 10:47:09,055 INFO Get : security_isin (Oil India Ltd.)
+2020-07-01 10:47:09,149 INFO Fetched : security_isin
+2020-07-01 10:47:09,150 INFO Get : all_isin_list
+2020-07-01 10:47:09,398 INFO Fetched : all_isin_list
+2020-07-01 10:47:09,730 INFO Get : security_isin (Oil & Natural Gas Corpn. Ltd.)
+2020-07-01 10:47:09,849 INFO Fetched : security_isin
+2020-07-01 10:47:09,849 INFO Get : all_isin_list
+2020-07-01 10:47:10,047 INFO Fetched : all_isin_list
+2020-07-01 10:47:10,506 INFO Get : security_isin (Omaxe Ltd.)
+2020-07-01 10:47:10,619 INFO Fetched : security_isin
+2020-07-01 10:47:10,619 INFO Get : all_isin_list
+2020-07-01 10:47:10,913 INFO Fetched : all_isin_list
+2020-07-01 10:47:11,171 INFO Get : security_isin (Oracle Financial Services Software Ltd.)
+2020-07-01 10:47:11,288 INFO Fetched : security_isin
+2020-07-01 10:47:11,288 INFO Get : all_isin_list
+2020-07-01 10:47:11,510 INFO Fetched : all_isin_list
+2020-07-01 10:47:12,050 INFO Get : security_isin (Orient Cement Ltd.)
+2020-07-01 10:47:12,179 INFO Fetched : security_isin
+2020-07-01 10:47:12,180 INFO Get : all_isin_list
+2020-07-01 10:47:12,491 INFO Fetched : all_isin_list
+2020-07-01 10:47:12,890 INFO Get : security_isin (Orient Electric Ltd.)
+2020-07-01 10:47:12,954 INFO Fetched : security_isin
+2020-07-01 10:47:12,954 INFO Get : all_isin_list
+2020-07-01 10:47:13,175 INFO Fetched : all_isin_list
+2020-07-01 10:47:13,601 INFO Get : security_isin (Orient Refractories Limited)
+2020-07-01 10:47:13,720 INFO Fetched : security_isin
+2020-07-01 10:47:13,720 INFO Get : all_isin_list
+2020-07-01 10:47:13,936 INFO Fetched : all_isin_list
+2020-07-01 10:47:14,369 INFO Get : security_isin (Page Industries Ltd.)
+2020-07-01 10:47:14,500 INFO Fetched : security_isin
+2020-07-01 10:47:14,500 INFO Get : all_isin_list
+2020-07-01 10:47:14,789 INFO Fetched : all_isin_list
+2020-07-01 10:47:15,216 INFO Get : security_isin (Parag Milk Foods Ltd.)
+2020-07-01 10:47:15,339 INFO Fetched : security_isin
+2020-07-01 10:47:15,339 INFO Get : all_isin_list
+2020-07-01 10:47:15,647 INFO Fetched : all_isin_list
+2020-07-01 10:47:16,064 INFO Get : security_isin (PC Jeweller Ltd.)
+2020-07-01 10:47:16,139 INFO Fetched : security_isin
+2020-07-01 10:47:16,140 INFO Get : all_isin_list
+2020-07-01 10:47:16,419 INFO Fetched : all_isin_list
+2020-07-01 10:47:16,760 INFO Get : security_isin (Persistent Systems Ltd.)
+2020-07-01 10:47:16,885 INFO Fetched : security_isin
+2020-07-01 10:47:16,885 INFO Get : all_isin_list
+2020-07-01 10:47:17,206 INFO Fetched : all_isin_list
+2020-07-01 10:47:17,628 INFO Get : security_isin (Petronet LNG Ltd.)
+2020-07-01 10:47:17,728 INFO Fetched : security_isin
+2020-07-01 10:47:17,728 INFO Get : all_isin_list
+2020-07-01 10:47:17,965 INFO Fetched : all_isin_list
+2020-07-01 10:47:18,327 INFO Get : security_isin (Pfizer Ltd.)
+2020-07-01 10:47:18,407 INFO Fetched : security_isin
+2020-07-01 10:47:18,407 INFO Get : all_isin_list
+2020-07-01 10:47:18,681 INFO Fetched : all_isin_list
+2020-07-01 10:47:19,004 INFO Get : security_isin (Phillips Carbon Black Ltd.)
+2020-07-01 10:47:19,129 INFO Fetched : security_isin
+2020-07-01 10:47:19,129 INFO Get : all_isin_list
+2020-07-01 10:47:19,491 INFO Fetched : all_isin_list
+2020-07-01 10:47:19,953 INFO Get : security_isin (The Phoenix Mills Ltd)
+2020-07-01 10:47:20,028 INFO Fetched : security_isin
+2020-07-01 10:47:20,028 INFO Get : security_isin (Pidilite Industries Ltd.)
+2020-07-01 10:47:20,099 INFO Fetched : security_isin
+2020-07-01 10:47:20,100 INFO Get : all_isin_list
+2020-07-01 10:47:20,376 INFO Fetched : all_isin_list
+2020-07-01 10:47:20,803 INFO Get : security_isin (PI Industries Ltd.)
+2020-07-01 10:47:20,921 INFO Fetched : security_isin
+2020-07-01 10:47:20,921 INFO Get : all_isin_list
+2020-07-01 10:47:21,221 INFO Fetched : all_isin_list
+2020-07-01 10:47:21,610 INFO Get : security_isin (Piramal Enterprises Ltd.)
+2020-07-01 10:47:21,729 INFO Fetched : security_isin
+2020-07-01 10:47:21,729 INFO Get : all_isin_list
+2020-07-01 10:47:21,968 INFO Fetched : all_isin_list
+2020-07-01 10:47:22,404 INFO Get : security_isin (PNB Housing Finance Ltd.)
+2020-07-01 10:47:22,529 INFO Fetched : security_isin
+2020-07-01 10:47:22,529 INFO Get : all_isin_list
+2020-07-01 10:47:22,848 INFO Fetched : all_isin_list
+2020-07-01 10:47:23,267 INFO Get : security_isin (PNC Infratech Ltd.)
+2020-07-01 10:47:23,388 INFO Fetched : security_isin
+2020-07-01 10:47:23,389 INFO Get : all_isin_list
+2020-07-01 10:47:23,719 INFO Fetched : all_isin_list
+2020-07-01 10:47:24,093 INFO Get : security_isin (Polycab India Ltd.)
+2020-07-01 10:47:24,187 INFO Fetched : security_isin
+2020-07-01 10:47:24,189 INFO Get : all_isin_list
+2020-07-01 10:47:24,494 INFO Fetched : all_isin_list
+2020-07-01 10:47:24,880 INFO Get : security_isin (Power Finance Corpn. Ltd.)
+2020-07-01 10:47:25,008 INFO Fetched : security_isin
+2020-07-01 10:47:25,008 INFO Get : all_isin_list
+2020-07-01 10:47:25,283 INFO Fetched : all_isin_list
+2020-07-01 10:47:25,709 INFO Get : security_isin (Power Grid Corporation of India Ltd.)
+2020-07-01 10:47:25,799 INFO Fetched : security_isin
+2020-07-01 10:47:25,799 INFO Get : all_isin_list
+2020-07-01 10:47:26,024 INFO Fetched : all_isin_list
+2020-07-01 10:47:26,507 INFO Get : security_isin (Prestige Estates Projects Ltd.)
+2020-07-01 10:47:26,617 INFO Fetched : security_isin
+2020-07-01 10:47:26,617 INFO Get : all_isin_list
+2020-07-01 10:47:26,903 INFO Fetched : all_isin_list
+2020-07-01 10:47:27,392 INFO Get : security_isin (Prism Johnson Ltd.)
+2020-07-01 10:47:27,509 INFO Fetched : security_isin
+2020-07-01 10:47:27,510 INFO Get : all_isin_list
+2020-07-01 10:47:27,838 INFO Fetched : all_isin_list
+2020-07-01 10:47:28,239 INFO Get : security_isin (Procter & Gamble Health Ltd.)
+2020-07-01 10:47:28,339 INFO Fetched : security_isin
+2020-07-01 10:47:28,340 INFO Get : all_isin_list
+2020-07-01 10:47:28,679 INFO Fetched : all_isin_list
+2020-07-01 10:47:29,120 INFO Get : security_isin (Procter & Gamble Hygiene & Health Care Ltd.)
+2020-07-01 10:47:29,249 INFO Fetched : security_isin
+2020-07-01 10:47:29,249 INFO Get : all_isin_list
+2020-07-01 10:47:29,511 INFO Fetched : all_isin_list
+2020-07-01 10:47:30,034 INFO Get : security_isin (PTC India Ltd.)
+2020-07-01 10:47:30,107 INFO Fetched : security_isin
+2020-07-01 10:47:30,107 INFO Get : all_isin_list
+2020-07-01 10:47:30,398 INFO Fetched : all_isin_list
+2020-07-01 10:47:30,714 INFO Get : security_isin (Punjab National Bank)
+2020-07-01 10:47:30,839 INFO Fetched : security_isin
+2020-07-01 10:47:30,840 INFO Get : security_isin (PVR Ltd.)
+2020-07-01 10:47:30,909 INFO Fetched : security_isin
+2020-07-01 10:47:30,909 INFO Get : all_isin_list
+2020-07-01 10:47:31,222 INFO Fetched : all_isin_list
+2020-07-01 10:47:31,453 INFO Get : security_isin (Quess Corp Ltd.)
+2020-07-01 10:47:31,549 INFO Fetched : security_isin
+2020-07-01 10:47:31,550 INFO Get : all_isin_list
+2020-07-01 10:47:31,766 INFO Fetched : all_isin_list
+2020-07-01 10:47:32,097 INFO Get : security_isin (Radico Khaitan Ltd.)
+2020-07-01 10:47:32,169 INFO Fetched : security_isin
+2020-07-01 10:47:32,169 INFO Get : all_isin_list
+2020-07-01 10:47:32,444 INFO Fetched : all_isin_list
+2020-07-01 10:47:32,789 INFO Get : security_isin (Rail Vikas Nigam Ltd.)
+2020-07-01 10:47:32,908 INFO Fetched : security_isin
+2020-07-01 10:47:32,908 INFO Get : all_isin_list
+2020-07-01 10:47:33,187 INFO Fetched : all_isin_list
+2020-07-01 10:47:33,541 INFO Get : security_isin (Rain Industries Ltd.)
+2020-07-01 10:47:33,659 INFO Fetched : security_isin
+2020-07-01 10:47:33,660 INFO Get : all_isin_list
+2020-07-01 10:47:33,920 INFO Fetched : all_isin_list
+2020-07-01 10:47:34,343 INFO Get : security_isin (Rajesh Exports Ltd.)
+2020-07-01 10:47:34,449 INFO Fetched : security_isin
+2020-07-01 10:47:34,449 INFO Get : all_isin_list
+2020-07-01 10:47:34,726 INFO Fetched : all_isin_list
+2020-07-01 10:47:35,098 INFO Get : security_isin (Rallis India Ltd.)
+2020-07-01 10:47:35,219 INFO Fetched : security_isin
+2020-07-01 10:47:35,219 INFO Get : all_isin_list
+2020-07-01 10:47:35,547 INFO Fetched : all_isin_list
+2020-07-01 10:47:35,933 INFO Get : security_isin (Rashtriya Chemicals & Fertilizers Ltd.)
+2020-07-01 10:47:36,008 INFO Fetched : security_isin
+2020-07-01 10:47:36,008 INFO Get : all_isin_list
+2020-07-01 10:47:36,254 INFO Fetched : all_isin_list
+2020-07-01 10:47:36,735 INFO Get : security_isin (Ratnamani Metals & Tubes Ltd.)
+2020-07-01 10:47:36,856 INFO Fetched : security_isin
+2020-07-01 10:47:36,856 INFO Get : all_isin_list
+2020-07-01 10:47:37,146 INFO Fetched : all_isin_list
+2020-07-01 10:47:37,605 INFO Get : security_isin (Raymond Ltd.)
+2020-07-01 10:47:37,698 INFO Fetched : security_isin
+2020-07-01 10:47:37,698 INFO Get : all_isin_list
+2020-07-01 10:47:38,000 INFO Fetched : all_isin_list
+2020-07-01 10:47:38,298 INFO Get : security_isin (RBL Bank Ltd.)
+2020-07-01 10:47:38,427 INFO Fetched : security_isin
+2020-07-01 10:47:38,427 INFO Get : all_isin_list
+2020-07-01 10:47:38,675 INFO Fetched : all_isin_list
+2020-07-01 10:47:38,982 INFO Get : security_isin (REC Ltd.)
+2020-07-01 10:47:39,108 INFO Fetched : security_isin
+2020-07-01 10:47:39,109 INFO Get : all_isin_list
+2020-07-01 10:47:39,390 INFO Fetched : all_isin_list
+2020-07-01 10:47:39,633 INFO Get : security_isin (Redington India Ltd.)
+2020-07-01 10:47:39,748 INFO Fetched : security_isin
+2020-07-01 10:47:39,748 INFO Get : all_isin_list
+2020-07-01 10:47:39,990 INFO Fetched : all_isin_list
+2020-07-01 10:47:40,392 INFO Get : security_isin (Relaxo Footwears Ltd.)
+2020-07-01 10:47:40,488 INFO Fetched : security_isin
+2020-07-01 10:47:40,488 INFO Get : all_isin_list
+2020-07-01 10:47:40,742 INFO Fetched : all_isin_list
+2020-07-01 10:47:41,150 INFO Get : security_isin (Reliance Industries Ltd.)
+2020-07-01 10:47:41,268 INFO Fetched : security_isin
+2020-07-01 10:47:41,268 INFO Get : all_isin_list
+2020-07-01 10:47:41,474 INFO Fetched : all_isin_list
+2020-07-01 10:47:41,998 INFO Get : security_isin (Repco Home Finance Ltd.)
+2020-07-01 10:47:42,078 INFO Fetched : security_isin
+2020-07-01 10:47:42,078 INFO Get : all_isin_list
+2020-07-01 10:47:42,350 INFO Fetched : all_isin_list
+2020-07-01 10:47:42,794 INFO Get : security_isin (Rites Ltd.)
+2020-07-01 10:47:42,918 INFO Fetched : security_isin
+2020-07-01 10:47:42,919 INFO Get : all_isin_list
+2020-07-01 10:47:43,202 INFO Fetched : all_isin_list
+2020-07-01 10:47:43,476 INFO Get : security_isin (Sanofi India Ltd.)
+2020-07-01 10:47:43,548 INFO Fetched : security_isin
+2020-07-01 10:47:43,548 INFO Get : all_isin_list
+2020-07-01 10:47:43,827 INFO Fetched : all_isin_list
+2020-07-01 10:47:44,200 INFO Get : security_isin (SBI Cards & Payments Services Ltd.)
+2020-07-01 10:47:44,299 INFO Fetched : security_isin
+2020-07-01 10:47:44,299 INFO Get : all_isin_list
+2020-07-01 10:47:44,510 INFO Fetched : all_isin_list
+2020-07-01 10:47:45,009 INFO Get : security_isin (SBI Life Insurance Company Ltd.)
+2020-07-01 10:47:45,138 INFO Fetched : security_isin
+2020-07-01 10:47:45,139 INFO Get : all_isin_list
+2020-07-01 10:47:45,408 INFO Fetched : all_isin_list
+2020-07-01 10:47:45,880 INFO Get : security_isin (Schaeffler India Ltd.)
+2020-07-01 10:47:45,999 INFO Fetched : security_isin
+2020-07-01 10:47:45,999 INFO Get : all_isin_list
+2020-07-01 10:47:46,328 INFO Fetched : all_isin_list
+2020-07-01 10:47:46,749 INFO Get : security_isin (Schneider Electric Infrastructure Ltd.)
+2020-07-01 10:47:46,856 INFO Fetched : security_isin
+2020-07-01 10:47:46,856 INFO Get : all_isin_list
+2020-07-01 10:47:47,061 INFO Fetched : all_isin_list
+2020-07-01 10:47:47,575 INFO Get : security_isin (Security and Intelligence Services (India) Ltd.)
+2020-07-01 10:47:47,688 INFO Fetched : security_isin
+2020-07-01 10:47:47,688 INFO Get : all_isin_list
+2020-07-01 10:47:47,962 INFO Fetched : all_isin_list
+2020-07-01 10:47:48,558 INFO Get : security_isin (Shankara Building Products Ltd.)
+2020-07-01 10:47:48,678 INFO Fetched : security_isin
+2020-07-01 10:47:48,679 INFO Get : all_isin_list
+2020-07-01 10:47:48,948 INFO Fetched : all_isin_list
+2020-07-01 10:47:49,442 INFO Get : security_isin (Sheela Foam Ltd.)
+2020-07-01 10:47:49,566 INFO Fetched : security_isin
+2020-07-01 10:47:49,567 INFO Get : all_isin_list
+2020-07-01 10:47:49,848 INFO Fetched : all_isin_list
+2020-07-01 10:47:50,216 INFO Get : security_isin (Shipping Corpn. Of India Ltd.)
+2020-07-01 10:47:50,348 INFO Fetched : security_isin
+2020-07-01 10:47:50,349 INFO Get : all_isin_list
+2020-07-01 10:47:50,622 INFO Fetched : all_isin_list
+2020-07-01 10:47:51,103 INFO Get : security_isin (S H Kelkar and Company Ltd)
+2020-07-01 10:47:51,208 INFO Fetched : security_isin
+2020-07-01 10:47:51,209 INFO Get : security_isin (Shopper's Stop Ltd.)
+2020-07-01 10:47:51,276 INFO Fetched : security_isin
+2020-07-01 10:47:51,277 INFO Get : all_isin_list
+2020-07-01 10:47:51,590 INFO Fetched : all_isin_list
+2020-07-01 10:47:51,948 INFO Get : security_isin (Shree Cement Ltd.)
+2020-07-01 10:47:52,031 INFO Fetched : security_isin
+2020-07-01 10:47:52,032 INFO Get : security_isin (Shriram City Union Finance Ltd.)
+2020-07-01 10:47:52,098 INFO Fetched : security_isin
+2020-07-01 10:47:52,098 INFO Get : all_isin_list
+2020-07-01 10:47:52,413 INFO Fetched : all_isin_list
+2020-07-01 10:47:52,884 INFO Get : security_isin (Shriram Transport Finance Co. Ltd.)
+2020-07-01 10:47:52,968 INFO Fetched : security_isin
+2020-07-01 10:47:52,969 INFO Get : all_isin_list
+2020-07-01 10:47:53,169 INFO Fetched : all_isin_list
+2020-07-01 10:47:53,614 INFO Get : security_isin (Siemens Ltd.)
+2020-07-01 10:47:53,729 INFO Fetched : security_isin
+2020-07-01 10:47:53,730 INFO Get : all_isin_list
+2020-07-01 10:47:53,994 INFO Fetched : all_isin_list
+2020-07-01 10:47:54,268 INFO Get : security_isin (SJVN Ltd.)
+2020-07-01 10:47:54,399 INFO Fetched : security_isin
+2020-07-01 10:47:54,399 INFO Get : all_isin_list
+2020-07-01 10:47:54,616 INFO Fetched : all_isin_list
+2020-07-01 10:47:54,844 INFO Get : security_isin (SKF India Ltd.)
+2020-07-01 10:47:54,958 INFO Fetched : security_isin
+2020-07-01 10:47:54,958 INFO Get : all_isin_list
+2020-07-01 10:47:55,187 INFO Fetched : all_isin_list
+2020-07-01 10:47:55,485 INFO Get : security_isin (Sobha Ltd.)
+2020-07-01 10:47:55,596 INFO Fetched : security_isin
+2020-07-01 10:47:55,596 INFO Get : all_isin_list
+2020-07-01 10:47:55,831 INFO Fetched : all_isin_list
+2020-07-01 10:47:56,094 INFO Get : security_isin (Solar Industries India Ltd.)
+2020-07-01 10:47:56,198 INFO Fetched : security_isin
+2020-07-01 10:47:56,199 INFO Get : all_isin_list
+2020-07-01 10:47:56,427 INFO Fetched : all_isin_list
+2020-07-01 10:47:56,848 INFO Get : security_isin (Somany Ceramics Ltd.)
+2020-07-01 10:47:56,968 INFO Fetched : security_isin
+2020-07-01 10:47:56,968 INFO Get : all_isin_list
+2020-07-01 10:47:57,247 INFO Fetched : all_isin_list
+2020-07-01 10:47:57,605 INFO Get : security_isin (Sonata Software Ltd.)
+2020-07-01 10:47:57,718 INFO Fetched : security_isin
+2020-07-01 10:47:57,718 INFO Get : all_isin_list
+2020-07-01 10:47:57,948 INFO Fetched : all_isin_list
+2020-07-01 10:47:58,387 INFO Get : security_isin (South Indian Bank Ltd.)
+2020-07-01 10:47:58,458 INFO Fetched : security_isin
+2020-07-01 10:47:58,458 INFO Get : all_isin_list
+2020-07-01 10:47:58,702 INFO Fetched : all_isin_list
+2020-07-01 10:47:59,129 INFO Get : security_isin (Spandana Sphoorty Financial Ltd.)
+2020-07-01 10:47:59,248 INFO Fetched : security_isin
+2020-07-01 10:47:59,249 INFO Get : all_isin_list
+2020-07-01 10:47:59,555 INFO Fetched : all_isin_list
+2020-07-01 10:48:00,025 INFO Get : security_isin (Spicejet Ltd.)
+2020-07-01 10:48:00,107 INFO Fetched : security_isin
+2020-07-01 10:48:00,108 INFO Get : all_isin_list
+2020-07-01 10:48:00,398 INFO Fetched : all_isin_list
+2020-07-01 10:48:00,695 INFO Get : security_isin (SRF Ltd.)
+2020-07-01 10:48:00,816 INFO Fetched : security_isin
+2020-07-01 10:48:00,816 INFO Get : all_isin_list
+2020-07-01 10:48:01,040 INFO Fetched : all_isin_list
+2020-07-01 10:48:01,267 INFO Get : security_isin (Star Cement Ltd)
+2020-07-01 10:48:01,360 INFO Fetched : security_isin
+2020-07-01 10:48:01,361 INFO Get : security_isin (State Bank of India)
+2020-07-01 10:48:01,428 INFO Fetched : security_isin
+2020-07-01 10:48:01,429 INFO Get : security_isin (Steel Authority Of India Ltd.)
+2020-07-01 10:48:01,509 INFO Fetched : security_isin
+2020-07-01 10:48:01,509 INFO Get : all_isin_list
+2020-07-01 10:48:01,791 INFO Fetched : all_isin_list
+2020-07-01 10:48:02,249 INFO Get : security_isin (Sterling and Wilson Solar Ltd.)
+2020-07-01 10:48:02,368 INFO Fetched : security_isin
+2020-07-01 10:48:02,368 INFO Get : all_isin_list
+2020-07-01 10:48:02,753 INFO Fetched : all_isin_list
+2020-07-01 10:48:03,208 INFO Get : security_isin (Sterlite Technologies Ltd.)
+2020-07-01 10:48:03,328 INFO Fetched : security_isin
+2020-07-01 10:48:03,329 INFO Get : all_isin_list
+2020-07-01 10:48:03,573 INFO Fetched : all_isin_list
+2020-07-01 10:48:04,049 INFO Get : security_isin (Strides Pharma Science Ltd.)
+2020-07-01 10:48:04,127 INFO Fetched : security_isin
+2020-07-01 10:48:04,127 INFO Get : all_isin_list
+2020-07-01 10:48:04,406 INFO Fetched : all_isin_list
+2020-07-01 10:48:04,838 INFO Get : security_isin (Sudarshan Chemical Inds. Ltd.)
+2020-07-01 10:48:04,959 INFO Fetched : security_isin
+2020-07-01 10:48:04,959 INFO Get : all_isin_list
+2020-07-01 10:48:05,199 INFO Fetched : all_isin_list
+2020-07-01 10:48:05,611 INFO Get : security_isin (Sumitomo Chemical India Pvt. Ltd.)
+2020-07-01 10:48:05,728 INFO Fetched : security_isin
+2020-07-01 10:48:05,729 INFO Get : all_isin_list
+2020-07-01 10:48:05,997 INFO Fetched : all_isin_list
+2020-07-01 10:48:06,494 INFO Get : security_isin (Sundram Fasteners Ltd.)
+2020-07-01 10:48:06,610 INFO Fetched : security_isin
+2020-07-01 10:48:06,610 INFO Get : all_isin_list
+2020-07-01 10:48:06,889 INFO Fetched : all_isin_list
+2020-07-01 10:48:07,285 INFO Get : security_isin (Sun Pharma Advanced Research Company Ltd.)
+2020-07-01 10:48:07,387 INFO Fetched : security_isin
+2020-07-01 10:48:07,388 INFO Get : all_isin_list
+2020-07-01 10:48:07,620 INFO Fetched : all_isin_list
+2020-07-01 10:48:08,109 INFO Get : security_isin (Sun Pharmaceutical Inds. Ltd.)
+2020-07-01 10:48:08,227 INFO Fetched : security_isin
+2020-07-01 10:48:08,227 INFO Get : all_isin_list
+2020-07-01 10:48:08,498 INFO Fetched : all_isin_list
+2020-07-01 10:48:08,925 INFO Get : security_isin (Sunteck Realty Ltd.)
+2020-07-01 10:48:09,047 INFO Fetched : security_isin
+2020-07-01 10:48:09,048 INFO Get : all_isin_list
+2020-07-01 10:48:09,320 INFO Fetched : all_isin_list
+2020-07-01 10:48:09,709 INFO Get : security_isin (Sun TV Network Ltd.)
+2020-07-01 10:48:09,839 INFO Fetched : security_isin
+2020-07-01 10:48:09,839 INFO Get : all_isin_list
+2020-07-01 10:48:10,065 INFO Fetched : all_isin_list
+2020-07-01 10:48:10,442 INFO Get : security_isin (Suprajit Engineering Ltd.)
+2020-07-01 10:48:10,538 INFO Fetched : security_isin
+2020-07-01 10:48:10,539 INFO Get : all_isin_list
+2020-07-01 10:48:10,761 INFO Fetched : all_isin_list
+2020-07-01 10:48:11,191 INFO Get : security_isin (Supreme Industries Ltd.)
+2020-07-01 10:48:11,280 INFO Fetched : security_isin
+2020-07-01 10:48:11,281 INFO Get : all_isin_list
+2020-07-01 10:48:11,521 INFO Fetched : all_isin_list
+2020-07-01 10:48:11,915 INFO Get : security_isin (Suzlon Energy Ltd.)
+2020-07-01 10:48:12,008 INFO Fetched : security_isin
+2020-07-01 10:48:12,008 INFO Get : all_isin_list
+2020-07-01 10:48:12,244 INFO Fetched : all_isin_list
+2020-07-01 10:48:12,608 INFO Get : security_isin (Swan Energy Ltd.)
+2020-07-01 10:48:12,718 INFO Fetched : security_isin
+2020-07-01 10:48:12,718 INFO Get : all_isin_list
+2020-07-01 10:48:13,023 INFO Fetched : all_isin_list
+2020-07-01 10:48:13,344 INFO Get : security_isin (Symphony Ltd.)
+2020-07-01 10:48:13,437 INFO Fetched : security_isin
+2020-07-01 10:48:13,438 INFO Get : all_isin_list
+2020-07-01 10:48:13,732 INFO Fetched : all_isin_list
+2020-07-01 10:48:14,021 INFO Get : security_isin (Syngene International Ltd.)
+2020-07-01 10:48:14,118 INFO Fetched : security_isin
+2020-07-01 10:48:14,118 INFO Get : all_isin_list
+2020-07-01 10:48:14,373 INFO Fetched : all_isin_list
+2020-07-01 10:48:14,794 INFO Get : security_isin (Take Solutions Ltd.)
+2020-07-01 10:48:14,916 INFO Fetched : security_isin
+2020-07-01 10:48:14,916 INFO Get : all_isin_list
+2020-07-01 10:48:15,238 INFO Fetched : all_isin_list
+2020-07-01 10:48:15,585 INFO Get : security_isin (Tamil Nadu Newsprint & Papers Ltd.)
+2020-07-01 10:48:15,657 INFO Fetched : security_isin
+2020-07-01 10:48:15,657 INFO Get : all_isin_list
+2020-07-01 10:48:15,874 INFO Fetched : all_isin_list
+2020-07-01 10:48:16,367 INFO Get : security_isin (Tasty Bite Eatables Ltd.)
+2020-07-01 10:48:16,504 INFO Fetched : security_isin
+2020-07-01 10:48:16,504 INFO Get : all_isin_list
+2020-07-01 10:48:16,798 INFO Fetched : all_isin_list
+2020-07-01 10:48:17,285 INFO Get : security_isin (Tata Chemicals Ltd.)
+2020-07-01 10:48:17,356 INFO Fetched : security_isin
+2020-07-01 10:48:17,356 INFO Get : all_isin_list
+2020-07-01 10:48:17,641 INFO Fetched : all_isin_list
+2020-07-01 10:48:18,090 INFO Get : security_isin (Tata Coffee Ltd.)
+2020-07-01 10:48:18,208 INFO Fetched : security_isin
+2020-07-01 10:48:18,208 INFO Get : all_isin_list
+2020-07-01 10:48:18,512 INFO Fetched : all_isin_list
+2020-07-01 10:48:19,060 INFO Get : security_isin (Tata Communications Ltd.)
+2020-07-01 10:48:19,178 INFO Fetched : security_isin
+2020-07-01 10:48:19,178 INFO Get : all_isin_list
+2020-07-01 10:48:19,597 INFO Fetched : all_isin_list
+2020-07-01 10:48:21,960 INFO Get : security_isin (Tata Consultancy Services Ltd.)
+2020-07-01 10:48:22,047 INFO Fetched : security_isin
+2020-07-01 10:48:22,047 INFO Get : all_isin_list
+2020-07-01 10:48:22,449 INFO Fetched : all_isin_list
+2020-07-01 10:48:23,176 INFO Get : security_isin (Tata Consumer Products Ltd.)
+2020-07-01 10:48:23,296 INFO Fetched : security_isin
+2020-07-01 10:48:23,297 INFO Get : security_isin (Tata Elxsi Ltd.)
+2020-07-01 10:48:23,382 INFO Fetched : security_isin
+2020-07-01 10:48:23,382 INFO Get : all_isin_list
+2020-07-01 10:48:23,673 INFO Fetched : all_isin_list
+2020-07-01 10:48:24,187 INFO Get : security_isin (Tata Investment Corpn. Ltd.)
+2020-07-01 10:48:24,297 INFO Fetched : security_isin
+2020-07-01 10:48:24,297 INFO Get : all_isin_list
+2020-07-01 10:48:24,600 INFO Fetched : all_isin_list
+2020-07-01 10:48:24,999 INFO Get : security_isin (Tata Metaliks Ltd.)
+2020-07-01 10:48:25,127 INFO Fetched : security_isin
+2020-07-01 10:48:25,127 INFO Get : all_isin_list
+2020-07-01 10:48:25,391 INFO Fetched : all_isin_list
+2020-07-01 10:48:25,735 INFO Get : security_isin (Tata Motors Ltd - DVR)
+2020-07-01 10:48:25,857 INFO Fetched : security_isin
+2020-07-01 10:48:25,857 INFO Get : security_isin (Tata Motors Ltd.)
+2020-07-01 10:48:25,937 INFO Fetched : security_isin
+2020-07-01 10:48:25,938 INFO Get : all_isin_list
+2020-07-01 10:48:26,157 INFO Fetched : all_isin_list
+2020-07-01 10:48:26,499 INFO Get : security_isin (Tata Power Co. Ltd.)
+2020-07-01 10:48:26,564 INFO Fetched : security_isin
+2020-07-01 10:48:26,564 INFO Get : all_isin_list
+2020-07-01 10:48:26,789 INFO Fetched : all_isin_list
+2020-07-01 10:48:27,163 INFO Get : security_isin (Tata Steel Ltd.)
+2020-07-01 10:48:27,227 INFO Fetched : security_isin
+2020-07-01 10:48:27,227 INFO Get : all_isin_list
+2020-07-01 10:48:27,468 INFO Fetched : all_isin_list
+2020-07-01 10:48:27,805 INFO Get : security_isin (TCI Express Ltd.)
+2020-07-01 10:48:27,926 INFO Fetched : security_isin
+2020-07-01 10:48:27,926 INFO Get : all_isin_list
+2020-07-01 10:48:28,221 INFO Fetched : all_isin_list
+2020-07-01 10:48:28,556 INFO Get : security_isin (TCNS Clothing Co Ltd.)
+2020-07-01 10:48:28,668 INFO Fetched : security_isin
+2020-07-01 10:48:28,668 INFO Get : all_isin_list
+2020-07-01 10:48:28,969 INFO Fetched : all_isin_list
+2020-07-01 10:48:29,382 INFO Get : security_isin (TeamLease Services Ltd.)
+2020-07-01 10:48:29,456 INFO Fetched : security_isin
+2020-07-01 10:48:29,456 INFO Get : all_isin_list
+2020-07-01 10:48:29,737 INFO Fetched : all_isin_list
+2020-07-01 10:48:30,128 INFO Get : security_isin (Tech Mahindra Ltd.)
+2020-07-01 10:48:30,245 INFO Fetched : security_isin
+2020-07-01 10:48:30,245 INFO Get : all_isin_list
+2020-07-01 10:48:30,478 INFO Fetched : all_isin_list
+2020-07-01 10:48:30,826 INFO Get : security_isin (The New India Assurance Co. Ltd.)
+2020-07-01 10:48:30,947 INFO Fetched : security_isin
+2020-07-01 10:48:30,948 INFO Get : all_isin_list
+2020-07-01 10:48:31,228 INFO Fetched : all_isin_list
+2020-07-01 10:48:31,680 INFO Get : security_isin (The Ramco Cements Ltd.)
+2020-07-01 10:48:31,808 INFO Fetched : security_isin
+2020-07-01 10:48:31,808 INFO Get : all_isin_list
+2020-07-01 10:48:32,091 INFO Fetched : all_isin_list
+2020-07-01 10:48:32,530 INFO Get : security_isin (Thermax Ltd.)
+2020-07-01 10:48:32,607 INFO Fetched : security_isin
+2020-07-01 10:48:32,607 INFO Get : all_isin_list
+2020-07-01 10:48:32,844 INFO Fetched : all_isin_list
+2020-07-01 10:48:33,117 INFO Get : security_isin (Thyrocare Technologies Ltd.)
+2020-07-01 10:48:33,246 INFO Fetched : security_isin
+2020-07-01 10:48:33,247 INFO Get : all_isin_list
+2020-07-01 10:48:33,466 INFO Fetched : all_isin_list
+2020-07-01 10:48:33,886 INFO Get : security_isin (Time Technoplast Ltd)
+2020-07-01 10:48:34,007 INFO Fetched : security_isin
+2020-07-01 10:48:34,008 INFO Get : security_isin (Timken India Ltd.)
+2020-07-01 10:48:34,087 INFO Fetched : security_isin
+2020-07-01 10:48:34,087 INFO Get : all_isin_list
+2020-07-01 10:48:34,401 INFO Fetched : all_isin_list
+2020-07-01 10:48:34,748 INFO Get : security_isin (Titan Company Ltd.)
+2020-07-01 10:48:34,857 INFO Fetched : security_isin
+2020-07-01 10:48:34,857 INFO Get : all_isin_list
+2020-07-01 10:48:35,200 INFO Fetched : all_isin_list
+2020-07-01 10:48:35,556 INFO Get : security_isin (Torrent Pharmaceuticals Ltd.)
+2020-07-01 10:48:35,687 INFO Fetched : security_isin
+2020-07-01 10:48:35,688 INFO Get : all_isin_list
+2020-07-01 10:48:35,928 INFO Fetched : all_isin_list
+2020-07-01 10:48:36,390 INFO Get : security_isin (Torrent Power Ltd.)
+2020-07-01 10:48:36,467 INFO Fetched : security_isin
+2020-07-01 10:48:36,467 INFO Get : all_isin_list
+2020-07-01 10:48:36,707 INFO Fetched : all_isin_list
+2020-07-01 10:48:37,047 INFO Get : security_isin (Trent Ltd.)
+2020-07-01 10:48:37,147 INFO Fetched : security_isin
+2020-07-01 10:48:37,147 INFO Get : all_isin_list
+2020-07-01 10:48:37,460 INFO Fetched : all_isin_list
+2020-07-01 10:48:37,704 INFO Get : security_isin (Trident Ltd.)
+2020-07-01 10:48:37,806 INFO Fetched : security_isin
+2020-07-01 10:48:37,807 INFO Get : all_isin_list
+2020-07-01 10:48:38,059 INFO Fetched : all_isin_list
+2020-07-01 10:48:38,364 INFO Get : security_isin (TTK Prestige Ltd.)
+2020-07-01 10:48:38,483 INFO Fetched : security_isin
+2020-07-01 10:48:38,484 INFO Get : all_isin_list
+2020-07-01 10:48:38,756 INFO Fetched : all_isin_list
+2020-07-01 10:48:39,157 INFO Get : security_isin (Tube Investments Of India Ltd.)
+2020-07-01 10:48:39,277 INFO Fetched : security_isin
+2020-07-01 10:48:39,277 INFO Get : all_isin_list
+2020-07-01 10:48:39,496 INFO Fetched : all_isin_list
+2020-07-01 10:48:39,967 INFO Get : security_isin (TV18 Broadcast Ltd.)
+2020-07-01 10:48:40,088 INFO Fetched : security_isin
+2020-07-01 10:48:40,089 INFO Get : all_isin_list
+2020-07-01 10:48:40,440 INFO Fetched : all_isin_list
+2020-07-01 10:48:40,826 INFO Get : security_isin (TVS Motor Co. Ltd.)
+2020-07-01 10:48:40,946 INFO Fetched : security_isin
+2020-07-01 10:48:40,946 INFO Get : all_isin_list
+2020-07-01 10:48:41,184 INFO Fetched : all_isin_list
+2020-07-01 10:48:41,564 INFO Get : security_isin (TVS Srichakra Ltd.)
+2020-07-01 10:48:41,678 INFO Fetched : security_isin
+2020-07-01 10:48:41,678 INFO Get : all_isin_list
+2020-07-01 10:48:41,934 INFO Fetched : all_isin_list
+2020-07-01 10:48:42,308 INFO Get : security_isin (TV Today Network Ltd.)
+2020-07-01 10:48:42,387 INFO Fetched : security_isin
+2020-07-01 10:48:42,387 INFO Get : all_isin_list
+2020-07-01 10:48:42,703 INFO Fetched : all_isin_list
+2020-07-01 10:48:43,130 INFO Get : security_isin (UCO Bank)
+2020-07-01 10:48:43,226 INFO Fetched : security_isin
+2020-07-01 10:48:43,226 INFO Get : security_isin (UFLEX Ltd.)
+2020-07-01 10:48:43,295 INFO Fetched : security_isin
+2020-07-01 10:48:43,296 INFO Get : all_isin_list
+2020-07-01 10:48:43,662 INFO Fetched : all_isin_list
+2020-07-01 10:48:43,919 INFO Get : security_isin (Ujjivan Financial Services Ltd.)
+2020-07-01 10:48:44,044 INFO Fetched : security_isin
+2020-07-01 10:48:44,044 INFO Get : all_isin_list
+2020-07-01 10:48:44,402 INFO Fetched : all_isin_list
+2020-07-01 10:48:44,874 INFO Get : security_isin (Ujjivan Small Finance Bank Ltd.)
+2020-07-01 10:48:44,997 INFO Fetched : security_isin
+2020-07-01 10:48:44,998 INFO Get : all_isin_list
+2020-07-01 10:48:45,373 INFO Fetched : all_isin_list
+2020-07-01 10:48:45,829 INFO Get : security_isin (Ultratech Cement Ltd.)
+2020-07-01 10:48:45,957 INFO Fetched : security_isin
+2020-07-01 10:48:45,957 INFO Get : all_isin_list
+2020-07-01 10:48:46,283 INFO Fetched : all_isin_list
+2020-07-01 10:48:46,700 INFO Get : security_isin (Union Bank of India)
+2020-07-01 10:48:46,829 INFO Fetched : security_isin
+2020-07-01 10:48:46,830 INFO Get : security_isin (United Breweries Ltd.)
+2020-07-01 10:48:46,895 INFO Fetched : security_isin
+2020-07-01 10:48:46,895 INFO Get : all_isin_list
+2020-07-01 10:48:47,304 INFO Fetched : all_isin_list
+2020-07-01 10:48:47,734 INFO Get : security_isin (UPL Ltd.)
+2020-07-01 10:48:47,858 INFO Fetched : security_isin
+2020-07-01 10:48:47,858 INFO Get : all_isin_list
+2020-07-01 10:48:48,162 INFO Fetched : all_isin_list
+2020-07-01 10:48:48,452 INFO Get : security_isin (Vaibhav Global Ltd.)
+2020-07-01 10:48:48,564 INFO Fetched : security_isin
+2020-07-01 10:48:48,565 INFO Get : all_isin_list
+2020-07-01 10:48:48,908 INFO Fetched : all_isin_list
+2020-07-01 10:48:49,274 INFO Get : security_isin (Vardhman Textiles Ltd.)
+2020-07-01 10:48:49,407 INFO Fetched : security_isin
+2020-07-01 10:48:49,407 INFO Get : all_isin_list
+2020-07-01 10:48:49,779 INFO Fetched : all_isin_list
+2020-07-01 10:48:50,212 INFO Get : security_isin (Varroc Engineering Pvt Ltd.)
+2020-07-01 10:48:50,325 INFO Fetched : security_isin
+2020-07-01 10:48:50,326 INFO Get : all_isin_list
+2020-07-01 10:48:50,600 INFO Fetched : all_isin_list
+2020-07-01 10:48:51,055 INFO Get : security_isin (Varun Beverages Ltd.)
+2020-07-01 10:48:51,177 INFO Fetched : security_isin
+2020-07-01 10:48:51,177 INFO Get : all_isin_list
+2020-07-01 10:48:51,543 INFO Fetched : all_isin_list
+2020-07-01 10:48:52,038 INFO Get : security_isin (VA Tech Wabag Ltd)
+2020-07-01 10:48:52,136 INFO Fetched : security_isin
+2020-07-01 10:48:52,136 INFO Get : security_isin (Vedanta Ltd.)
+2020-07-01 10:48:52,214 INFO Fetched : security_isin
+2020-07-01 10:48:52,215 INFO Get : all_isin_list
+2020-07-01 10:48:52,534 INFO Fetched : all_isin_list
+2020-07-01 10:48:52,834 INFO Get : security_isin (Venky's (India) Ltd.)
+2020-07-01 10:48:52,906 INFO Fetched : security_isin
+2020-07-01 10:48:52,906 INFO Get : all_isin_list
+2020-07-01 10:48:53,194 INFO Fetched : all_isin_list
+2020-07-01 10:48:53,727 INFO Get : security_isin (V-Guard Industries Ltd.)
+2020-07-01 10:48:53,796 INFO Fetched : security_isin
+2020-07-01 10:48:53,796 INFO Get : all_isin_list
+2020-07-01 10:48:54,065 INFO Fetched : all_isin_list
+2020-07-01 10:48:54,511 INFO Get : security_isin (Vinati Organics Ltd.)
+2020-07-01 10:48:54,625 INFO Fetched : security_isin
+2020-07-01 10:48:54,625 INFO Get : all_isin_list
+2020-07-01 10:48:54,833 INFO Fetched : all_isin_list
+2020-07-01 10:48:55,207 INFO Get : security_isin (VIP Industries Ltd)
+2020-07-01 10:48:55,336 INFO Fetched : security_isin
+2020-07-01 10:48:55,337 INFO Get : security_isin (V-Mart Retail Ltd.)
+2020-07-01 10:48:55,406 INFO Fetched : security_isin
+2020-07-01 10:48:55,406 INFO Get : all_isin_list
+2020-07-01 10:48:55,621 INFO Fetched : all_isin_list
+2020-07-01 10:48:56,010 INFO Get : security_isin (Vodafone Idea Ltd.)
+2020-07-01 10:48:56,136 INFO Fetched : security_isin
+2020-07-01 10:48:56,136 INFO Get : all_isin_list
+2020-07-01 10:48:56,361 INFO Fetched : all_isin_list
+2020-07-01 10:48:56,726 INFO Get : security_isin (Voltas Ltd.)
+2020-07-01 10:48:56,856 INFO Fetched : security_isin
+2020-07-01 10:48:56,856 INFO Get : all_isin_list
+2020-07-01 10:48:57,083 INFO Fetched : all_isin_list
+2020-07-01 10:48:57,345 INFO Get : security_isin (VRL Logistics Ltd.)
+2020-07-01 10:48:57,434 INFO Fetched : security_isin
+2020-07-01 10:48:57,434 INFO Get : all_isin_list
+2020-07-01 10:48:57,709 INFO Fetched : all_isin_list
+2020-07-01 10:48:58,064 INFO Get : security_isin (VST Industries Ltd.)
+2020-07-01 10:48:58,186 INFO Fetched : security_isin
+2020-07-01 10:48:58,186 INFO Get : all_isin_list
+2020-07-01 10:48:58,463 INFO Fetched : all_isin_list
+2020-07-01 10:48:58,908 INFO Get : security_isin (Wabco India Ltd.)
+2020-07-01 10:48:58,984 INFO Fetched : security_isin
+2020-07-01 10:48:58,984 INFO Get : all_isin_list
+2020-07-01 10:48:59,243 INFO Fetched : all_isin_list
+2020-07-01 10:48:59,600 INFO Get : security_isin (Welspun Corp Ltd.)
+2020-07-01 10:48:59,715 INFO Fetched : security_isin
+2020-07-01 10:48:59,715 INFO Get : all_isin_list
+2020-07-01 10:48:59,980 INFO Fetched : all_isin_list
+2020-07-01 10:49:00,380 INFO Get : security_isin (Welspun India Ltd.)
+2020-07-01 10:49:00,476 INFO Fetched : security_isin
+2020-07-01 10:49:00,476 INFO Get : all_isin_list
+2020-07-01 10:49:00,708 INFO Fetched : all_isin_list
+2020-07-01 10:49:01,115 INFO Get : security_isin (Westlife Development Ltd.)
+2020-07-01 10:49:01,188 INFO Fetched : security_isin
+2020-07-01 10:49:01,188 INFO Get : all_isin_list
+2020-07-01 10:49:01,417 INFO Fetched : all_isin_list
+2020-07-01 10:49:01,879 INFO Get : security_isin (Whirlpool Of India Ltd.)
+2020-07-01 10:49:01,965 INFO Fetched : security_isin
+2020-07-01 10:49:01,965 INFO Get : all_isin_list
+2020-07-01 10:49:02,155 INFO Fetched : all_isin_list
+2020-07-01 10:49:02,601 INFO Get : security_isin (Wipro Ltd.)
+2020-07-01 10:49:02,696 INFO Fetched : security_isin
+2020-07-01 10:49:02,697 INFO Get : all_isin_list
+2020-07-01 10:49:02,978 INFO Fetched : all_isin_list
+2020-07-01 10:49:03,241 INFO Get : security_isin (Wockhardt Ltd.)
+2020-07-01 10:49:03,327 INFO Fetched : security_isin
+2020-07-01 10:49:03,327 INFO Get : all_isin_list
+2020-07-01 10:49:03,524 INFO Fetched : all_isin_list
+2020-07-01 10:49:03,813 INFO Get : security_isin (Zee Entertainment Enterprises Ltd.)
+2020-07-01 10:49:03,936 INFO Fetched : security_isin
+2020-07-01 10:49:03,936 INFO Get : all_isin_list
+2020-07-01 10:49:04,127 INFO Fetched : all_isin_list
+2020-07-01 10:49:04,638 INFO Get : security_isin (Zensar Technologies Ltd.)
+2020-07-01 10:49:04,756 INFO Fetched : security_isin
+2020-07-01 10:49:04,756 INFO Get : all_isin_list
+2020-07-01 10:49:05,016 INFO Fetched : all_isin_list
+2020-07-01 10:49:05,475 INFO Get : security_isin (Zydus Wellness Ltd.)
+2020-07-01 10:49:05,566 INFO Fetched : security_isin
+2020-07-01 10:49:05,566 INFO Get : all_isin_list
+2020-07-01 10:49:05,872 INFO Fetched : all_isin_list
+2020-07-01 10:49:06,236 INFO Update/Insert - mas_securities
+2020-07-01 10:49:42,573 INFO Update/Insert success - mas_securities
+2020-07-01 10:49:42,720 INFO Mas Securities - Ratios extraction is started

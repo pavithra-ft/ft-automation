@@ -69,7 +69,7 @@ def get_mas_security_ratio(security_ratio_list):
     return mas_security_ratio_list
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     sql_logger.info('Mas Securities - Ratios extraction is started')
     security_ratio_list = get_security_ratio()
     mas_security_ratio_list = get_mas_security_ratio(security_ratio_list)

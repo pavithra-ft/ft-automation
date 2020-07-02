@@ -1,0 +1,42 @@
+2020-07-01 10:17:35,527 INFO Index Prices - Extraction of BSE index prices is started
+2020-07-01 10:17:35,528 INFO Index Prices - Extraction(BSE100) from site is started
+2020-07-01 10:17:35,843 INFO Index Prices - Extraction(BSE100) from site is completed
+2020-07-01 10:17:38,373 INFO Index Prices - Extraction(BSE200) from site is started
+2020-07-01 10:17:39,107 INFO Index Prices - Extraction(BSE200) from site is completed
+2020-07-01 10:17:40,543 INFO Index Prices - Extraction(BSE30) from site is started
+2020-07-01 10:17:41,434 INFO Index Prices - Extraction(BSE30) from site is completed
+2020-07-01 10:17:42,906 INFO Index Prices - Extraction(BSE500) from site is started
+2020-07-01 10:17:43,481 INFO Index Prices - Extraction(BSE500) from site is completed
+2020-07-01 10:17:44,923 INFO Index Prices - Extraction(BSEHEALTH) from site is started
+2020-07-01 10:17:45,580 INFO Index Prices - Extraction(BSEHEALTH) from site is completed
+2020-07-01 10:17:47,057 INFO Index Prices - Extraction(BSEMC) from site is started
+2020-07-01 10:17:47,567 INFO Index Prices - Extraction(BSEMC) from site is completed
+2020-07-01 10:17:49,132 INFO Index Prices - Extraction(BSEMSC400) from site is started
+2020-07-01 10:17:49,666 INFO Index Prices - Extraction(BSEMSC400) from site is completed
+2020-07-01 10:17:51,142 INFO Index Prices - Extraction(BSESC) from site is started
+2020-07-01 10:17:52,314 INFO Index Prices - Extraction(BSESC) from site is completed
+2020-07-01 10:17:53,761 INFO Index Prices - Extraction(SENSEX) from site is started
+2020-07-01 10:17:54,355 INFO Index Prices - Extraction(SENSEX) from site is completed
+2020-07-01 10:17:55,792 INFO Index Prices - Extraction of BSE index prices is completed
+2020-07-01 10:23:51,061 INFO Index Prices - NSE is started
+2020-07-01 10:23:51,659 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:23:54,722 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:23:55,048 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:23:56,696 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:23:57,070 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:23:58,717 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:23:59,072 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:00,738 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:01,115 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:02,780 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:03,133 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:04,826 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:05,266 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:06,969 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:07,406 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:09,055 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:09,413 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:11,126 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:11,754 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:13,312 INFO Index Prices - Extraction of NSE index prices is started
+2020-07-01 10:24:13,312 INFO Index Prices - NSE is completed

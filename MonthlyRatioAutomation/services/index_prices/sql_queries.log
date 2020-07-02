@@ -1,0 +1,42 @@
+2020-07-01 10:17:35,528 INFO Index Prices - Extraction of BSE index prices is started
+2020-07-01 10:17:35,843 INFO Update/Insert - index_prices
+2020-07-01 10:17:38,231 INFO Update/Insert success - index_prices
+2020-07-01 10:17:39,107 INFO Update/Insert - index_prices
+2020-07-01 10:17:40,422 INFO Update/Insert success - index_prices
+2020-07-01 10:17:41,435 INFO Update/Insert - index_prices
+2020-07-01 10:17:42,773 INFO Update/Insert success - index_prices
+2020-07-01 10:17:43,481 INFO Update/Insert - index_prices
+2020-07-01 10:17:44,801 INFO Update/Insert success - index_prices
+2020-07-01 10:17:45,580 INFO Update/Insert - index_prices
+2020-07-01 10:17:46,933 INFO Update/Insert success - index_prices
+2020-07-01 10:17:47,567 INFO Update/Insert - index_prices
+2020-07-01 10:17:49,001 INFO Update/Insert success - index_prices
+2020-07-01 10:17:49,666 INFO Update/Insert - index_prices
+2020-07-01 10:17:51,013 INFO Update/Insert success - index_prices
+2020-07-01 10:17:52,315 INFO Update/Insert - index_prices
+2020-07-01 10:17:53,651 INFO Update/Insert success - index_prices
+2020-07-01 10:17:54,356 INFO Update/Insert - index_prices
+2020-07-01 10:17:55,672 INFO Update/Insert success - index_prices
+2020-07-01 10:17:55,792 INFO Index Prices - Extraction of BSE index prices is completed
+2020-07-01 10:23:51,061 INFO Index Prices - NSE is started
+2020-07-01 10:23:51,742 INFO Update/Insert - index_prices (NIFTY100)
+2020-07-01 10:23:54,573 INFO Update/Insert success - index_prices (NIFTY100)
+2020-07-01 10:23:55,059 INFO Update/Insert - index_prices (NIFTY200)
+2020-07-01 10:23:56,556 INFO Update/Insert success - index_prices (NIFTY200)
+2020-07-01 10:23:57,079 INFO Update/Insert - index_prices (NIFTY50)
+2020-07-01 10:23:58,596 INFO Update/Insert success - index_prices (NIFTY50)
+2020-07-01 10:23:59,093 INFO Update/Insert - index_prices (NIFTY500)
+2020-07-01 10:24:00,596 INFO Update/Insert success - index_prices (NIFTY500)
+2020-07-01 10:24:01,133 INFO Update/Insert - index_prices (NIFTYMC100)
+2020-07-01 10:24:02,645 INFO Update/Insert success - index_prices (NIFTYMC100)
+2020-07-01 10:24:03,162 INFO Update/Insert - index_prices (NIFTYMC150)
+2020-07-01 10:24:04,687 INFO Update/Insert success - index_prices (NIFTYMC150)
+2020-07-01 10:24:05,286 INFO Update/Insert - index_prices (NIFTYPHARMA)
+2020-07-01 10:24:06,826 INFO Update/Insert success - index_prices (NIFTYPHARMA)
+2020-07-01 10:24:07,415 INFO Update/Insert - index_prices (NIFTYSC100)
+2020-07-01 10:24:08,925 INFO Update/Insert success - index_prices (NIFTYSC100)
+2020-07-01 10:24:09,442 INFO Update/Insert - index_prices (NIFTYSC250)
+2020-07-01 10:24:10,986 INFO Update/Insert success - index_prices (NIFTYSC250)
+2020-07-01 10:24:11,784 INFO Update/Insert - index_prices (NIFVIX)
+2020-07-01 10:24:13,194 INFO Update/Insert success - index_prices (NIFVIX)
+2020-07-01 10:24:13,312 INFO Index Prices - NSE is completed

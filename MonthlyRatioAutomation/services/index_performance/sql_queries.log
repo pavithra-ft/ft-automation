@@ -1,0 +1,468 @@
+2020-07-01 11:21:20,293 INFO Index Performance - Started
+2020-07-01 11:21:20,293 INFO Get : mas_indices
+2020-07-01 11:21:21,744 INFO Fetched : mas_indices
+2020-07-01 11:21:58,705 INFO Get : start_date (BSE30)
+2020-07-01 11:21:58,795 INFO Fetched : start_date
+2020-07-01 11:21:58,795 INFO Get : start_index_price (BSE30)
+2020-07-01 11:21:58,973 INFO Fetched : start_index_price
+2020-07-01 11:21:58,974 INFO Get : index_price (BSE30,2020-06-30)
+2020-07-01 11:21:59,073 INFO Fetched : index_price
+2020-07-01 11:21:59,074 INFO Get : index_price (BSE30,2020-05-31)
+2020-07-01 11:21:59,163 INFO Fetched : index_price
+2020-07-01 11:21:59,164 INFO Get : index_price (BSE30,2020-03-31)
+2020-07-01 11:21:59,244 INFO Fetched : index_price
+2020-07-01 11:21:59,244 INFO Get : index_price (BSE30,2019-12-31)
+2020-07-01 11:21:59,324 INFO Fetched : index_price
+2020-07-01 11:21:59,324 INFO Get : index_price (BSE30,2019-06-30)
+2020-07-01 11:21:59,404 INFO Fetched : index_price
+2020-07-01 11:21:59,405 INFO Get : index_price (BSE30,2018-06-30)
+2020-07-01 11:21:59,485 INFO Fetched : index_price
+2020-07-01 11:21:59,485 INFO Get : index_price (BSE30,2017-06-30)
+2020-07-01 11:21:59,572 INFO Fetched : index_price
+2020-07-01 11:21:59,572 INFO Get : index_price (BSE30,2015-06-30)
+2020-07-01 11:21:59,664 INFO Fetched : index_price
+2020-07-01 11:22:34,567 INFO Get : start_date (BSE100)
+2020-07-01 11:22:34,641 INFO Fetched : start_date
+2020-07-01 11:22:34,641 INFO Get : start_index_price (BSE100)
+2020-07-01 11:22:34,723 INFO Fetched : start_index_price
+2020-07-01 11:22:34,723 INFO Get : index_price (BSE100,2020-06-30)
+2020-07-01 11:22:34,817 INFO Fetched : index_price
+2020-07-01 11:22:34,817 INFO Get : index_price (BSE100,2020-05-31)
+2020-07-01 11:22:34,903 INFO Fetched : index_price
+2020-07-01 11:22:34,903 INFO Get : index_price (BSE100,2020-03-31)
+2020-07-01 11:22:34,982 INFO Fetched : index_price
+2020-07-01 11:22:34,982 INFO Get : index_price (BSE100,2019-12-31)
+2020-07-01 11:22:35,063 INFO Fetched : index_price
+2020-07-01 11:22:35,063 INFO Get : index_price (BSE100,2019-06-30)
+2020-07-01 11:22:35,143 INFO Fetched : index_price
+2020-07-01 11:22:35,143 INFO Get : index_price (BSE100,2018-06-30)
+2020-07-01 11:22:35,223 INFO Fetched : index_price
+2020-07-01 11:22:35,223 INFO Get : index_price (BSE100,2017-06-30)
+2020-07-01 11:22:35,302 INFO Fetched : index_price
+2020-07-01 11:22:35,302 INFO Get : index_price (BSE100,2015-06-30)
+2020-07-01 11:22:35,379 INFO Fetched : index_price
+2020-07-01 11:22:35,379 INFO Get : sector (Finance (including NBFCs))
+2020-07-01 11:22:35,467 INFO Fetched : sector
+2020-07-01 11:23:10,823 INFO Get : start_date (BSE200)
+2020-07-01 11:23:10,901 INFO Fetched : start_date
+2020-07-01 11:23:10,902 INFO Get : start_index_price (BSE200)
+2020-07-01 11:23:10,972 INFO Fetched : start_index_price
+2020-07-01 11:23:10,972 INFO Get : index_price (BSE200,2020-06-30)
+2020-07-01 11:23:11,052 INFO Fetched : index_price
+2020-07-01 11:23:11,052 INFO Get : index_price (BSE200,2020-05-31)
+2020-07-01 11:23:11,130 INFO Fetched : index_price
+2020-07-01 11:23:11,130 INFO Get : index_price (BSE200,2020-03-31)
+2020-07-01 11:23:11,222 INFO Fetched : index_price
+2020-07-01 11:23:11,222 INFO Get : index_price (BSE200,2019-12-31)
+2020-07-01 11:23:11,301 INFO Fetched : index_price
+2020-07-01 11:23:11,302 INFO Get : index_price (BSE200,2019-06-30)
+2020-07-01 11:23:11,402 INFO Fetched : index_price
+2020-07-01 11:23:11,403 INFO Get : index_price (BSE200,2018-06-30)
+2020-07-01 11:23:11,481 INFO Fetched : index_price
+2020-07-01 11:23:11,482 INFO Get : index_price (BSE200,2017-06-30)
+2020-07-01 11:23:11,558 INFO Fetched : index_price
+2020-07-01 11:23:11,559 INFO Get : index_price (BSE200,2015-06-30)
+2020-07-01 11:23:11,642 INFO Fetched : index_price
+2020-07-01 11:23:11,642 INFO Get : sector (Finance (including NBFCs))
+2020-07-01 11:23:11,714 INFO Fetched : sector
+2020-07-01 11:23:47,138 INFO Get : start_date (BSE500)
+2020-07-01 11:23:47,230 INFO Fetched : start_date
+2020-07-01 11:23:47,230 INFO Get : start_index_price (BSE500)
+2020-07-01 11:23:47,299 INFO Fetched : start_index_price
+2020-07-01 11:23:47,300 INFO Get : index_price (BSE500,2020-06-30)
+2020-07-01 11:23:47,380 INFO Fetched : index_price
+2020-07-01 11:23:47,382 INFO Get : index_price (BSE500,2020-05-31)
+2020-07-01 11:23:47,461 INFO Fetched : index_price
+2020-07-01 11:23:47,461 INFO Get : index_price (BSE500,2020-03-31)
+2020-07-01 11:23:47,541 INFO Fetched : index_price
+2020-07-01 11:23:47,541 INFO Get : index_price (BSE500,2019-12-31)
+2020-07-01 11:23:47,620 INFO Fetched : index_price
+2020-07-01 11:23:47,621 INFO Get : index_price (BSE500,2019-06-30)
+2020-07-01 11:23:47,701 INFO Fetched : index_price
+2020-07-01 11:23:47,701 INFO Get : index_price (BSE500,2018-06-30)
+2020-07-01 11:23:47,781 INFO Fetched : index_price
+2020-07-01 11:23:47,781 INFO Get : index_price (BSE500,2017-06-30)
+2020-07-01 11:23:47,863 INFO Fetched : index_price
+2020-07-01 11:23:47,864 INFO Get : index_price (BSE500,2015-06-30)
+2020-07-01 11:23:47,951 INFO Fetched : index_price
+2020-07-01 11:23:47,953 INFO Get : sector (Finance (including NBFCs))
+2020-07-01 11:23:48,025 INFO Fetched : sector
+2020-07-01 11:24:35,497 INFO Get : start_date (BSEMC)
+2020-07-01 11:24:35,594 INFO Fetched : start_date
+2020-07-01 11:24:35,594 INFO Get : start_index_price (BSEMC)
+2020-07-01 11:24:35,667 INFO Fetched : start_index_price
+2020-07-01 11:24:35,667 INFO Get : index_price (BSEMC,2020-06-30)
+2020-07-01 11:24:35,770 INFO Fetched : index_price
+2020-07-01 11:24:35,771 INFO Get : index_price (BSEMC,2020-05-31)
+2020-07-01 11:24:35,859 INFO Fetched : index_price
+2020-07-01 11:24:35,859 INFO Get : index_price (BSEMC,2020-03-31)
+2020-07-01 11:24:35,938 INFO Fetched : index_price
+2020-07-01 11:24:35,938 INFO Get : index_price (BSEMC,2019-12-31)
+2020-07-01 11:24:36,016 INFO Fetched : index_price
+2020-07-01 11:24:36,016 INFO Get : index_price (BSEMC,2019-06-30)
+2020-07-01 11:24:36,100 INFO Fetched : index_price
+2020-07-01 11:24:36,101 INFO Get : index_price (BSEMC,2018-06-30)
+2020-07-01 11:24:36,190 INFO Fetched : index_price
+2020-07-01 11:24:36,190 INFO Get : index_price (BSEMC,2017-06-30)
+2020-07-01 11:24:36,270 INFO Fetched : index_price
+2020-07-01 11:24:36,271 INFO Get : index_price (BSEMC,2015-06-30)
+2020-07-01 11:24:36,370 INFO Fetched : index_price
+2020-07-01 11:24:36,371 INFO Get : sector (Finance (including NBFCs))
+2020-07-01 11:24:36,434 INFO Fetched : sector
+2020-07-01 11:25:12,441 INFO Get : start_date (SENSEX)
+2020-07-01 11:25:12,518 INFO Fetched : start_date
+2020-07-01 11:25:12,518 INFO Get : start_index_price (SENSEX)
+2020-07-01 11:25:12,588 INFO Fetched : start_index_price
+2020-07-01 11:25:12,589 INFO Get : index_price (SENSEX,2020-06-30)
+2020-07-01 11:25:12,670 INFO Fetched : index_price
+2020-07-01 11:25:12,670 INFO Get : index_price (SENSEX,2020-05-31)
+2020-07-01 11:25:12,739 INFO Fetched : index_price
+2020-07-01 11:25:12,739 INFO Get : index_price (SENSEX,2020-03-31)
+2020-07-01 11:25:12,819 INFO Fetched : index_price
+2020-07-01 11:25:12,819 INFO Get : index_price (SENSEX,2019-12-31)
+2020-07-01 11:25:12,899 INFO Fetched : index_price
+2020-07-01 11:25:12,899 INFO Get : index_price (SENSEX,2019-06-30)
+2020-07-01 11:25:12,980 INFO Fetched : index_price
+2020-07-01 11:25:12,980 INFO Get : index_price (SENSEX,2018-06-30)
+2020-07-01 11:25:13,056 INFO Fetched : index_price
+2020-07-01 11:25:13,056 INFO Get : index_price (SENSEX,2017-06-30)
+2020-07-01 11:25:13,130 INFO Fetched : index_price
+2020-07-01 11:25:13,130 INFO Get : index_price (SENSEX,2015-06-30)
+2020-07-01 11:25:13,208 INFO Fetched : index_price
+2020-07-01 11:25:13,209 INFO Get : sector (Finance (including NBFCs))
+2020-07-01 11:25:13,283 INFO Fetched : sector
+2020-07-01 11:25:48,653 INFO Get : start_date (NIFTY50)
+2020-07-01 11:25:48,738 INFO Fetched : start_date
+2020-07-01 11:25:48,738 INFO Get : start_index_price (NIFTY50)
+2020-07-01 11:25:48,809 INFO Fetched : start_index_price
+2020-07-01 11:25:48,809 INFO Get : index_price (NIFTY50,2020-06-30)
+2020-07-01 11:25:48,889 INFO Fetched : index_price
+2020-07-01 11:25:48,890 INFO Get : index_price (NIFTY50,2020-05-31)
+2020-07-01 11:25:48,969 INFO Fetched : index_price
+2020-07-01 11:25:48,969 INFO Get : index_price (NIFTY50,2020-03-31)
+2020-07-01 11:25:49,063 INFO Fetched : index_price
+2020-07-01 11:25:49,063 INFO Get : index_price (NIFTY50,2019-12-31)
+2020-07-01 11:25:49,149 INFO Fetched : index_price
+2020-07-01 11:25:49,149 INFO Get : index_price (NIFTY50,2019-06-30)
+2020-07-01 11:25:49,228 INFO Fetched : index_price
+2020-07-01 11:25:49,229 INFO Get : index_price (NIFTY50,2018-06-30)
+2020-07-01 11:25:49,309 INFO Fetched : index_price
+2020-07-01 11:25:49,310 INFO Get : index_price (NIFTY50,2017-06-30)
+2020-07-01 11:25:49,388 INFO Fetched : index_price
+2020-07-01 11:25:49,389 INFO Get : index_price (NIFTY50,2015-06-30)
+2020-07-01 11:25:49,470 INFO Fetched : index_price
+2020-07-01 11:25:49,472 INFO Get : security_isin (Reliance Industries Ltd.)
+2020-07-01 11:25:49,558 INFO Fetched : security_isin
+2020-07-01 11:25:49,559 INFO Get : all_isin_list
+2020-07-01 11:25:49,960 INFO Fetched : all_isin_list
+2020-07-01 11:25:50,372 INFO Get : sector (Financial services)
+2020-07-01 11:25:50,464 INFO Fetched : sector
+2020-07-01 11:26:26,611 INFO Get : start_date (NIFTY100)
+2020-07-01 11:26:26,693 INFO Fetched : start_date
+2020-07-01 11:26:26,693 INFO Get : start_index_price (NIFTY100)
+2020-07-01 11:26:26,775 INFO Fetched : start_index_price
+2020-07-01 11:26:26,775 INFO Get : index_price (NIFTY100,2020-06-30)
+2020-07-01 11:26:26,875 INFO Fetched : index_price
+2020-07-01 11:26:26,875 INFO Get : index_price (NIFTY100,2020-05-31)
+2020-07-01 11:26:26,964 INFO Fetched : index_price
+2020-07-01 11:26:26,965 INFO Get : index_price (NIFTY100,2020-03-31)
+2020-07-01 11:26:27,053 INFO Fetched : index_price
+2020-07-01 11:26:27,054 INFO Get : index_price (NIFTY100,2019-12-31)
+2020-07-01 11:26:27,125 INFO Fetched : index_price
+2020-07-01 11:26:27,126 INFO Get : index_price (NIFTY100,2019-06-30)
+2020-07-01 11:26:27,215 INFO Fetched : index_price
+2020-07-01 11:26:27,216 INFO Get : index_price (NIFTY100,2018-06-30)
+2020-07-01 11:26:27,296 INFO Fetched : index_price
+2020-07-01 11:26:27,296 INFO Get : index_price (NIFTY100,2017-06-30)
+2020-07-01 11:26:27,395 INFO Fetched : index_price
+2020-07-01 11:26:27,396 INFO Get : index_price (NIFTY100,2015-06-30)
+2020-07-01 11:26:27,487 INFO Fetched : index_price
+2020-07-01 11:26:27,488 INFO Get : security_isin (Reliance Industries Ltd.)
+2020-07-01 11:26:27,567 INFO Fetched : security_isin
+2020-07-01 11:26:27,567 INFO Get : all_isin_list
+2020-07-01 11:26:27,910 INFO Fetched : all_isin_list
+2020-07-01 11:26:28,306 INFO Get : sector (Financial services)
+2020-07-01 11:26:28,385 INFO Fetched : sector
+2020-07-01 11:27:03,829 INFO Get : start_date (NIFTY200)
+2020-07-01 11:27:03,917 INFO Fetched : start_date
+2020-07-01 11:27:03,917 INFO Get : start_index_price (NIFTY200)
+2020-07-01 11:27:03,976 INFO Fetched : start_index_price
+2020-07-01 11:27:03,976 INFO Get : index_price (NIFTY200,2020-06-30)
+2020-07-01 11:27:04,063 INFO Fetched : index_price
+2020-07-01 11:27:04,063 INFO Get : index_price (NIFTY200,2020-05-31)
+2020-07-01 11:27:04,147 INFO Fetched : index_price
+2020-07-01 11:27:04,147 INFO Get : index_price (NIFTY200,2020-03-31)
+2020-07-01 11:27:04,238 INFO Fetched : index_price
+2020-07-01 11:27:04,238 INFO Get : index_price (NIFTY200,2019-12-31)
+2020-07-01 11:27:04,340 INFO Fetched : index_price
+2020-07-01 11:27:04,340 INFO Get : index_price (NIFTY200,2019-06-30)
+2020-07-01 11:27:04,427 INFO Fetched : index_price
+2020-07-01 11:27:04,427 INFO Get : index_price (NIFTY200,2018-06-30)
+2020-07-01 11:27:04,519 INFO Fetched : index_price
+2020-07-01 11:27:04,520 INFO Get : index_price (NIFTY200,2017-06-30)
+2020-07-01 11:27:04,607 INFO Fetched : index_price
+2020-07-01 11:27:04,608 INFO Get : index_price (NIFTY200,2015-06-30)
+2020-07-01 11:27:04,697 INFO Fetched : index_price
+2020-07-01 11:27:04,698 INFO Get : security_isin (Reliance Industries Ltd.)
+2020-07-01 11:27:04,781 INFO Fetched : security_isin
+2020-07-01 11:27:04,781 INFO Get : all_isin_list
+2020-07-01 11:27:05,257 INFO Fetched : all_isin_list
+2020-07-01 11:27:05,696 INFO Get : sector (Financial services)
+2020-07-01 11:27:05,833 INFO Fetched : sector
+2020-07-01 11:27:41,891 INFO Get : start_date (NIFTY500)
+2020-07-01 11:27:41,966 INFO Fetched : start_date
+2020-07-01 11:27:41,966 INFO Get : start_index_price (NIFTY500)
+2020-07-01 11:27:42,035 INFO Fetched : start_index_price
+2020-07-01 11:27:42,035 INFO Get : index_price (NIFTY500,2020-06-30)
+2020-07-01 11:27:42,116 INFO Fetched : index_price
+2020-07-01 11:27:42,116 INFO Get : index_price (NIFTY500,2020-05-31)
+2020-07-01 11:27:42,196 INFO Fetched : index_price
+2020-07-01 11:27:42,196 INFO Get : index_price (NIFTY500,2020-03-31)
+2020-07-01 11:27:42,276 INFO Fetched : index_price
+2020-07-01 11:27:42,276 INFO Get : index_price (NIFTY500,2019-12-31)
+2020-07-01 11:27:42,356 INFO Fetched : index_price
+2020-07-01 11:27:42,356 INFO Get : index_price (NIFTY500,2019-06-30)
+2020-07-01 11:27:42,433 INFO Fetched : index_price
+2020-07-01 11:27:42,433 INFO Get : index_price (NIFTY500,2018-06-30)
+2020-07-01 11:27:42,516 INFO Fetched : index_price
+2020-07-01 11:27:42,516 INFO Get : index_price (NIFTY500,2017-06-30)
+2020-07-01 11:27:42,596 INFO Fetched : index_price
+2020-07-01 11:27:42,596 INFO Get : index_price (NIFTY500,2015-06-30)
+2020-07-01 11:27:42,677 INFO Fetched : index_price
+2020-07-01 11:27:42,678 INFO Get : security_isin (Reliance Industries Ltd.)
+2020-07-01 11:27:42,753 INFO Fetched : security_isin
+2020-07-01 11:27:42,753 INFO Get : all_isin_list
+2020-07-01 11:27:43,211 INFO Fetched : all_isin_list
+2020-07-01 11:27:43,628 INFO Get : sector (Financial services)
+2020-07-01 11:27:43,752 INFO Fetched : sector
+2020-07-01 11:28:19,853 INFO Get : start_date (NIFTYSC100)
+2020-07-01 11:28:19,925 INFO Fetched : start_date
+2020-07-01 11:28:19,925 INFO Get : start_index_price (NIFTYSC100)
+2020-07-01 11:28:19,994 INFO Fetched : start_index_price
+2020-07-01 11:28:19,994 INFO Get : index_price (NIFTYSC100,2020-06-30)
+2020-07-01 11:28:20,075 INFO Fetched : index_price
+2020-07-01 11:28:20,075 INFO Get : index_price (NIFTYSC100,2020-05-31)
+2020-07-01 11:28:20,156 INFO Fetched : index_price
+2020-07-01 11:28:20,156 INFO Get : index_price (NIFTYSC100,2020-03-31)
+2020-07-01 11:28:20,232 INFO Fetched : index_price
+2020-07-01 11:28:20,232 INFO Get : index_price (NIFTYSC100,2019-12-31)
+2020-07-01 11:28:20,317 INFO Fetched : index_price
+2020-07-01 11:28:20,318 INFO Get : index_price (NIFTYSC100,2019-06-30)
+2020-07-01 11:28:20,406 INFO Fetched : index_price
+2020-07-01 11:28:20,406 INFO Get : index_price (NIFTYSC100,2018-06-30)
+2020-07-01 11:28:20,485 INFO Fetched : index_price
+2020-07-01 11:28:20,486 INFO Get : index_price (NIFTYSC100,2017-06-30)
+2020-07-01 11:28:20,569 INFO Fetched : index_price
+2020-07-01 11:28:20,570 INFO Get : index_price (NIFTYSC100,2015-06-30)
+2020-07-01 11:28:20,657 INFO Fetched : index_price
+2020-07-01 11:28:20,658 INFO Get : security_isin (Multi Commodity Exchange of India Ltd.)
+2020-07-01 11:28:20,735 INFO Fetched : security_isin
+2020-07-01 11:28:20,735 INFO Get : all_isin_list
+2020-07-01 11:28:21,152 INFO Fetched : all_isin_list
+2020-07-01 11:28:21,707 INFO Get : sector (Financial services)
+2020-07-01 11:28:21,831 INFO Fetched : sector
+2020-07-01 11:28:58,693 INFO Get : start_date (NIFTYMC100)
+2020-07-01 11:28:58,764 INFO Fetched : start_date
+2020-07-01 11:28:58,764 INFO Get : start_index_price (NIFTYMC100)
+2020-07-01 11:28:58,939 INFO Fetched : start_index_price
+2020-07-01 11:28:58,940 INFO Get : index_price (NIFTYMC100,2020-06-30)
+2020-07-01 11:28:59,024 INFO Fetched : index_price
+2020-07-01 11:28:59,024 INFO Get : index_price (NIFTYMC100,2020-05-31)
+2020-07-01 11:28:59,104 INFO Fetched : index_price
+2020-07-01 11:28:59,104 INFO Get : index_price (NIFTYMC100,2020-03-31)
+2020-07-01 11:28:59,185 INFO Fetched : index_price
+2020-07-01 11:28:59,185 INFO Get : index_price (NIFTYMC100,2019-12-31)
+2020-07-01 11:28:59,265 INFO Fetched : index_price
+2020-07-01 11:28:59,265 INFO Get : index_price (NIFTYMC100,2019-06-30)
+2020-07-01 11:28:59,356 INFO Fetched : index_price
+2020-07-01 11:28:59,356 INFO Get : index_price (NIFTYMC100,2018-06-30)
+2020-07-01 11:28:59,450 INFO Fetched : index_price
+2020-07-01 11:28:59,450 INFO Get : index_price (NIFTYMC100,2017-06-30)
+2020-07-01 11:28:59,535 INFO Fetched : index_price
+2020-07-01 11:28:59,536 INFO Get : index_price (NIFTYMC100,2015-06-30)
+2020-07-01 11:28:59,626 INFO Fetched : index_price
+2020-07-01 11:28:59,628 INFO Get : security_isin (Tata Consumer Products Ltd.)
+2020-07-01 11:28:59,715 INFO Fetched : security_isin
+2020-07-01 11:28:59,716 INFO Get : sector (Financial services)
+2020-07-01 11:28:59,810 INFO Fetched : sector
+2020-07-01 11:29:35,753 INFO Get : start_date (BSEMSC400)
+2020-07-01 11:29:35,836 INFO Fetched : start_date
+2020-07-01 11:29:35,836 INFO Get : start_index_price (BSEMSC400)
+2020-07-01 11:29:35,905 INFO Fetched : start_index_price
+2020-07-01 11:29:35,905 INFO Get : index_price (BSEMSC400,2020-06-30)
+2020-07-01 11:29:35,998 INFO Fetched : index_price
+2020-07-01 11:29:35,999 INFO Get : index_price (BSEMSC400,2020-05-31)
+2020-07-01 11:29:36,068 INFO Fetched : index_price
+2020-07-01 11:29:36,069 INFO Get : index_price (BSEMSC400,2020-03-31)
+2020-07-01 11:29:36,152 INFO Fetched : index_price
+2020-07-01 11:29:36,152 INFO Get : index_price (BSEMSC400,2019-12-31)
+2020-07-01 11:29:36,225 INFO Fetched : index_price
+2020-07-01 11:29:36,225 INFO Get : index_price (BSEMSC400,2019-06-30)
+2020-07-01 11:29:36,305 INFO Fetched : index_price
+2020-07-01 11:29:36,305 INFO Get : index_price (BSEMSC400,2018-06-30)
+2020-07-01 11:29:36,374 INFO Fetched : index_price
+2020-07-01 11:29:36,374 INFO Get : index_price (BSEMSC400,2017-06-30)
+2020-07-01 11:29:36,444 INFO Fetched : index_price
+2020-07-01 11:29:36,444 INFO Get : index_price (BSEMSC400,2015-06-30)
+2020-07-01 11:29:36,527 INFO Fetched : index_price
+2020-07-01 11:29:36,528 INFO Get : sector (Finance (including NBFCs))
+2020-07-01 11:29:36,604 INFO Fetched : sector
+2020-07-01 11:30:12,026 INFO Get : start_date (NIFTYPHARMA)
+2020-07-01 11:30:12,097 INFO Fetched : start_date
+2020-07-01 11:30:12,097 INFO Get : start_index_price (NIFTYPHARMA)
+2020-07-01 11:30:12,170 INFO Fetched : start_index_price
+2020-07-01 11:30:12,170 INFO Get : index_price (NIFTYPHARMA,2020-06-30)
+2020-07-01 11:30:12,250 INFO Fetched : index_price
+2020-07-01 11:30:12,251 INFO Get : index_price (NIFTYPHARMA,2020-05-31)
+2020-07-01 11:30:12,333 INFO Fetched : index_price
+2020-07-01 11:30:12,334 INFO Get : index_price (NIFTYPHARMA,2020-03-31)
+2020-07-01 11:30:12,414 INFO Fetched : index_price
+2020-07-01 11:30:12,414 INFO Get : index_price (NIFTYPHARMA,2019-12-31)
+2020-07-01 11:30:12,504 INFO Fetched : index_price
+2020-07-01 11:30:12,505 INFO Get : index_price (NIFTYPHARMA,2019-06-30)
+2020-07-01 11:30:12,592 INFO Fetched : index_price
+2020-07-01 11:30:12,593 INFO Get : index_price (NIFTYPHARMA,2018-06-30)
+2020-07-01 11:30:12,683 INFO Fetched : index_price
+2020-07-01 11:30:12,683 INFO Get : index_price (NIFTYPHARMA,2017-06-30)
+2020-07-01 11:30:12,773 INFO Fetched : index_price
+2020-07-01 11:30:12,773 INFO Get : index_price (NIFTYPHARMA,2015-06-30)
+2020-07-01 11:30:12,864 INFO Fetched : index_price
+2020-07-01 11:30:12,865 INFO Get : security_isin (Sun Pharmaceutical Industries Ltd.)
+2020-07-01 11:30:12,946 INFO Fetched : security_isin
+2020-07-01 11:30:12,946 INFO Get : all_isin_list
+2020-07-01 11:30:13,419 INFO Fetched : all_isin_list
+2020-07-01 11:30:13,913 INFO Get : sector (Healthcare services)
+2020-07-01 11:30:13,986 INFO Fetched : sector
+2020-07-01 11:30:51,284 INFO Get : start_date (NIFTYSC250)
+2020-07-01 11:30:51,355 INFO Fetched : start_date
+2020-07-01 11:30:51,355 INFO Get : start_index_price (NIFTYSC250)
+2020-07-01 11:30:51,422 INFO Fetched : start_index_price
+2020-07-01 11:30:51,422 INFO Get : index_price (NIFTYSC250,2020-06-30)
+2020-07-01 11:30:51,514 INFO Fetched : index_price
+2020-07-01 11:30:51,514 INFO Get : index_price (NIFTYSC250,2020-05-31)
+2020-07-01 11:30:51,599 INFO Fetched : index_price
+2020-07-01 11:30:51,599 INFO Get : index_price (NIFTYSC250,2020-03-31)
+2020-07-01 11:30:51,679 INFO Fetched : index_price
+2020-07-01 11:30:51,680 INFO Get : index_price (NIFTYSC250,2019-12-31)
+2020-07-01 11:30:51,753 INFO Fetched : index_price
+2020-07-01 11:30:51,754 INFO Get : index_price (NIFTYSC250,2019-06-30)
+2020-07-01 11:30:51,828 INFO Fetched : index_price
+2020-07-01 11:30:51,828 INFO Get : index_price (NIFTYSC250,2018-06-30)
+2020-07-01 11:30:51,903 INFO Fetched : index_price
+2020-07-01 11:30:51,903 INFO Get : index_price (NIFTYSC250,2017-06-30)
+2020-07-01 11:30:51,983 INFO Fetched : index_price
+2020-07-01 11:30:51,983 INFO Get : index_price (NIFTYSC250,2015-06-30)
+2020-07-01 11:30:52,052 INFO Fetched : index_price
+2020-07-01 11:30:52,053 INFO Get : security_isin (Multi Commodity Exchange of India Ltd.)
+2020-07-01 11:30:52,123 INFO Fetched : security_isin
+2020-07-01 11:30:52,123 INFO Get : all_isin_list
+2020-07-01 11:30:52,488 INFO Fetched : all_isin_list
+2020-07-01 11:30:53,033 INFO Get : sector (Consumer Dis.)
+2020-07-01 11:30:53,117 INFO Fetched : sector
+2020-07-01 11:31:28,663 INFO Get : start_date (NIFTYMC150)
+2020-07-01 11:31:28,745 INFO Fetched : start_date
+2020-07-01 11:31:28,745 INFO Get : start_index_price (NIFTYMC150)
+2020-07-01 11:31:28,814 INFO Fetched : start_index_price
+2020-07-01 11:31:28,814 INFO Get : index_price (NIFTYMC150,2020-06-30)
+2020-07-01 11:31:28,903 INFO Fetched : index_price
+2020-07-01 11:31:28,903 INFO Get : index_price (NIFTYMC150,2020-05-31)
+2020-07-01 11:31:28,986 INFO Fetched : index_price
+2020-07-01 11:31:28,987 INFO Get : index_price (NIFTYMC150,2020-03-31)
+2020-07-01 11:31:29,065 INFO Fetched : index_price
+2020-07-01 11:31:29,065 INFO Get : index_price (NIFTYMC150,2019-12-31)
+2020-07-01 11:31:29,133 INFO Fetched : index_price
+2020-07-01 11:31:29,133 INFO Get : index_price (NIFTYMC150,2019-06-30)
+2020-07-01 11:31:29,204 INFO Fetched : index_price
+2020-07-01 11:31:29,205 INFO Get : index_price (NIFTYMC150,2018-06-30)
+2020-07-01 11:31:29,284 INFO Fetched : index_price
+2020-07-01 11:31:29,285 INFO Get : index_price (NIFTYMC150,2017-06-30)
+2020-07-01 11:31:29,361 INFO Fetched : index_price
+2020-07-01 11:31:29,362 INFO Get : index_price (NIFTYMC150,2015-06-30)
+2020-07-01 11:31:29,436 INFO Fetched : index_price
+2020-07-01 11:31:29,438 INFO Get : security_isin (Tata Consumer Products Ltd.)
+2020-07-01 11:31:29,512 INFO Fetched : security_isin
+2020-07-01 11:31:29,512 INFO Get : sector (Financial services)
+2020-07-01 11:31:29,595 INFO Fetched : sector
+2020-07-01 11:32:05,462 INFO Get : start_date (BSESC)
+2020-07-01 11:32:05,530 INFO Fetched : start_date
+2020-07-01 11:32:05,530 INFO Get : start_index_price (BSESC)
+2020-07-01 11:32:05,592 INFO Fetched : start_index_price
+2020-07-01 11:32:05,593 INFO Get : index_price (BSESC,2020-06-30)
+2020-07-01 11:32:05,661 INFO Fetched : index_price
+2020-07-01 11:32:05,661 INFO Get : index_price (BSESC,2020-05-31)
+2020-07-01 11:32:05,741 INFO Fetched : index_price
+2020-07-01 11:32:05,741 INFO Get : index_price (BSESC,2020-03-31)
+2020-07-01 11:32:05,815 INFO Fetched : index_price
+2020-07-01 11:32:05,816 INFO Get : index_price (BSESC,2019-12-31)
+2020-07-01 11:32:05,892 INFO Fetched : index_price
+2020-07-01 11:32:05,892 INFO Get : index_price (BSESC,2019-06-30)
+2020-07-01 11:32:05,971 INFO Fetched : index_price
+2020-07-01 11:32:05,972 INFO Get : index_price (BSESC,2018-06-30)
+2020-07-01 11:32:06,052 INFO Fetched : index_price
+2020-07-01 11:32:06,053 INFO Get : index_price (BSESC,2017-06-30)
+2020-07-01 11:32:06,131 INFO Fetched : index_price
+2020-07-01 11:32:06,131 INFO Get : index_price (BSESC,2015-06-30)
+2020-07-01 11:32:06,214 INFO Fetched : index_price
+2020-07-01 11:32:06,215 INFO Get : sector (Healthcare)
+2020-07-01 11:32:06,281 INFO Fetched : sector
+2020-07-01 11:32:42,395 INFO Get : start_date (BSEHEALTH)
+2020-07-01 11:32:42,487 INFO Fetched : start_date
+2020-07-01 11:32:42,488 INFO Get : start_index_price (BSEHEALTH)
+2020-07-01 11:32:42,554 INFO Fetched : start_index_price
+2020-07-01 11:32:42,555 INFO Get : index_price (BSEHEALTH,2020-06-30)
+2020-07-01 11:32:42,642 INFO Fetched : index_price
+2020-07-01 11:32:42,642 INFO Get : index_price (BSEHEALTH,2020-05-31)
+2020-07-01 11:32:42,720 INFO Fetched : index_price
+2020-07-01 11:32:42,721 INFO Get : index_price (BSEHEALTH,2020-03-31)
+2020-07-01 11:32:42,799 INFO Fetched : index_price
+2020-07-01 11:32:42,800 INFO Get : index_price (BSEHEALTH,2019-12-31)
+2020-07-01 11:32:42,873 INFO Fetched : index_price
+2020-07-01 11:32:42,873 INFO Get : index_price (BSEHEALTH,2019-06-30)
+2020-07-01 11:32:42,961 INFO Fetched : index_price
+2020-07-01 11:32:42,962 INFO Get : index_price (BSEHEALTH,2018-06-30)
+2020-07-01 11:32:43,034 INFO Fetched : index_price
+2020-07-01 11:32:43,035 INFO Get : index_price (BSEHEALTH,2017-06-30)
+2020-07-01 11:32:43,112 INFO Fetched : index_price
+2020-07-01 11:32:43,112 INFO Get : index_price (BSEHEALTH,2015-06-30)
+2020-07-01 11:32:43,209 INFO Fetched : index_price
+2020-07-01 11:32:43,210 INFO Get : sector (Healthcare)
+2020-07-01 11:32:43,271 INFO Fetched : sector
+2020-07-01 11:32:43,272 INFO Update/Insert - index_performance
+2020-07-01 11:32:43,272 INFO Get : is_index_performance (BSE30,2020-06-30)
+2020-07-01 11:32:43,381 INFO Fetched : is_index_performance
+2020-07-01 11:32:43,481 INFO Get : is_index_performance (BSE100,2020-06-30)
+2020-07-01 11:32:43,560 INFO Fetched : is_index_performance
+2020-07-01 11:32:43,657 INFO Get : is_index_performance (BSE200,2020-06-30)
+2020-07-01 11:32:43,741 INFO Fetched : is_index_performance
+2020-07-01 11:32:43,831 INFO Get : is_index_performance (BSE500,2020-06-30)
+2020-07-01 11:32:43,920 INFO Fetched : is_index_performance
+2020-07-01 11:32:44,010 INFO Get : is_index_performance (BSEMC,2020-06-30)
+2020-07-01 11:32:44,100 INFO Fetched : is_index_performance
+2020-07-01 11:32:44,205 INFO Get : is_index_performance (SENSEX,2020-06-30)
+2020-07-01 11:32:44,312 INFO Fetched : is_index_performance
+2020-07-01 11:32:44,402 INFO Get : is_index_performance (NIFTY50,2020-06-30)
+2020-07-01 11:32:44,490 INFO Fetched : is_index_performance
+2020-07-01 11:32:44,569 INFO Get : is_index_performance (NIFTY100,2020-06-30)
+2020-07-01 11:32:44,639 INFO Fetched : is_index_performance
+2020-07-01 11:32:44,721 INFO Get : is_index_performance (NIFTY200,2020-06-30)
+2020-07-01 11:32:44,813 INFO Fetched : is_index_performance
+2020-07-01 11:32:44,903 INFO Get : is_index_performance (NIFTY500,2020-06-30)
+2020-07-01 11:32:44,981 INFO Fetched : is_index_performance
+2020-07-01 11:32:45,059 INFO Get : is_index_performance (NIFTYSC100,2020-06-30)
+2020-07-01 11:32:45,140 INFO Fetched : is_index_performance
+2020-07-01 11:32:45,227 INFO Get : is_index_performance (NIFTYMC100,2020-06-30)
+2020-07-01 11:32:45,320 INFO Fetched : is_index_performance
+2020-07-01 11:32:45,403 INFO Get : is_index_performance (BSEMSC400,2020-06-30)
+2020-07-01 11:32:45,490 INFO Fetched : is_index_performance
+2020-07-01 11:32:45,584 INFO Get : is_index_performance (NIFTYPHARMA,2020-06-30)
+2020-07-01 11:32:45,693 INFO Fetched : is_index_performance
+2020-07-01 11:32:45,780 INFO Get : is_index_performance (NIFTYSC250,2020-06-30)
+2020-07-01 11:32:45,874 INFO Fetched : is_index_performance
+2020-07-01 11:32:45,961 INFO Get : is_index_performance (NIFTYMC150,2020-06-30)
+2020-07-01 11:32:46,054 INFO Fetched : is_index_performance
+2020-07-01 11:32:46,140 INFO Get : is_index_performance (BSESC,2020-06-30)
+2020-07-01 11:32:46,233 INFO Fetched : is_index_performance
+2020-07-01 11:32:46,325 INFO Get : is_index_performance (BSEHEALTH,2020-06-30)
+2020-07-01 11:32:46,411 INFO Fetched : is_index_performance
+2020-07-01 11:32:46,501 INFO Update/Insert success - index_performance
+2020-07-01 11:32:46,632 INFO 2020-06-30 Index Performance - Indices calculation/extraction is Completed

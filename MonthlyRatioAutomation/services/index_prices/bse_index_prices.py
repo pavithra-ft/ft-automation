@@ -44,6 +44,6 @@ def get_bse_index(historical_url):
     sql_logger.info('Index Prices - Extraction of BSE index prices is completed')
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     historical_url = ['https://api.bseindia.com/BseIndiaAPI/api/IndexArchDaily']
     get_bse_index(historical_url)

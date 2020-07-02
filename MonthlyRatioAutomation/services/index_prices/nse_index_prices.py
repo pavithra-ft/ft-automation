@@ -10,7 +10,7 @@ from dictionary.nse_index_prices_dict import nse_index_prices_urls
 
 
 def get_index_data(index_code, html_content):
-    app_logger.info('Index Prices - Extraction of NSE index prices is started')
+    app_logger.info('Index Prices - Extraction ' + '(' + index_code + ')' + 'of NSE index prices is started')
 
     soup = BeautifulSoup(html_content.text, features="lxml")
     table = soup.find('table')
@@ -41,7 +41,7 @@ def get_index_data(index_code, html_content):
         app_logger.info('Exception raised in queries : ' + str(error))
     finally:
         iq_session.close()
-    app_logger.info('Index Prices - Extraction of NSE index prices is started')
+    app_logger.info('Index Prices - Extraction ' + '(' + index_code + ')' + ' of NSE index prices is started')
 
 
 def get_nse_index(historical_url):
@@ -71,6 +71,6 @@ def get_nse_index(historical_url):
     sql_logger.info('Index Prices - NSE is completed')
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     historical_url = ['https://www1.nseindia.com/products/dynaContent/equities/indices']
     get_nse_index(historical_url)

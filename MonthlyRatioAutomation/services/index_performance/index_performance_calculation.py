@@ -5,7 +5,7 @@ from pyjarowinkler import distance
 from config.base_logger import app_logger
 from dictionary.sector_dictionary import sector_dict
 from model.index_tables_model import IndexPerformance
-from services.index_performance.bse_ratio_extraction import get_bse_data
+from extraction.bse_ratio_extraction import get_bse_data
 from extraction.nse_pdf_extraction import get_nse_data
 from dictionary.portfolio_dictionary import portfolio_dict
 
@@ -64,22 +64,27 @@ def get_index_perf_calc(reporting_date, index_code):
     date_power_5y = reporting_date - perf_5y_date
     power_inception = reporting_date - start_date
 
-    perf_1m = round(((curr_price[0][0] / index_1m_price[0][0]) - 1), 4) if start_date <= perf_1m_date else None
-    perf_3m = round(((curr_price[0][0] / index_3m_price[0][0]) - 1), 4) if start_date <= perf_3m_date else None
-    perf_6m = round(((curr_price[0][0] / index_6m_price[0][0]) - 1), 4) if start_date <= perf_6m_date else None
-    perf_1y = round((((curr_price[0][0] / index_1y_price[0][0]) ** (365 / date_power_1y.days)) - 1), 4) \
+    perf_1m = round(((float(curr_price[-1][0]) / float(index_1m_price[-1][0])) - 1), 4) \
+        if start_date <= perf_1m_date else None
+    perf_3m = round(((float(curr_price[-1][0]) / float(index_3m_price[-1][0])) - 1), 4) \
+        if start_date <= perf_3m_date else None
+    perf_6m = round(((float(curr_price[-1][0]) / float(index_6m_price[-1][0])) - 1), 4) \
+        if start_date <= perf_6m_date else None
+    perf_1y = round((((float(curr_price[-1][0]) / float(index_1y_price[-1][0])) ** (365 / date_power_1y.days)) - 1), 4)\
         if start_date <= perf_1y_date else None
-    perf_2y = round((((curr_price[0][0] / index_2y_price[0][0]) ** (365 / date_power_2y.days)) - 1), 4) \
+    perf_2y = round((((float(curr_price[-1][0]) / float(index_2y_price[-1][0])) ** (365 / date_power_2y.days)) - 1), 4)\
         if start_date <= perf_2y_date else None
-    perf_3y = round((((curr_price[0][0] / index_3y_price[0][0]) ** (365 / date_power_3y.days)) - 1), 4) \
+    perf_3y = round((((float(curr_price[-1][0]) / float(index_3y_price[-1][0])) ** (365 / date_power_3y.days)) - 1), 4)\
         if start_date <= perf_3y_date else None
-    perf_5y = round((((curr_price[0][0] / index_5y_price[0][0]) ** (365 / date_power_5y.days)) - 1), 4) \
+    perf_5y = round((((float(curr_price[-1][0]) / float(index_5y_price[-1][0])) ** (365 / date_power_5y.days)) - 1), 4)\
         if start_date <= perf_5y_date else None
 
     if power_inception.days >= 365:
-        perf_inception = round((((curr_price[0][0] / start_index_price) ** (365 / power_inception.days)) - 1), 4)
+        perf_inception = round((((float(curr_price[-1][0]) / start_index_price) **
+                                 (365 / power_inception.days)) - 1), 4)
     else:
-        perf_inception = round(((curr_price[0][0] / start_index_price) - 1), 4)
+        perf_inception = round(((float(curr_price[-1][0]) / start_index_price) - 1), 4)
+
     index_perf_data = {'index_code': index_code, 'perf_1m': perf_1m, 'perf_3m': perf_3m, 'perf_6m': perf_6m,
                        'perf_1y': perf_1y, 'perf_2y': perf_2y, 'perf_3y': perf_3y, 'perf_5y': perf_5y,
                        'perf_inception': perf_inception, 'reporting_date': reporting_date}
@@ -97,6 +102,7 @@ def get_index_ratios(index_code, nse_list, bse_list):
         index_ratio_list.append(nse)
     for bse in bse_list:
         index_ratio_list.append(bse)
+
     for ratios_data in index_ratio_list:
         if ratios_data['index_code'] == index_code:
             if ratios_data['top_holding_isin'] is not None:
@@ -121,6 +127,7 @@ def get_index_performance(index_code, reporting_date, pdf_files):
     bse_list = get_bse_data()
     performance = get_index_perf_calc(reporting_date, index_code)
     ratios = get_index_ratios(index_code, nse_list, bse_list)
+
     index_performance = IndexPerformance()
     index_performance.set_index_code(performance['index_code'])
     index_performance.set_standard_deviation(ratios['standard_deviation'])
