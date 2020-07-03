@@ -36,6 +36,6 @@ def get_indices_performance():
 
 if __name__ == "__main__":
     pdf_files = [file for file in glob(r"C:\Users\pavithra\Documents\fintuple-automation-projects\RatioExtraction"
-                                       r"\ratio_extraction\ratio_extraction\pdf_files\*.pdf")]
+                                       r"\ratio_extraction\ratio_extraction\extracted_pdf_files\*.pdf")]
     sql_logger.info('Index Performance - Started')
     get_indices_performance()
