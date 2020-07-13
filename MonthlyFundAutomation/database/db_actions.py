@@ -4,13 +4,13 @@ from sqlalchemy.orm import sessionmaker
 from config.base_logger import sql_logger
 from sqlalchemy import create_engine, extract, func, and_, or_, update, insert
 
-# app_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/app')
-# fs_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/fs')
-# iq_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/iq')
+app_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/app')
+fs_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/fs')
+iq_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/iq')
 
-app_engine = create_engine('mysql://pavi:root@127.0.0.1/app')
-fs_engine = create_engine('mysql://pavi:root@127.0.0.1/fs')
-iq_engine = create_engine('mysql://pavi:root@127.0.0.1/iq')
+# app_engine = create_engine('mysql://pavi:root@127.0.0.1/app')
+# fs_engine = create_engine('mysql://pavi:root@127.0.0.1/fs')
+# iq_engine = create_engine('mysql://pavi:root@127.0.0.1/iq')
 
 app_db = sessionmaker(bind=app_engine)
 fs_db = sessionmaker(bind=fs_engine)
@@ -51,9 +51,9 @@ def get_index_price_as_on_date(date, index_code):
     index_price = iq_session.query(model.IndexPrices.index_price_close).\
         filter(model.IndexPrices.index_code == index_code). \
         filter(extract('year', model.IndexPrices.index_price_as_on_date) == date_year). \
-        filter(extract('month', model.IndexPrices.index_price_as_on_date) == date_month).all()[-1][0]
+        filter(extract('month', model.IndexPrices.index_price_as_on_date) == date_month).all()
     sql_logger.info('Fetched : index_price')
-    return float(index_price)
+    return index_price
 
 
 def get_start_price(start_date, index_code):
@@ -437,7 +437,8 @@ def put_fund_ratios(fund_ratio_data):
         fund_ratio = update(model.FundRatios).where(model.FundRatios.fund_code == fund_ratio_data.fund_code). \
             where(model.FundRatios.reporting_date == fund_ratio_data.reporting_date).values(
             fund_code=fund_ratio_data.fund_code, reporting_date=fund_ratio_data.reporting_date,
-            top5_pe_ratio=fund_ratio_data.top5_pe_ratio, top10_pe_ratio=fund_ratio_data.top10_pe_ratio,
+            full_pe_ratio=fund_ratio_data.full_pe_ratio, top5_pe_ratio=fund_ratio_data.top5_pe_ratio,
+            top10_pe_ratio=fund_ratio_data.top10_pe_ratio, full_market_cap=fund_ratio_data.full_market_cap,
             top5_market_cap=fund_ratio_data.top5_market_cap, top10_market_cap=fund_ratio_data.top10_market_cap,
             standard_deviation=fund_ratio_data.standard_deviation, median=fund_ratio_data.median,
             sigma=fund_ratio_data.sigma, sortino_ratio=fund_ratio_data.sortino_ratio,
@@ -447,7 +448,8 @@ def put_fund_ratios(fund_ratio_data):
     else:
         fund_ratio = insert(model.FundRatios).values(
             fund_code=fund_ratio_data.fund_code, reporting_date=fund_ratio_data.reporting_date,
-            top5_pe_ratio=fund_ratio_data.top5_pe_ratio, top10_pe_ratio=fund_ratio_data.top10_pe_ratio,
+            full_pe_ratio=fund_ratio_data.full_pe_ratio, top5_pe_ratio=fund_ratio_data.top5_pe_ratio,
+            top10_pe_ratio=fund_ratio_data.top10_pe_ratio, full_market_cap=fund_ratio_data.full_market_cap,
             top5_market_cap=fund_ratio_data.top5_market_cap, top10_market_cap=fund_ratio_data.top10_market_cap,
             standard_deviation=fund_ratio_data.standard_deviation, median=fund_ratio_data.median,
             sigma=fund_ratio_data.sigma, sortino_ratio=fund_ratio_data.sortino_ratio,

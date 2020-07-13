@@ -560,8 +560,10 @@ class FundRatios:
     def __init__(self):
         self.fund_code = None
         self.reporting_date = None
+        self.full_pe_ratio = None
         self.top5_pe_ratio = None
         self.top10_pe_ratio = None
+        self.full_market_cap = None
         self.top5_market_cap = None
         self.top10_market_cap = None
         self.standard_deviation = None
@@ -585,6 +587,12 @@ class FundRatios:
     def get_reporting_date(self):
         return self.reporting_date
 
+    def set_full_pe_ratio(self, full_pe_ratio=None):
+        self.full_pe_ratio = full_pe_ratio
+
+    def get_full_pe_ratio(self):
+        return self.full_pe_ratio
+
     def set_top5_pe_ratio(self, top5_pe_ratio=None):
         self.top5_pe_ratio = top5_pe_ratio
 
@@ -596,6 +604,12 @@ class FundRatios:
 
     def get_top10_pe_ratio(self):
         return self.top10_pe_ratio
+
+    def set_full_market_cap(self, full_market_cap=None):
+        self.full_market_cap = full_market_cap
+
+    def get_full_market_cap(self):
+        return self.full_market_cap
 
     def set_top5_market_cap(self, top5_market_cap=None):
         self.top5_market_cap = top5_market_cap

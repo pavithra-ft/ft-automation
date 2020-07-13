@@ -1,9 +1,10 @@
 import model.fund_details_extraction as extract
 from datetime import datetime
+from config.base_logger import app_logger
 
 
 def get_fund_info(df):
-    # Extraction of Fund attributes
+    app_logger.info('Fund info - Started')
     fund_info = extract.FundInfo()
     fund_info.set_fund_name(df.iloc[2, 2])
     fund_info.set_fund_code(df.iloc[3, 2])
@@ -15,11 +16,12 @@ def get_fund_info(df):
     fund_info.set_performance_1m(float(df.iloc[7, 2]))
     fund_info.set_market_cap_type_code(df.iloc[8, 2])
     fund_info.set_investment_style(df.iloc[9, 2])
+    app_logger.info('Fund info - Completed')
     return fund_info
 
 
 def get_fund_allocation_values(df):
-    # Extraction of Fund allocations
+    app_logger.info('Allocation values - Started')
     fund_allocation = []
     index = 15
     while df.iloc[index, 4] != "TOTAL":
@@ -29,11 +31,12 @@ def get_fund_allocation_values(df):
             allocation_body.set_exposure(df.iloc[index, 5])
             fund_allocation.append(allocation_body)
         index += 1
+    app_logger.info('Allocation values - Completed')
     return fund_allocation
 
 
 def get_market_cap_values(df):
-    # Extraction of Market capitalization
+    app_logger.info('Market cap values - Started')
     cap_data = []
     index = 3
     while df.iloc[index, 4] != "TOTAL":
@@ -44,11 +47,12 @@ def get_market_cap_values(df):
             cap_data_body.set_exposure(float(df.iloc[index, 5]))
             cap_data.append(cap_data_body)
         index += 1
+    app_logger.info('Market cap values - Completed')
     return cap_data
 
 
 def get_fund_portfolio_values(df):
-    # Extraction of Fund portfolio
+    app_logger.info('Portfolio values - Started')
     portfolio_values = []
     index = 13
     while df.iloc[index, 1] != "TOTAL":
@@ -62,11 +66,12 @@ def get_fund_portfolio_values(df):
                 portfolio_body.set_exposure(float(exposure))
             portfolio_values.append(portfolio_body)
         index += 1
+    app_logger.info('Portfolio values - Completed')
     return portfolio_values
 
 
 def get_fund_sector_values(df):
-    # Extraction of Sector allocations
+    app_logger.info('Sector values - Started')
     sector_values = []
     index = 23
     while df.iloc[index, 4] != "TOTAL":
@@ -77,4 +82,5 @@ def get_fund_sector_values(df):
             sector_body.set_exposure(float(exposure))
             sector_values.append(sector_body)
         index += 1
+    app_logger.info('Sector values - Completed')
     return sector_values
