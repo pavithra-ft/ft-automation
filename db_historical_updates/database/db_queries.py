@@ -1,8 +1,6 @@
 from datetime import datetime
-
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine, extract, func, and_, or_, update, insert
-
 from database.orm_model import Collaterals, CollateralTemplates, FundRatios, FundBenchmarkNav, FundMarketCapDetails, \
     FundPerformance, FundPortfolioDetails, FundSectorDetails, IndexPrices, MasMarketCapTypes, MasSecurities, \
     MasSectors, PerAllFunds, RatioBasis, SecuritiesFundamentals, IndexPerformance, MasIndices
@@ -96,8 +94,8 @@ def get_index_price_as_on_date(date, index_code):
     date_year = datetime.strptime(str(date), "%Y-%m-%d").year
     index_price = iq_session.query(IndexPrices.index_price_close).filter(IndexPrices.index_code == index_code). \
         filter(extract('year', IndexPrices.index_price_as_on_date) == date_year). \
-        filter(extract('month', IndexPrices.index_price_as_on_date) == date_month).all()[-1][0]
-    return float(index_price)
+        filter(extract('month', IndexPrices.index_price_as_on_date) == date_month).all()
+    return index_price
 
 
 def get_portfolio_dates(fund_code):
@@ -151,9 +149,9 @@ def get_nav_start_date(fund_code):
 
 
 def get_fund_nav(fund_code, date):
-    fund_1m_nav = iq_session.query(FundBenchmarkNav.fund_nav).filter_by(fund_code=fund_code).\
+    fund_nav = iq_session.query(FundBenchmarkNav.fund_nav).filter_by(fund_code=fund_code).\
         filter_by(effective_end_date=date).all()
-    return fund_1m_nav
+    return fund_nav
 
 
 def get_investment_style(fund_code):
@@ -182,9 +180,9 @@ def get_fund_code_fund_perf():
     return fund_code_list
 
 
-def get_fund_codes_fund_ratios():
+def get_fund_codes_fund_ratios(fund_code):
     fund_code_list = iq_session.query().with_entities(FundPerformance.fund_code, FundPerformance.effective_end_date).\
-        filter_by(effective_end_date='2020-05-31')
+        filter_by(fund_code=fund_code).all()
     return fund_code_list
 
 
@@ -226,7 +224,7 @@ def get_all_fund_return(fund_code, reporting_date):
         if return_value[0] is None:
             fund_return_list.append(0)
         else:
-            fund_return_list.append(return_value[0])
+            fund_return_list.append(float(return_value[0]))
     return fund_return_list
 
 
@@ -269,7 +267,7 @@ def get_risk_free_rate():
 
 def get_sector_from_portfolio(security_isin):
     sector = iq_session.query(MasSectors.sector).filter(MasSecurities.security_isin == security_isin). \
-        filter(MasSectors.industry == MasSecurities.industry).all()[0][0]
+        filter(MasSectors.industry == MasSecurities.industry).all()
     return sector
 
 
@@ -288,7 +286,7 @@ def get_index_start_date(index_code):
 def get_index_start_price(index_code, start_date):
     start_index_price = iq_session.query(IndexPrices.index_price_close).filter_by(index_code=index_code).\
         filter_by(index_price_as_on_date=start_date).all()[0][0]
-    return start_index_price
+    return float(start_index_price)
 
 
 def is_collaterals_exist(fund_code, reporting_date):
@@ -492,25 +490,27 @@ def put_fund_ratios(fund_ratio_data):
     if not is_fund_ratio_exist(fund_ratio_data.fund_code, fund_ratio_data.reporting_date):
         fund_ratio = insert(FundRatios).values(
             fund_code=fund_ratio_data.fund_code, reporting_date=fund_ratio_data.reporting_date,
-            top5_pe_ratio=fund_ratio_data.top5_pe_ratio, top10_pe_ratio=fund_ratio_data.top10_pe_ratio,
+            full_pe_ratio=fund_ratio_data.full_pe_ratio, top5_pe_ratio=fund_ratio_data.top5_pe_ratio,
+            top10_pe_ratio=fund_ratio_data.top10_pe_ratio, full_market_cap=fund_ratio_data.full_market_cap,
             top5_market_cap=fund_ratio_data.top5_market_cap, top10_market_cap=fund_ratio_data.top10_market_cap,
             standard_deviation=fund_ratio_data.standard_deviation, median=fund_ratio_data.median,
             sigma=fund_ratio_data.sigma, sortino_ratio=fund_ratio_data.sortino_ratio,
             negative_excess_returns_risk_free=fund_ratio_data.negative_excess_returns_risk_free,
             fund_alpha=fund_ratio_data.fund_alpha, updated_ts=fund_ratio_data.updated_ts,
             updated_by=fund_ratio_data.updated_by)
-    # else:
-    #     fund_ratio = update(FundRatios).where(FundRatios.fund_code == fund_ratio_data.fund_code). \
-    #         where(FundRatios.reporting_date == fund_ratio_data.reporting_date).values(
-    #         fund_code=fund_ratio_data.fund_code, reporting_date=fund_ratio_data.reporting_date,
-    #         top5_pe_ratio=fund_ratio_data.top5_pe_ratio, top10_pe_ratio=fund_ratio_data.top10_pe_ratio,
-    #         top5_market_cap=fund_ratio_data.top5_market_cap, top10_market_cap=fund_ratio_data.top10_market_cap,
-    #         standard_deviation=fund_ratio_data.standard_deviation, median=fund_ratio_data.median,
-    #         sigma=fund_ratio_data.sigma, sortino_ratio=fund_ratio_data.sortino_ratio,
-    #         negative_excess_returns_risk_free=fund_ratio_data.negative_excess_returns_risk_free,
-    #         fund_alpha=fund_ratio_data.fund_alpha, updated_ts=fund_ratio_data.updated_ts,
-    #         updated_by=fund_ratio_data.updated_by)
-        iq_engine.execute(fund_ratio)
+    else:
+        fund_ratio = update(FundRatios).where(FundRatios.fund_code == fund_ratio_data.fund_code). \
+            where(FundRatios.reporting_date == fund_ratio_data.reporting_date).values(
+            fund_code=fund_ratio_data.fund_code, reporting_date=fund_ratio_data.reporting_date,
+            full_pe_ratio=fund_ratio_data.full_pe_ratio, top5_pe_ratio=fund_ratio_data.top5_pe_ratio,
+            top10_pe_ratio=fund_ratio_data.top10_pe_ratio, full_market_cap=fund_ratio_data.full_market_cap,
+            top5_market_cap=fund_ratio_data.top5_market_cap, top10_market_cap=fund_ratio_data.top10_market_cap,
+            standard_deviation=fund_ratio_data.standard_deviation, median=fund_ratio_data.median,
+            sigma=fund_ratio_data.sigma, sortino_ratio=fund_ratio_data.sortino_ratio,
+            negative_excess_returns_risk_free=fund_ratio_data.negative_excess_returns_risk_free,
+            fund_alpha=fund_ratio_data.fund_alpha, updated_ts=fund_ratio_data.updated_ts,
+            updated_by=fund_ratio_data.updated_by)
+    iq_engine.execute(fund_ratio)
 
 
 def put_fund_sector(sector_data):
@@ -532,25 +532,25 @@ def put_fund_sector(sector_data):
 
 
 def put_index_performance(index_data):
-    if is_index_performance_exist(index_data['index_code'], index_data['reporting_date']):
-        index_perf = update(IndexPerformance).where(IndexPerformance.index_code == index_data['index_code']).\
-            where(IndexPerformance.reporting_date == index_data['reporting_date']).values(
-            index_code=index_data['index_code'], standard_deviation=index_data['standard_deviation'],
-            pe_ratio=index_data['pe_ratio'], top_sector_name=index_data['top_sector_name'],
-            top_sector_exposure=index_data['top_sector_exposure'], top_holding_isin=index_data['top_holding_isin'],
-            top_holding_exposure=index_data['top_holding_exposure'], perf_1m=index_data['perf_1m'],
-            perf_3m=index_data['perf_3m'], perf_6m=index_data['perf_6m'], perf_1y=index_data['perf_1y'],
-            perf_2y=index_data['perf_2y'], perf_3y=index_data['perf_3y'], perf_5y=index_data['perf_5y'],
-            perf_inception=index_data['perf_inception'], reporting_date=index_data['reporting_date'])
+    if is_index_performance_exist(index_data.index_code, index_data.reporting_date):
+        index_perf = update(IndexPerformance).where(IndexPerformance.index_code == index_data.index_code).\
+            where(IndexPerformance.reporting_date == index_data.reporting_date).values(
+            index_code=index_data.index_code, standard_deviation=index_data.standard_deviation,
+            pe_ratio=index_data.pe_ratio, top_sector_name=index_data.top_sector_name,
+            top_sector_exposure=index_data.top_sector_exposure, top_holding_isin=index_data.top_holding_isin,
+            top_holding_exposure=index_data.top_holding_exposure, perf_1m=index_data.perf_1m,
+            perf_3m=index_data.perf_3m, perf_6m=index_data.perf_6m, perf_1y=index_data.perf_1y,
+            perf_2y=index_data.perf_2y, perf_3y=index_data.perf_3y, perf_5y=index_data.perf_5y,
+            perf_inception=index_data.perf_inception, reporting_date=index_data.reporting_date)
     else:
         index_perf = insert(IndexPerformance).values(
-            index_code=index_data['index_code'], standard_deviation=index_data['standard_deviation'],
-            pe_ratio=index_data['pe_ratio'], top_sector_name=index_data['top_sector_name'],
-            top_sector_exposure=index_data['top_sector_exposure'], top_holding_isin=index_data['top_holding_isin'],
-            top_holding_exposure=index_data['top_holding_exposure'], perf_1m=index_data['perf_1m'],
-            perf_3m=index_data['perf_3m'], perf_6m=index_data['perf_6m'], perf_1y=index_data['perf_1y'],
-            perf_2y=index_data['perf_2y'], perf_3y=index_data['perf_3y'], perf_5y=index_data['perf_5y'],
-            perf_inception=index_data['perf_inception'], reporting_date=index_data['reporting_date'])
+            index_code=index_data.index_code, standard_deviation=index_data.standard_deviation,
+            pe_ratio=index_data.pe_ratio, top_sector_name=index_data.top_sector_name,
+            top_sector_exposure=index_data.top_sector_exposure, top_holding_isin=index_data.top_holding_isin,
+            top_holding_exposure=index_data.top_holding_exposure, perf_1m=index_data.perf_1m,
+            perf_3m=index_data.perf_3m, perf_6m=index_data.perf_6m, perf_1y=index_data.perf_1y,
+            perf_2y=index_data.perf_2y, perf_3y=index_data.perf_3y, perf_5y=index_data.perf_5y,
+            perf_inception=index_data.perf_inception, reporting_date=index_data.reporting_date)
     iq_engine.execute(index_perf)
 
 
@@ -565,3 +565,23 @@ def put_sec_fundamental_data(sf_data):
         security_id=sf_data['security_id'], security_isin=sf_data['security_isin'], as_on_date=sf_data['as_on_date'],
         market_cap=sf_data['market_cap'], pe_ratio=sf_data['pe_ratio'])
     iq_engine.execute(sf_query)
+
+
+def put_current_aum(fund_code, current_aum, reporting_date):
+    aum_query = update(FundPerformance).where(FundPerformance.fund_code == fund_code).\
+        where(FundPerformance.effective_end_date == reporting_date).values(current_aum=current_aum)
+    iq_engine.execute(aum_query)
+
+
+def put_no_of_clients(fund_code, no_of_clients, reporting_date):
+    no_of_clients_query = update(FundPerformance).where(FundPerformance.fund_code == fund_code).\
+        where(FundPerformance.effective_end_date == reporting_date).values(no_of_clients=no_of_clients)
+    iq_engine.execute(no_of_clients_query)
+
+
+def put_allocations(fund_code, allocation_values, reporting_date):
+    allocation_query = update(FundPerformance).where(FundPerformance.fund_code == fund_code).\
+        where(FundPerformance.effective_end_date == reporting_date).values(
+        portfolio_equity_allocation=round(allocation_values['equity_allocation'], 4),
+        portfolio_cash_allocation=allocation_values['cash_allocation'])
+    iq_engine.execute(allocation_query)

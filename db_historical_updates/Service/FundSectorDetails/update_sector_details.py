@@ -1,7 +1,6 @@
 from datetime import datetime
-
-from database.db_queries import get_portfolio_dates, get_portfolio_details, get_sector_from_portfolio, put_fund_sector
 from model.FundTablesModel import FundSector
+from database.db_queries import get_portfolio_dates, get_portfolio_details, get_sector_from_portfolio, put_fund_sector
 
 
 def get_fund_sector_from_portfolio(portfolio_values):

@@ -1,5 +1,4 @@
 from datetime import datetime
-
 from model.FundTablesModel import FundMarketCapDetails
 from database.db_queries import get_portfolio_dates, get_portfolio_details, get_mcap_for_security, put_market_cap_data
 
@@ -21,7 +20,7 @@ def get_mcap_from_portfolio(portfolio_values):
 
 
 try:
-    fund_code_list = ['40274836']
+    fund_code_list = []
     for fund_code in fund_code_list:
         portfolio_date_list = get_portfolio_dates(fund_code)
         for reporting_date in portfolio_date_list:

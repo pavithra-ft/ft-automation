@@ -2,9 +2,7 @@ import re
 import os
 import numpy as np
 import pandas as pd
-
 from glob import glob
-
 from database.db_queries import get_nav_dates, put_fund_nav
 
 

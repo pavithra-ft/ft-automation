@@ -16,12 +16,12 @@ def get_market_cap_type_code(market_cap_values):
                 if obj[0][1] is None:
                     market_cap_values.remove(obj)
             for cap in market_cap_values:
-                if cap[0][0] == 'Large' or cap[0][0] == 'Mega':
-                    large_exposure += float(cap[0][1]) * 100
-                if cap[0][0] == 'Small' or cap[0][0] == 'Micro':
-                    small_exposure += float(cap[0][1]) * 100
-                if cap[0][0] == 'Mid':
-                    mid_exposure += float(cap[0][1]) * 100
+                if cap[0] == 'Large' or cap[0] == 'Mega':
+                    large_exposure += float(cap[1]) * 100
+                if cap[0] == 'Small' or cap[0] == 'Micro':
+                    small_exposure += float(cap[1]) * 100
+                if cap[0] == 'Mid':
+                    mid_exposure += float(cap[1]) * 100
             if large_exposure >= 20 and mid_exposure >= 20 and small_exposure >= 20:
                 market_cap_type_code = get_cap_type("Multi Cap")
             elif ((65 > large_exposure >= 25 and 65 > mid_exposure >= 25) or
@@ -45,7 +45,7 @@ def get_market_cap_type_code(market_cap_values):
 
 
 try:
-    fund_code_list = get_fund_code_fund_perf()
+    fund_code_list = []
     for fund_code in fund_code_list:
         start_date = get_mcap_dates(fund_code)
         for date in start_date:

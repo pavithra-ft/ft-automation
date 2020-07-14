@@ -642,8 +642,10 @@ class FundRatios:
     def __init__(self):
         self.fund_code = None
         self.reporting_date = None
+        self.full_pe_ratio = None
         self.top5_pe_ratio = None
         self.top10_pe_ratio = None
+        self.full_market_cap = None
         self.top5_market_cap = None
         self.top10_market_cap = None
         self.standard_deviation = None
@@ -667,6 +669,12 @@ class FundRatios:
     def get_reporting_date(self):
         return self.reporting_date
 
+    def set_full_pe_ratio(self, full_pe_ratio=None):
+        self.full_pe_ratio = full_pe_ratio
+
+    def get_full_pe_ratio(self):
+        return self.full_pe_ratio
+
     def set_top5_pe_ratio(self, top5_pe_ratio=None):
         self.top5_pe_ratio = top5_pe_ratio
 
@@ -678,6 +686,12 @@ class FundRatios:
 
     def get_top10_pe_ratio(self):
         return self.top10_pe_ratio
+
+    def set_full_market_cap(self, full_market_cap=None):
+        self.full_market_cap = full_market_cap
+
+    def get_full_market_cap(self):
+        return self.full_market_cap
 
     def set_top5_market_cap(self, top5_market_cap=None):
         self.top5_market_cap = top5_market_cap
@@ -740,13 +754,14 @@ class FundRatios:
         return self.updated_by
 
     def __repr__(self):
-        return "<FundRatios(fund_code='{0}', reporting_date='{1}', top5_pe_ratio='{2}', top10_pe_ratio='{3}', " \
-               "top5_market_cap='{4}', top10_market_cap='{5}', standard_deviation='{6}', median='{7}', sigma='{8}', " \
-               "sortino_ratio='{9}', negative_excess_returns_risk_free='{10}', fund_alpha='{11}', updated_ts='{12}', " \
-               "updated_by='{13}')>".\
-            format(self.fund_code, self.reporting_date, self.top5_pe_ratio, self.top10_pe_ratio, self.top5_market_cap,
-                   self.top10_market_cap, self.standard_deviation, self.median, self.sigma, self.sortino_ratio,
-                   self.negative_excess_returns_risk_free, self.fund_alpha, self.updated_ts, self.updated_by)
+        return "<FundRatios(fund_code='{0}', reporting_date='{1}', full_pe_ratio='{2}', top5_pe_ratio='{3}', " \
+               "top10_pe_ratio='{4}', full_market_cap='{5}', top5_market_cap='{6}', top10_market_cap='{7}', " \
+               "standard_deviation='{8}', median='{9}', sigma='{10}', sortino_ratio='{11}', " \
+               "negative_excess_returns_risk_free='{12}', fund_alpha='{13}', updated_ts='{14}', updated_by='{15}')>".\
+            format(self.fund_code, self.reporting_date, self.full_pe_ratio, self.top5_pe_ratio, self.top10_pe_ratio,
+                   self.full_market_cap, self.top5_market_cap, self.top10_market_cap, self.standard_deviation,
+                   self.median, self.sigma, self.sortino_ratio, self.negative_excess_returns_risk_free, self.fund_alpha,
+                   self.updated_ts, self.updated_by)
 
 
 class FundSector:

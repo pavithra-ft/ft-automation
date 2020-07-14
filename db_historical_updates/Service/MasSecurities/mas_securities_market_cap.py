@@ -2,9 +2,7 @@ import os
 import re
 import numpy as np
 import pandas as pd
-
 from glob import glob
-
 from database.db_queries import get_all_isin, put_mas_securities_mcap
 
 try:

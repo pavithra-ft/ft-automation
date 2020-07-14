@@ -3,10 +3,8 @@ import re
 import datetime
 import numpy as np
 import pandas as pd
-
 from glob import glob
 from pyjarowinkler import distance
-
 from database.db_queries import get_all_isin, put_sec_fundamental_data
 
 

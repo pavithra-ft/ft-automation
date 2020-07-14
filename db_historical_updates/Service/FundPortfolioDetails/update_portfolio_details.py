@@ -4,9 +4,7 @@ import glob
 import datetime
 import numpy as np
 import pandas as pd
-
 from pyjarowinkler import distance
-
 from model.FundTablesModel import FundPortfolio
 from dictionary.portfolio_dictionary import portfolio_dict
 from Service.date_calculation import get_effective_start_end_date
@@ -14,10 +12,8 @@ from database.db_queries import get_security_isin, get_all_isin, put_fund_portfo
 
 
 def get_isin(portfolio_value):
-    if portfolio_dict.__contains__(portfolio_value['Security']):
-        sec_name = portfolio_dict[portfolio_value['Security']]
-    else:
-        sec_name = portfolio_value['Security']
+    sec_name = portfolio_dict[portfolio_value['Security']] if portfolio_dict.__contains__(portfolio_value['Security']) \
+        else portfolio_value['Security']
     isin_details = get_security_isin(sec_name)
     if len(isin_details) == 0:
         sec_name = sec_name.replace(".", " ").replace("'", " ")
@@ -35,28 +31,26 @@ def get_isin(portfolio_value):
         security_isin = security_details[max_index][0]
     else:
         security_isin = isin_details[0][0]
-    print(security_isin)
     return security_isin
 
 
 def get_fund_portfolio(fund_code, portfolio_values):
     for row in portfolio_values:
-        reporting_date = datetime.datetime.strptime(row['Date'], "%d-%m-%Y").date()
+        reporting_date = datetime.datetime.strptime(row['Date'], "%Y-%m-%d").date()
         effective_start_date, effective_end_date = get_effective_start_end_date(reporting_date)
         portfolio_body = FundPortfolio()
         portfolio_body.set_fund_code(fund_code)
         portfolio_body.set_security_isin(row['ISIN'])
-        portfolio_body.set_exposure(round(float(row['%']), 4))
+        portfolio_body.set_exposure(round(float(row['Weight']), 4))
         portfolio_body.set_start_date(effective_start_date)
         portfolio_body.set_end_date(effective_end_date)
         portfolio_body.set_created_ts(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         portfolio_body.set_action_by('ft-automation')
-        print(portfolio_body)
         put_fund_portfolio(portfolio_body)
 
 
 try:
-    sheet_names = ['Portfolio - Updated']
+    sheet_names = ['Portfolio']
     os.chdir(r"C:\Users\pavithra\Documents\fintuple-automation-projects\db_historical_updates\Excel")
     files = []
     for file in glob.glob("*.xlsx"):
