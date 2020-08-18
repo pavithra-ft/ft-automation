@@ -12,6 +12,14 @@ from database.db_actions import iq_session, app_session, fs_session
 
 
 def get_fund_record(file, sheet):
+    """
+    This function converts the excel file to a Dataframe and parses it to extract the details of the Fund. Also, gets
+    all the details of the Fund.
+
+    :param file: An excel file of the Fund
+    :param sheet: Sheet name in the excel file
+    :return: A dictionary of complete Fund details and a class object of basic fund information
+    """
     fund_data = fund_info = None
     try:
         app_logger.info('Conversion of Excel to Dataframe string is started')
@@ -37,9 +45,15 @@ def get_fund_record(file, sheet):
 
 
 def put_fund_record(fund_data, fund_info):
+    """
+    This function focuses on inserting all the records of the Fund in their respective tables into Database.
+
+    :param fund_data: A dictionary of complete Fund details
+    :param fund_info: A class object of basic fund information
+    """
     try:
         previous_1m_end_date = get_1m_date(fund_info.get_reporting_date())
-        query.update_islatest(fund_info.get_fund_code(), previous_1m_end_date)
+        query.update_is_latest(fund_info.get_fund_code(), previous_1m_end_date)
         query.put_fund_benchmark_nav(fund_data['nav'])
         query.put_fund_performance(fund_data['fund_perf'], fund_data['benchmark_perf'], fund_data['alt_benchmark_perf'])
         query.put_market_cap(fund_data['market_cap'])

@@ -1,16 +1,13 @@
 import database.orm_model as model
+from envparse import env
 from datetime import datetime
 from sqlalchemy.orm import sessionmaker
 from config.base_logger import sql_logger
 from sqlalchemy import create_engine, extract, func, and_, or_, update, insert
 
-app_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/app')
-fs_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/fs')
-iq_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/iq')
-
-# app_engine = create_engine('mysql://pavi:root@127.0.0.1/app')
-# fs_engine = create_engine('mysql://pavi:root@127.0.0.1/fs')
-# iq_engine = create_engine('mysql://pavi:root@127.0.0.1/iq')
+app_engine = create_engine('mysql://' + env('DEV_USER') + ':' + env('DEV_PASS') + '@' + env('DEV_HOST') + '/app')
+fs_engine = create_engine('mysql://' + env('DEV_USER') + ':' + env('DEV_PASS') + '@' + env('DEV_HOST') + '/fs')
+iq_engine = create_engine('mysql://' + env('DEV_USER') + ':' + env('DEV_PASS') + '@' + env('DEV_HOST') + '/iq')
 
 app_db = sessionmaker(bind=app_engine)
 fs_db = sessionmaker(bind=fs_engine)
@@ -22,6 +19,11 @@ iq_session = iq_db()
 
 
 def get_nav_start_date(fund_code):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :return: NAV start date of the given fund_code fetched from Per_all_funds
+    """
     sql_logger.info('Get : nav_start_date')
     nav_start_date = app_session.query(model.PerAllFunds.nav_start_date).filter_by(fund_code=fund_code).all()[0][0]
     sql_logger.info('Fetched : nav_start_date')
@@ -29,6 +31,11 @@ def get_nav_start_date(fund_code):
 
 
 def get_benchmark_index(fund_code):
+    """
+
+    :param fund_code: Fund code of the fund
+    :return: Benchmark index code of the given fund_code
+    """
     sql_logger.info('Get : benchmark_index_code')
     benchmark_index_code = app_session.query(model.PerAllFunds.benchmark_index_code).filter_by(fund_code=fund_code).\
         all()[0][0]
@@ -37,6 +44,11 @@ def get_benchmark_index(fund_code):
 
 
 def get_alt_benchmark_index(fund_code):
+    """
+
+    :param fund_code: Fund code of the fund
+    :return: Alternate benchmark index code of the given fund_code
+    """
     sql_logger.info('Get : alt_benchmark_index_code')
     alt_benchmark_index_code = app_session.query(model.PerAllFunds.benchmark_alt_index_code).\
         filter_by(fund_code=fund_code).all()[0][0]
@@ -45,6 +57,12 @@ def get_alt_benchmark_index(fund_code):
 
 
 def get_index_price_as_on_date(date, index_code):
+    """
+
+    :param date: Date
+    :param index_code: Benchmark index code/Alternate benchmark index code of the fund
+    :return: Index close price of the given index code on the specified date
+    """
     sql_logger.info('Get : index_price ' + '(' + str(date) + ')')
     date_month = datetime.strptime(str(date), "%Y-%m-%d").month
     date_year = datetime.strptime(str(date), "%Y-%m-%d").year
@@ -57,6 +75,12 @@ def get_index_price_as_on_date(date, index_code):
 
 
 def get_start_price(start_date, index_code):
+    """
+
+    :param start_date: NAV start date of the Fund
+    :param index_code: Benchmark index code/Alternate benchmark index code of the fund
+    :return: Index close price of the given index code on the specified date
+    """
     sql_logger.info('Get : start_price')
     start_price = iq_session.query(model.IndexPrices.index_price_close).filter_by(index_code=index_code). \
         filter_by(index_price_as_on_date=start_date).all()[0][0]
@@ -65,6 +89,11 @@ def get_start_price(start_date, index_code):
 
 
 def get_cap_type(type_desc):
+    """
+
+    :param type_desc: Market cap type - String
+    :return: Market cap type - Code
+    """
     sql_logger.info('Get : market_cap_type ' + '(' + type_desc + ')')
     market_cap_type = iq_session.query(model.MasMarketCapTypes.market_cap_type_code). \
         filter_by(market_cap_type_desc=type_desc).all()[0][0]
@@ -73,6 +102,11 @@ def get_cap_type(type_desc):
 
 
 def get_investment_style(fund_code):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :return: Investment style of the Fund
+    """
     sql_logger.info('Get : investment_style')
     investment_style = app_session.query(model.PerAllFunds.investment_style).filter_by(fund_code=fund_code).all()[0][0]
     sql_logger.info('Fetched : investment_style')
@@ -80,6 +114,12 @@ def get_investment_style(fund_code):
 
 
 def get_fund_nav(fund_code, date):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :param date: Date
+    :return: Fund NAV of the given fund code on the specified date
+    """
     sql_logger.info('Get : fund_nav ' + '(' + str(date) + ')')
     fund_nav = iq_session.query(model.FundBenchmarkNav.fund_nav).filter_by(fund_code=fund_code).\
         filter_by(effective_end_date=date).all()
@@ -88,6 +128,11 @@ def get_fund_nav(fund_code, date):
 
 
 def get_security_isin_from_db(security_name):
+    """
+
+    :param security_name: Security name taken from the Portfolio holdings of the Fund
+    :return: Security ISIN of the specified security name
+    """
     sql_logger.info('Get : security_isin ' + '(' + security_name + ')')
     security_isin = iq_session.query(model.MasSecurities.security_isin).\
         filter_by(security_name=security_name).all()[0][0]
@@ -96,6 +141,10 @@ def get_security_isin_from_db(security_name):
 
 
 def get_all_isin():
+    """
+
+    :return: All Security ISIN with their corresponding Security names
+    """
     sql_logger.info('Get : all_isin_list')
     all_isin_list = iq_session.query(model.MasSecurities.security_isin, model.MasSecurities.security_name).all()
     sql_logger.info('Fetched : all_isin_list')
@@ -103,6 +152,11 @@ def get_all_isin():
 
 
 def get_mcap_for_security(security_isin):
+    """
+
+    :param security_isin: ISIN of the security
+    :return: Market cap type code of the given security
+    """
     sql_logger.info('Get : security_mcap_code ' + '(' + security_isin + ')')
     security_mcap_code = iq_session.query(model.MasSecurities.market_cap_type_code).\
         filter_by(security_isin=security_isin).all()[0][0]
@@ -111,6 +165,11 @@ def get_mcap_for_security(security_isin):
 
 
 def get_sector_from_portfolio(security_isin):
+    """
+
+    :param security_isin: ISIN of the security
+    :return: Sector of the given security
+    """
     sql_logger.info('Get : sector ' + '(' + security_isin + ')')
     sector = iq_session.query(model.MasSectors.sector).filter(model.MasSecurities.security_isin == security_isin). \
         filter(model.MasSectors.industry == model.MasSecurities.industry).all()[0][0]
@@ -119,6 +178,10 @@ def get_sector_from_portfolio(security_isin):
 
 
 def get_collateral_code():
+    """
+
+    :return: Collateral code generated by the SQL Functions
+    """
     sql_logger.info('Get : collateral_code')
     collateral_code = fs_session.query(func.codeGenerator('COLLATERAL')).all()[0][0]
     sql_logger.info('Fetched : collateral_code')
@@ -126,6 +189,10 @@ def get_collateral_code():
 
 
 def get_collateral_view_code():
+    """
+
+    :return: Collateral view code generated by the SQL Functions
+    """
     sql_logger.info('Get : collateral_view_code')
     collateral_view_code = fs_session.query(func.codeGenerator('COLLATERAL-VIEW')).all()[0][0]
     sql_logger.info('Fetched : collateral_view_code')
@@ -133,6 +200,11 @@ def get_collateral_view_code():
 
 
 def get_fund_short_code(fund_code):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :return: Fund short code of the Fund
+    """
     sql_logger.info('Get : fund_short_code')
     fund_short_code = app_session.query(model.PerAllFunds.fund_short_code).filter_by(fund_code=fund_code).all()[0][0]
     sql_logger.info('Fetched : fund_short_code')
@@ -140,6 +212,11 @@ def get_fund_short_code(fund_code):
 
 
 def get_default_visibility_code(fund_code):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :return: Default visibility code of the given fund code
+    """
     sql_logger.info('Get : default_visibility_code')
     default_visibility_code = fs_session.query(model.CollateralTemplates.default_visibility_code). \
         filter_by(entity_type='FUND').filter_by(template_type_code='FINTUPLE').filter_by(entity_code=fund_code). \
@@ -149,6 +226,12 @@ def get_default_visibility_code(fund_code):
 
 
 def get_collateral_template_code(fund_code, reporting_date):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :param reporting_date: Reporting date of the Fund
+    :return: Template code of the given fund code
+    """
     sql_logger.info('Get : collateral_template_code')
     collateral_template_code = fs_session.query(model.CollateralTemplates.template_code).filter(
         model.CollateralTemplates.entity_code == fund_code).filter(
@@ -162,6 +245,11 @@ def get_collateral_template_code(fund_code, reporting_date):
 
 
 def get_pe_ratio(security_isin_list):
+    """
+
+    :param security_isin_list: A list of Security ISIN and their corresponding exposures
+    :return: A list of Security ISIN and it's corresponding PE ratio
+    """
     sql_logger.info('Get : pe_ratio_list')
     pe_ratio_list = []
     for security in security_isin_list:
@@ -180,6 +268,11 @@ def get_pe_ratio(security_isin_list):
 
 
 def get_fund_ratio_mcap(security_isin_list):
+    """
+
+    :param security_isin_list: A list of Security ISIN and their corresponding exposures
+    :return: A list of Security ISIN and it's corresponding Market cap
+    """
     sql_logger.info('Get : fund_ratio_mcap_list')
     fund_ratio_mcap_list = []
     for security in security_isin_list:
@@ -198,6 +291,11 @@ def get_fund_ratio_mcap(security_isin_list):
 
 
 def get_all_1m_perf(fund_code):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :return: A list of 1 month performance for all the reporting dates of the given fund code
+    """
     sql_logger.info('Get : fund_return_list')
     fund_return = iq_session.query(model.FundPerformance.perf_1m).filter_by(fund_code=fund_code).all()
     fund_return_list = []
@@ -211,6 +309,10 @@ def get_all_1m_perf(fund_code):
 
 
 def get_risk_free_rate():
+    """
+
+    :return: Risk free return rate
+    """
     sql_logger.info('Get : risk_free_rate')
     risk_free_rate = iq_session.query(model.RatioBasis.risk_free_return_rate).all()[0][0]
     sql_logger.info('Fetched : risk_free_rate')
@@ -218,6 +320,12 @@ def get_risk_free_rate():
 
 
 def is_nav_exist(fund_code, effective_end_date):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :param effective_end_date: Reporting date of the Fund
+    :return: The count of records for the given fund code and date
+    """
     sql_logger.info('Get : is_nav')
     is_nav = iq_session.query(model.FundBenchmarkNav).filter_by(fund_code=fund_code). \
         filter_by(effective_end_date=effective_end_date).count()
@@ -226,6 +334,12 @@ def is_nav_exist(fund_code, effective_end_date):
 
 
 def is_fund_performance_exist(fund_code, effective_end_date):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :param effective_end_date: Reporting date of the Fund
+    :return: The count of records for the given fund code and date
+    """
     sql_logger.info('Get : is_fund_performance')
     is_fund_performance = iq_session.query(model.FundPerformance).filter_by(fund_code=fund_code). \
         filter_by(effective_end_date=effective_end_date).count()
@@ -234,6 +348,13 @@ def is_fund_performance_exist(fund_code, effective_end_date):
 
 
 def is_market_cap_exist(fund_code, end_date, type_market_cap):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :param end_date: Reporting date of the Fund
+    :param type_market_cap: Market cap type
+    :return: The count of records for the given fund code, date and the market cap type
+    """
     sql_logger.info('Get : is_market_cap ' + '(' + type_market_cap + ')')
     is_market_cap = iq_session.query(model.FundMarketCapDetails).filter_by(fund_code=fund_code). \
         filter_by(end_date=end_date).filter_by(type_market_cap=type_market_cap).count()
@@ -242,6 +363,13 @@ def is_market_cap_exist(fund_code, end_date, type_market_cap):
 
 
 def is_fund_portfolio_exist(fund_code, end_date, security_isin):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :param end_date: Reporting date of the Fund
+    :param security_isin: ISIN of a security
+    :return: The count of records for the given fund code, date and security ISIN
+    """
     sql_logger.info('Get : is_fund_portfolio ' + '(' + security_isin + ')')
     is_fund_portfolio = iq_session.query(model.FundPortfolioDetails).filter_by(fund_code=fund_code). \
         filter_by(end_date=end_date).filter_by(security_isin=security_isin).count()
@@ -250,6 +378,13 @@ def is_fund_portfolio_exist(fund_code, end_date, security_isin):
 
 
 def is_fund_sector_exist(fund_code, end_date, sector_type_name):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :param end_date: Reporting date of the Fund
+    :param sector_type_name: Setor type
+    :return: The count of records for the given fund code, date and sector type
+    """
     sql_logger.info('Get : is_fund_sector ' + '(' + sector_type_name + ')')
     is_fund_sector = iq_session.query(model.FundSectorDetails).filter_by(fund_code=fund_code).\
         filter_by(end_date=end_date).filter_by(sector_type_name=sector_type_name).count()
@@ -258,6 +393,12 @@ def is_fund_sector_exist(fund_code, end_date, sector_type_name):
 
 
 def is_collaterals_exist(fund_code, reporting_date):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :param reporting_date: Reporting date of the Fund
+    :return: The count of records for the given fund code and date
+    """
     sql_logger.info('Get : is_collateral')
     is_collateral = fs_session.query(model.Collaterals).filter_by(entity_code=fund_code). \
         filter_by(reporting_date=reporting_date).count()
@@ -266,6 +407,12 @@ def is_collaterals_exist(fund_code, reporting_date):
 
 
 def is_fund_ratio_exist(fund_code, reporting_date):
+    """
+
+    :param fund_code: Fund code of the Fund
+    :param reporting_date: Reporting date of the Fund
+    :return: The count of records for the given fund code and date
+    """
     sql_logger.info('Get : is_fund_ratio')
     is_fund_ratio = iq_session.query(model.FundRatios).filter_by(fund_code=fund_code). \
         filter_by(reporting_date=reporting_date).count()
@@ -273,7 +420,13 @@ def is_fund_ratio_exist(fund_code, reporting_date):
     return is_fund_ratio
 
 
-def update_islatest(fund_code, previous_1m_end_date):
+def update_is_latest(fund_code, previous_1m_end_date):
+    """
+    Updates the is_Latest value of the previous month to 0
+
+    :param fund_code: Fund code of the Fund
+    :param previous_1m_end_date: Reporting date of the previous month
+    """
     sql_logger.info('Update - isLatest')
     islatest_update = update(model.FundPerformance).where(model.FundPerformance.fund_code == fund_code). \
         where(model.FundPerformance.effective_end_date == previous_1m_end_date).values(isLatest=None)
@@ -282,6 +435,11 @@ def update_islatest(fund_code, previous_1m_end_date):
 
 
 def put_fund_benchmark_nav(nav_data):
+    """
+    Adds a new record/Updates the values if already exists
+
+    :param nav_data: Fund benchmark NAV record of the Fund for the reporting date
+    """
     sql_logger.info('Update/Insert - fund_benchmark_nav')
     if is_nav_exist(nav_data.fund_code, nav_data.effective_end_date):
         nav_query = update(model.FundBenchmarkNav).where(model.FundBenchmarkNav.fund_code == nav_data.fund_code). \
@@ -301,6 +459,13 @@ def put_fund_benchmark_nav(nav_data):
 
 
 def put_fund_performance(fund_perf_data, benchmark_perf_data, alt_benchmark_perf_data):
+    """
+    Adds a new record/Updates the values if already exists
+
+    :param fund_perf_data: Fund performance data of the Fund for the reporting date
+    :param benchmark_perf_data: Benchmark performance data of the Fund for the reporting date
+    :param alt_benchmark_perf_data: Alternate Benchmark performance data of the Fund for the reporting date
+    """
     sql_logger.info('Update/Insert - fund_performance')
     if is_fund_performance_exist(fund_perf_data.fund_code, fund_perf_data.effective_end_date):
         fund_perf_query = update(model.FundPerformance).\
@@ -369,6 +534,11 @@ def put_fund_performance(fund_perf_data, benchmark_perf_data, alt_benchmark_perf
 
 
 def put_market_cap(market_cap_data):
+    """
+    Adds a new record/Updates the values if already exists
+
+    :param market_cap_data: Market cap record of the Fund for the reporting date
+    """
     sql_logger.info('Update/Insert - fund_market_cap_details')
     if market_cap_data:
         for data in market_cap_data:
@@ -390,6 +560,11 @@ def put_market_cap(market_cap_data):
 
 
 def put_fund_portfolio(portfolio_data):
+    """
+    Adds a new record/Updates the values if already exists
+
+    :param portfolio_data: Portfolio holdings record of the Fund for the reporting date
+    """
     sql_logger.info('Update/Insert - fund_portfolio_details')
     if portfolio_data:
         for data in portfolio_data:
@@ -411,6 +586,11 @@ def put_fund_portfolio(portfolio_data):
 
 
 def put_fund_sector(sector_data):
+    """
+    Adds a new record/Updates the values if already exists
+
+    :param sector_data: Sectors record of the Fund for the reporting date
+    """
     sql_logger.info('Update/Insert - fund_sector_details')
     if sector_data:
         for data in sector_data:
@@ -432,6 +612,11 @@ def put_fund_sector(sector_data):
 
 
 def put_fund_ratios(fund_ratio_data):
+    """
+    Adds a new record/Updates the values if already exists
+
+    :param fund_ratio_data: Fund ratios record of the Fund for the reporting date
+    """
     sql_logger.info('Update/Insert - fund_ratios')
     if is_fund_ratio_exist(fund_ratio_data.fund_code, fund_ratio_data.reporting_date):
         fund_ratio = update(model.FundRatios).where(model.FundRatios.fund_code == fund_ratio_data.fund_code). \
@@ -461,6 +646,11 @@ def put_fund_ratios(fund_ratio_data):
 
 
 def put_collaterals(collateral_data):
+    """
+    Adds a new record to the table
+
+    :param collateral_data: Collaterals record of the Fund for the reporting date
+    """
     sql_logger.info('Update/Insert - collaterals')
     if not is_collaterals_exist(collateral_data.entity_code, collateral_data.reporting_date):
         collateral = insert(model.Collaterals).values(

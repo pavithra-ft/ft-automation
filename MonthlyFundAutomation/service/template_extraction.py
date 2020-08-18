@@ -4,6 +4,12 @@ from config.base_logger import app_logger
 
 
 def get_fund_info(df):
+    """
+    This function extracts the basic Fund information of the Fund from the given excel file.
+
+    :param df: A dataframe of the given excel data
+    :return: A class object of basic fund information
+    """
     app_logger.info('Fund info - Started')
     fund_info = extract.FundInfo()
     fund_info.set_fund_name(df.iloc[2, 2])
@@ -21,6 +27,12 @@ def get_fund_info(df):
 
 
 def get_fund_allocation_values(df):
+    """
+    This function extracts the Allocation values of the Fund from the given excel file.
+
+    :param df: A dataframe of the given excel data
+    :return: A class object of allocation values
+    """
     app_logger.info('Allocation values - Started')
     fund_allocation = []
     index = 15
@@ -36,6 +48,12 @@ def get_fund_allocation_values(df):
 
 
 def get_market_cap_values(df):
+    """
+    This function extracts the Market cap values of the Fund from the given excel file.
+
+    :param df: A dataframe of the given excel data
+    :return: A class object of market cap values
+    """
     app_logger.info('Market cap values - Started')
     cap_data = []
     index = 3
@@ -52,6 +70,12 @@ def get_market_cap_values(df):
 
 
 def get_fund_portfolio_values(df):
+    """
+    This function extracts the Portfolio values of the Fund from the given excel file.
+
+    :param df: A dataframe of the given excel data
+    :return: A class object of portfolio values
+    """
     app_logger.info('Portfolio values - Started')
     portfolio_values = []
     index = 13
@@ -71,6 +95,12 @@ def get_fund_portfolio_values(df):
 
 
 def get_fund_sector_values(df):
+    """
+    This function extracts the Sector values of the Fund from the given excel file.
+
+    :param df: A dataframe of the given excel data
+    :return: A class object of sector values
+    """
     app_logger.info('Sector values - Started')
     sector_values = []
     index = 23

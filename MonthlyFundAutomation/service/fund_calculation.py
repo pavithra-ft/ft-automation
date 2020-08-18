@@ -14,6 +14,13 @@ from model.fund_details_extraction import FundMarketCapExtraction, FundPortfolio
 
 
 def calc_benchmark_nav(fund_code, reporting_date):
+    """
+    This function calculates the Benchmark NAV of the Fund.
+
+    :param fund_code: Fund code of the Fund
+    :param reporting_date: Reporting date of the Fund
+    :return: Benchmark NAV of the Fund for the given reporting date
+    """
     app_logger.info('Fund Benchmark NAV - Calculation of Benchmark NAV is started')
     effective_start_date, effective_end_date = date.get_effective_start_end_date(reporting_date)
     nav_start_date = query.get_nav_start_date(fund_code)
@@ -26,6 +33,13 @@ def calc_benchmark_nav(fund_code, reporting_date):
 
 
 def calc_alt_benchmark_nav(fund_code, reporting_date):
+    """
+    This function calculates the Alternate Benchmark NAV of the Fund.
+
+    :param fund_code: Fund code of the Fund
+    :param reporting_date: Reporting date of the Fund
+    :return: Alternate Benchmark NAV of the Fund for the given reporting date
+    """
     app_logger.info('Fund Benchmark NAV - Calculation of Alternate Benchmark NAV is started')
     effective_start_date, effective_end_date = date.get_effective_start_end_date(reporting_date)
     nav_start_date = query.get_nav_start_date(fund_code)
@@ -38,6 +52,12 @@ def calc_alt_benchmark_nav(fund_code, reporting_date):
 
 
 def get_market_cap_type_code(market_cap_values):
+    """
+    This function determines the Market cap type code of the Fund.
+
+    :param market_cap_values: A class object of Market cap types with their corresponding exposures
+    :return: Market cap type code based the below mentioned condition
+    """
     app_logger.info('Fund Performance - Calculation of MarketCap Type code is started')
     market_cap_type_code = None
     large_exposure = small_exposure = mid_exposure = 0
@@ -81,6 +101,14 @@ def get_market_cap_type_code(market_cap_values):
 
 
 def get_fund_performance(fund_info, allocation_values, market_cap_values):
+    """
+    This function calculates the Fund performance of the Fund.
+
+    :param fund_info: A class object of basic fund information
+    :param allocation_values: A class object which holds the allocation values of the Fund
+    :param market_cap_values: A class object which contains the market cap type and it's corresponding exposures
+    :return: A class object containing all the performances of the fund and also the Fund NAV for the reporting date
+    """
     app_logger.info('Fund Performance - Calculation of Fund performance is started')
     portfolio_equity_allocation = portfolio_cash_allocation = portfolio_asset_allocation = \
         portfolio_other_allocations = None
@@ -172,6 +200,15 @@ def get_fund_performance(fund_info, allocation_values, market_cap_values):
 
 
 def get_benchmark_perf_month(index_code, nav_start_date, curr_price, date):
+    """
+    This function calculates the Benchmark/Alternate benchmark performance for 1 month, 3 months and 6 months.
+
+    :param index_code: Benchmark index code/Alternate benchmark index code of the Fund
+    :param nav_start_date: NAV start date of the Fund
+    :param curr_price: Index close price of the index code for the reporting date
+    :param date: Date
+    :return: Benchmark/Alternate benchmark performance for the given date of the Index code
+    """
     app_logger.info('Benchmark performance started (' + index_code + ',' + str(date) + ')')
     perf_mon = None
     price_mon = query.get_index_price_as_on_date(date, index_code)
@@ -183,6 +220,16 @@ def get_benchmark_perf_month(index_code, nav_start_date, curr_price, date):
 
 
 def get_benchmark_perf_year(effective_end_date, index_code, nav_start_date, curr_price, date):
+    """
+    This function calculates the Benchmark/Alternate benchmark performance for 1 year, 2 years, 3 years and 5 years.
+
+    :param effective_end_date: Reporting date of the Fund
+    :param index_code: Benchmark index code/Alternate benchmark index code of the Fund
+    :param nav_start_date: NAV start date of the Fund
+    :param curr_price: Index close price of the index code for the reporting date
+    :param date: Date
+    :return: Benchmark/Alternate benchmark performance for the given date of the Index code
+    """
     app_logger.info('Benchmark performance started (' + index_code + ',' + str(date) + ')')
     perf_yr = None
     price_yr = query.get_index_price_as_on_date(date, index_code)
@@ -195,6 +242,15 @@ def get_benchmark_perf_year(effective_end_date, index_code, nav_start_date, curr
 
 
 def get_benchmark_perf_inception(effective_end_date, index_code, nav_start_date, curr_price):
+    """
+    This function calculates the Benchmark/Alternate benchmark performance inception for the indices of the Fund.
+
+    :param effective_end_date: Reporting date of the Fund
+    :param index_code: Benchmark index code/Alternate benchmark index code of the Fund
+    :param nav_start_date: NAV start date of the Fund
+    :param curr_price: Index close price of the index code for the reporting date
+    :return: Benchmark/Alternate benchmark performance inception of the Index code
+    """
     app_logger.info('Benchmark inception calculation started (' + index_code + ')')
     start_index_price = query.get_start_price(nav_start_date, index_code)
     bm_power_inception = effective_end_date - nav_start_date
@@ -207,6 +263,12 @@ def get_benchmark_perf_inception(effective_end_date, index_code, nav_start_date,
 
 
 def get_benchmark_performance(fund_info):
+    """
+    This function determines the Benchmark performance of the Fund.
+
+    :param fund_info: A class object of basic fund information
+    :return: A class object containing the Benchmark performance record of the Fund
+    """
     app_logger.info('Fund Performance - Calculation of Benchmark performance is started')
     effective_start_date, effective_end_date = date.get_effective_start_end_date(fund_info.get_reporting_date())
     index_code = query.get_benchmark_index(fund_info.get_fund_code())
@@ -241,6 +303,12 @@ def get_benchmark_performance(fund_info):
 
 
 def get_alt_benchmark_performance(fund_info):
+    """
+    This function determines the Alternate benchmark performance of the Fund.
+
+    :param fund_info: A class object of basic fund information
+    :return: A class object containing the Alternate benchmark performance record of the Fund
+    """
     app_logger.info('Fund Performance - Calculation of Alternate Benchmark performance is started')
     effective_start_date, effective_end_date = date.get_effective_start_end_date(fund_info.get_reporting_date())
     index_code = query.get_alt_benchmark_index(fund_info.get_fund_code())
@@ -275,6 +343,15 @@ def get_alt_benchmark_performance(fund_info):
 
 
 def get_fund_benchmark_nav(fund_perf_data, fund_nav, benchmark_perf_data, alt_benchmark_perf_data):
+    """
+    This function determines the Fund benchmark NAV data.
+
+    :param fund_perf_data: Fund performance data calculated in the get_fund_performance()
+    :param fund_nav: Fund NAV value calculated in the get_fund_performance
+    :param benchmark_perf_data: Benchmark performance data calculated in the get_benchmark_performance()
+    :param alt_benchmark_perf_data: Alternate benchmark performance data calculated in get_alt_benchmark_performance()
+    :return: A class object of Fund benchmark NAV record of the Fund
+    """
     app_logger.info('Fund Benchmark NAV - Calculation is started')
     fund_nav_data = table.FundBenchmarkNav()
     fund_nav_data.set_fund_code(fund_perf_data.get_fund_code())
@@ -291,6 +368,13 @@ def get_fund_benchmark_nav(fund_perf_data, fund_nav, benchmark_perf_data, alt_be
 
 
 def get_security_isin(security_name):
+    """
+    This function determines the Security ISIN of the given Security name from the Portfolio holdings of the Fund.
+    Jaro Winkler Distance is used in this function which indicates the similarity score between two Strings.
+
+    :param security_name: Security name from the Portfolio holdings
+    :return: Security ISIN of the given security name
+    """
     stock_name = portfolio_dict[security_name] if portfolio_dict.__contains__(security_name) else security_name
     if stock_name in mutual_funds:
         security_isin = 'MF'
@@ -316,6 +400,13 @@ def get_security_isin(security_name):
 
 
 def get_market_cap(fund_info, market_cap_values):
+    """
+    This function determines the Market cap details of the Fund for the reporting date.
+
+    :param fund_info: A class object of basic fund information
+    :param market_cap_values: A class object which holds the market cap type and it's corresponding exposures
+    :return: A class object which contains the Market cap details of the Fund for the reporting date
+    """
     app_logger.info('Fund Market Cap Details - Calculation of Fund MarketCap is started')
     effective_start_date, effective_end_date = date.get_effective_start_end_date(fund_info.get_reporting_date())
     market_cap_data = []
@@ -334,6 +425,14 @@ def get_market_cap(fund_info, market_cap_values):
 
 
 def get_mcap_from_portfolio(fund_info, portfolio_values):
+    """
+    This function determines the Market cap type and it's exposures of the Fund for the reporting date.
+    This calculation will occur only when the market_cap_values is null and the Portfolio holdings is 100%.
+
+    :param fund_info: A class object of basic fund information
+    :param portfolio_values: A class object of portfolio holdings of the Fund
+    :return: A class object which contains the Market cap details of the Fund for the reporting date
+    """
     app_logger.info('Fund Market Cap Details - Calculation of Fund MarketCap from Portfolio details is started')
     mcap_values, mcap_values_from_pf = {}, []
     cap_sum = 0
@@ -356,6 +455,13 @@ def get_mcap_from_portfolio(fund_info, portfolio_values):
 
 
 def get_fund_portfolio(fund_info, portfolio_values):
+    """
+    This function determines the Portfolio details of the Fund for the reporting date.
+
+    :param fund_info: A class object of basic fund information
+    :param portfolio_values: A class object of portfolio holdings of the Fund
+    :return: A class object of Portfolio holdings details of the Fund for the reporting date
+    """
     app_logger.info('Fund Portfolio Details - Calculation of Fund Portfolio is started')
     effective_start_date, effective_end_date = date.get_effective_start_end_date(fund_info.get_reporting_date())
     portfolio_data, portfolio_dict = [], {}
@@ -385,6 +491,13 @@ def get_fund_portfolio(fund_info, portfolio_values):
 
 
 def get_fund_sector_from_pf(fund_info, portfolio_values):
+    """
+    This function determines the Sector allocation from the given Portfolio holdings of the Fund.
+
+    :param fund_info: A class object of basic fund information
+    :param portfolio_values: A class object of portfolio holdings of the Fund
+    :return: A class object which contains the Sector details of the Fund for the reporting date
+    """
     app_logger.info('Fund Sector Details - Calculation of Fund Sector from Portfolio details is started')
     effective_start_date, effective_end_date = date.get_effective_start_end_date(fund_info.get_reporting_date())
     sector_data, sector_dict = [], {}
@@ -413,6 +526,13 @@ def get_fund_sector_from_pf(fund_info, portfolio_values):
 
 
 def get_fund_sector_from_sector(fund_info, sector_values):
+    """
+    This function determines the Sector allocation from the given Sector details of the Fund for the reporting date.
+
+    :param fund_info: A class object of basic fund information
+    :param sector_values: A class object of sector allocation with it's exposures
+    :return: A class object of Sector details of the Fund for the reporting date
+    """
     app_logger.info('Fund Sector Details - Calculation of Fund Sector is started')
     effective_start_date, effective_end_date = date.get_effective_start_end_date(fund_info.get_reporting_date())
     sector_data = []
@@ -431,6 +551,12 @@ def get_fund_sector_from_sector(fund_info, sector_values):
 
 
 def get_collateral(fund_info):
+    """
+    This function determines the Collateral details of the Fund for the reporting date.
+
+    :param fund_info: A class object of basic fund information
+    :return: A class object which contains the Collateral details of the Fund for the reporting date
+    """
     app_logger.info('Collaterals - Calculation is started')
     effective_start_date, effective_end_date = date.get_effective_start_end_date(fund_info.get_reporting_date())
     fund_short_code = query.get_fund_short_code(fund_info.get_fund_code())
@@ -461,6 +587,13 @@ def get_collateral(fund_info):
 
 
 def calc_full_pe_ratio(sorted_exposure):
+    """
+    This function calculates the Full PE ratio of the Fund by using the Portfolio holdings exposures and it's
+    corresponding PE ratio's.
+
+    :param sorted_exposure: A class object of Portfolio holdings which is sorted based on their exposures
+    :return: Full PE ratio of the Fund for the reporting date
+    """
     app_logger.info('Fund Ratios - Calculation of Full PE Ratio is started')
     pe_ratio_list = query.get_pe_ratio(sorted_exposure)
     pe_ratio_values = [float(pe_ratio['pe_ratio']) for security in sorted_exposure for pe_ratio in pe_ratio_list
@@ -477,6 +610,13 @@ def calc_full_pe_ratio(sorted_exposure):
 
 
 def calc_top5_pe_ratio(top5_holdings):
+    """
+    This function calculates the Top 5 PE ratio of the Fund by using the Portfolio holdings exposures and it's
+    corresponding PE ratio's.
+
+    :param top5_holdings: A class object of Top 5 portfolio holdings which is sorted by it's exposures
+    :return: Top 5 PE ratio of the Fund for the reporting date
+    """
     app_logger.info('Fund Ratios - Calculation of Top 5 PE Ratio is started')
     pe_ratio_list = query.get_pe_ratio(top5_holdings)
     pe_ratio_values = [float(pe_ratio['pe_ratio']) for security in top5_holdings for pe_ratio in pe_ratio_list
@@ -493,6 +633,13 @@ def calc_top5_pe_ratio(top5_holdings):
 
 
 def calc_top10_pe_ratio(top10_holdings):
+    """
+    This function calculates the Top 10 PE ratio of the Fund by using the Portfolio holdings exposures and it's
+    corresponding PE ratio's.
+
+    :param top10_holdings: A class object of Top 10 portfolio holdings which is sorted by it's exposures
+    :return: Top 10 PE ratio of the Fund for the reporting date
+    """
     app_logger.info('Fund Ratios - Calculation of Top 10 PE Ratio is started')
     pe_ratio_list = query.get_pe_ratio(top10_holdings)
     pe_ratio_values = [float(pe_ratio['pe_ratio']) for security in top10_holdings for pe_ratio in pe_ratio_list
@@ -509,6 +656,13 @@ def calc_top10_pe_ratio(top10_holdings):
 
 
 def calc_full_market_cap(sorted_exposure):
+    """
+    This function calculates the Full Market Cap of the Fund by using the Portfolio holdings exposures and it's
+    corresponding Market cap values.
+
+    :param sorted_exposure: A class object of Portfolio holdings which is sorted based on their exposures
+    :return: Full Market Cap of the Fund for the reporting date
+    """
     app_logger.info('Fund Ratios - Calculation of Full MarketCap is started')
     mcap_list = query.get_fund_ratio_mcap(sorted_exposure)
     mcap_values = [float(market_cap['market_cap']) for security in sorted_exposure for market_cap in mcap_list
@@ -525,6 +679,13 @@ def calc_full_market_cap(sorted_exposure):
 
 
 def calc_top5_market_cap(top5_holdings):
+    """
+    This function calculates the Top 5 Market Cap of the Fund by using the Portfolio holdings exposures and it's
+    corresponding Market cap values.
+
+    :param top5_holdings: A class object of Top 5 portfolio holdings which is sorted by it's exposures
+    :return: Top 5 Market Cap of the Fund for the reporting date
+    """
     app_logger.info('Fund Ratios - Calculation of Top 5 MarketCap is started')
     mcap_list = query.get_fund_ratio_mcap(top5_holdings)
     mcap_values = [float(market_cap['market_cap']) for security in top5_holdings for market_cap in mcap_list
@@ -541,6 +702,13 @@ def calc_top5_market_cap(top5_holdings):
 
 
 def calc_top10_market_cap(top10_holdings):
+    """
+    This function calculates the Top 10 Market Cap of the Fund by using the Portfolio holdings exposures and it's
+    corresponding Market cap values.
+
+    :param top10_holdings: A class object of Top 10 portfolio holdings which is sorted by it's exposures
+    :return: Top 10 Market Cap of the Fund for the reporting date
+    """
     app_logger.info('Fund Ratios - Calculation of Top 10 MarketCap is started')
     mcap_list = query.get_fund_ratio_mcap(top10_holdings)
     mcap_values = [float(market_cap['market_cap']) for security in top10_holdings for market_cap in mcap_list
@@ -557,6 +725,13 @@ def calc_top10_market_cap(top10_holdings):
 
 
 def get_negative_excess_return(fund_return_list, risk_free):
+    """
+    This function calculates the Negative Excess return risk free of the Fund for the reporting date.
+
+    :param fund_return_list: A list of 1 month performance for all the reporting dates of the Fund
+    :param risk_free: Risk free rate
+    :return: Negative excess return risk free of the Fund for the reporting date
+    """
     app_logger.info('Fund Ratios - Calculation of Negative excess return is started')
     negative_excess_return_list = []
     for return_value in fund_return_list:
@@ -570,10 +745,25 @@ def get_negative_excess_return(fund_return_list, risk_free):
 
 
 def xnpv(rate, annualized_values):
+    """
+    This function calculates the Equivalent of Excel's XNPV function.
+
+    :param rate: Rate
+    :param annualized_values: A list of dates and it's corresponding NAV
+    :return: XNPV value
+    """
     return sum([av / (1 + rate) ** ((t - annualized_values[0][0]).days / 365.0) for (t, av) in annualized_values])
 
 
 def get_annualized_return(fund_code, effective_end_date, fund_nav):
+    """
+    This function determines the Annualized return of the Fund for the reporting date.
+
+    :param fund_code: Fund code of the Fund
+    :param effective_end_date: Reporting date of the Fund
+    :param fund_nav: Fund NAV of the Fund for the reporting date
+    :return: Annualized return of the Fund for the reporting date
+    """
     app_logger.info('Fund Ratios - Calculation of Annualized return is started')
     nav_start_date = query.get_nav_start_date(fund_code)
     start_date_nav = -1
@@ -587,6 +777,16 @@ def get_annualized_return(fund_code, effective_end_date, fund_nav):
 
 
 def get_fund_ratios(fund_info, portfolio_data, fund_nav, portfolio_sum, benchmark_perf_1m):
+    """
+    This function determines the Fund ratios details of the Fund for the reporting date.
+
+    :param fund_info: A class object of basic fund information
+    :param portfolio_data: A class object of portfolio holdings of the Fund
+    :param fund_nav: Fund NAV of the Fund for the reporting date
+    :param portfolio_sum: Sum of portfolio holdings exposures
+    :param benchmark_perf_1m: 1 month Benchmark performance of the Fund for the reporting date
+    :return: A class object which contains the Fund ratios details of the Fund for the reporting date
+    """
     app_logger.info('Fund Ratios - Calculation is started')
     top5_pe_ratio = top10_pe_ratio = top5_market_cap = top10_market_cap = full_pe_ratio = full_market_cap = None
     effective_start_date, effective_end_date = date.get_effective_start_end_date(fund_info.get_reporting_date())
@@ -654,6 +854,18 @@ def get_fund_ratios(fund_info, portfolio_data, fund_nav, portfolio_sum, benchmar
 
 
 def table_records(fund_info, allocation_values, market_cap_values, portfolio_values, sector_values):
+    """
+    This function determines all the details/records of the Fund for the reporting date.
+
+    :param fund_info: A class object of basic fund information
+    :param allocation_values: A class object of allocation values of the Fund
+    :param market_cap_values: A class object of market cap values of the Fund
+    :param portfolio_values: A class object of portfolio holdings of the Fund
+    :param sector_values: A class object of sector allocation of the Fund
+    :return: A dictionary which holds the Fund benchmark NAV data, Fund performance data, Benchmark performance data,
+             Alternate benchmark performance data, Market cap details, Portfolio details, Sector details, Fund ratios
+             details and Collaterals details
+    """
     portfolio_sum = 0
     for value in portfolio_values:
         if value.exposure:
