@@ -12,6 +12,7 @@ class BseSector(scrapy.Spider):
         bse_sector_dict = {
             'BSE100': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSE100&index_Code=22',
             'BSE200': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSE200&index_Code=23',
+            'BSE30': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=DOL30&index_Code=47',
             'BSE500': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSE500&index_Code=17',
             'BSEHEALTH': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSEHC&index_Code=84',
             'BSEMC': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=MIDCAP&index_Code=81',
