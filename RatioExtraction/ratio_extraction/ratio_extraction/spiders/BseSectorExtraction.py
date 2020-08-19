@@ -9,6 +9,9 @@ class BseSector(scrapy.Spider):
     start_url = "https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSE30&index_Code=16"
 
     def start_requests(self):
+        """
+        This function loops through the given indices and yields their respective Sectors.
+        """
         bse_sector_dict = {
             'BSE100': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSE100&index_Code=22',
             'BSE200': 'https://www.bseindia.com/sensex/IndicesWatch_Sector.aspx?iname=BSE200&index_Code=23',
@@ -24,6 +27,11 @@ class BseSector(scrapy.Spider):
             yield SplashRequest(url=sector_url, callback=self.sector_parser, meta={'index_code': index_code})
 
     def sector_parser(self, response):
+        """
+        This function extracts the required data from the response of the URL and stores them in the items.
+
+        :param response: Response from the URL
+        """
         table = response.css('div[class="col-lg-12 largetable"] table tbody tr td table tbody tr td')[0]
         for index, row in enumerate(table.css('table > tbody > tr')):
             if index == 3:

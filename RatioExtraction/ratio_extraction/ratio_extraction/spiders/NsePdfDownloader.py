@@ -9,6 +9,9 @@ class NsePdfSpider(scrapy.Spider):
     start_url = "https://www1.nseindia.com/products/content/equities/indices/broad_indices.htm"
 
     def start_requests(self):
+        """
+        This function loops through the indices and downloads the PDF of the corresponding index.
+        """
         urls = {"NIFTY100": "https://www1.nseindia.com/products/content/equities/indices/nifty_100.htm",
                 "NIFTY200": "https://www1.nseindia.com/products/content/equities/indices/nifty_200.htm",
                 "NIFTY50": "https://www1.nseindia.com/products/content/equities/indices/nifty_50.htm",
@@ -23,6 +26,11 @@ class NsePdfSpider(scrapy.Spider):
             yield scrapy.Request(url=url, callback=self.pdf_parser, meta={'index_code': index_code})
 
     def pdf_parser(self, response):
+        """
+        This function downloads the PDF of the indices.
+
+        :param response: Response from the URL
+        """
         link = []
         index_code = response.meta.get('index_code')
         if index_code != "NIFTYPHARMA":
@@ -38,6 +46,11 @@ class NsePdfSpider(scrapy.Spider):
             self.save_pdf(pdf)
 
     def save_pdf(self, pdf):
+        """
+        This function saves the downloaded PDF in the given directory.
+
+        :param pdf: Downloaded PDF
+        """
         data = requests.get(pdf)
         content = data.content
         filename = BASE_DIR + "/extracted_pdf_files/" + pdf.split('/')[-1]
