@@ -8,15 +8,23 @@ from selenium import webdriver
 def download_file(amc, source_dir):
     main_url = 'https://www.advisorkhoj.com/mutual-funds-research/mutual-fund-portfolio/'
     chrome_options = webdriver.ChromeOptions()
-    prefs = {'download.default_directory': source_dir}
-    chrome_options.add_experimental_option('prefs', prefs)
-    driver = webdriver.Chrome(chrome_options=chrome_options, executable_path=r'C:\Users\pavithra\Downloads'
-                                                                             r'\chromedriver_win32\chromedriver.exe')
+    preferences = {"download.default_directory": source_dir,
+                   "directory_upgrade": True,
+                   "safebrowsing.enabled": True}
+    # chrome_options.add_argument("--headless")
+    chrome_options.add_experimental_option('prefs', preferences)
+    driver = webdriver.Chrome(options=chrome_options,
+                              executable_path=r'C:\Users\pavithra\Downloads\chromedriver_win32\chromedriver.exe')
+
+    driver.command_executor._commands["send_command"] = ("POST", '/session/$sessionId/chromium/send_command')
+    params = {'cmd': 'Page.setDownloadBehavior',
+              'params': {'behavior': 'allow', 'downloadPath': source_dir}}
+    driver.execute("send_command", params)
 
     driver.get(main_url + amc + '/' + year)
-    search_input = driver.find_element_by_xpath('//*[@id="wrapper"]/section[2]/div/div/div[3]/div[3]/div/div/div['
-                                                '2]/div/div/div/p[1]/a')
-    search_input.click()
+    driver.find_element_by_xpath('//*[@id="wrapper"]/section[2]/div/div/div[2]/div[3]/div/div/div[2]/div/div/div/p[1]'
+                                 '/a').click()
+    time.sleep(15)
 
 
 def rename_file(index, source_dir):
@@ -57,15 +65,15 @@ def extract_zip_files(index, source_dir, target_dir):
 
 
 if __name__ == '__main__':
-    source_dir = r'C:\Users\pavithra\Documents\fintuple-automation-projects\AMC_Excel\amc_files_extraction' \
-                 r'\amc_files_extraction\zip_files'
-    target_dir = r'C:\Users\pavithra\Documents\fintuple-automation-projects\AMC_Excel\amc_files_extraction' \
-                 r'\amc_files_extraction\extracted_data'
+    source_dir = r'C:\Users\pavithra\Documents\fintuple-automation-projects\FundRatingAMCFiles' \
+                 r'\fund_rating_file_extraction\fund_rating_file_extraction\zip_files'
+    target_dir = r'C:\Users\pavithra\Documents\fintuple-automation-projects\FundRatingAMCFiles' \
+                 r'\fund_rating_file_extraction\fund_rating_file_extraction\extracted_files'
     year = '2020'
     url_dict = {'DSP': 'DSP-Mutual-Fund'}
     for index, amc in url_dict.items():
         download_file(amc, source_dir)
-        time.sleep(30)
+        time.sleep(15)
         rename_file(index, source_dir)
         time.sleep(10)
         extract_zip_files(index, source_dir, target_dir)

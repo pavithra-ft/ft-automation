@@ -52,7 +52,7 @@ class AdvisorKhoj(scrapy.Spider):
 def save_zip(amc, url):
     data = requests.get(url)
     content = data.content
-    zip_filename = BASE_DIR + "/amc_files_extraction/zip_files/" + amc.lower() + '.zip'
+    zip_filename = BASE_DIR + "/fund_rating_file_extraction/zip_files/" + amc.lower() + '.zip'
     with open(zip_filename, 'wb') as f:
         f.write(content)
     extract_zip_files(zip_filename)
@@ -61,14 +61,14 @@ def save_zip(amc, url):
 def save_xlsx(amc, url):
     data = requests.get(url)
     content = data.content
-    filename = BASE_DIR + "/amc_files_extraction/extracted_data/" + amc.lower() + '.xlsx'
+    filename = BASE_DIR + "/fund_rating_file_extraction/extracted_files/" + amc.lower() + '.xlsx'
     with open(filename, 'wb') as f:
         f.write(content)
 
 
 def extract_zip_files(zip_filename):
-    source_dir = BASE_DIR + "/amc_files_extraction/zip_files"
-    target_dir = BASE_DIR + "/amc_files_extraction/extracted_data/"
+    source_dir = BASE_DIR + "/fund_rating_file_extraction/zip_files"
+    target_dir = BASE_DIR + "/fund_rating_file_extraction/extracted_files/"
 
     filelist = []
     with zipfile.ZipFile(zip_filename, 'r') as zipObj:

@@ -1,21 +1,30 @@
 import os
 import time
 from selenium import webdriver
-from selenium.webdriver.support.ui import Select
 
 
 def download_file(amc, directory):
-    # main_url = 'https://www.advisorkhoj.com/mutual-funds-research/mutual-fund-portfolio/'
     chrome_options = webdriver.ChromeOptions()
-    prefs = {'download.default_directory': directory}
-    chrome_options.add_experimental_option('prefs', prefs)
-    driver = webdriver.Chrome(chrome_options=chrome_options, executable_path=r'C:\Users\pavithra\Downloads'
-                                                                             r'\chromedriver_win32\chromedriver.exe')
+    preferences = {"download.default_directory": directory,
+                   "directory_upgrade": True,
+                   "safebrowsing.enabled": True}
+    chrome_options.add_argument("--headless")
+    chrome_options.add_experimental_option("prefs", preferences)
+    driver = webdriver.Chrome(options=chrome_options,
+                              executable_path=r'C:\Users\pavithra\Downloads\chromedriver_win32\chromedriver.exe')
 
-    # driver.get(main_url + amc + '/' + year)
+    driver.command_executor._commands["send_command"] = ("POST", '/session/$sessionId/chromium/send_command')
+    params = {'cmd': 'Page.setDownloadBehavior',
+              'params': {'behavior': 'allow', 'downloadPath': directory}}
+    driver.execute("send_command", params)
+
     driver.get(amc)
-    selectOption = Select(driver.find_element_by_class_name("btn btn-default dropdown-toggle"))
-    selectOption.select_by_visible_text("Monthly Portfolio Disclosure")
+    driver.find_element_by_xpath('//*[@id="select-data"]/div/ul/li/div/button/i').click()
+    time.sleep(1)
+    driver.find_element_by_xpath('//*[@id="MonthlyPortfolioDisclosure"]').click()
+    time.sleep(1)
+    driver.find_element_by_xpath('//*[@id="MonthlyPortfolioDisclosure10"]/div/ul/li[1]').click()
+    time.sleep(10)
 
 
 def rename_file(index, directory):
@@ -26,11 +35,10 @@ def rename_file(index, directory):
 
 
 if __name__ == '__main__':
-    directory = r'C:\Users\pavithra\Documents\fintuple-automation-projects\AMC_Excel\amc_files_extraction' \
-                r'\amc_files_extraction\extracted_data'
+    directory = r'C:\Users\pavithra\Documents\fintuple-automation-projects\FundRatingAMCFiles' \
+                r'\fund_rating_file_extraction\fund_rating_file_extraction\extracted_files'
     year = '2020'
     url_dict = {'FRANKLIN': 'https://www.franklintempletonindia.com/investor/reports'}
     for index, amc in url_dict.items():
         download_file(amc, directory)
-        # time.sleep(20)
-        # rename_file(index, directory)
+        rename_file(index, directory)
