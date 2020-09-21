@@ -12,8 +12,6 @@ BOT_NAME = 'fund_rating_file_extraction'
 SPIDER_MODULES = ['fund_rating_file_extraction.spiders']
 NEWSPIDER_MODULE = 'fund_rating_file_extraction.spiders'
 
-BASE_DIR = r'C:\Users\pavithra\Documents\fintuple-automation-projects\FundRatingAMCFiles\fund_rating_file_extraction'
-
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'fund_rating_file_extraction (+http://www.yourdomain.com)'
 

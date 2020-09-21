@@ -1,36 +1,40 @@
 import os
 import time
+import scrapy
+from ..config.urls import *
 from selenium import webdriver
+from ..config.selenium_chrome import *
+from ..config.web_elements import axis_path
+from ..config.amc_dictionary import axis_dict
+from ..config.file_extensions import xlsx_ext
+from selenium.webdriver.chrome.options import Options
 
 
-def download_file(amc, directory):
-    main_url = 'https://www.advisorkhoj.com/mutual-funds-research/mutual-fund-portfolio/'
-    chrome_options = webdriver.ChromeOptions()
-    prefs = {'download.default_directory': directory}
-    chrome_options.add_argument("--headless")
-    chrome_options.add_experimental_option('prefs', prefs)
-    driver = webdriver.Chrome(options=chrome_options,
-                              executable_path=r'C:\Users\pavithra\Downloads\chromedriver_win32\chromedriver.exe')
+class AxisAdvisorKhoj(scrapy.Spider):
+    name = 'axis_crawler'
+    allowed_domains = [allowed_domains[0]]
+    start_urls = [start_url[0]]
 
-    driver.get(main_url + amc + '/' + year)
-    search_input = driver.find_element_by_xpath('//*[@id="wrapper"]/section[2]/div/div/div[2]/div[3]/div/div/div[2]/div'
-                                                '/div/div/p[1]/a')
-    search_input.click()
-    time.sleep(10)
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.options = Options()
+        self.options.add_experimental_option('prefs', DOWNLOAD_PREFERENCES)
+        self.options.add_argument(HEADLESS_OPTIONS['headless'])
+        self.options.add_argument(HEADLESS_OPTIONS['window_size'])
+        self.driver = webdriver.Chrome(desired_capabilities=BINARY_LOCATION, chrome_options=self.options,
+                                       executable_path=CHROME_DRIVER_PATH)
+
+    def parse(self, response, **kwargs):
+        for index, amc in axis_dict.items():
+            enable_download(self.driver, EXTRACTED_DIR)
+            self.driver.get(self.start_urls[0] + amc + '/' + str(YEAR))
+            self.driver.find_element_by_xpath(axis_path[0]).click()
+            time.sleep(5)
+            rename_file(index, EXTRACTED_DIR)
 
 
 def rename_file(index, directory):
     os.chdir(directory)
     latest_file = sorted(os.listdir(os.getcwd()), key=os.path.getmtime)
-    filename = directory + '/' + index.lower() + '.xlsx'
+    filename = directory + '/' + index.lower() + xlsx_ext
     os.rename(latest_file[-1], filename)
-
-
-if __name__ == '__main__':
-    directory = r'C:\Users\pavithra\Documents\fintuple-automation-projects\FundRatingAMCFiles' \
-                r'\fund_rating_file_extraction\fund_rating_file_extraction\extracted_files'
-    year = '2020'
-    url_dict = {'AXIS': 'Axis-Mutual-Fund'}
-    for index, amc in url_dict.items():
-        download_file(amc, directory)
-        rename_file(index, directory)
