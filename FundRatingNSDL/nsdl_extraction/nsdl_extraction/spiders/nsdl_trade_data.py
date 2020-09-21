@@ -1,8 +1,11 @@
 import time
 import scrapy
 import datetime
+from ..config.urls import *
 from selenium import webdriver
+from ..config.web_elements import *
 from ..items import NsdlTradeDataItem
+from ..config.selenium_chrome import *
 from dateutil.relativedelta import relativedelta
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options
@@ -11,80 +14,80 @@ from selenium.common.exceptions import NoSuchElementException
 
 class NsdlTrade(scrapy.Spider):
     name = 'trade_crawler'
-    allowed_domains = ['nsdl.co.in']
-    start_urls = ['https://www.fpi.nsdl.co.in/web/Reports/traderepositoryreport.aspx']
+    allowed_domains = [allowed_domains[0]]
+    start_urls = [start_url[0]]
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.options = Options()
-        self.options.add_argument('--headless')
-        self.options.add_argument('--disable-gpu')
-        self.options.binary_locaion = '/usr/bin/google-chrome-stable'
-        self.driver = webdriver.Chrome(r'C:\Users\pavithra\Downloads\chromedriver_win32\chromedriver.exe',
-                                       chrome_options=self.options)
 
     def parse(self, response, **kwargs):
-        self.driver.get(self.start_urls[0])
         calendar_rows = [1, 2, 3, 4, 5, 6]
         calendar_cols = [1, 2, 3, 4, 5, 6, 7]
         for row in calendar_rows:
             for col in calendar_cols:
-                criteria = Select(self.driver.find_element_by_xpath('//*[@id="drp_EntityType"]'))
-                criteria.select_by_value('For All')
+                options = Options()
+                options.add_argument(HEADLESS_OPTIONS['headless'])
+                options.add_argument(HEADLESS_OPTIONS['window_size'])
+                options.add_argument(HEADLESS_OPTIONS['sandbox'])
+                options.add_argument(HEADLESS_OPTIONS['dev_shm_usage'])
+                options.add_argument(HEADLESS_OPTIONS['disable_gpu'])
+                options.add_argument(HEADLESS_OPTIONS['network_service'])
+                options.add_argument(HEADLESS_OPTIONS['display_compositor'])
+                driver = webdriver.Chrome(executable_path=CHROME_DRIVER_PATH, options=options)
 
-                market = Select(self.driver.find_element_by_xpath('//*[@id="drp_view"]'))
-                market.select_by_value('Secondary Market plus Primary Market')
+                driver.get(self.start_urls[0])
+                criteria = Select(driver.find_element_by_xpath(criteria_path[0]))
+                criteria.select_by_value(criteria_value[0])
+
+                market = Select(driver.find_element_by_xpath(market_path[0]))
+                market.select_by_value(market_value[0])
 
                 current_date = datetime.datetime.today().date() - relativedelta(months=1)
                 month_in_words = datetime.date(current_date.year, current_date.month, current_date.day).strftime('%B')
 
-                date_picker = self.driver.find_element_by_id('imgtxtFromDate')
+                date_picker = driver.find_element_by_id(date_picker_path[0])
                 date_picker.click()
-                time.sleep(0.5)
+                time.sleep(1)
 
-                month_year_title = self.driver.find_element_by_class_name('DynarchCalendar-title')
+                month_year_title = driver.find_element_by_class_name(date_picker_mon_yr[0])
                 month_year_title.click()
-                time.sleep(0.5)
+                time.sleep(1)
 
-                year = self.driver.find_element_by_xpath('/html/body/table/tbody/tr/td/div/div[3]/table/tbody/tr/td/'
-                                                         'table[1]/tbody/tr[1]/td/input')
+                year = driver.find_element_by_xpath(date_picker_year[0])
                 year.clear()
                 year.send_keys(current_date.year)
-                time.sleep(0.5)
+                time.sleep(1)
 
                 month_rows = [1, 2, 3, 4]
                 month_cols = [1, 2, 3]
                 for mrows in month_rows:
                     for mcols in month_cols:
-                        month = self.driver.find_element_by_xpath('/html/body/table/tbody/tr/td/div/div['
-                                                                  '3]/table/tbody/tr/td/table[2]/tbody/tr[{}]/td[{}]'.
-                                                                  format(mrows, mcols))
+                        month = driver.find_element_by_xpath(mas_securities_month[0].format(mrows, mcols))
                         if month.text == month_in_words[0:3]:
                             month.click()
-                            time.sleep(2)
+                            time.sleep(1)
 
-                date_locator = '/html/body/table/tbody/tr/td/div/div[2]/table/tbody/tr[{}]/td[{}]/' \
-                               'div[@class="DynarchCalendar-day"]'.format(row, col)
+                day = driver.find_element_by_xpath(date_locator_path[0].format(row, col))
+                day.click()
+                time.sleep(1)
+
+                go_button = driver.find_element_by_xpath(go_button_path[0])
+                go_button.click()
+                time.sleep(3)
+
                 try:
-                    day = self.driver.find_element_by_xpath(date_locator)
-                    day.click()
-                    time.sleep(1)
-
-                    go_button = self.driver.find_element_by_xpath('//*[@id="btnSubmit"]')
-                    go_button.click()
-                    time.sleep(1)
-
-                    table = self.driver.find_element_by_xpath('//*[@id="dvTradeData"]/table[1]/tbody')
-                    for index, t_row in enumerate(table.find_elements_by_xpath('tr')):
+                    trade_table = driver.find_element_by_xpath(trade_table_path[0])
+                    for index, t_row in enumerate(trade_table.find_elements_by_xpath(trade_table_row[0])):
                         td_data = []
                         if index > 2:
-                            for t_cell in t_row.find_elements_by_xpath('td'):
+                            for t_cell in t_row.find_elements_by_xpath(trade_table_cell[0]):
                                 td_data.append(t_cell.text)
+                                time.sleep(1)
 
                         if td_data:
                             trade_items = NsdlTradeDataItem()
-                            reporting_date = datetime.datetime.strptime(self.driver.find_element_by_xpath(
-                                '//*[@id="hdnFromDate"]').get_attribute('value'), '%d-%b-%Y').date()
+                            reporting_date = datetime.datetime.strptime(driver.find_element_by_xpath(
+                                reporting_date_path[0]).get_attribute('value'), '%d-%b-%Y').date()
                             trade_items['reporting_date'] = datetime.date.strftime(reporting_date, '%Y-%m-%d')
                             trade_items['security_isin'] = td_data[1]
                             trade_items['coupon_rate'] = td_data[3]
@@ -100,3 +103,6 @@ class NsdlTrade(scrapy.Spider):
 
                 except NoSuchElementException:
                     pass
+                except Exception as error:
+                    print('Exception raised :', error)
+                driver.close()

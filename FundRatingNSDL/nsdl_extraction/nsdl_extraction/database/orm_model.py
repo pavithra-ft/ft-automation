@@ -1,6 +1,6 @@
-from .settings import CONNECTION_STRING
 from sqlalchemy import create_engine, Column
 from sqlalchemy.ext.declarative import declarative_base
+from nsdl_extraction.nsdl_extraction.settings import CONNECTION_STRING
 from sqlalchemy.dialects.mysql import INTEGER, VARCHAR, DOUBLE, DATE, TINYINT
 
 Base = declarative_base()

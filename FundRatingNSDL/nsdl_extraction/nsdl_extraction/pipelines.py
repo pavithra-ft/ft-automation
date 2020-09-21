@@ -5,9 +5,9 @@
 
 
 # useful for handling different item types with a single interface
-from .items import NsdlTradeDataItem, NsdlIssuanceDataItem, NsdlSecurityItem
 from sqlalchemy.orm import sessionmaker
-from .orm_model import db_connect, SecurityPrices, PrimaryIssuance, MasSecurities
+from nsdl_extraction.nsdl_extraction.database.orm_model import *
+from .items import NsdlTradeDataItem, NsdlIssuanceDataItem, NsdlSecurityItem
 
 
 class NsdlExtractionTradePipeline:
@@ -18,7 +18,7 @@ class NsdlExtractionTradePipeline:
         engine = db_connect()
         self.Session = sessionmaker(bind=engine)
 
-    def process_item(self, item, spider):
+    def process_item(self, item):
         if not isinstance(item, NsdlTradeDataItem):
             return item
         session = self.Session()
@@ -38,7 +38,7 @@ class NsdlExtractionTradePipeline:
             try:
                 session.add(security_prices)
                 session.commit()
-            except Exception as error:
+            except Exception:
                 session.rollback()
                 raise
             finally:
@@ -54,7 +54,7 @@ class NsdlExtractionIssuancePipeline:
         engine = db_connect()
         self.Session = sessionmaker(bind=engine)
 
-    def process_item(self, item, spider):
+    def process_item(self, item):
         if not isinstance(item, NsdlIssuanceDataItem):
             return item
         session = self.Session()
@@ -78,7 +78,7 @@ class NsdlExtractionIssuancePipeline:
             try:
                 session.add(primary_issuance)
                 session.commit()
-            except Exception as error:
+            except Exception:
                 session.rollback()
                 raise
             finally:
@@ -94,7 +94,7 @@ class NsdlSecurityPipeline:
         engine = db_connect()
         self.Session = sessionmaker(bind=engine)
 
-    def process_item(self, item, spider):
+    def process_item(self, item):
         if not isinstance(item, NsdlSecurityItem):
             return item
         session = self.Session()
@@ -114,7 +114,7 @@ class NsdlSecurityPipeline:
             try:
                 session.add(mas_securities)
                 session.commit()
-            except Exception as error:
+            except Exception:
                 session.rollback()
                 raise
             finally:
