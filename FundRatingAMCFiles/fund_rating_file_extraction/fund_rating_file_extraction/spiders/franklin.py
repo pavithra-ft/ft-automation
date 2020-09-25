@@ -12,10 +12,15 @@ from ..config.web_elements import franklin_dropdown, franklin_select, franklin_l
 
 class FranklinAdvisorKhoj(scrapy.Spider):
     name = 'franklin_crawler'
-    allowed_domains = [allowed_domains[0]]
-    start_urls = [start_url[0]]
+    allowed_domains = [allowed_domains[1]]
+    start_urls = [franklin_dict['FRANKLIN']]
 
     def __init__(self, **kwargs):
+        """
+        This constructor sets up the required settings for the Headless Selenium Chrome browser.
+
+        :param kwargs: Keyword arguments
+        """
         super().__init__(**kwargs)
         self.options = Options()
         self.options.add_experimental_option('prefs', DOWNLOAD_PREFERENCES)
@@ -25,6 +30,12 @@ class FranklinAdvisorKhoj(scrapy.Spider):
                                        executable_path=CHROME_DRIVER_PATH)
 
     def parse(self, response, **kwargs):
+        """
+        This function loops through the Dictionary and gets the Response of the URL.
+
+        :param response: Response of the URL
+        :param kwargs: Keyword arguments
+        """
         for index, amc in franklin_dict.items():
             enable_download(self.driver, EXTRACTED_DIR)
             self.driver.get(amc)
@@ -38,6 +49,12 @@ class FranklinAdvisorKhoj(scrapy.Spider):
 
 
 def rename_file(index, directory):
+    """
+    This function renames the downloaded file with AMC name.
+
+    :param index: Name of the AMC
+    :param directory: Directory where the file is downloaded and stored
+    """
     os.chdir(directory)
     latest_file = sorted(os.listdir(os.getcwd()), key=os.path.getmtime)
     filename = directory + '/' + index.lower() + xlsx_ext

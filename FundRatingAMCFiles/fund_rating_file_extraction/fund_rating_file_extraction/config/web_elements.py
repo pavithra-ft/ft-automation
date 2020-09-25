@@ -1,3 +1,7 @@
+"""
+This file contains all the AMC's Web elements XPATH and CSS Selectors which directs to download the file.
+"""
+
 advisor_khoj_path = ['div[class="col-md-12 col-sm-12 remove-bootstrap-col-lr-padding"] div p a::attr(href)']
 
 axis_path = ['//*[@id="wrapper"]/section[2]/div/div/div[2]/div[3]/div/div/div[2]/div/div/div/p[1]/a']

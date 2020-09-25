@@ -7,5 +7,6 @@ import scrapy
 
 
 class FundRatingFileExtractionItem(scrapy.Item):
+    # Name of the items to be scraped
     amc_url = scrapy.Field()
     files = scrapy.Field()

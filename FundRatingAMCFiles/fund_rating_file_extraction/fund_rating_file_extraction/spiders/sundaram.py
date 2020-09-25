@@ -13,11 +13,20 @@ class SundaramAdvisorKhoj(scrapy.Spider):
     start_url = [start_url[0]]
 
     def start_requests(self):
+        """
+        This function loops through all the AMC's in the given dictionary with the Query parameters of the URL.
+        With the built up URL, the Scrapy Request will be sent.
+        """
         for amc_key, amc_value in sundaram_dict.items():
             url = self.start_url[0] + amc_value + "/" + str(YEAR)
             yield scrapy.Request(url=url, callback=self.parser, meta={'amc_key': amc_key})
 
     def parser(self, response):
+        """
+        This function gets the Response from the given URL and passes the response to the specific download formats.
+
+        :param response: Response received from the URL.
+        """
         link = {}
         link.update({response.meta.get('amc_key'): response.css(sundaram_path[0]).getall()[0]})
 
@@ -28,6 +37,12 @@ class SundaramAdvisorKhoj(scrapy.Spider):
 
 
 def save_xlsx(amc, url):
+    """
+    This function saves the downloaded XLSX files.
+
+    :param amc: Name of the AMC
+    :param url: URL of the AMC
+    """
     data = requests.get(url)
     content = data.content
     filename = EXTRACTED_DIR + '/' + amc.lower() + xlsx_ext

@@ -18,6 +18,11 @@ class DspAdvisorKhoj(scrapy.Spider):
     start_urls = [start_url[0]]
 
     def __init__(self, **kwargs):
+        """
+        This constructor sets up the required settings for the Headless Selenium Chrome browser.
+
+        :param kwargs: Keyword arguments
+        """
         super().__init__(**kwargs)
         self.options = Options()
         self.options.add_experimental_option('prefs', DOWNLOAD_PREFERENCES)
@@ -27,6 +32,12 @@ class DspAdvisorKhoj(scrapy.Spider):
                                        executable_path=CHROME_DRIVER_PATH)
 
     def parse(self, response, **kwargs):
+        """
+        This function will loop through the Dictionary and gets the Response from the URL.
+
+        :param response: Response of the URL
+        :param kwargs: Keyword arguments
+        """
         for index, amc in dsp_dict.items():
             enable_download(self.driver, ZIP_DIR)
             self.driver.get(self.start_urls[0] + amc + '/' + str(YEAR))
@@ -38,6 +49,12 @@ class DspAdvisorKhoj(scrapy.Spider):
 
 
 def rename_file(index, source_dir):
+    """
+    This function renames the downloaded zip file with AMC name.
+
+    :param index: Name of the AMC
+    :param source_dir: Directory where the file is downloaded and stored
+    """
     files_path = source_dir + '/*' + zip_ext
     latest_file = max(glob.iglob(files_path), key=os.path.getmtime)
     if os.path.isfile(source_dir + '/' + index.lower() + zip_ext):
@@ -46,6 +63,13 @@ def rename_file(index, source_dir):
 
 
 def extract_zip_files(index, source_dir, target_dir):
+    """
+    This function will extract the files inside the downloaded Zip file and stores it in the Target Directory.
+
+    :param index: Name of the AMC
+    :param source_dir: Directory where the file is downloaded and stored
+    :param target_dir: Directory to store the file after extracting it from the Zip file
+    """
     filelist = []
     inner_dir = []
     with zipfile.ZipFile(source_dir + '/' + index.lower() + zip_ext, 'r') as zipObj:
