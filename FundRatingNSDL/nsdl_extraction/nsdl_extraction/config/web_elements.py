@@ -1,3 +1,7 @@
+"""
+This file holds all the Web elements XPATH and CSS Selectors which locates the elements.
+"""
+
 criteria_path = ['//*[@id="drp_EntityType"]']
 criteria_value = ['For All']
 

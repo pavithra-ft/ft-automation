@@ -6,7 +6,6 @@
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-
 from envparse import env
 
 BOT_NAME = 'nsdl_extraction'
@@ -98,5 +97,5 @@ CONNECTION_STRING = "{drivername}://{user}:{password}@{host}:{port}/{db_name}?ch
      password=env('DB_PASS'),
      host=env('DB_HOST'),
      port="3306",
-     db_name="fund_rating",
+     db_name="fund_rating"
 )

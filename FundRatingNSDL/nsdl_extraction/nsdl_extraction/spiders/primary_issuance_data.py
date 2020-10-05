@@ -9,6 +9,7 @@ from ..items import NsdlIssuanceDataItem
 from dateutil.relativedelta import relativedelta
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options
+from selenium.common.exceptions import NoSuchElementException
 
 
 class NsdlIssuance(scrapy.Spider):
@@ -20,6 +21,17 @@ class NsdlIssuance(scrapy.Spider):
         super().__init__(**kwargs)
 
     def parse(self, response, **kwargs):
+        """
+        This function will parse through all the dates in the current month and extracts all the primary issuance data
+        from the NSDL website.
+
+        Extracted data will go through a condition, if ISIN and reporting_date already present in PRIMARY_ISSUANCE
+        table, it will drop off that particular data and if it doesn't exist in PRIMARY_ISSUANCE then it will push
+        the data into the table. (This process is taken care by the Pipelines.py)
+
+        :param response: Response from the URL
+        :param kwargs: Keyword arguments
+        """
         calendar_rows = [1, 2, 3, 4, 5, 6]
         calendar_cols = [1, 2, 3, 4, 5, 6, 7]
         for row in calendar_rows:
@@ -34,6 +46,7 @@ class NsdlIssuance(scrapy.Spider):
                 options.add_argument(HEADLESS_OPTIONS['display_compositor'])
                 driver = webdriver.Chrome(executable_path=CHROME_DRIVER_PATH, options=options)
 
+                driver.get(self.start_urls[0])
                 criteria = Select(driver.find_element_by_xpath(criteria_path[0]))
                 criteria.select_by_value(criteria_value[0])
 
@@ -60,7 +73,7 @@ class NsdlIssuance(scrapy.Spider):
                 month_cols = [1, 2, 3]
                 for mrows in month_rows:
                     for mcols in month_cols:
-                        month = driver.find_element_by_xpath(mas_securities_month.format(mrows, mcols))
+                        month = driver.find_element_by_xpath(mas_securities_month[0].format(mrows, mcols))
                         if month.text == month_in_words[0:3]:
                             month.click()
                             time.sleep(1)
@@ -125,7 +138,8 @@ class NsdlIssuance(scrapy.Spider):
                                 issuance_items['date_of_rating'] = None
 
                             yield issuance_items
-
+                except NoSuchElementException:
+                    pass
                 except Exception as error:
                     print('Exception raised :', error)
                 driver.close()

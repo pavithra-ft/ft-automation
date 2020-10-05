@@ -6,19 +6,26 @@
 
 # useful for handling different item types with a single interface
 from sqlalchemy.orm import sessionmaker
-from nsdl_extraction.nsdl_extraction.database.orm_model import *
 from .items import NsdlTradeDataItem, NsdlIssuanceDataItem, NsdlSecurityItem
+from .database.orm_model import SecurityPrices, db_connect, PrimaryIssuance, MasSecurities
 
 
 class NsdlExtractionTradePipeline:
     def __init__(self):
         """
-        Initializes database connection and sessionmaker
+        Initializes database connection and session maker
         """
         engine = db_connect()
         self.Session = sessionmaker(bind=engine)
 
-    def process_item(self, item):
+    def process_item(self, item, spider):
+        """
+        Extracted Item from the spider will go through a condition, if item already exist in Database, then that
+        particular item will be dropped off, if not then it will be pushed into the Database.
+
+        :param item: Data yielded from the Spider
+        :param spider: Spider from where the item is yielded
+        """
         if not isinstance(item, NsdlTradeDataItem):
             return item
         session = self.Session()
@@ -43,18 +50,27 @@ class NsdlExtractionTradePipeline:
                 raise
             finally:
                 session.close()
-            return item
+        else:
+            session.close()
+        return item
 
 
 class NsdlExtractionIssuancePipeline:
     def __init__(self):
         """
-        Initializes database connection and sessionmaker
+        Initializes database connection and session maker
         """
         engine = db_connect()
         self.Session = sessionmaker(bind=engine)
 
-    def process_item(self, item):
+    def process_item(self, item, spider):
+        """
+        Extracted Item from the spider will go through a condition, if item already exist in Database, then that
+        particular item will be dropped off, if not then it will be pushed into the Database.
+
+        :param item: Data yielded from the Spider
+        :param spider: Spider from where the item is yielded
+        """
         if not isinstance(item, NsdlIssuanceDataItem):
             return item
         session = self.Session()
@@ -83,7 +99,9 @@ class NsdlExtractionIssuancePipeline:
                 raise
             finally:
                 session.close()
-            return item
+        else:
+            session.close()
+        return item
 
 
 class NsdlSecurityPipeline:
@@ -94,11 +112,19 @@ class NsdlSecurityPipeline:
         engine = db_connect()
         self.Session = sessionmaker(bind=engine)
 
-    def process_item(self, item):
+    def process_item(self, item, spider):
+        """
+        Extracted Item from the spider will go through a condition, if item already exist in Database, then that
+        particular item will be dropped off, if not then it will be pushed into the Database.
+
+        :param item: Data yielded from the Spider
+        :param spider: Spider from where the item is yielded
+        """
         if not isinstance(item, NsdlSecurityItem):
             return item
         session = self.Session()
-        item_exists = session.query(MasSecurities).filter_by(security_isin=item['security_isin']).count()
+        item_exists = session.query(MasSecurities).filter_by(security_isin=item['security_isin']).filter_by(
+            exchange_code=item['exchange_code']).count()
         if item_exists == 0:
             mas_securities = MasSecurities()
             mas_securities.security_isin = item['security_isin']
@@ -119,4 +145,6 @@ class NsdlSecurityPipeline:
                 raise
             finally:
                 session.close()
+        else:
+            session.close()
         return item

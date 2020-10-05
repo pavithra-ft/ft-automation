@@ -20,6 +20,18 @@ class NsdlIssuanceSecurity(scrapy.Spider):
         super().__init__(**kwargs)
 
     def parse(self, response, **kwargs):
+        """
+        This function will parse through all the dates in the current month and extracts the Security ISIN and
+        Security name from the NSDL website.
+
+        Extracted data will go through a condition, if ISIN already present in MAS_SECURITIES table, it will drop off
+        that particular data and if it doesn't exist in MAS_SECURITIES then it will push the data into the table.
+        (This process is taken care by the Pipelines.py)
+
+        :param response: Response from the URL
+        :param kwargs: Keyword arguments
+        """
+
         calendar_rows = [1, 2, 3, 4, 5, 6]
         calendar_cols = [1, 2, 3, 4, 5, 6, 7]
         for row in calendar_rows:
@@ -32,8 +44,7 @@ class NsdlIssuanceSecurity(scrapy.Spider):
                 options.add_argument(HEADLESS_OPTIONS['disable_gpu'])
                 options.add_argument(HEADLESS_OPTIONS['network_service'])
                 options.add_argument(HEADLESS_OPTIONS['display_compositor'])
-                driver = webdriver.Chrome(
-                    executable_path=CHROME_DRIVER_PATH, options=options)
+                driver = webdriver.Chrome(executable_path=CHROME_DRIVER_PATH, options=options)
 
                 driver.get(self.start_urls[0])
                 criteria = Select(driver.find_element_by_xpath(criteria_path[0]))
@@ -42,7 +53,7 @@ class NsdlIssuanceSecurity(scrapy.Spider):
                 market = Select(driver.find_element_by_xpath(market_path[0]))
                 market.select_by_value(market_value[0])
 
-                current_date = datetime.datetime.today().date() - relativedelta(months=2)
+                current_date = datetime.datetime.today().date() - relativedelta(months=1)
                 month_in_words = datetime.date(current_date.year, current_date.month, current_date.day).strftime('%B')
 
                 date_picker = driver.find_element_by_id(date_picker_path[0])

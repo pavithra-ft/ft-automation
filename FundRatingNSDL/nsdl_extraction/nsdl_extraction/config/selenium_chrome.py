@@ -1,4 +1,8 @@
-CHROME_DRIVER_PATH = r'C:\Users\pavithra\Desktop\software\chromedriver_win32\chromedriver.exe'
+"""
+This file holds the Selenium settings and Options for Headless Selenium Chrome browser.
+"""
+
+CHROME_DRIVER_PATH = r'C:\Users\pavithra\automation_software\FundRating\chromedriver_win32\chromedriver.exe'
 
 HEADLESS_OPTIONS = {'headless': '--headless',
                     'window_size': '--window-size=1920x1080',

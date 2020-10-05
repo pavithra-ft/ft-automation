@@ -21,6 +21,17 @@ class NsdlTrade(scrapy.Spider):
         super().__init__(**kwargs)
 
     def parse(self, response, **kwargs):
+        """
+        This function will parse through all the dates in the current month and extracts all the trade prices and
+        market data from the NSDL website.
+
+        Extracted data will go through a condition, if ISIN and reporting_date already present in SECURITY_PRICES
+        table, it will drop off that particular data and if it doesn't exist in SECURITY_PRICES then it will push
+        the data into the table. (This process is taken care by the Pipelines.py)
+
+        :param response: Response from the URL
+        :param kwargs: Keyword arguments
+        """
         calendar_rows = [1, 2, 3, 4, 5, 6]
         calendar_cols = [1, 2, 3, 4, 5, 6, 7]
         for row in calendar_rows:
@@ -99,6 +110,7 @@ class NsdlTrade(scrapy.Spider):
                             trade_items['turnover'] = float(td_data[8]) * 100000
                             trade_items['credit_rating'] = None if td_data[9] == '-' or td_data[9] == '' \
                                 else td_data[9]
+                            trade_items['number_of_trade'] = td_data[10] if td_data[10] else None
                             yield trade_items
 
                 except NoSuchElementException:
