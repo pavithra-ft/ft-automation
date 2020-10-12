@@ -116,21 +116,21 @@ def get_fund_performance(fund_info, allocation_values, market_cap_values):
 
     current_aum = round(float(fund_info.get_current_aum().replace(",", ""))) if fund_info.get_current_aum() else None
     no_of_clients = int(fund_info.get_no_of_clients()) if fund_info.get_no_of_clients() else None
-    mcap_type_code = fund_info.get_market_cap_type_code()
+    mcap_type_code = fund_info.get_market_cap_type_code() if fund_info.get_market_cap_type_code() != 'SELECT' else None
     market_cap_type_code = mcap_type_code if mcap_type_code else get_market_cap_type_code(market_cap_values)
 
-    investment_style = fund_info.get_investment_style()
+    investment_style = fund_info.get_investment_style() if fund_info.get_investment_style() != 'SELECT' else None
     investment_style_type_code = investment_style if investment_style else \
         query.get_investment_style(fund_info.get_fund_code())
     for obj in allocation_values:
         if obj.allocation == 'Equity':
-            portfolio_equity_allocation = round(float(obj.exposure), 4)
+            portfolio_equity_allocation = round(float(obj.exposure), 4) if obj.exposure != '0' else None
         if obj.allocation == 'Cash & Equivalent':
-            portfolio_cash_allocation = round(float(obj.exposure), 4)
+            portfolio_cash_allocation = round(float(obj.exposure), 4) if obj.exposure != '0' else None
         if obj.allocation == 'Asset':
-            portfolio_asset_allocation = round(float(obj.exposure), 4)
+            portfolio_asset_allocation = round(float(obj.exposure), 4) if obj.exposure != '0' else None
         if obj.allocation == 'Others':
-            portfolio_other_allocations = round(float(obj.exposure), 4)
+            portfolio_other_allocations = round(float(obj.exposure), 4) if obj.exposure != '0' else None
 
     prev_1m_end_date = date.get_1m_date(fund_info.get_reporting_date())
     prev_3m_end_date = date.get_3m_date(fund_info.get_reporting_date())
@@ -411,15 +411,16 @@ def get_market_cap(fund_info, market_cap_values):
     effective_start_date, effective_end_date = date.get_effective_start_end_date(fund_info.get_reporting_date())
     market_cap_data = []
     for value in market_cap_values:
-        cap_body = table.FundMarketCap()
-        cap_body.set_fund_code(fund_info.get_fund_code())
-        cap_body.set_type_market_cap(value.type_market_cap)
-        cap_body.set_exposure(round(float(value.exposure), 4))
-        cap_body.set_start_date(effective_start_date)
-        cap_body.set_end_date(effective_end_date)
-        cap_body.set_created_ts(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-        cap_body.set_action_by('ft-automation')
-        market_cap_data.append(cap_body)
+        if value.exposure != 0:
+            cap_body = table.FundMarketCap()
+            cap_body.set_fund_code(fund_info.get_fund_code())
+            cap_body.set_type_market_cap(value.type_market_cap)
+            cap_body.set_exposure(round(float(value.exposure), 4))
+            cap_body.set_start_date(effective_start_date)
+            cap_body.set_end_date(effective_end_date)
+            cap_body.set_created_ts(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+            cap_body.set_action_by('ft-automation')
+            market_cap_data.append(cap_body)
     app_logger.info('Fund Market Cap Details - Calculation of Fund MarketCap is completed')
     return market_cap_data
 
@@ -535,12 +536,23 @@ def get_fund_sector_from_sector(fund_info, sector_values):
     """
     app_logger.info('Fund Sector Details - Calculation of Fund Sector is started')
     effective_start_date, effective_end_date = date.get_effective_start_end_date(fund_info.get_reporting_date())
-    sector_data = []
+
+    sector_data, sector_dict = [], {}
+    exposure_sum = 0
     for value in sector_values:
+        sector = value.sector_name
+        value_exposure = value.exposure if value.exposure is not None else 0
+        exposure_sum += value_exposure
+        if sector_dict.__contains__(sector):
+            sector_dict[sector] += value_exposure
+        else:
+            sector_dict.update({sector: value_exposure})
+
+    for sector, exp in sector_dict.items():
         sector_body = table.FundSector()
         sector_body.set_fund_code(fund_info.get_fund_code())
-        sector_body.set_sector_type_name(value.sector_name)
-        sector_body.set_exposure(round(value.exposure, 6))
+        sector_body.set_sector_type_name(sector)
+        sector_body.set_exposure(round(exp, 6))
         sector_body.set_start_date(effective_start_date)
         sector_body.set_end_date(effective_end_date)
         sector_body.set_created_ts(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
