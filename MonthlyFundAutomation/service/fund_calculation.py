@@ -10,6 +10,7 @@ from pyjarowinkler import distance
 from config.base_logger import app_logger
 from dictionary.mutual_funds_dictionary import mutual_funds
 from dictionary.portfolio_dictionary import portfolio_dict
+from config.elements import mcap_allocation_dict, mcap_code_dict, mf_security_isin
 from model.fund_details_extraction import FundMarketCapExtraction, FundPortfolioExtraction
 
 
@@ -65,37 +66,39 @@ def get_market_cap_type_code(market_cap_values):
         market_cap_type_code = None
     elif market_cap_values is not None:
         if len(market_cap_values) == 1:
-            if market_cap_values.type_market_cap == 'Cash':
+            if market_cap_values.type_market_cap == mcap_allocation_dict['cash']:
                 market_cap_type_code = None
         else:
             for obj in market_cap_values:
                 if obj.exposure is None:
                     market_cap_values.remove(obj)
             for cap in market_cap_values:
-                if cap.type_market_cap == 'Large' or cap.type_market_cap == 'Mega':
+                if (cap.type_market_cap == mcap_allocation_dict['large'] or
+                        cap.type_market_cap == mcap_allocation_dict['mega']):
                     large_exposure += cap.exposure * 100
-                if cap.type_market_cap == 'Small' or cap.type_market_cap == 'Micro':
+                if (cap.type_market_cap == mcap_allocation_dict['small'] or
+                        cap.type_market_cap == mcap_allocation_dict['micro']):
                     small_exposure += cap.exposure * 100
-                if cap.type_market_cap == 'Mid':
+                if cap.type_market_cap == mcap_allocation_dict['mid']:
                     mid_exposure += cap.exposure * 100
             if large_exposure >= 20 and mid_exposure >= 20 and small_exposure >= 20:
-                market_cap_type_code = query.get_cap_type("Multi Cap")
+                market_cap_type_code = query.get_cap_type(mcap_code_dict['multi'])
             elif ((65 > large_exposure >= 25 and 65 > mid_exposure >= 25) or
                   (65 > mid_exposure >= 25 and 65 > small_exposure >= 25) or
                   (65 > small_exposure >= 25 and 65 > large_exposure >= 25)):
                 if large_exposure < mid_exposure and large_exposure < small_exposure:
-                    market_cap_type_code = query.get_cap_type("Mid-Small Cap")
+                    market_cap_type_code = query.get_cap_type(mcap_code_dict['mid_small'])
                 elif mid_exposure < large_exposure and mid_exposure < small_exposure:
-                    market_cap_type_code = query.get_cap_type("Large-Small Cap")
+                    market_cap_type_code = query.get_cap_type(mcap_code_dict['large_small'])
                 elif small_exposure < large_exposure and small_exposure < mid_exposure:
-                    market_cap_type_code = query.get_cap_type("Large-Mid Cap")
+                    market_cap_type_code = query.get_cap_type(mcap_code_dict['large_mid'])
             else:
                 if large_exposure > mid_exposure and large_exposure > small_exposure:
-                    market_cap_type_code = query.get_cap_type("Large Cap")
+                    market_cap_type_code = query.get_cap_type(mcap_code_dict['large'])
                 elif mid_exposure > large_exposure and mid_exposure > small_exposure:
-                    market_cap_type_code = query.get_cap_type("Mid Cap")
+                    market_cap_type_code = query.get_cap_type(mcap_code_dict['mid'])
                 else:
-                    market_cap_type_code = query.get_cap_type("Small Cap")
+                    market_cap_type_code = query.get_cap_type(mcap_code_dict['small'])
     app_logger.info('Fund Performance - Calculation of MarketCap Type code is completed')
     return market_cap_type_code
 
@@ -110,18 +113,18 @@ def get_fund_performance(fund_info, allocation_values, market_cap_values):
     :return: A class object containing all the performances of the fund and also the Fund NAV for the reporting date
     """
     app_logger.info('Fund Performance - Calculation of Fund performance is started')
-    portfolio_equity_allocation = portfolio_cash_allocation = portfolio_asset_allocation = \
-        portfolio_other_allocations = None
+    portfolio_equity_allocation = portfolio_cash_allocation = None
+    portfolio_asset_allocation = portfolio_other_allocations = None
+
     effective_start_date, effective_end_date = date.get_effective_start_end_date(fund_info.get_reporting_date())
 
     current_aum = round(float(fund_info.get_current_aum().replace(",", ""))) if fund_info.get_current_aum() else None
     no_of_clients = int(fund_info.get_no_of_clients()) if fund_info.get_no_of_clients() else None
     mcap_type_code = fund_info.get_market_cap_type_code() if fund_info.get_market_cap_type_code() != 'SELECT' else None
     market_cap_type_code = mcap_type_code if mcap_type_code else get_market_cap_type_code(market_cap_values)
-
     investment_style = fund_info.get_investment_style() if fund_info.get_investment_style() != 'SELECT' else None
-    investment_style_type_code = investment_style if investment_style else \
-        query.get_investment_style(fund_info.get_fund_code())
+    investment_style_type_code = (investment_style if investment_style
+                                  else query.get_investment_style(fund_info.get_fund_code()))
     for obj in allocation_values:
         if obj.allocation == 'Equity':
             portfolio_equity_allocation = round(float(obj.exposure), 4) if obj.exposure != '0' else None
@@ -159,25 +162,26 @@ def get_fund_performance(fund_info, allocation_values, market_cap_values):
     perf_1m = round(((fund_nav / float(fund_1m_nav[0][0])) - 1), 4) if fund_1m_nav else None
     perf_3m = round(((fund_nav / float(fund_3m_nav[0][0])) - 1), 4) if fund_3m_nav else None
     perf_6m = round(((fund_nav / float(fund_6m_nav[0][0])) - 1), 4) if fund_6m_nav else None
-    perf_1y = round((((fund_nav / float(fund_1y_nav[0][0])) ** (365 / date_power_1y.days)) - 1), 4) \
-        if fund_1y_nav else None
-    perf_2y = round((((fund_nav / float(fund_2y_nav[0][0])) ** (365 / date_power_2y.days)) - 1), 4) \
-        if fund_2y_nav else None
-    perf_3y = round((((fund_nav / float(fund_3y_nav[0][0])) ** (365 / date_power_3y.days)) - 1), 4) \
-        if fund_3y_nav else None
-    perf_5y = round((((fund_nav / float(fund_5y_nav[0][0])) ** (365 / date_power_5y.days)) - 1), 4) \
-        if fund_5y_nav else None
+    perf_1y = (round((((fund_nav / float(fund_1y_nav[0][0])) ** (365 / date_power_1y.days)) - 1), 4)
+               if fund_1y_nav else None)
+    perf_2y = (round((((fund_nav / float(fund_2y_nav[0][0])) ** (365 / date_power_2y.days)) - 1), 4)
+               if fund_2y_nav else None)
+    perf_3y = (round((((fund_nav / float(fund_3y_nav[0][0])) ** (365 / date_power_3y.days)) - 1), 4)
+               if fund_3y_nav else None)
+    perf_5y = (round((((fund_nav / float(fund_5y_nav[0][0])) ** (365 / date_power_5y.days)) - 1), 4)
+               if fund_5y_nav else None)
 
     if date_power_inception.days > 365:
         perf_inception = round((((fund_nav / 1) ** (365 / date_power_inception.days)) - 1), 4)
     else:
         perf_inception = round(((fund_nav / 1) - 1), 4)
+
     fund_perf_data = table.FundPerformance()
     fund_perf_data.set_fund_code(fund_info.get_fund_code())
     fund_perf_data.set_current_aum(current_aum)
     fund_perf_data.set_no_of_clients(no_of_clients)
     fund_perf_data.set_market_cap_type_code(market_cap_type_code)
-    fund_perf_data.set_investment_style_type_code(investment_style_type_code)
+    fund_perf_data.set_investment_style_type_code(investment_style_type_code[0])
     fund_perf_data.set_portfolio_equity_allocation(portfolio_equity_allocation)
     fund_perf_data.set_portfolio_cash_allocation(portfolio_cash_allocation)
     fund_perf_data.set_portfolio_asset_allocation(portfolio_asset_allocation)
@@ -185,10 +189,10 @@ def get_fund_performance(fund_info, allocation_values, market_cap_values):
     fund_perf_data.set_perf_1m(perf_1m)
     fund_perf_data.set_perf_3m(perf_3m)
     fund_perf_data.set_perf_6m(perf_6m)
-    fund_perf_data.set_perf_1y(perf_1y)
-    fund_perf_data.set_perf_2y(perf_2y)
-    fund_perf_data.set_perf_3y(perf_3y)
-    fund_perf_data.set_perf_5y(perf_5y)
+    fund_perf_data.set_perf_1y(perf_1y[0])
+    fund_perf_data.set_perf_2y(perf_2y[0])
+    fund_perf_data.set_perf_3y(perf_3y[0])
+    fund_perf_data.set_perf_5y(perf_5y[0])
     fund_perf_data.set_perf_inception(perf_inception)
     fund_perf_data.set_isLatest('1')
     fund_perf_data.set_effective_start_date(effective_start_date)
@@ -377,7 +381,7 @@ def get_security_isin(security_name):
     """
     stock_name = portfolio_dict[security_name] if portfolio_dict.__contains__(security_name) else security_name
     if stock_name in mutual_funds:
-        security_isin = 'MF'
+        security_isin = mf_security_isin['mutual_fund']
     else:
         isin_details = query.get_security_isin_from_db(stock_name)
         if len(isin_details) == 0:

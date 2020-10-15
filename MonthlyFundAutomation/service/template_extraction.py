@@ -36,7 +36,7 @@ def get_fund_allocation_values(df):
     app_logger.info('Allocation values - Started')
     fund_allocation = []
     index = 15
-    while df.iloc[index, 4] != "TOTAL":
+    while df.iloc[index, 4] != "TOTAL" or df.iloc[index, 4] != "Total":
         if df.iloc[index, 5]:
             allocation_body = extract.FundAllocationExtraction()
             allocation_body.set_allocation(df.iloc[index, 4])
@@ -57,7 +57,7 @@ def get_market_cap_values(df):
     app_logger.info('Market cap values - Started')
     cap_data = []
     index = 3
-    while df.iloc[index, 4] != "TOTAL":
+    while df.iloc[index, 4] != "TOTAL" or df.iloc[index, 4] != "Total":
         if df.iloc[index, 5]:
             cap_data_body = extract.FundMarketCapExtraction()
             market_cap = df.iloc[index, 4].replace(" Cap", "")
@@ -79,7 +79,7 @@ def get_fund_portfolio_values(df):
     app_logger.info('Portfolio values - Started')
     portfolio_values = []
     index = 13
-    while df.iloc[index, 1] != "TOTAL":
+    while df.iloc[index, 1] != "TOTAL" or df.iloc[index, 1] != "Total":
         if df.iloc[index, 1]:
             portfolio_body = extract.FundPortfolioExtraction()
             portfolio_body.set_security_name(df.iloc[index, 1].strip())
@@ -104,7 +104,7 @@ def get_fund_sector_values(df):
     app_logger.info('Sector values - Started')
     sector_values = []
     index = 23
-    while df.iloc[index, 4] != "TOTAL":
+    while df.iloc[index, 4] != "TOTAL" or df.iloc[index, 4] != "Total":
         if df.iloc[index, 4]:
             sector_body = extract.FundSectorExtraction()
             sector_body.set_sector_name(df.iloc[index, 4])
