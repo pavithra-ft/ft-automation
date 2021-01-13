@@ -6,7 +6,6 @@ import service.template_extraction as extraction
 from config.base_logger import app_logger, sql_logger
 from service.date_calculation import get_1m_date
 from service.fund_calculation import table_records
-from database.db_actions import iq_session, app_session, fs_session
 
 
 def get_fund_record(file, sheet):
@@ -63,13 +62,13 @@ def put_fund_record(fund_data, fund_info):
                         ' Record inserted successfully')
         sql_logger.info(str(fund_info.get_reporting_date()) + ' - ' + fund_info.get_fund_code() +
                         ' Record inserted successfully')
-        fs_session.commit()
-        iq_session.commit()
+        query.fs_session.commit()
+        query.iq_session.commit()
     except Exception as error:
-        fs_session.rollback()
-        iq_session.rollback()
+        query.fs_session.rollback()
+        query.iq_session.rollback()
         app_logger.info('Exception raised in queries: '+str(error))
     finally:
-        app_session.close()
-        fs_session.close()
-        iq_session.close()
+        query.app_session.close()
+        query.fs_session.close()
+        query.iq_session.close()
