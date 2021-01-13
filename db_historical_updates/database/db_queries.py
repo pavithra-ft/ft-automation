@@ -86,7 +86,7 @@ def get_nav_dates(fund_code):
 
 def get_start_price(start_date, index_code):
     start_index_price = float(iq_session.query(model.IndexPrices.index_price_close).filter_by(index_code=index_code).
-                               filter_by(index_price_as_on_date=start_date).all()[0][0])
+                              filter_by(index_price_as_on_date=start_date).all()[0][0])
     return start_index_price
 
 

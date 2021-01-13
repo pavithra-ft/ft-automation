@@ -1,4 +1,4 @@
-fund_code = ['49023848']
+fund_code = ['']
 
 file_loc = [r"C:\Users\pavithra\Documents\fintuple-automation-projects\db_historical_updates\Excel"]
 
