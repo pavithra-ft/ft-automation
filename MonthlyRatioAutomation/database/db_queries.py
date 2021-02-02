@@ -1,16 +1,13 @@
-from datetime import datetime
-from sqlalchemy.orm import sessionmaker
-from config.base_logger import sql_logger
+from envparse import env
 from sqlalchemy import create_engine, extract, func, update, insert
+from sqlalchemy.orm import sessionmaker
+from datetime import datetime
+from config.base_logger import sql_logger
 from database.orm_model import IndexPrices, IndexPerformance, MasSectors, MasIndices, MasSecurities
 
-app_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/app')
-fs_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/fs')
-iq_engine = create_engine('mysql://wyzeup:d0m#l1dZwhz!*9Iq0y1h@ft-dev.cr3pgf2uoi18.ap-south-1.rds.amazonaws.com/iq')
-
-# app_engine = create_engine('mysql://pavi:root@127.0.0.1/app')
-# fs_engine = create_engine('mysql://pavi:root@127.0.0.1/fs')
-# iq_engine = create_engine('mysql://pavi:root@127.0.0.1/iq')
+app_engine = create_engine('mysql://' + env('DEV_USER') + ':' + env('DEV_PASS') + '@' + env('DEV_HOST') + '/app')
+fs_engine = create_engine('mysql://' + env('DEV_USER') + ':' + env('DEV_PASS') + '@' + env('DEV_HOST') + '/fs')
+iq_engine = create_engine('mysql://' + env('DEV_USER') + ':' + env('DEV_PASS') + '@' + env('DEV_HOST') + '/iq')
 
 app_db = sessionmaker(bind=app_engine)
 fs_db = sessionmaker(bind=fs_engine)
@@ -22,6 +19,10 @@ iq_session = iq_db()
 
 
 def get_mas_indices():
+    """
+
+    :return: A list of all indices
+    """
     sql_logger.info('Get : mas_indices')
     mas_indices_query = iq_session.query(func.distinct(MasIndices.index_code)).all()
     mas_indices = [index[0] for index in mas_indices_query]
@@ -30,6 +31,12 @@ def get_mas_indices():
 
 
 def get_index_start_price(start_date, index_code):
+    """
+
+    :param start_date: Start date of the index
+    :param index_code: Index code
+    :return: Index close price on the start date of the index
+    """
     sql_logger.info('Get : start_index_price ' + '(' + index_code + ')')
     start_index_price = iq_session.query(IndexPrices.index_price_close).filter_by(index_code=index_code).\
         filter_by(index_price_as_on_date=start_date).all()[0][0]
@@ -38,6 +45,11 @@ def get_index_start_price(start_date, index_code):
 
 
 def get_index_start_date(index_code):
+    """
+
+    :param index_code: Index code
+    :return: Start date of the index
+    """
     sql_logger.info('Get : start_date ' + '(' + index_code + ')')
     start_date = iq_session.query(IndexPrices.index_price_as_on_date).filter_by(index_code=index_code).\
         order_by(IndexPrices.index_price_as_on_date.asc()).limit(1).all()[0][0]
@@ -46,6 +58,12 @@ def get_index_start_date(index_code):
 
 
 def get_index_price_as_on_date(date, index_code):
+    """
+
+    :param date: Date
+    :param index_code: Index code
+    :return: Index close price on the given date of the index
+    """
     sql_logger.info('Get : index_price ' + '(' + index_code + ',' + str(date) + ')')
     date_month = datetime.strptime(str(date), "%Y-%m-%d").month
     date_year = datetime.strptime(str(date), "%Y-%m-%d").year
@@ -57,6 +75,11 @@ def get_index_price_as_on_date(date, index_code):
 
 
 def get_security_isin(security_name):
+    """
+
+    :param security_name: Security name
+    :return: ISIN of the given security
+    """
     sql_logger.info('Get : security_isin ' + '(' + security_name + ')')
     security_isin = iq_session.query(MasSecurities.security_isin).filter_by(security_name=security_name).all()
     sql_logger.info('Fetched : security_isin')
@@ -64,6 +87,10 @@ def get_security_isin(security_name):
 
 
 def get_all_isin():
+    """
+
+    :return: A list of all security ISIN and their corresponding names
+    """
     sql_logger.info('Get : all_isin_list')
     all_isin_list = iq_session.query().with_entities(MasSecurities.security_isin, MasSecurities.security_name).all()
     sql_logger.info('Fetched : all_isin_list')
@@ -71,6 +98,11 @@ def get_all_isin():
 
 
 def get_security_sector(industry):
+    """
+
+    :param industry: An industry
+    :return: Sector of the given industry
+    """
     sql_logger.info('Get : sector ' + '(' + industry + ')')
     sector = iq_session.query(MasSectors.sector).filter_by(industry=industry).all()[0][0]
     sql_logger.info('Fetched : sector')
@@ -78,6 +110,12 @@ def get_security_sector(industry):
 
 
 def is_index_performance_exist(index_code, reporting_date):
+    """
+
+    :param index_code: Index code
+    :param reporting_date: Reporting date of the Index
+    :return: The count of records for the given index code and date
+    """
     sql_logger.info('Get : is_index_performance ' + '(' + index_code + ',' + str(reporting_date) + ')')
     is_index_performance = iq_session.query(IndexPerformance).filter_by(index_code=index_code).\
         filter_by(reporting_date=reporting_date).count()
@@ -86,6 +124,10 @@ def is_index_performance_exist(index_code, reporting_date):
 
 
 def put_index_performance(index_perf_data):
+    """
+
+    :param index_perf_data: A class object of Index performance record
+    """
     sql_logger.info('Update/Insert - index_performance')
     for data in index_perf_data:
         if is_index_performance_exist(data.index_code, data.reporting_date):
@@ -110,6 +152,10 @@ def put_index_performance(index_perf_data):
 
 
 def put_mas_securities(mas_security_ratio_list):
+    """
+
+    :param mas_security_ratio_list: A list of security with it's corresponding ratios
+    """
     sql_logger.info('Update/Insert - mas_securities')
     for ratio in mas_security_ratio_list:
         mas_securities = update(MasSecurities).where(MasSecurities.security_isin == ratio['security_isin']).values(
@@ -120,6 +166,10 @@ def put_mas_securities(mas_security_ratio_list):
 
 
 def put_index_prices(index_price_data):
+    """
+
+    :param index_price_data: A dictionary of index prices with their corresponding dates
+    """
     sql_logger.info('Update/Insert - index_prices ' + '(' + index_price_data[0]['index_code'] + ')')
     for index in index_price_data:
         index_price = insert(IndexPrices).values(
@@ -127,3 +177,9 @@ def put_index_prices(index_price_data):
             index_price_low=index['Low'], index_price_close=index['Close'], index_price_as_on_date=index['Date'])
         iq_session.execute(index_price)
     sql_logger.info('Update/Insert success - index_prices ' + '(' + index_price_data[0]['index_code'] + ')')
+
+
+def put_mas_securities_mcap(security_isin, market_cap_value, pe_ratio, pb_ratio, dividend_yield, eps):
+    mas_sec_query = update(MasSecurities).where(MasSecurities.security_isin == security_isin).values(
+        market_cap_value=market_cap_value, pe_ratio=pe_ratio, pb_ratio=pb_ratio, eps=eps, dividend_yield=dividend_yield)
+    iq_engine.execute(mas_sec_query)

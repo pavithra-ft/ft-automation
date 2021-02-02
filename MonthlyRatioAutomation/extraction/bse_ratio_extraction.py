@@ -7,20 +7,35 @@ from dictionary.bse_ratio_dict import bse_ratio_api
 
 
 def get_bse_pe_ratio(pe_ratio_api_dict):
+    """
+    This function extracts the PE ratio of all the given indices.
+
+    :param pe_ratio_api_dict: A dictionary which holds the Indices and it's corresponding URL's
+    :return: A list of dictionaries which holds the index and it's PE ratio
+    """
     app_logger.info('Index Performance - BSE : PE ratio extraction is started')
     bse_pe_list = []
     for index_code, api_url in pe_ratio_api_dict.items():
-        pe_ratio_request = requests.get(url=api_url)
-        pe_data = pe_ratio_request.json()
-        for data in pe_data:
-            if data.__contains__('PE'):
-                pe_body = {'index_code': index_code, 'pe_ratio': float(data['PE'].replace(',', ''))}
-                bse_pe_list.append(pe_body)
+        pe_ratio_request = requests.get(api_url)
+        if 'json' in pe_ratio_request.headers.get('Content-Type'):
+            js = pe_ratio_request.json()
+            for data in js:
+                if data.__contains__('PE'):
+                    if ',' in data['PE']:
+                        pe_body = {'index_code': index_code, 'pe_ratio': float(data['PE'].replace(',', ''))}
+                    else:
+                        pe_body = {'index_code': index_code, 'pe_ratio': float(data['PE'])}
+                    bse_pe_list.append(pe_body)
     app_logger.info('Index Performance - BSE : PE ratio extraction is completed')
     return bse_pe_list
 
 
 def get_bse_data():
+    """
+    This function determines the ratios, top sector and top holding for the indices.
+
+    :return: A list of dictionaries which holds the ratios, top sector and top holding details of the indices
+    """
     app_logger.info('Index Performance - BSE : Sector/Holding extraction is started')
     bse_list = []
     bse_pe_list = get_bse_pe_ratio(bse_ratio_api)
@@ -42,7 +57,7 @@ def get_bse_data():
 
 
 try:
-    os.chdir(r'C:\Users\pavithra\Documents\fintuple-automation-projects\RatioExtraction\ratio_extraction'
+    os.chdir(r'C:\Users\pavithra\Documents\fintuple-automation-projects\MonthlyRatioExtraction\ratio_extraction'
              r'\ratio_extraction\extracted_data')
     bse_sector_file = [file for file in glob("*.json")]
     for file in bse_sector_file:

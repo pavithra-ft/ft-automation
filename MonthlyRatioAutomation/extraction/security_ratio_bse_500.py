@@ -8,8 +8,14 @@ security_ratio_url = "https://www.valueresearchonline.com/stocks/selector-data/i
 
 
 def get_security_ratio():
+    """
+    This function focuses on extracting the Ratios of the Securities which is under BSE500.
+
+    :return: A list of securities with their Ratios
+    """
     app_logger.info('Mas Securities - PE/PB/DY/EPS extraction of Securities(BSE500) is started')
     response = get(security_ratio_url)
+    print(response)
     security_ratio_list = []
     for data in json.loads(response.content)['data']:
         text_label = ['securtiy_name', 'price_to_earnings', 'price_to_book', 'dividend_yield', 'earning_per_share']

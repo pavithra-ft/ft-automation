@@ -7,6 +7,12 @@ warnings.simplefilter('ignore')
 
 
 def get_nse_data(pdf_files):
+    """
+    This function focuses on extracting the required details from the PDF.
+
+    :param pdf_files: The downloaded PDF files
+    :return: A list of dictionaries with the required data extracted from the PDF
+    """
     app_logger.info('Index Performance - NSE Ratios/Sector/Holding extraction is started')
     nse_list = []
     for pdf in pdf_files:

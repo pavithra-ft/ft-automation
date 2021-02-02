@@ -1,0 +1,2207 @@
+2020-10-01 15:07:40,027 INFO Index Performance - Indices calculation/extraction is started
+2020-10-01 15:07:42,772 INFO Index Performance - Index code (BSE30)
+2020-10-01 15:07:42,772 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:08:17,450 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:08:17,452 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:08:17,452 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:08:20,826 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:08:20,828 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:08:20,828 INFO Index Performance - Performance calculation is started
+2020-10-01 15:08:21,809 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:08:21,809 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:08:21,810 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:08:21,810 INFO Index Performance - Index code (BSE100)
+2020-10-01 15:08:21,811 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:10:22,986 INFO Index Performance - Indices calculation/extraction is started
+2020-10-01 15:10:25,426 INFO Index Performance - Index code (BSE30)
+2020-10-01 15:10:25,427 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:11:13,640 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:11:13,643 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:11:13,643 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:11:16,463 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:11:16,464 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:11:16,464 INFO Index Performance - Performance calculation is started
+2020-10-01 15:11:17,404 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:11:17,405 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:11:17,405 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:11:17,405 INFO Index Performance - Index code (BSE100)
+2020-10-01 15:11:17,405 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:11:57,693 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:11:57,697 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:11:57,697 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:12:00,589 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:12:00,590 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:12:00,590 INFO Index Performance - Performance calculation is started
+2020-10-01 15:12:01,534 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:12:01,535 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:12:01,625 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:12:01,625 INFO Index Performance - Index code (BSE200)
+2020-10-01 15:12:01,625 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:12:47,862 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:12:47,865 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:12:47,865 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:12:50,724 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:12:50,724 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:12:50,724 INFO Index Performance - Performance calculation is started
+2020-10-01 15:12:51,651 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:12:51,652 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:12:51,763 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:12:51,764 INFO Index Performance - Index code (BSE500)
+2020-10-01 15:12:51,764 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:13:42,248 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:13:42,251 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:13:42,251 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:13:45,178 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:13:45,179 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:13:45,180 INFO Index Performance - Performance calculation is started
+2020-10-01 15:13:46,157 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:13:46,157 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:13:46,234 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:13:46,234 INFO Index Performance - Index code (BSEMC)
+2020-10-01 15:13:46,234 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:14:26,106 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:14:26,109 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:14:26,109 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:14:28,992 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:14:28,993 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:14:28,993 INFO Index Performance - Performance calculation is started
+2020-10-01 15:14:29,925 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:14:29,926 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:14:30,029 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:14:30,029 INFO Index Performance - Index code (SENSEX)
+2020-10-01 15:14:30,030 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:15:25,787 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:15:25,791 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:15:25,792 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:15:28,908 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:15:28,908 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:15:28,908 INFO Index Performance - Performance calculation is started
+2020-10-01 15:15:29,796 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:15:29,796 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:15:29,905 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:15:29,905 INFO Index Performance - Index code (NIFTY50)
+2020-10-01 15:15:29,906 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:16:29,397 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:16:29,401 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:16:29,401 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:16:32,465 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:16:32,465 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:16:32,465 INFO Index Performance - Performance calculation is started
+2020-10-01 15:16:33,376 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:16:33,376 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:16:34,665 INFO INE002A01018
+2020-10-01 15:16:34,761 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:16:34,761 INFO Index Performance - Index code (NIFTY100)
+2020-10-01 15:16:34,762 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:17:03,518 INFO Index Performance - Indices calculation/extraction is started
+2020-10-01 15:17:05,973 INFO Index Performance - Index code (BSE30)
+2020-10-01 15:17:05,973 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:17:53,782 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:17:53,785 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:17:53,785 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:17:56,855 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:17:56,856 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:17:56,856 INFO Index Performance - Performance calculation is started
+2020-10-01 15:17:57,877 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:17:57,877 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:17:57,877 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:17:57,878 INFO Index Performance - Index code (BSE100)
+2020-10-01 15:17:57,878 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:18:51,637 INFO Index Performance - Indices calculation/extraction is started
+2020-10-01 15:18:53,906 INFO Index Performance - Index code (BSE30)
+2020-10-01 15:18:53,906 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:19:36,460 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:19:36,463 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:19:36,463 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:19:39,436 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:19:39,436 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:19:39,436 INFO Index Performance - Performance calculation is started
+2020-10-01 15:19:40,319 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:19:40,320 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:19:40,320 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:19:40,320 INFO Index Performance - Index code (BSE100)
+2020-10-01 15:19:40,320 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:20:22,110 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:20:22,113 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:20:22,113 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:20:25,045 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:20:25,045 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:20:25,045 INFO Index Performance - Performance calculation is started
+2020-10-01 15:20:26,015 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:20:26,016 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:20:26,107 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:20:26,107 INFO Index Performance - Index code (BSE200)
+2020-10-01 15:20:26,108 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:21:04,877 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:21:04,879 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:21:04,879 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:21:07,939 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:21:07,940 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:21:07,940 INFO Index Performance - Performance calculation is started
+2020-10-01 15:21:08,919 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:21:08,919 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:21:09,015 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:21:09,015 INFO Index Performance - Index code (BSE500)
+2020-10-01 15:21:09,016 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:21:43,721 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:21:43,725 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:21:43,725 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:21:46,624 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:21:46,625 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:21:46,625 INFO Index Performance - Performance calculation is started
+2020-10-01 15:21:47,646 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:21:47,646 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:21:47,742 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:21:47,743 INFO Index Performance - Index code (BSEMC)
+2020-10-01 15:21:47,743 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:22:23,227 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:22:23,231 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:22:23,231 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:22:26,268 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:22:26,268 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:22:26,268 INFO Index Performance - Performance calculation is started
+2020-10-01 15:22:27,307 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:22:27,307 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:22:27,399 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:22:27,399 INFO Index Performance - Index code (SENSEX)
+2020-10-01 15:22:27,400 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:23:02,869 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:23:02,871 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:23:02,872 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:23:05,861 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:23:05,861 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:23:05,861 INFO Index Performance - Performance calculation is started
+2020-10-01 15:23:06,785 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:23:06,786 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:23:06,881 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:23:06,881 INFO Index Performance - Index code (NIFTY50)
+2020-10-01 15:23:06,881 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:23:42,690 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:23:42,694 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:23:42,694 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:23:45,791 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:23:45,791 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:23:45,792 INFO Index Performance - Performance calculation is started
+2020-10-01 15:23:46,746 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:23:46,746 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:23:47,956 INFO INE002A01018
+2020-10-01 15:23:48,054 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:23:48,054 INFO Index Performance - Index code (NIFTY100)
+2020-10-01 15:23:48,055 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:24:23,651 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:24:23,655 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:24:23,655 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:24:26,615 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:24:26,616 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:24:26,617 INFO Index Performance - Performance calculation is started
+2020-10-01 15:24:27,554 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:24:27,555 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:24:28,670 INFO INE002A01018
+2020-10-01 15:24:28,798 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:24:28,799 INFO Index Performance - Index code (NIFTY200)
+2020-10-01 15:24:28,799 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:25:09,633 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:25:09,637 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:25:09,637 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:25:12,489 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:25:12,489 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:25:12,489 INFO Index Performance - Performance calculation is started
+2020-10-01 15:25:13,473 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:25:13,474 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:25:14,643 INFO INE002A01018
+2020-10-01 15:25:14,731 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:25:14,731 INFO Index Performance - Index code (NIFTY500)
+2020-10-01 15:25:14,731 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:25:49,892 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:25:49,894 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:25:49,894 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:25:52,766 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:25:52,766 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:25:52,766 INFO Index Performance - Performance calculation is started
+2020-10-01 15:25:53,753 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:25:53,753 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:25:54,734 INFO INE002A01018
+2020-10-01 15:25:54,871 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:25:54,872 INFO Index Performance - Index code (NIFTYSC100)
+2020-10-01 15:25:54,872 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:26:32,388 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:26:32,391 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:26:32,391 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:26:35,541 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:26:35,541 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:26:35,542 INFO Index Performance - Performance calculation is started
+2020-10-01 15:26:36,553 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:26:36,553 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:26:37,547 INFO INE947Q01010
+2020-10-01 15:26:37,659 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:26:37,659 INFO Index Performance - Index code (NIFTYMC100)
+2020-10-01 15:26:37,659 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:27:16,621 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:27:16,624 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:27:16,624 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:27:19,567 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:27:19,568 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:27:19,569 INFO Index Performance - Performance calculation is started
+2020-10-01 15:27:20,582 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:27:20,583 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:27:21,784 INFO INE437A01024
+2020-10-01 15:27:21,878 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:27:21,878 INFO Index Performance - Index code (BSEMSC400)
+2020-10-01 15:27:21,878 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:28:02,032 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:28:02,036 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:28:02,036 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:28:06,153 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:28:06,154 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:28:06,154 INFO Index Performance - Performance calculation is started
+2020-10-01 15:28:07,106 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:28:07,106 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:28:07,107 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:28:07,107 INFO Index Performance - Index code (NIFTYPHARMA)
+2020-10-01 15:28:07,107 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:28:42,872 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:28:42,876 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:28:42,876 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:28:45,732 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:28:45,733 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:28:45,733 INFO Index Performance - Performance calculation is started
+2020-10-01 15:28:46,700 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:28:46,701 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:28:47,878 INFO INE089A01023
+2020-10-01 15:28:48,005 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:28:48,005 INFO Index Performance - Index code (NIFTYSC250)
+2020-10-01 15:28:48,005 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:29:28,509 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:29:28,511 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:29:28,512 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:29:31,544 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:29:31,544 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:29:31,545 INFO Index Performance - Performance calculation is started
+2020-10-01 15:29:33,075 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:29:33,075 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:29:34,043 INFO INE947Q01010
+2020-10-01 15:29:34,188 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:29:34,189 INFO Index Performance - Index code (NIFTYMC150)
+2020-10-01 15:29:34,189 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:30:20,054 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:30:20,058 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:30:20,058 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:30:22,751 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:30:22,751 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:30:22,751 INFO Index Performance - Performance calculation is started
+2020-10-01 15:30:23,694 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:30:23,695 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:30:24,892 INFO INE437A01024
+2020-10-01 15:30:25,020 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:30:25,020 INFO Index Performance - Index code (BSESC)
+2020-10-01 15:30:25,020 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:31:12,704 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:31:12,707 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:31:12,707 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:31:15,519 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:31:15,519 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:31:15,520 INFO Index Performance - Performance calculation is started
+2020-10-01 15:31:16,499 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:31:16,499 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:31:16,606 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:31:16,607 INFO Index Performance - Index code (BSEHEALTH)
+2020-10-01 15:31:16,607 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:32:06,081 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:32:06,085 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:32:06,085 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:32:09,012 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:32:09,013 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:32:09,013 INFO Index Performance - Performance calculation is started
+2020-10-01 15:32:10,024 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:32:10,025 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:32:10,120 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:32:14,163 INFO 2020-09-30 Index Performance - Indices calculation/extraction is Completed
+2020-10-01 15:36:26,916 INFO Index Performance - Indices calculation/extraction is started
+2020-10-01 15:36:29,792 INFO Index Performance - Index code (BSE30)
+2020-10-01 15:36:29,793 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:37:46,682 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:37:46,686 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:37:46,687 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:37:50,858 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:37:50,858 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:37:50,858 INFO Index Performance - Performance calculation is started
+2020-10-01 15:37:51,885 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:37:51,885 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:37:51,886 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:37:51,886 INFO Index Performance - Index code (BSE100)
+2020-10-01 15:37:51,886 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:39:10,092 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:39:10,096 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:39:10,096 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:39:13,222 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:39:13,223 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:39:13,223 INFO Index Performance - Performance calculation is started
+2020-10-01 15:39:14,401 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:39:14,402 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:39:14,524 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:39:14,525 INFO Index Performance - Index code (BSE200)
+2020-10-01 15:39:14,525 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:40:22,284 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:40:22,289 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:40:22,289 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:40:25,317 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:40:25,318 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:40:25,319 INFO Index Performance - Performance calculation is started
+2020-10-01 15:40:26,283 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:40:26,284 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:40:26,385 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:40:26,385 INFO Index Performance - Index code (BSE500)
+2020-10-01 15:40:26,385 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:41:32,481 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:41:32,485 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:41:32,485 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:41:35,857 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:41:35,857 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:41:35,858 INFO Index Performance - Performance calculation is started
+2020-10-01 15:41:36,967 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:41:36,967 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:41:37,060 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:41:37,061 INFO Index Performance - Index code (BSEMC)
+2020-10-01 15:41:37,061 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:42:46,366 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:42:46,371 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:42:46,371 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:42:49,539 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:42:49,539 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:42:49,539 INFO Index Performance - Performance calculation is started
+2020-10-01 15:42:50,507 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:42:50,507 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:42:50,600 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:42:50,600 INFO Index Performance - Index code (SENSEX)
+2020-10-01 15:42:50,601 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:43:57,768 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:43:57,772 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:43:57,772 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:44:00,808 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:44:00,808 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:44:00,809 INFO Index Performance - Performance calculation is started
+2020-10-01 15:44:01,805 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:44:01,805 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:44:01,890 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:44:01,890 INFO Index Performance - Index code (NIFTY50)
+2020-10-01 15:44:01,890 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:45:02,563 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:45:02,567 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:45:02,567 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:45:05,994 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:45:05,994 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:45:05,994 INFO Index Performance - Performance calculation is started
+2020-10-01 15:45:07,002 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:45:07,003 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:45:08,269 INFO INE002A01018
+2020-10-01 15:45:08,387 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:45:08,387 INFO Index Performance - Index code (NIFTY100)
+2020-10-01 15:45:08,387 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:46:00,037 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:46:00,041 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:46:00,041 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:46:02,902 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:46:02,903 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:46:02,903 INFO Index Performance - Performance calculation is started
+2020-10-01 15:46:04,258 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:46:04,258 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:46:05,482 INFO INE002A01018
+2020-10-01 15:46:05,588 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:46:05,588 INFO Index Performance - Index code (NIFTY200)
+2020-10-01 15:46:05,589 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:46:51,794 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:46:51,798 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:46:51,798 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:46:54,803 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:46:54,804 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:46:54,804 INFO Index Performance - Performance calculation is started
+2020-10-01 15:46:55,807 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:46:55,807 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:46:56,859 INFO INE002A01018
+2020-10-01 15:46:56,989 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:46:56,989 INFO Index Performance - Index code (NIFTY500)
+2020-10-01 15:46:56,990 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:47:38,013 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:47:38,017 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:47:38,017 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:47:40,857 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:47:40,857 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:47:40,858 INFO Index Performance - Performance calculation is started
+2020-10-01 15:47:41,881 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:47:41,882 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:47:43,060 INFO INE002A01018
+2020-10-01 15:47:43,195 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:47:43,195 INFO Index Performance - Index code (NIFTYSC100)
+2020-10-01 15:47:43,195 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:48:17,563 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:48:17,566 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:48:17,566 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:48:20,445 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:48:20,445 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:48:20,446 INFO Index Performance - Performance calculation is started
+2020-10-01 15:48:21,510 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:48:21,510 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:48:22,462 INFO INE947Q01010
+2020-10-01 15:48:22,564 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:48:22,565 INFO Index Performance - Index code (NIFTYMC100)
+2020-10-01 15:48:22,565 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:48:57,282 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:48:57,285 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:48:57,285 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:49:00,201 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:49:00,201 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:49:00,202 INFO Index Performance - Performance calculation is started
+2020-10-01 15:49:01,266 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:49:01,266 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:49:02,291 INFO INE437A01024
+2020-10-01 15:49:02,433 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:49:02,433 INFO Index Performance - Index code (BSEMSC400)
+2020-10-01 15:49:02,433 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:49:37,273 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:49:37,275 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:49:37,275 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:49:40,336 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:49:40,337 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:49:40,337 INFO Index Performance - Performance calculation is started
+2020-10-01 15:49:41,363 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:49:41,363 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:49:41,364 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:49:41,364 INFO Index Performance - Index code (NIFTYPHARMA)
+2020-10-01 15:49:41,364 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:50:16,077 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:50:16,081 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:50:16,081 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:50:18,992 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:50:18,992 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:50:18,993 INFO Index Performance - Performance calculation is started
+2020-10-01 15:50:20,030 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:50:20,030 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:50:21,050 INFO INE089A01023
+2020-10-01 15:50:21,202 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:50:21,202 INFO Index Performance - Index code (NIFTYSC250)
+2020-10-01 15:50:21,202 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:50:57,777 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:50:57,780 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:50:57,780 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:51:00,742 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:51:00,742 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:51:00,743 INFO Index Performance - Performance calculation is started
+2020-10-01 15:51:01,657 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:51:01,657 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:51:02,632 INFO INE947Q01010
+2020-10-01 15:51:02,771 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:51:02,772 INFO Index Performance - Index code (NIFTYMC150)
+2020-10-01 15:51:02,772 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:51:42,481 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:51:42,484 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:51:42,484 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:51:45,508 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:51:45,508 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:51:45,508 INFO Index Performance - Performance calculation is started
+2020-10-01 15:51:46,416 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:51:46,416 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:51:47,574 INFO INE437A01024
+2020-10-01 15:51:47,680 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:51:47,680 INFO Index Performance - Index code (BSESC)
+2020-10-01 15:51:47,681 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:52:27,442 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:52:27,444 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:52:27,444 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:52:30,782 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:52:30,782 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:52:30,782 INFO Index Performance - Performance calculation is started
+2020-10-01 15:52:31,814 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:52:31,814 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:52:31,901 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:52:31,901 INFO Index Performance - Index code (BSEHEALTH)
+2020-10-01 15:52:31,901 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-10-01 15:53:11,724 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-10-01 15:53:11,728 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-10-01 15:53:11,728 INFO Index Performance - BSE : PE ratio extraction is started
+2020-10-01 15:53:14,753 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-10-01 15:53:14,754 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-10-01 15:53:14,754 INFO Index Performance - Performance calculation is started
+2020-10-01 15:53:15,780 INFO Index Performance - Performance calculation is completed
+2020-10-01 15:53:15,780 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-10-01 15:53:15,878 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-10-01 15:53:20,674 INFO 2020-09-30 Index Performance - Indices calculation/extraction is Completed
+2020-11-02 11:44:26,830 INFO Index Performance - Indices calculation/extraction is started
+2020-11-02 11:44:30,131 INFO Index Performance - Index code (BSE30)
+2020-11-02 11:44:30,131 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:45:04,530 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:45:04,533 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:45:04,533 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:45:14,290 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:45:14,291 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:45:14,291 INFO Index Performance - Performance calculation is started
+2020-11-02 11:45:15,159 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:45:15,159 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:45:15,159 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:45:15,160 INFO Index Performance - Index code (BSE100)
+2020-11-02 11:45:15,160 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:45:48,968 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:45:48,971 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:45:48,971 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:45:57,360 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:45:57,361 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:45:57,361 INFO Index Performance - Performance calculation is started
+2020-11-02 11:45:58,184 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:45:58,184 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:45:58,270 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:45:58,270 INFO Index Performance - Index code (BSE200)
+2020-11-02 11:45:58,271 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:46:31,460 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:46:31,464 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:46:31,464 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:46:37,609 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:46:37,610 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:46:37,610 INFO Index Performance - Performance calculation is started
+2020-11-02 11:46:38,423 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:46:38,423 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:46:38,423 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:46:38,423 INFO Index Performance - Index code (BSE500)
+2020-11-02 11:46:38,423 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:47:11,411 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:47:11,414 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:47:11,414 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:47:20,058 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:47:20,059 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:47:20,060 INFO Index Performance - Performance calculation is started
+2020-11-02 11:47:20,882 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:47:20,882 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:47:20,967 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:47:20,967 INFO Index Performance - Index code (BSEMC)
+2020-11-02 11:47:20,968 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:47:54,356 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:47:54,359 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:47:54,359 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:48:04,693 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:48:04,694 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:48:04,694 INFO Index Performance - Performance calculation is started
+2020-11-02 11:48:05,501 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:48:05,501 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:48:05,586 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:48:05,586 INFO Index Performance - Index code (SENSEX)
+2020-11-02 11:48:05,587 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:48:40,709 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:48:40,712 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:48:40,712 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:48:48,517 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:48:48,518 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:48:48,518 INFO Index Performance - Performance calculation is started
+2020-11-02 11:48:49,320 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:48:49,320 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:48:49,406 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:48:49,406 INFO Index Performance - Index code (NIFTY50)
+2020-11-02 11:48:49,406 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:49:22,623 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:49:22,626 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:49:22,626 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:49:32,048 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:49:32,048 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:49:32,049 INFO Index Performance - Performance calculation is started
+2020-11-02 11:49:32,873 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:49:32,873 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:49:33,852 INFO INE002A01018
+2020-11-02 11:49:33,984 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:49:33,984 INFO Index Performance - Index code (NIFTY100)
+2020-11-02 11:49:33,984 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:50:07,653 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:50:07,656 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:50:07,656 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:50:15,715 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:50:15,715 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:50:15,715 INFO Index Performance - Performance calculation is started
+2020-11-02 11:50:16,498 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:50:16,499 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:50:17,471 INFO INE002A01018
+2020-11-02 11:50:17,608 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:50:17,609 INFO Index Performance - Index code (NIFTY200)
+2020-11-02 11:50:17,609 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:50:51,446 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:50:51,448 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:50:51,448 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:51:03,434 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:51:03,435 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:51:03,435 INFO Index Performance - Performance calculation is started
+2020-11-02 11:51:04,217 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:51:04,218 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:51:05,220 INFO INE002A01018
+2020-11-02 11:51:05,330 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:51:05,330 INFO Index Performance - Index code (NIFTY500)
+2020-11-02 11:51:05,330 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:51:38,310 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:51:38,313 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:51:38,313 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:51:49,250 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:51:49,250 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:51:49,250 INFO Index Performance - Performance calculation is started
+2020-11-02 11:51:50,177 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:51:50,178 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:51:51,122 INFO INE002A01018
+2020-11-02 11:51:51,199 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:51:51,199 INFO Index Performance - Index code (NIFTYSC100)
+2020-11-02 11:51:51,199 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:52:24,850 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:52:24,854 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:52:24,854 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:52:31,558 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:52:31,558 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:52:31,559 INFO Index Performance - Performance calculation is started
+2020-11-02 11:52:32,408 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:52:32,408 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:52:33,196 INFO INE947Q01010
+2020-11-02 11:52:33,330 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:52:33,330 INFO Index Performance - Index code (NIFTYMC100)
+2020-11-02 11:52:33,330 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:53:06,785 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:53:06,789 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:53:06,789 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:53:16,993 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:53:16,993 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:53:16,993 INFO Index Performance - Performance calculation is started
+2020-11-02 11:53:17,794 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:53:17,794 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:53:18,945 INFO INE437A01024
+2020-11-02 11:53:19,070 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:53:19,070 INFO Index Performance - Index code (BSEMSC400)
+2020-11-02 11:53:19,070 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:53:57,389 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:53:57,391 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:53:57,391 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:54:08,416 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:54:08,417 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:54:08,417 INFO Index Performance - Performance calculation is started
+2020-11-02 11:54:09,208 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:54:09,209 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:54:09,294 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:54:09,294 INFO Index Performance - Index code (NIFTYPHARMA)
+2020-11-02 11:54:09,294 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:54:42,633 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:54:42,635 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:54:42,635 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:54:55,572 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:54:55,573 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:54:55,573 INFO Index Performance - Performance calculation is started
+2020-11-02 11:54:56,424 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:54:56,424 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:54:57,367 INFO INE089A01023
+2020-11-02 11:54:57,506 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:54:57,507 INFO Index Performance - Index code (NIFTYSC250)
+2020-11-02 11:54:57,507 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:55:33,050 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:55:33,053 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:55:33,053 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:55:41,961 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:55:41,961 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:55:41,961 INFO Index Performance - Performance calculation is started
+2020-11-02 11:55:42,747 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:55:42,747 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:55:43,573 INFO INE947Q01010
+2020-11-02 11:55:43,695 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:55:43,695 INFO Index Performance - Index code (NIFTYMC150)
+2020-11-02 11:55:43,695 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:56:24,014 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:56:24,017 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:56:24,017 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:56:32,895 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:56:32,895 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:56:32,895 INFO Index Performance - Performance calculation is started
+2020-11-02 11:56:33,744 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:56:33,745 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:56:34,664 INFO INE437A01024
+2020-11-02 11:56:34,726 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:56:34,726 INFO Index Performance - Index code (BSESC)
+2020-11-02 11:56:34,727 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:57:07,681 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:57:07,683 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:57:07,683 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:57:14,348 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:57:14,349 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:57:14,349 INFO Index Performance - Performance calculation is started
+2020-11-02 11:57:15,151 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:57:15,151 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:57:15,234 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:57:15,234 INFO Index Performance - Index code (BSEHEALTH)
+2020-11-02 11:57:15,234 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-11-02 11:57:48,278 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-11-02 11:57:48,281 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-11-02 11:57:48,281 INFO Index Performance - BSE : PE ratio extraction is started
+2020-11-02 11:57:57,906 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-11-02 11:57:57,906 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-11-02 11:57:57,906 INFO Index Performance - Performance calculation is started
+2020-11-02 11:57:59,476 INFO Index Performance - Performance calculation is completed
+2020-11-02 11:57:59,477 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-11-02 11:57:59,477 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-11-02 11:58:04,279 INFO 2020-10-31 Index Performance - Indices calculation/extraction is Completed
+2020-12-01 17:49:05,627 INFO Index Performance - Indices calculation/extraction is started
+2020-12-01 17:49:07,290 INFO Index Performance - Index code (BSE30)
+2020-12-01 17:49:07,290 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 17:49:53,537 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 17:49:53,540 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 17:49:53,540 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 17:49:56,032 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 17:49:56,032 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 17:49:56,033 INFO Index Performance - Performance calculation is started
+2020-12-01 20:06:58,462 INFO Index Performance - Indices calculation/extraction is started
+2020-12-01 20:07:00,051 INFO Index Performance - Index code (BSE30)
+2020-12-01 20:07:00,051 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:07:35,011 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:07:35,014 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:07:35,014 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:07:37,664 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:07:37,664 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:07:37,664 INFO Index Performance - Performance calculation is started
+2020-12-01 20:07:38,507 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:07:38,507 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:07:38,508 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:07:38,509 INFO Index Performance - Index code (BSE100)
+2020-12-01 20:07:38,509 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:08:13,999 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:08:14,002 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:08:14,002 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:08:16,571 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:08:16,572 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:08:16,572 INFO Index Performance - Performance calculation is started
+2020-12-01 20:08:17,361 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:08:17,361 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:08:17,449 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:08:17,449 INFO Index Performance - Index code (BSE200)
+2020-12-01 20:08:17,449 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:08:51,652 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:08:51,655 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:08:51,655 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:08:54,450 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:08:54,451 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:08:54,451 INFO Index Performance - Performance calculation is started
+2020-12-01 20:08:55,242 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:08:55,242 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:08:55,242 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:08:55,242 INFO Index Performance - Index code (BSE500)
+2020-12-01 20:08:55,242 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:09:29,721 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:09:29,724 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:09:29,724 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:09:32,298 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:09:32,299 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:09:32,299 INFO Index Performance - Performance calculation is started
+2020-12-01 20:09:33,240 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:09:33,240 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:09:33,325 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:09:33,326 INFO Index Performance - Index code (BSEMC)
+2020-12-01 20:09:33,326 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:10:08,258 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:10:08,260 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:10:08,260 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:10:11,692 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:10:11,692 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:10:11,692 INFO Index Performance - Performance calculation is started
+2020-12-01 20:10:12,526 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:10:12,526 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:10:12,527 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:10:12,527 INFO Index Performance - Index code (SENSEX)
+2020-12-01 20:10:12,527 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:10:47,719 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:10:47,723 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:10:47,724 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:10:50,860 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:10:50,860 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:10:50,861 INFO Index Performance - Performance calculation is started
+2020-12-01 20:10:51,719 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:10:51,719 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:10:51,806 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:10:51,807 INFO Index Performance - Index code (NIFTY50)
+2020-12-01 20:10:51,807 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:11:26,637 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:11:26,640 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:11:26,640 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:11:29,340 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:11:29,340 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:11:29,341 INFO Index Performance - Performance calculation is started
+2020-12-01 20:11:30,216 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:11:30,217 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:11:31,547 INFO INE040A01034
+2020-12-01 20:11:31,696 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:11:31,696 INFO Index Performance - Index code (NIFTY100)
+2020-12-01 20:11:31,697 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:12:06,261 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:12:06,264 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:12:06,264 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:12:08,779 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:12:08,780 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:12:08,780 INFO Index Performance - Performance calculation is started
+2020-12-01 20:12:09,576 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:12:09,576 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:12:10,748 INFO INE040A01034
+2020-12-01 20:12:10,835 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:12:10,836 INFO Index Performance - Index code (NIFTY200)
+2020-12-01 20:12:10,836 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:12:48,210 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:12:48,213 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:12:48,213 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:12:50,796 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:12:50,796 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:12:50,796 INFO Index Performance - Performance calculation is started
+2020-12-01 20:12:51,692 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:12:51,692 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:12:52,770 INFO INE040A01034
+2020-12-01 20:12:52,880 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:12:52,880 INFO Index Performance - Index code (NIFTY500)
+2020-12-01 20:12:52,880 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:13:28,056 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:13:28,059 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:13:28,059 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:13:30,555 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:13:30,556 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:13:30,556 INFO Index Performance - Performance calculation is started
+2020-12-01 20:13:31,354 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:13:31,355 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:13:32,330 INFO INE040A01034
+2020-12-01 20:13:32,398 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:13:32,399 INFO Index Performance - Index code (NIFTYSC100)
+2020-12-01 20:13:32,399 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:14:40,566 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:14:40,569 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:14:40,570 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:14:43,005 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:14:43,005 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:14:43,005 INFO Index Performance - Performance calculation is started
+2020-12-01 20:14:43,812 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:14:43,812 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:14:44,807 INFO INE947Q01010
+2020-12-01 20:14:44,938 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:14:44,938 INFO Index Performance - Index code (NIFTYMC100)
+2020-12-01 20:14:44,939 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:15:24,573 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:15:24,576 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:15:24,577 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:15:27,039 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:15:27,039 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:15:27,039 INFO Index Performance - Performance calculation is started
+2020-12-01 20:15:27,831 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:15:27,831 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:15:28,994 INFO INE437A01024
+2020-12-01 20:15:29,077 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:15:29,077 INFO Index Performance - Index code (BSEMSC400)
+2020-12-01 20:15:29,078 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:16:06,067 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:16:06,069 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:16:06,070 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:16:08,755 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:16:08,756 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:16:08,756 INFO Index Performance - Performance calculation is started
+2020-12-01 20:16:09,521 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:16:09,521 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:16:09,521 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:16:09,521 INFO Index Performance - Index code (NIFTYPHARMA)
+2020-12-01 20:16:09,521 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:16:54,270 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:16:54,273 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:16:54,273 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:16:57,847 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:16:57,847 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:16:57,847 INFO Index Performance - Performance calculation is started
+2020-12-01 20:16:58,663 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:16:58,664 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:17:00,039 INFO INE089A01023
+2020-12-01 20:17:00,162 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:17:00,162 INFO Index Performance - Index code (NIFTYSC250)
+2020-12-01 20:17:00,162 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:17:40,068 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:17:40,071 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:17:40,071 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:17:42,696 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:17:42,696 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:17:42,696 INFO Index Performance - Performance calculation is started
+2020-12-01 20:17:43,557 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:17:43,558 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:17:44,984 INFO INE947Q01010
+2020-12-01 20:17:45,085 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:17:45,085 INFO Index Performance - Index code (NIFTYMC150)
+2020-12-01 20:17:45,085 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:18:25,428 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:18:25,433 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:18:25,433 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:18:27,816 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:18:27,816 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:18:27,817 INFO Index Performance - Performance calculation is started
+2020-12-01 20:18:28,520 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:18:28,520 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:18:29,660 INFO INE437A01024
+2020-12-01 20:18:29,751 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:18:29,751 INFO Index Performance - Index code (BSESC)
+2020-12-01 20:18:29,751 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:19:28,441 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:19:28,444 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:19:28,444 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:19:30,879 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:19:30,879 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:19:30,879 INFO Index Performance - Performance calculation is started
+2020-12-01 20:19:31,681 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:19:31,681 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:19:31,744 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:19:31,744 INFO Index Performance - Index code (BSEHEALTH)
+2020-12-01 20:19:31,744 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2020-12-01 20:20:33,609 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2020-12-01 20:20:33,612 INFO Index Performance - BSE : Sector/Holding extraction is started
+2020-12-01 20:20:33,612 INFO Index Performance - BSE : PE ratio extraction is started
+2020-12-01 20:20:36,148 INFO Index Performance - BSE : PE ratio extraction is completed
+2020-12-01 20:20:36,148 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2020-12-01 20:20:36,148 INFO Index Performance - Performance calculation is started
+2020-12-01 20:20:36,854 INFO Index Performance - Performance calculation is completed
+2020-12-01 20:20:36,854 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2020-12-01 20:20:36,920 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2020-12-01 20:20:40,191 INFO 2020-11-30 Index Performance - Indices calculation/extraction is Completed
+2021-01-04 12:18:55,712 INFO Index Performance - Indices calculation/extraction is started
+2021-01-04 12:18:56,279 INFO Index Performance - Index code (BSE30)
+2021-01-04 12:18:56,279 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:19:33,436 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:19:33,439 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:19:33,439 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:19:33,994 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:19:33,994 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:19:33,994 INFO Index Performance - Performance calculation is started
+2021-01-04 12:19:34,380 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:19:34,380 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:19:34,380 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:19:34,381 INFO Index Performance - Index code (BSE100)
+2021-01-04 12:19:34,381 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:20:11,344 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:20:11,347 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:20:11,347 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:20:12,038 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:20:12,038 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:20:12,038 INFO Index Performance - Performance calculation is started
+2021-01-04 12:20:12,398 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:20:12,399 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:20:12,429 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:20:12,429 INFO Index Performance - Index code (BSE200)
+2021-01-04 12:20:12,429 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:20:50,801 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:20:50,804 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:20:50,804 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:20:51,529 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:20:51,529 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:20:51,529 INFO Index Performance - Performance calculation is started
+2021-01-04 12:20:51,895 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:20:51,895 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:20:51,926 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:20:51,927 INFO Index Performance - Index code (BSE500)
+2021-01-04 12:20:51,927 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:21:33,014 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:21:33,017 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:21:33,017 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:21:33,660 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:21:33,660 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:21:33,661 INFO Index Performance - Performance calculation is started
+2021-01-04 12:21:34,028 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:21:34,029 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:21:34,061 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:21:34,061 INFO Index Performance - Index code (BSEMC)
+2021-01-04 12:21:34,061 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:22:15,981 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:22:15,984 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:22:15,984 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:22:16,699 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:22:16,699 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:22:16,699 INFO Index Performance - Performance calculation is started
+2021-01-04 12:22:17,042 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:22:17,042 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:22:17,071 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:22:17,071 INFO Index Performance - Index code (SENSEX)
+2021-01-04 12:22:17,071 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:22:59,498 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:22:59,501 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:22:59,501 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:23:00,171 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:23:00,171 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:23:00,171 INFO Index Performance - Performance calculation is started
+2021-01-04 12:23:00,556 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:23:00,556 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:23:00,591 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:23:00,591 INFO Index Performance - Index code (NIFTY50)
+2021-01-04 12:23:00,591 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:23:41,811 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:23:41,814 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:23:41,814 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:23:42,610 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:23:42,611 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:23:42,611 INFO Index Performance - Performance calculation is started
+2021-01-04 12:23:43,004 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:23:43,004 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:23:43,774 INFO INE002A01018
+2021-01-04 12:23:43,805 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:23:43,805 INFO Index Performance - Index code (NIFTY100)
+2021-01-04 12:23:43,805 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:24:23,682 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:24:23,685 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:24:23,685 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:24:24,417 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:24:24,418 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:24:24,418 INFO Index Performance - Performance calculation is started
+2021-01-04 12:24:24,795 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:24:24,796 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:24:25,602 INFO INE002A01018
+2021-01-04 12:24:25,637 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:24:25,637 INFO Index Performance - Index code (NIFTY200)
+2021-01-04 12:24:25,637 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:25:05,094 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:25:05,097 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:25:05,097 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:25:05,747 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:25:05,747 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:25:05,747 INFO Index Performance - Performance calculation is started
+2021-01-04 12:25:06,116 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:25:06,116 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:25:06,863 INFO INE002A01018
+2021-01-04 12:25:06,893 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:25:06,893 INFO Index Performance - Index code (NIFTY500)
+2021-01-04 12:25:06,894 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:25:44,627 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:25:44,630 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:25:44,630 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:25:45,651 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:25:45,651 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:25:45,651 INFO Index Performance - Performance calculation is started
+2021-01-04 12:25:46,037 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:25:46,037 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:25:46,767 INFO INE002A01018
+2021-01-04 12:25:46,797 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:25:46,797 INFO Index Performance - Index code (NIFTYSC100)
+2021-01-04 12:25:46,797 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:26:26,884 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:26:26,887 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:26:26,887 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:26:28,110 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:26:28,111 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:26:28,111 INFO Index Performance - Performance calculation is started
+2021-01-04 12:26:28,456 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:26:28,456 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:26:29,081 INFO INE947Q01010
+2021-01-04 12:26:29,108 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:26:29,108 INFO Index Performance - Index code (NIFTYMC100)
+2021-01-04 12:26:29,108 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:27:09,274 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:27:09,277 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:27:09,277 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:27:09,956 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:27:09,956 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:27:09,956 INFO Index Performance - Performance calculation is started
+2021-01-04 12:27:10,338 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:27:10,339 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:27:11,401 INFO INE437A01024
+2021-01-04 12:27:11,428 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:27:11,428 INFO Index Performance - Index code (BSEMSC400)
+2021-01-04 12:27:11,428 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:27:49,915 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:27:49,918 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:27:49,918 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:27:50,963 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:27:50,963 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:27:50,963 INFO Index Performance - Performance calculation is started
+2021-01-04 12:27:51,272 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:27:51,272 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:27:51,272 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:27:51,272 INFO Index Performance - Index code (NIFTYPHARMA)
+2021-01-04 12:27:51,272 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:28:28,075 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:28:28,078 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:28:28,078 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:28:28,679 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:28:28,680 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:28:28,680 INFO Index Performance - Performance calculation is started
+2021-01-04 12:28:29,017 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:28:29,018 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:28:29,837 INFO INE044A01036
+2021-01-04 12:28:29,864 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:28:29,865 INFO Index Performance - Index code (NIFTYSC250)
+2021-01-04 12:28:29,865 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:29:13,736 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:29:13,739 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:29:13,739 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:29:14,453 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:29:14,454 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:29:14,454 INFO Index Performance - Performance calculation is started
+2021-01-04 12:29:14,787 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:29:14,788 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:29:15,421 INFO INE947Q01010
+2021-01-04 12:29:15,451 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:29:15,451 INFO Index Performance - Index code (NIFTYMC150)
+2021-01-04 12:29:15,451 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:30:17,504 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:30:17,509 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:30:17,510 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:30:18,297 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:30:18,298 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:30:18,298 INFO Index Performance - Performance calculation is started
+2021-01-04 12:30:18,606 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:30:18,606 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:30:20,002 INFO INE437A01024
+2021-01-04 12:30:20,030 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:30:20,030 INFO Index Performance - Index code (BSESC)
+2021-01-04 12:30:20,030 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:31:06,225 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:31:06,228 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:31:06,228 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:31:07,126 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:31:07,126 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:31:07,126 INFO Index Performance - Performance calculation is started
+2021-01-04 12:31:07,492 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:31:07,493 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:31:07,522 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:31:07,522 INFO Index Performance - Index code (BSEHEALTH)
+2021-01-04 12:31:07,522 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-01-04 12:31:44,878 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-01-04 12:31:44,881 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-01-04 12:31:44,881 INFO Index Performance - BSE : PE ratio extraction is started
+2021-01-04 12:31:45,561 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-01-04 12:31:45,561 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-01-04 12:31:45,561 INFO Index Performance - Performance calculation is started
+2021-01-04 12:31:45,865 INFO Index Performance - Performance calculation is completed
+2021-01-04 12:31:45,865 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-01-04 12:31:45,897 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-01-04 12:31:47,211 INFO 2020-12-31 Index Performance - Indices calculation/extraction is Completed
+2021-02-02 10:19:05,257 INFO Index Performance - Indices calculation/extraction is started
+2021-02-02 10:19:05,800 INFO Index Performance - Index code (BSE30)
+2021-02-02 10:19:05,800 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:20:06,148 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:20:06,151 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:20:06,151 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:20:06,536 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:20:06,536 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:20:06,536 INFO Index Performance - Performance calculation is started
+2021-02-02 10:20:06,891 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:20:06,891 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:20:06,892 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:20:06,892 INFO Index Performance - Index code (BSE100)
+2021-02-02 10:20:06,892 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:20:57,829 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:20:57,832 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:20:57,832 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:20:58,235 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:20:58,235 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:20:58,235 INFO Index Performance - Performance calculation is started
+2021-02-02 10:20:58,599 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:20:58,599 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:20:58,629 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:20:58,629 INFO Index Performance - Index code (BSE200)
+2021-02-02 10:20:58,629 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:21:41,151 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:21:41,153 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:21:41,153 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:21:41,648 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:21:41,648 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:21:41,648 INFO Index Performance - Performance calculation is started
+2021-02-02 10:21:42,010 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:21:42,010 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:21:42,041 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:21:42,041 INFO Index Performance - Index code (BSE500)
+2021-02-02 10:21:42,041 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:22:23,994 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:22:23,998 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:22:23,998 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:22:24,744 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:22:24,744 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:22:24,744 INFO Index Performance - Performance calculation is started
+2021-02-02 10:22:25,357 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:22:25,357 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:22:25,393 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:22:25,394 INFO Index Performance - Index code (BSEMC)
+2021-02-02 10:22:25,394 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:23:06,377 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:23:06,380 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:23:06,380 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:23:07,877 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:23:07,877 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:23:07,877 INFO Index Performance - Performance calculation is started
+2021-02-02 10:23:08,238 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:23:08,238 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:23:08,267 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:23:08,268 INFO Index Performance - Index code (SENSEX)
+2021-02-02 10:23:08,268 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:23:54,575 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:23:54,578 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:23:54,578 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:23:54,934 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:23:54,934 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:23:54,934 INFO Index Performance - Performance calculation is started
+2021-02-02 10:23:55,300 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:23:55,300 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:23:55,330 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:23:55,330 INFO Index Performance - Index code (NIFTY50)
+2021-02-02 10:23:55,331 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:24:32,247 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:24:32,250 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:24:32,250 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:24:32,729 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:24:32,729 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:24:32,729 INFO Index Performance - Performance calculation is started
+2021-02-02 10:24:33,109 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:24:33,110 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:24:33,931 INFO INE040A01034
+2021-02-02 10:24:33,961 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:24:33,961 INFO Index Performance - Index code (NIFTY100)
+2021-02-02 10:24:33,961 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:25:12,112 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:25:12,116 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:25:12,116 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:25:12,613 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:25:12,614 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:25:12,614 INFO Index Performance - Performance calculation is started
+2021-02-02 10:25:12,970 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:25:12,970 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:25:13,756 INFO INE040A01034
+2021-02-02 10:25:13,785 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:25:13,785 INFO Index Performance - Index code (NIFTY200)
+2021-02-02 10:25:13,785 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:25:51,938 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:25:51,942 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:25:51,942 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:25:52,449 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:25:52,450 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:25:52,450 INFO Index Performance - Performance calculation is started
+2021-02-02 10:25:52,861 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:25:52,861 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:25:53,558 INFO INE040A01034
+2021-02-02 10:25:53,593 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:25:53,593 INFO Index Performance - Index code (NIFTY500)
+2021-02-02 10:25:53,593 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:26:31,382 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:26:31,385 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:26:31,385 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:26:31,745 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:26:31,745 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:26:31,745 INFO Index Performance - Performance calculation is started
+2021-02-02 10:26:32,119 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:26:32,119 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:26:32,754 INFO INE040A01034
+2021-02-02 10:26:32,787 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:26:32,787 INFO Index Performance - Index code (NIFTYSC100)
+2021-02-02 10:26:32,788 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:27:14,124 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:27:14,127 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:27:14,127 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:27:14,577 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:27:14,577 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:27:14,577 INFO Index Performance - Performance calculation is started
+2021-02-02 10:27:14,958 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:27:14,958 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:27:15,668 INFO INE947Q01010
+2021-02-02 10:34:12,143 INFO Index Performance - Indices calculation/extraction is started
+2021-02-02 10:34:12,668 INFO Index Performance - Index code (BSE30)
+2021-02-02 10:34:12,669 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:34:48,058 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:34:48,060 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:34:48,060 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:34:48,485 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:34:48,485 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:34:48,485 INFO Index Performance - Performance calculation is started
+2021-02-02 10:34:48,849 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:34:48,849 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:34:48,849 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:34:48,849 INFO Index Performance - Index code (BSE100)
+2021-02-02 10:34:48,849 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:35:24,942 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:35:24,946 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:35:24,946 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:35:25,666 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:35:25,666 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:35:25,666 INFO Index Performance - Performance calculation is started
+2021-02-02 10:35:26,096 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:35:26,096 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:35:26,133 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:35:26,133 INFO Index Performance - Index code (BSE200)
+2021-02-02 10:35:26,134 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:36:01,310 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:36:01,314 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:36:01,314 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:36:01,915 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:36:01,916 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:36:01,916 INFO Index Performance - Performance calculation is started
+2021-02-02 10:36:02,283 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:36:02,283 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:36:02,311 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:36:02,312 INFO Index Performance - Index code (BSE500)
+2021-02-02 10:36:02,312 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:36:38,214 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:36:38,218 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:36:38,218 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:36:38,656 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:36:38,657 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:36:38,657 INFO Index Performance - Performance calculation is started
+2021-02-02 10:36:38,996 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:36:38,996 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:36:39,023 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:36:39,023 INFO Index Performance - Index code (BSEMC)
+2021-02-02 10:36:39,023 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:37:17,571 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:37:17,574 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:37:17,574 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:37:18,030 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:37:18,031 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:37:18,031 INFO Index Performance - Performance calculation is started
+2021-02-02 10:37:18,369 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:37:18,370 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:37:18,394 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:37:18,394 INFO Index Performance - Index code (SENSEX)
+2021-02-02 10:37:18,395 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:38:01,742 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:38:01,745 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:38:01,745 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:38:02,098 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:38:02,099 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:38:02,099 INFO Index Performance - Performance calculation is started
+2021-02-02 10:38:02,390 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:38:02,390 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:38:02,416 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:38:02,417 INFO Index Performance - Index code (NIFTY50)
+2021-02-02 10:38:02,417 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:38:52,961 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:38:52,966 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:38:52,967 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:38:53,495 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:38:53,495 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:38:53,495 INFO Index Performance - Performance calculation is started
+2021-02-02 10:38:53,790 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:38:53,791 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:38:55,320 INFO INE040A01034
+2021-02-02 10:38:55,346 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:38:55,346 INFO Index Performance - Index code (NIFTY100)
+2021-02-02 10:38:55,347 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:39:40,247 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:39:40,251 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:39:40,251 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:39:40,705 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:39:40,705 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:39:40,705 INFO Index Performance - Performance calculation is started
+2021-02-02 10:39:41,006 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:39:41,007 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:39:41,629 INFO INE040A01034
+2021-02-02 10:39:41,653 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:39:41,653 INFO Index Performance - Index code (NIFTY200)
+2021-02-02 10:39:41,653 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:40:20,207 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:40:20,209 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:40:20,210 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:40:20,570 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:40:20,570 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:40:20,570 INFO Index Performance - Performance calculation is started
+2021-02-02 10:40:20,858 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:40:20,858 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:40:21,543 INFO INE040A01034
+2021-02-02 10:40:21,575 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:40:21,575 INFO Index Performance - Index code (NIFTY500)
+2021-02-02 10:40:21,575 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:40:57,944 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:40:57,947 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:40:57,947 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:40:58,327 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:40:58,327 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:40:58,327 INFO Index Performance - Performance calculation is started
+2021-02-02 10:40:58,621 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:40:58,621 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:40:59,163 INFO INE040A01034
+2021-02-02 10:40:59,187 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:40:59,187 INFO Index Performance - Index code (NIFTYSC100)
+2021-02-02 10:40:59,187 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:41:38,041 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:41:38,045 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:41:38,045 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:41:38,701 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:41:38,702 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:41:38,702 INFO Index Performance - Performance calculation is started
+2021-02-02 10:41:39,059 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:41:39,060 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:41:39,799 INFO INE947Q01010
+2021-02-02 10:41:39,826 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:41:39,826 INFO Index Performance - Index code (NIFTYMC100)
+2021-02-02 10:41:39,826 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:42:27,317 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:42:27,320 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:42:27,320 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:42:27,674 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:42:27,674 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:42:27,674 INFO Index Performance - Performance calculation is started
+2021-02-02 10:42:28,009 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:42:28,009 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:42:28,819 INFO INE437A01024
+2021-02-02 10:42:28,843 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:42:28,843 INFO Index Performance - Index code (BSEMSC400)
+2021-02-02 10:42:28,843 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:43:11,475 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:43:11,478 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:43:11,478 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:43:11,856 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:43:11,857 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:43:11,857 INFO Index Performance - Performance calculation is started
+2021-02-02 10:43:12,112 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:43:12,113 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:43:12,136 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:43:12,136 INFO Index Performance - Index code (NIFTYPHARMA)
+2021-02-02 10:43:12,136 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:43:53,212 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:43:53,216 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:43:53,216 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:43:53,570 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:43:53,570 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:43:53,571 INFO Index Performance - Performance calculation is started
+2021-02-02 10:43:53,868 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:43:53,868 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:43:54,761 INFO INE044A01036
+2021-02-02 10:43:54,818 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:43:54,818 INFO Index Performance - Index code (NIFTYSC250)
+2021-02-02 10:43:54,818 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:44:29,991 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:44:29,994 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:44:29,994 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:44:30,506 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:44:30,507 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:44:30,507 INFO Index Performance - Performance calculation is started
+2021-02-02 10:44:30,775 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:44:30,775 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:44:31,412 INFO INE947Q01010
+2021-02-02 10:44:31,436 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:44:31,436 INFO Index Performance - Index code (NIFTYMC150)
+2021-02-02 10:44:31,436 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:45:08,986 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:45:08,988 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:45:08,988 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:45:09,463 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:45:09,463 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:45:09,463 INFO Index Performance - Performance calculation is started
+2021-02-02 10:45:09,729 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:45:09,729 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:45:10,498 INFO INE437A01024
+2021-02-02 10:45:10,521 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:45:10,521 INFO Index Performance - Index code (BSESC)
+2021-02-02 10:45:10,521 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:45:49,877 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:45:49,882 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:45:49,882 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:45:50,377 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:45:50,377 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:45:50,377 INFO Index Performance - Performance calculation is started
+2021-02-02 10:45:50,669 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:45:50,669 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:45:50,692 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:45:50,692 INFO Index Performance - Index code (BSEHEALTH)
+2021-02-02 10:45:50,692 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 10:46:29,708 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 10:46:29,711 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 10:46:29,711 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 10:46:30,201 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 10:46:30,201 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 10:46:30,201 INFO Index Performance - Performance calculation is started
+2021-02-02 10:46:30,567 INFO Index Performance - Performance calculation is completed
+2021-02-02 10:46:30,567 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 10:46:30,595 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 10:46:31,316 INFO Exception raised in queries : (MySQLdb._exceptions.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '), 0.1565e0, 'INE947Q01010', 0.0422e0, 0.0126e0, 0.2333e0, 0.4323e0, 0.1523e0, 0' at line 1")
+[SQL: INSERT INTO index_performance (index_code, standard_deviation, pe_ratio, top_sector_name, top_sector_exposure, top_holding_isin, top_holding_exposure, perf_1m, perf_3m, perf_6m, perf_1y, perf_2y, perf_3y, perf_5y, perf_inception, reporting_date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: ('NIFTYSC100', 2.5442, 37.61, [], 0.1565, 'INE947Q01010', 0.0422, 0.0126, 0.2333, 0.4323, 0.1523, 0.0859, -0.064, 0.0771, 0.1222, datetime.date(2021, 1, 31))]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+2021-02-02 10:46:31,316 INFO 2021-01-31 Index Performance - Indices calculation/extraction is Completed
+2021-02-02 11:03:42,187 INFO Index Performance - Indices calculation/extraction is started
+2021-02-02 11:03:42,652 INFO Index Performance - Index code (BSE30)
+2021-02-02 11:03:42,652 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:04:18,612 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:04:18,614 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:04:18,614 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:04:19,059 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:04:19,059 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:04:19,059 INFO Index Performance - Performance calculation is started
+2021-02-02 11:04:19,398 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:04:19,398 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:04:19,398 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:04:19,398 INFO Index Performance - Index code (BSE100)
+2021-02-02 11:04:19,398 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:04:54,398 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:04:54,400 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:04:54,401 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:04:54,969 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:04:54,970 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:04:54,970 INFO Index Performance - Performance calculation is started
+2021-02-02 11:04:55,293 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:04:55,294 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:04:55,294 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:04:55,295 INFO Index Performance - Index code (BSE200)
+2021-02-02 11:04:55,295 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:05:36,205 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:05:36,208 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:05:36,209 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:05:36,717 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:05:36,717 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:05:36,717 INFO Index Performance - Performance calculation is started
+2021-02-02 11:05:37,060 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:05:37,060 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:05:37,086 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:05:37,086 INFO Index Performance - Index code (BSE500)
+2021-02-02 11:05:37,086 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:06:12,923 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:06:12,925 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:06:12,925 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:06:13,259 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:06:13,259 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:06:13,260 INFO Index Performance - Performance calculation is started
+2021-02-02 11:06:13,623 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:06:13,623 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:06:13,649 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:06:13,649 INFO Index Performance - Index code (BSEMC)
+2021-02-02 11:06:13,650 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:06:50,224 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:06:50,227 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:06:50,227 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:06:50,687 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:06:50,687 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:06:50,687 INFO Index Performance - Performance calculation is started
+2021-02-02 11:06:51,016 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:06:51,016 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:06:51,041 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:06:51,041 INFO Index Performance - Index code (SENSEX)
+2021-02-02 11:06:51,041 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:07:27,896 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:07:27,899 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:07:27,899 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:07:28,654 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:07:28,655 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:07:28,655 INFO Index Performance - Performance calculation is started
+2021-02-02 11:07:29,064 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:07:29,064 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:07:29,136 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:07:29,136 INFO Index Performance - Index code (NIFTY50)
+2021-02-02 11:07:29,136 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:08:34,408 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:08:34,411 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:08:34,411 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:08:35,536 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:08:35,536 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:08:35,536 INFO Index Performance - Performance calculation is started
+2021-02-02 11:08:35,850 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:08:35,850 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:08:36,637 INFO INE040A01034
+2021-02-02 11:08:36,662 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:08:36,662 INFO Index Performance - Index code (NIFTY100)
+2021-02-02 11:08:36,662 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:09:16,837 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:09:16,840 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:09:16,840 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:09:17,464 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:09:17,464 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:09:17,464 INFO Index Performance - Performance calculation is started
+2021-02-02 11:09:17,785 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:09:17,786 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:09:18,379 INFO INE040A01034
+2021-02-02 11:09:18,402 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:09:18,402 INFO Index Performance - Index code (NIFTY200)
+2021-02-02 11:09:18,402 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:09:56,864 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:09:56,867 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:09:56,867 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:09:57,337 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:09:57,337 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:09:57,338 INFO Index Performance - Performance calculation is started
+2021-02-02 11:09:57,633 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:09:57,633 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:09:58,223 INFO INE040A01034
+2021-02-02 11:09:58,246 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:09:58,246 INFO Index Performance - Index code (NIFTY500)
+2021-02-02 11:09:58,247 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:10:35,255 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:10:35,259 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:10:35,259 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:10:37,333 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:10:37,333 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:10:37,333 INFO Index Performance - Performance calculation is started
+2021-02-02 11:10:37,656 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:10:37,657 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:10:38,206 INFO INE040A01034
+2021-02-02 11:10:38,231 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:10:38,231 INFO Index Performance - Index code (NIFTYSC100)
+2021-02-02 11:10:38,231 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:11:18,411 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:11:18,414 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:11:18,414 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:11:18,806 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:11:18,806 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:11:18,806 INFO Index Performance - Performance calculation is started
+2021-02-02 11:11:19,090 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:11:19,090 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:11:19,662 INFO INE947Q01010
+2021-02-02 11:11:19,688 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:11:19,688 INFO Index Performance - Index code (NIFTYMC100)
+2021-02-02 11:11:19,688 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:12:03,237 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:12:03,240 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:12:03,241 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:12:04,234 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:12:04,234 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:12:04,234 INFO Index Performance - Performance calculation is started
+2021-02-02 11:12:04,564 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:12:04,564 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:12:05,285 INFO INE437A01024
+2021-02-02 11:12:05,310 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:12:05,310 INFO Index Performance - Index code (BSEMSC400)
+2021-02-02 11:12:05,310 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:12:43,672 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:12:43,675 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:12:43,676 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:12:44,187 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:12:44,187 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:12:44,187 INFO Index Performance - Performance calculation is started
+2021-02-02 11:12:44,508 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:12:44,508 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:12:44,534 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:12:44,534 INFO Index Performance - Index code (NIFTYPHARMA)
+2021-02-02 11:12:44,534 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:13:28,555 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:13:28,558 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:13:28,558 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:13:29,128 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:13:29,129 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:13:29,129 INFO Index Performance - Performance calculation is started
+2021-02-02 11:13:29,519 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:13:29,519 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:13:30,474 INFO INE044A01036
+2021-02-02 11:13:30,502 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:13:30,502 INFO Index Performance - Index code (NIFTYSC250)
+2021-02-02 11:13:30,502 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:14:13,165 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:14:13,167 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:14:13,168 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:14:13,647 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:14:13,647 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:14:13,647 INFO Index Performance - Performance calculation is started
+2021-02-02 11:14:13,919 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:14:13,919 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:14:14,961 INFO INE947Q01010
+2021-02-02 11:14:14,984 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:14:14,985 INFO Index Performance - Index code (NIFTYMC150)
+2021-02-02 11:14:14,985 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:14:56,847 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:14:56,849 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:14:56,850 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:14:57,269 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:14:57,269 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:14:57,269 INFO Index Performance - Performance calculation is started
+2021-02-02 11:14:57,547 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:14:57,547 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:14:58,286 INFO INE437A01024
+2021-02-02 11:14:58,311 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:14:58,311 INFO Index Performance - Index code (BSESC)
+2021-02-02 11:14:58,311 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:15:45,263 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:15:45,267 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:15:45,267 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:15:45,737 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:15:45,737 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:15:45,737 INFO Index Performance - Performance calculation is started
+2021-02-02 11:15:46,048 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:15:46,048 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:15:46,078 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:15:46,079 INFO Index Performance - Index code (BSEHEALTH)
+2021-02-02 11:15:46,079 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:16:30,425 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:16:30,428 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:16:30,428 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:16:31,157 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:16:31,157 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:16:31,157 INFO Index Performance - Performance calculation is started
+2021-02-02 11:16:31,450 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:16:31,450 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:16:31,474 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:16:32,402 INFO Exception raised in queries : (MySQLdb._exceptions.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '), 0.1565e0, 'INE947Q01010', 0.0422e0, 0.0126e0, 0.2333e0, 0.4323e0, 0.1523e0, 0' at line 1")
+[SQL: INSERT INTO index_performance (index_code, standard_deviation, pe_ratio, top_sector_name, top_sector_exposure, top_holding_isin, top_holding_exposure, perf_1m, perf_3m, perf_6m, perf_1y, perf_2y, perf_3y, perf_5y, perf_inception, reporting_date) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: ('NIFTYSC100', 2.5442, 37.61, [], 0.1565, 'INE947Q01010', 0.0422, 0.0126, 0.2333, 0.4323, 0.1523, 0.0859, -0.064, 0.0771, 0.1222, datetime.date(2021, 1, 31))]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+2021-02-02 11:16:32,402 INFO 2021-01-31 Index Performance - Indices calculation/extraction is Completed
+2021-02-02 11:21:59,393 INFO Index Performance - Indices calculation/extraction is started
+2021-02-02 11:21:59,821 INFO Index Performance - Index code (BSE30)
+2021-02-02 11:21:59,821 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:22:37,097 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:22:37,100 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:22:37,101 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:22:37,931 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:22:37,932 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:22:37,932 INFO Index Performance - Performance calculation is started
+2021-02-02 11:22:38,806 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:22:38,806 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:22:38,807 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:22:38,807 INFO Index Performance - Index code (BSE100)
+2021-02-02 11:22:38,807 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:23:19,754 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:23:19,757 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:23:19,757 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:23:20,291 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:23:20,291 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:23:20,291 INFO Index Performance - Performance calculation is started
+2021-02-02 11:23:20,598 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:23:20,599 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:23:20,625 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:23:20,626 INFO Index Performance - Index code (BSE200)
+2021-02-02 11:23:20,627 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:24:07,907 INFO Index Performance - Indices calculation/extraction is started
+2021-02-02 11:24:08,286 INFO Index Performance - Index code (BSE30)
+2021-02-02 11:24:08,286 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:24:45,889 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:24:45,892 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:24:45,892 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:24:46,590 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:24:46,591 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:24:46,591 INFO Index Performance - Performance calculation is started
+2021-02-02 11:24:46,970 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:24:46,970 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:24:46,971 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:24:46,971 INFO Index Performance - Index code (BSE100)
+2021-02-02 11:24:46,971 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:25:39,962 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:25:39,964 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:25:39,964 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:25:40,607 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:25:40,607 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:25:40,607 INFO Index Performance - Performance calculation is started
+2021-02-02 11:25:40,935 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:25:40,935 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:25:40,960 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:25:40,961 INFO Index Performance - Index code (BSE200)
+2021-02-02 11:25:40,961 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:26:17,126 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:26:17,130 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:26:17,130 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:26:17,618 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:26:17,619 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:26:17,619 INFO Index Performance - Performance calculation is started
+2021-02-02 11:26:17,927 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:26:17,927 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:26:17,948 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:26:17,949 INFO Index Performance - Index code (BSE500)
+2021-02-02 11:26:17,949 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:27:03,652 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:27:03,655 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:27:03,655 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:27:04,374 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:27:04,375 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:27:04,375 INFO Index Performance - Performance calculation is started
+2021-02-02 11:27:04,737 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:27:04,737 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:27:04,760 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:27:04,760 INFO Index Performance - Index code (BSEMC)
+2021-02-02 11:27:04,760 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:27:45,374 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:27:45,377 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:27:45,377 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:27:46,002 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:27:46,002 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:27:46,003 INFO Index Performance - Performance calculation is started
+2021-02-02 11:27:46,271 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:27:46,271 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:27:46,294 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:27:46,294 INFO Index Performance - Index code (SENSEX)
+2021-02-02 11:27:46,294 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:28:23,193 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:28:23,196 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:28:23,196 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:28:24,394 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:28:24,394 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:28:24,395 INFO Index Performance - Performance calculation is started
+2021-02-02 11:28:24,690 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:28:24,691 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:28:24,716 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:28:24,717 INFO Index Performance - Index code (NIFTY50)
+2021-02-02 11:28:24,717 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:29:01,599 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:29:01,602 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:29:01,602 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:29:02,030 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:29:02,030 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:29:02,030 INFO Index Performance - Performance calculation is started
+2021-02-02 11:29:02,293 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:29:02,293 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:29:02,923 INFO INE040A01034
+2021-02-02 11:29:02,949 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:29:02,949 INFO Index Performance - Index code (NIFTY100)
+2021-02-02 11:29:02,949 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:29:41,608 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:29:41,610 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:29:41,611 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:29:42,111 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:29:42,112 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:29:42,112 INFO Index Performance - Performance calculation is started
+2021-02-02 11:29:42,395 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:29:42,395 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:29:42,970 INFO INE040A01034
+2021-02-02 11:29:42,991 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:29:42,991 INFO Index Performance - Index code (NIFTY200)
+2021-02-02 11:29:42,991 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:30:20,638 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:30:20,641 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:30:20,642 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:30:21,760 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:30:21,761 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:30:21,761 INFO Index Performance - Performance calculation is started
+2021-02-02 11:30:22,452 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:30:22,452 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:30:23,885 INFO INE040A01034
+2021-02-02 11:30:23,910 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:30:23,911 INFO Index Performance - Index code (NIFTY500)
+2021-02-02 11:30:23,911 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:31:02,879 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:31:02,882 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:31:02,882 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:31:04,140 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:31:04,140 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:31:04,141 INFO Index Performance - Performance calculation is started
+2021-02-02 11:31:04,466 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:31:04,466 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:31:05,033 INFO INE040A01034
+2021-02-02 11:31:05,053 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:31:05,053 INFO Index Performance - Index code (NIFTYSC100)
+2021-02-02 11:31:05,054 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:31:57,380 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:31:57,385 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:31:57,385 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:31:58,426 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:31:58,426 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:31:58,426 INFO Index Performance - Performance calculation is started
+2021-02-02 11:31:58,836 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:31:58,836 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:31:59,577 INFO INE947Q01010
+2021-02-02 11:33:52,456 INFO Index Performance - Indices calculation/extraction is started
+2021-02-02 11:33:53,132 INFO Index Performance - Index code (BSE30)
+2021-02-02 11:33:53,132 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:34:31,167 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:34:31,169 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:34:31,170 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:34:31,672 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:34:31,672 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:34:31,672 INFO Index Performance - Performance calculation is started
+2021-02-02 11:34:31,949 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:34:31,949 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:34:31,949 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:34:31,949 INFO Index Performance - Index code (BSE100)
+2021-02-02 11:34:31,949 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:35:08,764 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:35:08,769 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:35:08,769 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:35:09,541 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:35:09,542 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:35:09,542 INFO Index Performance - Performance calculation is started
+2021-02-02 11:35:09,883 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:35:09,883 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:35:09,909 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:35:09,910 INFO Index Performance - Index code (BSE200)
+2021-02-02 11:35:09,910 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:35:46,800 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:35:46,803 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:35:46,803 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:35:47,339 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:35:47,339 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:35:47,339 INFO Index Performance - Performance calculation is started
+2021-02-02 11:35:47,679 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:35:47,679 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:35:47,704 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:35:47,705 INFO Index Performance - Index code (BSE500)
+2021-02-02 11:35:47,705 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:36:24,278 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:36:24,282 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:36:24,283 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:36:25,297 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:36:25,297 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:36:25,298 INFO Index Performance - Performance calculation is started
+2021-02-02 11:36:25,828 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:36:25,828 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:36:25,852 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:36:25,853 INFO Index Performance - Index code (BSEMC)
+2021-02-02 11:36:25,853 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:37:34,796 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:37:34,798 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:37:34,799 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:37:35,307 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:37:35,307 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:37:35,308 INFO Index Performance - Performance calculation is started
+2021-02-02 11:37:35,611 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:37:35,612 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:37:35,637 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:37:35,637 INFO Index Performance - Index code (SENSEX)
+2021-02-02 11:37:35,637 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:38:15,173 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:38:15,178 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:38:15,178 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:38:16,039 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:38:16,039 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:38:16,039 INFO Index Performance - Performance calculation is started
+2021-02-02 11:38:16,318 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:38:16,318 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:38:16,340 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:38:16,340 INFO Index Performance - Index code (NIFTY50)
+2021-02-02 11:38:16,340 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:39:07,651 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:39:07,654 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:39:07,654 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:39:10,691 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:39:10,691 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:39:10,691 INFO Index Performance - Performance calculation is started
+2021-02-02 11:39:12,855 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:39:12,855 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:39:13,606 INFO INE040A01034
+2021-02-02 11:39:13,632 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:39:13,632 INFO Index Performance - Index code (NIFTY100)
+2021-02-02 11:39:13,633 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:40:01,495 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:40:01,498 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:40:01,498 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:40:02,089 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:40:02,089 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:40:02,089 INFO Index Performance - Performance calculation is started
+2021-02-02 11:40:02,386 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:40:02,386 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:40:02,939 INFO INE040A01034
+2021-02-02 11:40:02,960 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:40:02,960 INFO Index Performance - Index code (NIFTY200)
+2021-02-02 11:40:02,960 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:40:41,049 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:40:41,053 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:40:41,054 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:40:41,547 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:40:41,548 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:40:41,548 INFO Index Performance - Performance calculation is started
+2021-02-02 11:40:41,848 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:40:41,849 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:40:42,410 INFO INE040A01034
+2021-02-02 11:40:42,431 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:40:42,431 INFO Index Performance - Index code (NIFTY500)
+2021-02-02 11:40:42,431 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:41:24,315 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:41:24,317 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:41:24,317 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:41:24,857 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:41:24,858 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:41:24,859 INFO Index Performance - Performance calculation is started
+2021-02-02 11:41:25,155 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:41:25,156 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:41:26,031 INFO INE040A01034
+2021-02-02 11:41:26,076 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:41:26,076 INFO Index Performance - Index code (NIFTYSC100)
+2021-02-02 11:41:26,077 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:42:12,812 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:42:12,818 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:42:12,819 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:42:13,291 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:42:13,292 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:42:13,292 INFO Index Performance - Performance calculation is started
+2021-02-02 11:42:13,564 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:42:13,564 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:42:14,402 INFO INE947Q01010
+2021-02-02 11:45:24,893 INFO Index Performance - Indices calculation/extraction is started
+2021-02-02 11:45:25,340 INFO Index Performance - Index code (BSE30)
+2021-02-02 11:45:25,340 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:45:40,241 INFO Index Performance - Indices calculation/extraction is started
+2021-02-02 11:45:40,802 INFO Index Performance - Index code (BSE30)
+2021-02-02 11:45:40,803 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:46:51,974 INFO Index Performance - Indices calculation/extraction is started
+2021-02-02 11:46:52,386 INFO Index Performance - Index code (BSE30)
+2021-02-02 11:46:52,386 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:47:38,245 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:47:38,251 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:47:38,251 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:47:44,106 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:47:44,107 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:47:44,107 INFO Index Performance - Performance calculation is started
+2021-02-02 11:47:45,940 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:47:45,941 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:47:45,941 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:47:45,941 INFO Index Performance - Index code (BSE100)
+2021-02-02 11:47:45,942 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:48:23,646 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:48:23,649 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:48:23,649 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:48:35,785 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:48:35,786 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:48:35,786 INFO Index Performance - Performance calculation is started
+2021-02-02 11:48:36,110 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:48:36,110 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:48:36,137 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:48:36,137 INFO Index Performance - Index code (BSE200)
+2021-02-02 11:48:36,137 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:49:14,250 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:49:14,253 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:49:14,253 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:49:14,655 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:49:14,655 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:49:14,655 INFO Index Performance - Performance calculation is started
+2021-02-02 11:49:14,966 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:49:14,966 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:49:14,990 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:49:14,991 INFO Index Performance - Index code (BSE500)
+2021-02-02 11:49:14,991 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:49:52,123 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:49:52,126 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:49:52,127 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:49:52,552 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:49:52,553 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:49:52,553 INFO Index Performance - Performance calculation is started
+2021-02-02 11:49:52,880 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:49:52,880 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:49:52,904 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:49:52,904 INFO Index Performance - Index code (BSEMC)
+2021-02-02 11:49:52,904 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:50:29,701 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:50:29,703 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:50:29,703 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:50:34,253 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:50:34,254 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:50:34,254 INFO Index Performance - Performance calculation is started
+2021-02-02 11:50:35,270 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:50:35,270 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:50:35,351 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:50:35,351 INFO Index Performance - Index code (SENSEX)
+2021-02-02 11:50:35,351 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:51:15,500 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:51:15,503 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:51:15,503 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:51:17,198 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:51:17,198 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:51:17,198 INFO Index Performance - Performance calculation is started
+2021-02-02 11:51:17,510 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:51:17,510 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:51:17,532 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:51:17,532 INFO Index Performance - Index code (NIFTY50)
+2021-02-02 11:51:17,533 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:51:54,430 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:51:54,433 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:51:54,433 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:51:55,205 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:51:55,205 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:51:55,205 INFO Index Performance - Performance calculation is started
+2021-02-02 11:51:55,526 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:51:55,526 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:51:56,114 INFO INE040A01034
+2021-02-02 11:51:56,135 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:51:56,135 INFO Index Performance - Index code (NIFTY100)
+2021-02-02 11:51:56,135 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:52:39,085 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:52:39,088 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:52:39,088 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:52:39,576 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:52:39,576 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:52:39,576 INFO Index Performance - Performance calculation is started
+2021-02-02 11:52:39,863 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:52:39,863 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:52:40,420 INFO INE040A01034
+2021-02-02 11:52:40,447 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:52:40,447 INFO Index Performance - Index code (NIFTY200)
+2021-02-02 11:52:40,447 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:53:22,458 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:53:22,460 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:53:22,461 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:53:22,881 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:53:22,881 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:53:22,881 INFO Index Performance - Performance calculation is started
+2021-02-02 11:53:23,244 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:53:23,244 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:53:23,872 INFO INE040A01034
+2021-02-02 11:53:23,911 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:53:23,912 INFO Index Performance - Index code (NIFTY500)
+2021-02-02 11:53:23,912 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:54:06,197 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:54:06,201 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:54:06,201 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:54:06,626 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:54:06,626 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:54:06,626 INFO Index Performance - Performance calculation is started
+2021-02-02 11:54:06,999 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:54:06,999 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:54:07,608 INFO INE040A01034
+2021-02-02 11:54:07,637 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:54:07,637 INFO Index Performance - Index code (NIFTYSC100)
+2021-02-02 11:54:07,637 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:54:49,029 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:54:49,032 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:54:49,032 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:54:49,974 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:54:49,975 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:54:49,975 INFO Index Performance - Performance calculation is started
+2021-02-02 11:54:50,370 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:54:50,370 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:54:51,082 INFO INE947Q01010
+2021-02-02 11:54:51,123 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:54:51,123 INFO Index Performance - Index code (NIFTYMC100)
+2021-02-02 11:54:51,123 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:55:36,885 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:55:36,889 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:55:36,889 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:55:37,305 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:55:37,305 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:55:37,306 INFO Index Performance - Performance calculation is started
+2021-02-02 11:55:37,658 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:55:37,658 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:55:38,439 INFO INE437A01024
+2021-02-02 11:55:38,468 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:55:38,468 INFO Index Performance - Index code (BSEMSC400)
+2021-02-02 11:55:38,468 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:56:28,476 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:56:28,479 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:56:28,479 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:56:29,140 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:56:29,141 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:56:29,142 INFO Index Performance - Performance calculation is started
+2021-02-02 11:56:29,710 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:56:29,710 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:56:29,742 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:56:29,742 INFO Index Performance - Index code (NIFTYPHARMA)
+2021-02-02 11:56:29,742 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:57:19,485 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:57:19,489 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:57:19,490 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:57:19,942 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:57:19,942 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:57:19,942 INFO Index Performance - Performance calculation is started
+2021-02-02 11:57:20,364 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:57:20,365 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:57:21,537 INFO INE044A01036
+2021-02-02 11:57:21,568 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:57:21,568 INFO Index Performance - Index code (NIFTYSC250)
+2021-02-02 11:57:21,568 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:58:09,974 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:58:09,977 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:58:09,978 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:58:10,579 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:58:10,579 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:58:10,579 INFO Index Performance - Performance calculation is started
+2021-02-02 11:58:10,911 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:58:10,911 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:58:11,678 INFO INE947Q01010
+2021-02-02 11:58:11,708 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:58:11,708 INFO Index Performance - Index code (NIFTYMC150)
+2021-02-02 11:58:11,708 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:58:51,898 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:58:51,901 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:58:51,901 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:58:52,474 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:58:52,474 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:58:52,474 INFO Index Performance - Performance calculation is started
+2021-02-02 11:58:52,777 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:58:52,778 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:58:53,732 INFO INE437A01024
+2021-02-02 11:58:53,827 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:58:53,827 INFO Index Performance - Index code (BSESC)
+2021-02-02 11:58:53,827 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 11:59:33,528 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 11:59:33,531 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 11:59:33,532 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 11:59:34,036 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 11:59:34,037 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 11:59:34,037 INFO Index Performance - Performance calculation is started
+2021-02-02 11:59:34,392 INFO Index Performance - Performance calculation is completed
+2021-02-02 11:59:34,392 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 11:59:34,422 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 11:59:34,422 INFO Index Performance - Index code (BSEHEALTH)
+2021-02-02 11:59:34,422 INFO Index Performance - NSE Ratios/Sector/Holding extraction is started
+2021-02-02 12:00:21,268 INFO Index Performance - NSE Ratios/Sector/Holding extraction is completed
+2021-02-02 12:00:21,271 INFO Index Performance - BSE : Sector/Holding extraction is started
+2021-02-02 12:00:21,271 INFO Index Performance - BSE : PE ratio extraction is started
+2021-02-02 12:00:22,147 INFO Index Performance - BSE : PE ratio extraction is completed
+2021-02-02 12:00:22,147 INFO Index Performance - BSE : Sector/Holding extraction is completed
+2021-02-02 12:00:22,147 INFO Index Performance - Performance calculation is started
+2021-02-02 12:00:22,502 INFO Index Performance - Performance calculation is completed
+2021-02-02 12:00:22,502 INFO Index Performance - Ratios/Sector/Holding extraction is started
+2021-02-02 12:00:22,538 INFO Index Performance - Ratios/Sector/Holding extraction is Completed
+2021-02-02 12:00:24,048 INFO 2021-01-31 Index Performance - Indices calculation/extraction is Completed
