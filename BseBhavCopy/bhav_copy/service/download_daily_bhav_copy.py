@@ -1,12 +1,21 @@
 import os
 import zipfile
 import requests
+import datetime
 from bhav_copy.config.bhav_copy_config import *
 
 
-def download_file(bse_bhav_copy_url):
-    request_headers = requests.head(bse_bhav_copy_url)
-    data = requests.get(bse_bhav_copy_url, stream=True, headers=request_headers)
+def get_recent_working_day(bse_bhav_copy_url):
+    today = datetime.datetime.today().date()
+    offset = max(1, (today.weekday() + 6) % 7 - 3)
+    timedelta = datetime.timedelta(offset)
+    download_url = bse_bhav_copy_url + str((today - timedelta).strftime("%d%m%y")) + file_extensions[0]
+    return download_url
+
+
+def download_file(download_url):
+    request_headers = requests.head(download_url)
+    data = requests.get(download_url, stream=True, headers=request_headers)
     content = data.content
     zip_filename = zip_file_dir[0] + "/" + zip_file_name[0] + file_extensions[0]
     with open(zip_filename, 'wb') as f:

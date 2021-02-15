@@ -8,4 +8,4 @@ file_extensions = [".zip", ".csv"]
 zip_file_name = ["bse_" + str(dt.datetime.now().date())]
 csv_file_name = ["bhav_copy_" + str(dt.datetime.now().date())]
 
-bse_bhav_copy_url = ["https://www.bseindia.com/download/BhavCopy/Equity/EQ_ISINCODE_110221.zip"]
+bse_bhav_copy_url = ["https://www.bseindia.com/download/BhavCopy/Equity/EQ_ISINCODE_"]
