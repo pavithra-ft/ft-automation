@@ -1,0 +1,7 @@
+selenium==3.141.0
+webdriver_manager==3.4.1
+numpy==1.14.6
+itemadapter==0.1.0
+Scrapy==2.2.0
+pandas==1.2.4
+SQLAlchemy==1.4.15

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../BseBhavCopyAC/.idea/BseBhavCopyAC.iml" filepath="$PROJECT_DIR$/../BseBhavCopyAC/.idea/BseBhavCopyAC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../BseBhavCopyFW/.idea/BseBhavCopyFW.iml" filepath="$PROJECT_DIR$/../BseBhavCopyFW/.idea/BseBhavCopyFW.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../FundRatingAMCFiles/.idea/FundRatingAMCFiles.iml" filepath="$PROJECT_DIR$/../FundRatingAMCFiles/.idea/FundRatingAMCFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MonthlyFundAutomation.iml" filepath="$PROJECT_DIR$/.idea/MonthlyFundAutomation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MonthlyRatioAutomation/.idea/MonthlyRatioAutomation.iml" filepath="$PROJECT_DIR$/../MonthlyRatioAutomation/.idea/MonthlyRatioAutomation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MonthlyRatioExtraction/.idea/MonthlyRatioExtraction.iml" filepath="$PROJECT_DIR$/../MonthlyRatioExtraction/.idea/MonthlyRatioExtraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../NseBhavCopyNI/.idea/NseBhavCopyNI.iml" filepath="$PROJECT_DIR$/../NseBhavCopyNI/.idea/NseBhavCopyNI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../db_historical_updates/.idea/db_updates.iml" filepath="$PROJECT_DIR$/../db_historical_updates/.idea/db_updates.iml" />
+    </modules>
+  </component>
+</project>

@@ -108,12 +108,10 @@ def get_index_ratios(index_code, nse_list, bse_list):
             if ratios_data['top_holding_isin'] is not None:
                 top_holding_isin = get_isin(ratios_data['top_holding_isin'])
             if ratios_data['top_sector_name'] is not None:
-                print(ratios_data['top_sector_name'])
                 if sector_dict.__contains__(ratios_data['top_sector_name'].capitalize().strip()):
                     industry = sector_dict[ratios_data['top_sector_name'].capitalize().strip()]
                 else:
                     industry = ratios_data['top_sector_name'].capitalize().strip()
-                print(industry)
                 top_sector_name = query.get_security_sector(industry)
             index_ratios_data.update({"standard_deviation": ratios_data['standard_deviation'],
                                       "pe_ratio": ratios_data['pe_ratio'], "top_sector_name": top_sector_name,

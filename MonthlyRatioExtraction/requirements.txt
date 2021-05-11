@@ -1,0 +1,4 @@
+itemadapter==0.1.0
+requests==2.24.0
+scrapy_splash==0.7.2
+Scrapy==2.2.0

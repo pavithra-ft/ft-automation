@@ -1,0 +1,212 @@
+2020-10-01 14:54:05,256 INFO Index Prices - Extraction of BSE index prices is started
+2020-10-01 14:54:05,256 INFO Index Prices - Extraction(BSE100) from site is started
+2020-10-01 14:54:06,047 INFO Index Prices - Extraction(BSE100) from site is completed
+2020-10-01 14:54:10,082 INFO Index Prices - Extraction(BSE200) from site is started
+2020-10-01 14:54:10,921 INFO Index Prices - Extraction(BSE200) from site is completed
+2020-10-01 14:54:12,752 INFO Index Prices - Extraction(BSE30) from site is started
+2020-10-01 14:54:13,599 INFO Index Prices - Extraction(BSE30) from site is completed
+2020-10-01 14:54:15,461 INFO Index Prices - Extraction(BSE500) from site is started
+2020-10-01 14:54:16,168 INFO Index Prices - Extraction(BSE500) from site is completed
+2020-10-01 14:54:18,078 INFO Index Prices - Extraction(BSEHEALTH) from site is started
+2020-10-01 14:54:19,036 INFO Index Prices - Extraction(BSEHEALTH) from site is completed
+2020-10-01 14:54:20,852 INFO Index Prices - Extraction(BSEMC) from site is started
+2020-10-01 14:54:21,562 INFO Index Prices - Extraction(BSEMC) from site is completed
+2020-10-01 14:54:23,441 INFO Index Prices - Extraction(BSEMSC400) from site is started
+2020-10-01 14:54:24,800 INFO Index Prices - Extraction(BSEMSC400) from site is completed
+2020-10-01 14:54:26,681 INFO Index Prices - Extraction(BSESC) from site is started
+2020-10-01 14:54:28,041 INFO Index Prices - Extraction(BSESC) from site is completed
+2020-10-01 14:54:29,931 INFO Index Prices - Extraction(SENSEX) from site is started
+2020-10-01 14:54:30,569 INFO Index Prices - Extraction(SENSEX) from site is completed
+2020-10-01 14:54:32,489 INFO Index Prices - Extraction of BSE index prices is completed
+2020-10-01 14:57:27,094 INFO Index Prices - NSE is started
+2020-10-01 14:57:34,887 INFO Index Prices - Extraction (NIFTY100)of NSE index prices is started
+2020-10-01 14:58:29,929 INFO Index Prices - NSE is started
+2020-10-01 14:58:30,466 INFO Index Prices - Extraction (NIFTY100)of NSE index prices is started
+2020-10-01 14:58:35,369 INFO Index Prices - Extraction (NIFTY100) of NSE index prices is started
+2020-10-01 14:58:35,779 INFO Index Prices - Extraction (NIFTY200)of NSE index prices is started
+2020-10-01 14:58:37,776 INFO Index Prices - Extraction (NIFTY200) of NSE index prices is started
+2020-10-01 14:58:38,094 INFO Index Prices - Extraction (NIFTY50)of NSE index prices is started
+2020-10-01 14:58:40,050 INFO Index Prices - Extraction (NIFTY50) of NSE index prices is started
+2020-10-01 14:58:40,413 INFO Index Prices - Extraction (NIFTY500)of NSE index prices is started
+2020-10-01 14:58:42,400 INFO Index Prices - Extraction (NIFTY500) of NSE index prices is started
+2020-10-01 14:58:42,754 INFO Index Prices - Extraction (NIFTYMC100)of NSE index prices is started
+2020-10-01 14:58:44,720 INFO Index Prices - Extraction (NIFTYMC100) of NSE index prices is started
+2020-10-01 14:58:45,032 INFO Index Prices - Extraction (NIFTYMC150)of NSE index prices is started
+2020-10-01 14:58:47,035 INFO Index Prices - Extraction (NIFTYMC150) of NSE index prices is started
+2020-10-01 14:58:47,863 INFO Index Prices - Extraction (NIFTYPHARMA)of NSE index prices is started
+2020-10-01 14:58:49,897 INFO Index Prices - Extraction (NIFTYPHARMA) of NSE index prices is started
+2020-10-01 14:58:50,297 INFO Index Prices - Extraction (NIFTYSC100)of NSE index prices is started
+2020-10-01 14:58:52,289 INFO Index Prices - Extraction (NIFTYSC100) of NSE index prices is started
+2020-10-01 14:58:53,087 INFO Index Prices - Extraction (NIFTYSC250)of NSE index prices is started
+2020-10-01 14:58:55,078 INFO Index Prices - Extraction (NIFTYSC250) of NSE index prices is started
+2020-10-01 14:58:56,128 INFO Index Prices - Extraction (NIFVIX)of NSE index prices is started
+2020-10-01 14:58:58,119 INFO Index Prices - Extraction (NIFVIX) of NSE index prices is started
+2020-10-01 14:58:58,119 INFO Index Prices - NSE is completed
+2020-11-02 11:41:19,311 INFO Index Prices - Extraction of BSE index prices is started
+2020-11-02 11:41:19,311 INFO Index Prices - Extraction(BSE100) from site is started
+2020-11-02 11:41:22,972 INFO Index Prices - Extraction(BSE100) from site is completed
+2020-11-02 11:41:27,092 INFO Index Prices - Extraction(BSE200) from site is started
+2020-11-02 11:41:29,135 INFO Index Prices - Extraction(BSE200) from site is completed
+2020-11-02 11:41:30,781 INFO Index Prices - Extraction(BSE30) from site is started
+2020-11-02 11:41:36,938 INFO Index Prices - Extraction(BSE30) from site is completed
+2020-11-02 11:41:40,043 INFO Index Prices - Extraction(BSE500) from site is started
+2020-11-02 11:41:41,976 INFO Index Prices - Extraction(BSE500) from site is completed
+2020-11-02 11:41:43,622 INFO Index Prices - Extraction(BSEHEALTH) from site is started
+2020-11-02 11:41:47,258 INFO Index Prices - Extraction(BSEHEALTH) from site is completed
+2020-11-02 11:41:48,807 INFO Index Prices - Extraction(BSEMC) from site is started
+2020-11-02 11:41:49,990 INFO Index Prices - Extraction(BSEMC) from site is completed
+2020-11-02 11:41:51,639 INFO Index Prices - Extraction(BSEMSC400) from site is started
+2020-11-02 11:41:54,292 INFO Index Prices - Extraction(BSEMSC400) from site is completed
+2020-11-02 11:41:55,843 INFO Index Prices - Extraction(BSESC) from site is started
+2020-11-02 11:41:57,121 INFO Index Prices - Extraction(BSESC) from site is completed
+2020-11-02 11:41:58,885 INFO Index Prices - Extraction(SENSEX) from site is started
+2020-11-02 11:42:01,099 INFO Index Prices - Extraction(SENSEX) from site is completed
+2020-11-02 11:42:03,580 INFO Index Prices - Extraction of BSE index prices is completed
+2020-11-02 11:42:57,817 INFO Index Prices - NSE is started
+2020-11-02 11:43:01,542 INFO Index Prices - Extraction (NIFTY100)of NSE index prices is started
+2020-11-02 11:43:06,260 INFO Index Prices - Extraction (NIFTY100) of NSE index prices is started
+2020-11-02 11:43:07,251 INFO Index Prices - Extraction (NIFTY200)of NSE index prices is started
+2020-11-02 11:43:08,927 INFO Index Prices - Extraction (NIFTY200) of NSE index prices is started
+2020-11-02 11:43:09,230 INFO Index Prices - Extraction (NIFTY50)of NSE index prices is started
+2020-11-02 11:43:10,811 INFO Index Prices - Extraction (NIFTY50) of NSE index prices is started
+2020-11-02 11:43:11,084 INFO Index Prices - Extraction (NIFTY500)of NSE index prices is started
+2020-11-02 11:43:12,551 INFO Index Prices - Extraction (NIFTY500) of NSE index prices is started
+2020-11-02 11:43:12,850 INFO Index Prices - Extraction (NIFTYMC100)of NSE index prices is started
+2020-11-02 11:43:14,462 INFO Index Prices - Extraction (NIFTYMC100) of NSE index prices is started
+2020-11-02 11:43:15,256 INFO Index Prices - Extraction (NIFTYMC150)of NSE index prices is started
+2020-11-02 11:43:16,801 INFO Index Prices - Extraction (NIFTYMC150) of NSE index prices is started
+2020-11-02 11:43:21,015 INFO Index Prices - Extraction (NIFTYPHARMA)of NSE index prices is started
+2020-11-02 11:43:22,501 INFO Index Prices - Extraction (NIFTYPHARMA) of NSE index prices is started
+2020-11-02 11:43:22,807 INFO Index Prices - Extraction (NIFTYSC100)of NSE index prices is started
+2020-11-02 11:43:24,301 INFO Index Prices - Extraction (NIFTYSC100) of NSE index prices is started
+2020-11-02 11:43:24,935 INFO Index Prices - Extraction (NIFTYSC250)of NSE index prices is started
+2020-11-02 11:43:26,461 INFO Index Prices - Extraction (NIFTYSC250) of NSE index prices is started
+2020-11-02 11:43:27,091 INFO Index Prices - Extraction (NIFVIX)of NSE index prices is started
+2020-11-02 11:43:28,641 INFO Index Prices - Extraction (NIFVIX) of NSE index prices is started
+2020-11-02 11:43:28,641 INFO Index Prices - NSE is completed
+2020-12-01 17:48:18,633 INFO Index Prices - NSE is started
+2020-12-01 17:48:19,057 INFO Index Prices - Extraction (NIFTY100)of NSE index prices is started
+2020-12-01 17:48:21,774 INFO Index Prices - Extraction (NIFTY100) of NSE index prices is completed
+2020-12-01 17:48:22,397 INFO Index Prices - Extraction (NIFTY200)of NSE index prices is started
+2020-12-01 17:48:23,848 INFO Index Prices - Extraction (NIFTY200) of NSE index prices is completed
+2020-12-01 17:48:24,223 INFO Index Prices - Extraction (NIFTY50)of NSE index prices is started
+2020-12-01 17:48:25,891 INFO Index Prices - Extraction (NIFTY50) of NSE index prices is completed
+2020-12-01 17:48:26,257 INFO Index Prices - Extraction (NIFTY500)of NSE index prices is started
+2020-12-01 17:48:27,744 INFO Index Prices - Extraction (NIFTY500) of NSE index prices is completed
+2020-12-01 17:48:28,021 INFO Index Prices - Extraction (NIFTYMC100)of NSE index prices is started
+2020-12-01 17:48:29,430 INFO Index Prices - Extraction (NIFTYMC100) of NSE index prices is completed
+2020-12-01 17:48:29,831 INFO Index Prices - Extraction (NIFTYMC150)of NSE index prices is started
+2020-12-01 17:48:31,248 INFO Index Prices - Extraction (NIFTYMC150) of NSE index prices is completed
+2020-12-01 17:48:31,633 INFO Index Prices - Extraction (NIFTYPHARMA)of NSE index prices is started
+2020-12-01 17:48:33,108 INFO Index Prices - Extraction (NIFTYPHARMA) of NSE index prices is completed
+2020-12-01 17:48:33,558 INFO Index Prices - Extraction (NIFTYSC100)of NSE index prices is started
+2020-12-01 17:48:35,207 INFO Index Prices - Extraction (NIFTYSC100) of NSE index prices is completed
+2020-12-01 17:48:35,744 INFO Index Prices - Extraction (NIFTYSC250)of NSE index prices is started
+2020-12-01 17:48:37,345 INFO Index Prices - Extraction (NIFTYSC250) of NSE index prices is completed
+2020-12-01 17:48:37,733 INFO Index Prices - Extraction (NIFVIX)of NSE index prices is started
+2020-12-01 17:48:39,178 INFO Index Prices - Extraction (NIFVIX) of NSE index prices is completed
+2020-12-01 17:48:39,178 INFO Index Prices - NSE is completed
+2020-12-01 20:05:59,288 INFO Index Prices - Extraction of BSE index prices is started
+2020-12-01 20:05:59,289 INFO Index Prices - Extraction(BSE100) from site is started
+2020-12-01 20:06:00,553 INFO Index Prices - Extraction(BSE100) from site is completed
+2020-12-01 20:06:03,714 INFO Index Prices - Extraction(BSE200) from site is started
+2020-12-01 20:06:04,436 INFO Index Prices - Extraction(BSE200) from site is completed
+2020-12-01 20:06:06,160 INFO Index Prices - Extraction(BSE30) from site is started
+2020-12-01 20:06:06,997 INFO Index Prices - Extraction(BSE30) from site is completed
+2020-12-01 20:06:08,641 INFO Index Prices - Extraction(BSE500) from site is started
+2020-12-01 20:06:09,251 INFO Index Prices - Extraction(BSE500) from site is completed
+2020-12-01 20:06:10,963 INFO Index Prices - Extraction(BSEHEALTH) from site is started
+2020-12-01 20:06:11,807 INFO Index Prices - Extraction(BSEHEALTH) from site is completed
+2020-12-01 20:06:13,516 INFO Index Prices - Extraction(BSEMC) from site is started
+2020-12-01 20:06:14,354 INFO Index Prices - Extraction(BSEMC) from site is completed
+2020-12-01 20:06:16,112 INFO Index Prices - Extraction(BSEMSC400) from site is started
+2020-12-01 20:06:16,912 INFO Index Prices - Extraction(BSEMSC400) from site is completed
+2020-12-01 20:06:18,657 INFO Index Prices - Extraction(BSESC) from site is started
+2020-12-01 20:06:19,789 INFO Index Prices - Extraction(BSESC) from site is completed
+2020-12-01 20:06:21,461 INFO Index Prices - Extraction(SENSEX) from site is started
+2020-12-01 20:06:22,679 INFO Index Prices - Extraction(SENSEX) from site is completed
+2020-12-01 20:06:24,360 INFO Index Prices - Extraction of BSE index prices is completed
+2021-01-04 12:10:28,645 INFO Index Prices - Extraction of BSE index prices is started
+2021-01-04 12:10:28,665 INFO Index Prices - Extraction(BSE100) from site is started
+2021-01-04 12:10:29,005 INFO Index Prices - Extraction(BSE100) from site is completed
+2021-01-04 12:10:30,227 INFO Index Prices - Extraction(BSE200) from site is started
+2021-01-04 12:10:31,449 INFO Index Prices - Extraction(BSE200) from site is completed
+2021-01-04 12:10:32,126 INFO Index Prices - Extraction(BSE30) from site is started
+2021-01-04 12:10:32,476 INFO Index Prices - Extraction(BSE30) from site is completed
+2021-01-04 12:10:33,147 INFO Index Prices - Extraction(BSE500) from site is started
+2021-01-04 12:10:33,466 INFO Index Prices - Extraction(BSE500) from site is completed
+2021-01-04 12:10:34,170 INFO Index Prices - Extraction(BSEHEALTH) from site is started
+2021-01-04 12:10:34,648 INFO Index Prices - Extraction(BSEHEALTH) from site is completed
+2021-01-04 12:10:35,418 INFO Index Prices - Extraction(BSEMC) from site is started
+2021-01-04 12:10:35,846 INFO Index Prices - Extraction(BSEMC) from site is completed
+2021-01-04 12:10:36,637 INFO Index Prices - Extraction(BSEMSC400) from site is started
+2021-01-04 12:10:37,016 INFO Index Prices - Extraction(BSEMSC400) from site is completed
+2021-01-04 12:10:37,807 INFO Index Prices - Extraction(BSESC) from site is started
+2021-01-04 12:10:38,253 INFO Index Prices - Extraction(BSESC) from site is completed
+2021-01-04 12:10:39,014 INFO Index Prices - Extraction(SENSEX) from site is started
+2021-01-04 12:10:39,583 INFO Index Prices - Extraction(SENSEX) from site is completed
+2021-01-04 12:10:40,337 INFO Index Prices - Extraction of BSE index prices is completed
+2021-01-04 12:13:43,501 INFO Index Prices - NSE is started
+2021-01-04 12:13:43,733 INFO Index Prices - Extraction (NIFTY100)of NSE index prices is started
+2021-01-04 12:13:44,964 INFO Index Prices - Extraction (NIFTY100) of NSE index prices is completed
+2021-01-04 12:13:45,202 INFO Index Prices - Extraction (NIFTY200)of NSE index prices is started
+2021-01-04 12:13:45,942 INFO Index Prices - Extraction (NIFTY200) of NSE index prices is completed
+2021-01-04 12:13:46,096 INFO Index Prices - Extraction (NIFTY50)of NSE index prices is started
+2021-01-04 12:13:46,817 INFO Index Prices - Extraction (NIFTY50) of NSE index prices is completed
+2021-01-04 12:13:46,969 INFO Index Prices - Extraction (NIFTY500)of NSE index prices is started
+2021-01-04 12:13:47,688 INFO Index Prices - Extraction (NIFTY500) of NSE index prices is completed
+2021-01-04 12:13:47,876 INFO Index Prices - Extraction (NIFTYMC100)of NSE index prices is started
+2021-01-04 12:13:48,587 INFO Index Prices - Extraction (NIFTYMC100) of NSE index prices is completed
+2021-01-04 12:13:48,856 INFO Index Prices - Extraction (NIFTYMC150)of NSE index prices is started
+2021-01-04 12:13:49,628 INFO Index Prices - Extraction (NIFTYMC150) of NSE index prices is completed
+2021-01-04 12:13:49,905 INFO Index Prices - Extraction (NIFTYPHARMA)of NSE index prices is started
+2021-01-04 12:13:50,576 INFO Index Prices - Extraction (NIFTYPHARMA) of NSE index prices is completed
+2021-01-04 12:13:50,805 INFO Index Prices - Extraction (NIFTYSC100)of NSE index prices is started
+2021-01-04 12:13:51,514 INFO Index Prices - Extraction (NIFTYSC100) of NSE index prices is completed
+2021-01-04 12:13:51,828 INFO Index Prices - Extraction (NIFTYSC250)of NSE index prices is started
+2021-01-04 12:13:52,530 INFO Index Prices - Extraction (NIFTYSC250) of NSE index prices is completed
+2021-01-04 12:13:52,792 INFO Index Prices - Extraction (NIFVIX)of NSE index prices is started
+2021-01-04 12:13:53,529 INFO Index Prices - Extraction (NIFVIX) of NSE index prices is completed
+2021-01-04 12:13:53,530 INFO Index Prices - NSE is completed
+2021-02-02 10:17:51,712 INFO Index Prices - Extraction of BSE index prices is started
+2021-02-02 10:17:51,731 INFO Index Prices - Extraction(BSE100) from site is started
+2021-02-02 10:17:52,173 INFO Index Prices - Extraction(BSE100) from site is completed
+2021-02-02 10:17:53,329 INFO Index Prices - Extraction(BSE200) from site is started
+2021-02-02 10:17:53,663 INFO Index Prices - Extraction(BSE200) from site is completed
+2021-02-02 10:17:54,911 INFO Index Prices - Extraction(BSE30) from site is started
+2021-02-02 10:17:55,308 INFO Index Prices - Extraction(BSE30) from site is completed
+2021-02-02 10:17:55,985 INFO Index Prices - Extraction(BSE500) from site is started
+2021-02-02 10:17:56,306 INFO Index Prices - Extraction(BSE500) from site is completed
+2021-02-02 10:17:56,976 INFO Index Prices - Extraction(BSEHEALTH) from site is started
+2021-02-02 10:17:57,347 INFO Index Prices - Extraction(BSEHEALTH) from site is completed
+2021-02-02 10:17:58,024 INFO Index Prices - Extraction(BSEMC) from site is started
+2021-02-02 10:17:58,372 INFO Index Prices - Extraction(BSEMC) from site is completed
+2021-02-02 10:17:59,071 INFO Index Prices - Extraction(BSEMSC400) from site is started
+2021-02-02 10:17:59,534 INFO Index Prices - Extraction(BSEMSC400) from site is completed
+2021-02-02 10:18:00,205 INFO Index Prices - Extraction(BSESC) from site is started
+2021-02-02 10:18:00,821 INFO Index Prices - Extraction(BSESC) from site is completed
+2021-02-02 10:18:01,485 INFO Index Prices - Extraction(SENSEX) from site is started
+2021-02-02 10:18:02,014 INFO Index Prices - Extraction(SENSEX) from site is completed
+2021-02-02 10:18:02,676 INFO Index Prices - Extraction of BSE index prices is completed
+2021-02-02 10:18:26,575 INFO Index Prices - NSE is started
+2021-02-02 10:18:26,722 INFO Index Prices - Extraction (NIFTY100)of NSE index prices is started
+2021-02-02 10:18:27,835 INFO Index Prices - Extraction (NIFTY100) of NSE index prices is completed
+2021-02-02 10:18:28,049 INFO Index Prices - Extraction (NIFTY200)of NSE index prices is started
+2021-02-02 10:18:28,663 INFO Index Prices - Extraction (NIFTY200) of NSE index prices is completed
+2021-02-02 10:18:28,777 INFO Index Prices - Extraction (NIFTY50)of NSE index prices is started
+2021-02-02 10:18:29,371 INFO Index Prices - Extraction (NIFTY50) of NSE index prices is completed
+2021-02-02 10:18:29,581 INFO Index Prices - Extraction (NIFTY500)of NSE index prices is started
+2021-02-02 10:18:30,220 INFO Index Prices - Extraction (NIFTY500) of NSE index prices is completed
+2021-02-02 10:18:30,379 INFO Index Prices - Extraction (NIFTYMC100)of NSE index prices is started
+2021-02-02 10:18:31,038 INFO Index Prices - Extraction (NIFTYMC100) of NSE index prices is completed
+2021-02-02 10:18:31,251 INFO Index Prices - Extraction (NIFTYMC150)of NSE index prices is started
+2021-02-02 10:18:31,881 INFO Index Prices - Extraction (NIFTYMC150) of NSE index prices is completed
+2021-02-02 10:18:32,030 INFO Index Prices - Extraction (NIFTYPHARMA)of NSE index prices is started
+2021-02-02 10:18:32,694 INFO Index Prices - Extraction (NIFTYPHARMA) of NSE index prices is completed
+2021-02-02 10:18:32,837 INFO Index Prices - Extraction (NIFTYSC100)of NSE index prices is started
+2021-02-02 10:18:33,501 INFO Index Prices - Extraction (NIFTYSC100) of NSE index prices is completed
+2021-02-02 10:18:33,652 INFO Index Prices - Extraction (NIFTYSC250)of NSE index prices is started
+2021-02-02 10:18:34,320 INFO Index Prices - Extraction (NIFTYSC250) of NSE index prices is completed
+2021-02-02 10:18:34,496 INFO Index Prices - Extraction (NIFVIX)of NSE index prices is started
+2021-02-02 10:18:35,127 INFO Index Prices - Extraction (NIFVIX) of NSE index prices is completed
+2021-02-02 10:18:35,127 INFO Index Prices - NSE is completed

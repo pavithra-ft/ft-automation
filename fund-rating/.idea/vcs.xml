@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../../Git/fi-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Git/fs-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Git/iq-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Git/onboarding-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Git/onboarding-api-km" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Git/onboarding-api-ni" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Git/onboarding-api-qed" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+  </component>
+</project>
