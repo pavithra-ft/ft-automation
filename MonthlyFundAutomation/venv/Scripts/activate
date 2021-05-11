@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\pavithra\PycharmProjects\MonthlyFundAutomation\venv"
+VIRTUAL_ENV="C:\Users\pavithra\Documents\fintuple-automation-projects\MonthlyFundAutomation\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
